@@ -9,10 +9,22 @@ const fadeUp = (i: number) => ({
   transition: { delay: i * 0.15, duration: 0.5 },
 });
 
-export const LessonTheory = ({ isLesson1 }: { isLesson1: boolean }) => {
-  const { tr } = useLang();
+const BG = [
+  "from-forest-light/40 to-forest-pale/60",
+  "from-sun/40 to-forest-pale/60",
+  "from-berry/30 to-sun/30",
+];
+const EMOJI = ["🌍", "🌱", "🔍"];
 
-  if (!isLesson1) {
+export const LessonTheory = ({ lessonId }: { lessonId: number }) => {
+  const { tr, trOpt } = useLang();
+
+  const paragraphs = [1, 2, 3]
+    .map((i) => trOpt(`l${lessonId}_theory_p${i}`))
+    .map((text, i) => ({ text, emoji: EMOJI[i], bg: BG[i] }))
+    .filter((c) => !!c.text) as { text: string; emoji: string; bg: string }[];
+
+  if (paragraphs.length === 0) {
     return (
       <div className="glass rounded-3xl p-8 md:p-12 min-h-[420px] grid place-items-center text-center">
         <div>
@@ -24,18 +36,12 @@ export const LessonTheory = ({ isLesson1 }: { isLesson1: boolean }) => {
     );
   }
 
-  const cards = [
-    { emoji: "🌍", text: tr("l1_theory_p1"), bg: "from-forest-light/40 to-forest-pale/60" },
-    { emoji: "🌱", text: tr("l1_theory_p2"), bg: "from-sun/40 to-forest-pale/60" },
-    { emoji: "🔍", text: tr("l1_theory_p3"), bg: "from-berry/30 to-sun/30" },
-  ];
-
   return (
     <div className="space-y-4">
       <div className="flex justify-end">
         <Owl message={tr("owlTheory")} size={100} side="right" />
       </div>
-      {cards.map((c, i) => (
+      {paragraphs.map((c, i) => (
         <motion.div
           key={i}
           {...fadeUp(i)}
