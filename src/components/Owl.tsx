@@ -9,9 +9,10 @@ type Props = {
   side?: "left" | "right";
   speaking?: boolean;
   accessory?: OwlAccessory;
+  winking?: boolean;
 };
 
-export const Owl = ({ message, size = 120, side = "left", speaking, accessory = "none" }: Props) => {
+export const Owl = ({ message, size = 120, side = "left", speaking, accessory = "none", winking = false }: Props) => {
   const { isSpeaking } = useSpeech();
   const talking = speaking ?? isSpeaking;
   return (
@@ -48,6 +49,15 @@ export const Owl = ({ message, size = 120, side = "left", speaking, accessory = 
             <circle cx="122" cy="100" r="10" fill="hsl(var(--forest-deep))" />
             <circle cx="81" cy="97" r="3" fill="white" />
             <circle cx="125" cy="97" r="3" fill="white" />
+          </motion.g>
+          {/* Wink overlay — covers right eye briefly when winking */}
+          <motion.g
+            initial={{ opacity: 0 }}
+            animate={{ opacity: winking ? [0, 1, 1, 0] : 0 }}
+            transition={{ duration: 0.6, times: [0, 0.2, 0.7, 1] }}
+          >
+            <circle cx="122" cy="98" r="22" fill="hsl(60 40% 90%)" />
+            <path d="M104 100 Q122 108 140 100" stroke="hsl(var(--forest-deep))" strokeWidth="3.5" strokeLinecap="round" fill="none" />
           </motion.g>
           {/* Beak */}
           <motion.path
