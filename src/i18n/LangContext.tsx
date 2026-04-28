@@ -4,7 +4,9 @@ import { Lang, langCycle, t, TKey } from "./translations";
 type Ctx = {
   lang: Lang;
   cycle: () => void;
-  tr: (key: TKey) => string;
+  tr: (key: TKey | string) => string;
+  /** Returns translated text for key, or undefined if missing/empty. Useful for conditional rendering. */
+  trOpt: (key: string) => string | undefined;
 };
 
 const LangContext = createContext<Ctx | null>(null);
