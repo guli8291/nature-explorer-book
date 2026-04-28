@@ -11,6 +11,7 @@ import { LessonScientists } from "@/components/lesson/LessonScientists";
 import { LessonObservation } from "@/components/lesson/LessonObservation";
 import { LessonPractice } from "@/components/lesson/LessonPractice";
 import { LessonQuiz } from "@/components/lesson/LessonQuiz";
+import { LessonSection } from "@/components/lesson/LessonSection";
 import type { TKey } from "@/i18n/translations";
 
 type Section = "intro" | "scientists" | "observation" | "experiments" | "review";
@@ -125,10 +126,34 @@ const Lesson = () => {
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.35 }}
           >
-            {active === "intro" && <LessonIntro lessonId={lessonId} fallbackTitle={lesson.title[lang]} />}
-            {active === "scientists" && <LessonScientists />}
-            {active === "observation" && <LessonObservation />}
-            {active === "experiments" && <LessonPractice lessonId={lessonId} />}
+            {active === "intro" && (
+              <LessonSection
+                lessonId={lessonId}
+                section="intro"
+                header={<LessonIntro lessonId={lessonId} fallbackTitle={lesson.title[lang]} />}
+              />
+            )}
+            {active === "scientists" && (
+              <LessonSection
+                lessonId={lessonId}
+                section="scientists"
+                header={<LessonScientists />}
+              />
+            )}
+            {active === "observation" && (
+              <LessonSection
+                lessonId={lessonId}
+                section="observation"
+                header={<LessonObservation />}
+              />
+            )}
+            {active === "experiments" && (
+              <LessonSection
+                lessonId={lessonId}
+                section="experiments"
+                header={<LessonPractice lessonId={lessonId} />}
+              />
+            )}
             {active === "review" && <LessonQuiz lessonId={lessonId} onComplete={markComplete} />}
           </motion.div>
         </AnimatePresence>
