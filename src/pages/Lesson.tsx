@@ -1,29 +1,33 @@
 import { useMemo, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
-import { ArrowLeft, ArrowRight, BookOpen, FlaskConical, GraduationCap, Sparkles } from "lucide-react";
+import { ArrowLeft, ArrowRight, BookOpen, Eye, FlaskConical, GraduationCap, Sparkles } from "lucide-react";
 import { TopBar } from "@/components/TopBar";
-import { Owl } from "@/components/Owl";
 import { useLang } from "@/i18n/LangContext";
+import { useSpeech } from "@/hooks/useSpeech";
 import { lessons } from "@/data/lessons";
 import { LessonIntro } from "@/components/lesson/LessonIntro";
-import { LessonTheory } from "@/components/lesson/LessonTheory";
+import { LessonScientists } from "@/components/lesson/LessonScientists";
+import { LessonObservation } from "@/components/lesson/LessonObservation";
 import { LessonPractice } from "@/components/lesson/LessonPractice";
 import { LessonQuiz } from "@/components/lesson/LessonQuiz";
+import type { TKey } from "@/i18n/translations";
 
-type Section = "intro" | "theory" | "practice" | "quiz";
+type Section = "intro" | "scientists" | "observation" | "experiments" | "review";
 
-const sections: { key: Section; icon: any }[] = [
-  { key: "intro", icon: Sparkles },
-  { key: "theory", icon: BookOpen },
-  { key: "practice", icon: FlaskConical },
-  { key: "quiz", icon: GraduationCap },
+const sections: { key: Section; icon: any; tk: TKey }[] = [
+  { key: "intro", icon: Sparkles, tk: "nav_intro" },
+  { key: "scientists", icon: BookOpen, tk: "nav_scientists" },
+  { key: "observation", icon: Eye, tk: "nav_observation" },
+  { key: "experiments", icon: FlaskConical, tk: "nav_experiments" },
+  { key: "review", icon: GraduationCap, tk: "nav_review" },
 ];
 
 const Lesson = () => {
   const { id } = useParams();
   const navigate = useNavigate();
   const { lang, tr } = useLang();
+  const { speak } = useSpeech();
   const lessonId = Number(id);
   const lesson = useMemo(() => lessons.find((l) => l.id === lessonId), [lessonId]);
   const [active, setActive] = useState<Section>("intro");
@@ -36,11 +40,12 @@ const Lesson = () => {
   const idx = sections.findIndex((s) => s.key === active);
   const progress = ((idx + 1) / sections.length) * 100;
 
-  const goNext = () => {
-    if (idx < sections.length - 1) setActive(sections[idx + 1].key);
-  };
-  const goPrev = () => {
-    if (idx > 0) setActive(sections[idx - 1].key);
+  const goNext = () => { if (idx < sections.length - 1) setActive(sections[idx + 1].key); };
+  const goPrev = () => { if (idx > 0) setActive(sections[idx - 1].key); };
+
+  const handlePick = (s: Section, label: string) => {
+    setActive(s);
+    speak(label, lang, `nav-${s}`);
   };
 
   const markComplete = () => {
@@ -53,12 +58,43 @@ const Lesson = () => {
     } catch {}
   };
 
-  // Lesson 1 has full content; others use a beautiful template
   const isLesson1 = lessonId === 1;
 
   return (
     <div className="min-h-screen pb-12">
       <TopBar progress={progress} />
+
+      {/* Sticky inner section nav under TopBar */}
+      <div className="sticky top-[64px] z-30 px-4 md:px-8 pt-3 pb-2 backdrop-blur-md bg-forest-cream/70 border-b border-forest-pale/60">
+        <div className="max-w-6xl mx-auto">
+          <nav className="glass rounded-2xl p-1.5 flex gap-1 overflow-x-auto">
+            {sections.map((s) => {
+              const Icon = s.icon;
+              const isActive = s.key === active;
+              const label = tr(s.tk);
+              return (
+                <button
+                  key={s.key}
+                  onClick={() => handlePick(s.key, label)}
+                  className="relative flex-1 min-w-[130px] px-3 py-2.5 rounded-xl font-bold text-sm flex items-center justify-center gap-2 transition-colors whitespace-nowrap"
+                >
+                  {isActive && (
+                    <motion.div
+                      layoutId="active-section"
+                      className="absolute inset-0 rounded-xl gradient-forest"
+                      transition={{ type: "spring", stiffness: 300, damping: 30 }}
+                    />
+                  )}
+                  <span className={`relative z-10 flex items-center gap-2 ${isActive ? "text-forest-cream" : "text-forest-mid"}`}>
+                    <Icon className="w-4 h-4" />
+                    {label}
+                  </span>
+                </button>
+              );
+            })}
+          </nav>
+        </div>
+      </div>
 
       <main className="px-4 md:px-8 mt-6 max-w-6xl mx-auto">
         {/* Lesson header */}
@@ -80,33 +116,6 @@ const Lesson = () => {
           </div>
         </div>
 
-        {/* Section nav */}
-        <nav className="glass rounded-2xl p-1.5 flex gap-1 mb-6 overflow-x-auto">
-          {sections.map((s) => {
-            const Icon = s.icon;
-            const isActive = s.key === active;
-            return (
-              <button
-                key={s.key}
-                onClick={() => setActive(s.key)}
-                className="relative flex-1 min-w-[110px] px-3 py-2.5 rounded-xl font-bold text-sm flex items-center justify-center gap-2 transition-colors"
-              >
-                {isActive && (
-                  <motion.div
-                    layoutId="active-section"
-                    className="absolute inset-0 rounded-xl gradient-forest"
-                    transition={{ type: "spring", stiffness: 300, damping: 30 }}
-                  />
-                )}
-                <span className={`relative z-10 flex items-center gap-2 ${isActive ? "text-forest-cream" : "text-forest-mid"}`}>
-                  <Icon className="w-4 h-4" />
-                  {tr(s.key)}
-                </span>
-              </button>
-            );
-          })}
-        </nav>
-
         {/* Section content */}
         <AnimatePresence mode="wait">
           <motion.div
@@ -117,9 +126,10 @@ const Lesson = () => {
             transition={{ duration: 0.35 }}
           >
             {active === "intro" && <LessonIntro isLesson1={isLesson1} lessonTitle={lesson.title[lang]} />}
-            {active === "theory" && <LessonTheory isLesson1={isLesson1} />}
-            {active === "practice" && <LessonPractice isLesson1={isLesson1} />}
-            {active === "quiz" && <LessonQuiz isLesson1={isLesson1} onComplete={markComplete} />}
+            {active === "scientists" && <LessonScientists />}
+            {active === "observation" && <LessonObservation />}
+            {active === "experiments" && <LessonPractice isLesson1={isLesson1} />}
+            {active === "review" && <LessonQuiz isLesson1={isLesson1} onComplete={markComplete} />}
           </motion.div>
         </AnimatePresence>
 
