@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Owl } from "@/components/Owl";
+import { SpeakButton } from "@/components/SpeakButton";
 import { useLang } from "@/i18n/LangContext";
 
 const fadeUp = (i: number) => ({
@@ -48,9 +49,10 @@ export const LessonTheory = ({ isLesson1 }: { isLesson1: boolean }) => {
           >
             {c.emoji}
           </motion.div>
-          <p className="text-base md:text-lg text-forest-deep font-semibold leading-relaxed">
+          <p className="flex-1 text-base md:text-lg text-forest-deep font-semibold leading-relaxed">
             {c.text}
           </p>
+          <SpeakButton text={c.text} size="md" />
         </motion.div>
       ))}
     </div>
