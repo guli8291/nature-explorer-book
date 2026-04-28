@@ -134,4 +134,11 @@
   .animate-float { animation: float 4s ease-in-out infinite; }
   .animate-wiggle { animation: wiggle 1.5s ease-in-out infinite; }
   .animate-star-fly { animation: star-fly 1.4s ease-out forwards; }
+
+  /* Hide scrollbar but keep scroll functionality */
+  .no-scrollbar { scrollbar-width: none; -ms-overflow-style: none; }
+  .no-scrollbar::-webkit-scrollbar { display: none; width: 0; height: 0; }
+
+  .snap-x-mandatory { scroll-snap-type: x mandatory; }
+  .snap-center-child { scroll-snap-align: center; }
 }
