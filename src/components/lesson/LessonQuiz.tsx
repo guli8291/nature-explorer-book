@@ -15,7 +15,7 @@ const QUESTIONS: Q[] = [
 
 type Star = { id: number; x: number; y: number; tx: number; ty: number };
 
-export const LessonQuiz = ({ isLesson1, onComplete }: { isLesson1: boolean; onComplete: () => void }) => {
+export const LessonQuiz = ({ lessonId, onComplete }: { lessonId: number; onComplete: () => void }) => {
   const { tr } = useLang();
   const [step, setStep] = useState(0);
   const [score, setScore] = useState(0);
@@ -23,7 +23,7 @@ export const LessonQuiz = ({ isLesson1, onComplete }: { isLesson1: boolean; onCo
   const [stars, setStars] = useState<Star[]>([]);
   const [done, setDone] = useState(false);
 
-  if (!isLesson1) {
+  if (lessonId !== 1) {
     return (
       <div className="glass rounded-3xl p-8 md:p-12 min-h-[420px] grid place-items-center text-center">
         <div>
