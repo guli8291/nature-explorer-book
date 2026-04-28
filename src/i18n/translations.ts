@@ -129,6 +129,12 @@ export const t = {
   q3_b: { kz: "Жансыз табиғат", ru: "Неживая природа", en: "Non-living nature" },
   q3_c: { kz: "Ойыншық", ru: "Игрушка", en: "Toy" },
   l2_title: { kz: '', ru: '', en: '' },
+  // Per-lesson nav labels (override defaults nav_intro/nav_scientists/nav_observation/nav_experiments/nav_review)
+  l2_nav_1: { kz: 'Кіріспе', ru: 'Введение', en: 'Introduction' },
+  l2_nav_2: { kz: 'Топтық жұмыс', ru: 'Работа в группах', en: 'Group Work' },
+  l2_nav_3: { kz: '', ru: '', en: '' },
+  l2_nav_4: { kz: '', ru: '', en: '' },
+  l2_nav_5: { kz: '', ru: '', en: '' },
   l2_intro: { kz: '', ru: '', en: '' },
   l2_theory_p1: { kz: '', ru: '', en: '' },
   l2_theory_p2: { kz: '', ru: '', en: '' },
