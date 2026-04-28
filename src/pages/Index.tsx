@@ -34,7 +34,7 @@ const Index = () => {
   const navigate = useNavigate();
   const [activeSection, setActiveSection] = useState<string>(SECTIONS[0].key);
   const [winkTick, setWinkTick] = useState(0);
-  const sectionRefs = useRef<Record<string, HTMLDivElement | null>>({});
+  const sectionRefs = useRef<Record<string, HTMLElement | null>>({});
   const railRefs = useRef<Record<string, HTMLDivElement | null>>({});
 
   const completed = (() => {
