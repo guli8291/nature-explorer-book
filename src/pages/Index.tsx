@@ -175,125 +175,93 @@ const Index = () => {
           return (
             <section
               key={sec.key}
-              className="shrink-0 h-full flex flex-row gap-4 md:gap-6 px-4 md:px-10 pt-20 pb-40"
+              className="shrink-0 h-full flex flex-col px-6 md:px-16 pt-24 pb-44"
               style={{ minWidth: "100vw", scrollSnapAlign: "start" }}
             >
-              {/* Left fixed panel: section title + progress + owl space */}
-              <aside className="hidden md:flex flex-col w-64 shrink-0 sticky top-0 self-start pt-4">
-                <motion.button
-                  type="button"
-                  onClick={() => speak(title, lang, `sec-${sec.key}`)}
-                  whileHover={{ scale: 1.02 }}
-                  whileTap={{ scale: 0.98 }}
-                  className="w-full text-left flex flex-col gap-3 p-5 rounded-3xl"
-                  style={{
-                    background: `linear-gradient(160deg, hsl(${sec.hsl}) 0%, hsl(${sec.hsl} / 0.85) 60%, hsl(${sec.tint}) 100%)`,
-                    boxShadow: `0 16px 48px -16px hsl(${sec.hsl} / 0.6)`,
-                  }}
+              {/* Section header */}
+              <motion.button
+                type="button"
+                onClick={() => speak(title, lang, `sec-${sec.key}`)}
+                whileHover={{ scale: 1.005 }}
+                whileTap={{ scale: 0.995 }}
+                className="w-full text-left flex items-center gap-4 md:gap-6 px-5 md:px-8 py-4 md:py-5 rounded-3xl"
+                style={{
+                  background: `linear-gradient(100deg, hsl(${sec.hsl}) 0%, hsl(${sec.hsl} / 0.9) 55%, hsl(${sec.tint}) 100%)`,
+                  boxShadow: `0 16px 48px -16px hsl(${sec.hsl} / 0.6)`,
+                }}
+              >
+                <div
+                  className="shrink-0 w-14 h-14 md:w-16 md:h-16 rounded-2xl grid place-items-center text-3xl md:text-4xl"
+                  style={{ background: "hsl(0 0% 100% / 0.9)" }}
                 >
-                  <div
-                    className="w-14 h-14 rounded-2xl grid place-items-center text-3xl"
-                    style={{ background: "hsl(0 0% 100% / 0.92)" }}
-                  >
-                    {sec.emoji}
-                  </div>
-                  <div className="text-[10px] font-bold uppercase tracking-[0.25em] text-white/85">
+                  {sec.emoji}
+                </div>
+                <div className="flex-1 min-w-0">
+                  <div className="text-[10px] md:text-xs font-bold uppercase tracking-[0.25em] text-white/85">
                     {tr("lesson")} {sec.range[0]}{sec.range[0] !== sec.range[1] ? `–${sec.range[1]}` : ""}
                   </div>
-                  <h2 className="font-display text-2xl font-black text-white leading-tight">
+                  <h2 className="font-display text-2xl md:text-4xl font-black text-white leading-tight truncate">
                     {title}
                   </h2>
-                  <div className="flex items-center gap-2 text-white/90 text-xs font-bold">
-                    <Volume2 size={14} /> {items.filter((l) => completed.includes(l.id)).length}/{items.length} ✓
-                  </div>
-                </motion.button>
-              </aside>
-
-              {/* Right scrollable lessons grid */}
-              <div className="relative flex-1 min-w-0 flex flex-col">
-                {/* Mobile section header */}
-                <motion.button
-                  type="button"
-                  onClick={() => speak(title, lang, `sec-${sec.key}`)}
-                  whileTap={{ scale: 0.98 }}
-                  className="md:hidden w-full text-left flex items-center gap-3 px-4 py-3 rounded-2xl mb-3"
-                  style={{
-                    background: `linear-gradient(100deg, hsl(${sec.hsl}) 0%, hsl(${sec.tint}) 100%)`,
-                    boxShadow: `0 12px 32px -12px hsl(${sec.hsl} / 0.6)`,
-                  }}
+                </div>
+                <motion.div
+                  animate={{ scale: [1, 1.15, 1] }}
+                  transition={{ duration: 2, repeat: Infinity }}
+                  className="shrink-0 w-11 h-11 md:w-12 md:h-12 rounded-full grid place-items-center bg-white/95 text-forest-deep"
                 >
-                  <div className="w-10 h-10 rounded-xl grid place-items-center text-2xl bg-white/95">{sec.emoji}</div>
-                  <div className="flex-1 min-w-0">
-                    <div className="text-[9px] font-bold uppercase tracking-widest text-white/85">
-                      {tr("lesson")} {sec.range[0]}{sec.range[0] !== sec.range[1] ? `–${sec.range[1]}` : ""}
-                    </div>
-                    <h2 className="font-display text-lg font-black text-white truncate">{title}</h2>
-                  </div>
-                  <Volume2 size={18} className="text-white" />
-                </motion.button>
+                  <Volume2 size={20} />
+                </motion.div>
+              </motion.button>
 
-                <div
-                  className="no-scrollbar soft-bounce flex-1 overflow-y-auto pr-1"
-                  style={{ maxHeight: "100%" }}
-                >
-                  <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4 pb-6">
-                    {items.map((l, idx) => {
-                      const done = completed.includes(l.id);
-                      return (
-                        <motion.button
-                          key={l.id}
-                          initial={{ opacity: 0, y: 16, scale: 0.92 }}
-                          animate={{ opacity: 1, y: 0, scale: 1 }}
-                          transition={{ delay: idx * 0.03, type: "spring", stiffness: 220, damping: 18 }}
-                          whileHover={{ scale: 1.05, y: -6 }}
-                          whileTap={{ scale: 0.96 }}
-                          onClick={() => navigate(`/lesson/${l.id}`)}
-                          className="flex flex-col items-center text-center p-3 md:p-4 rounded-2xl bg-white/90 hover:bg-white transition-colors relative overflow-hidden"
-                          style={{
-                            boxShadow: `0 8px 24px -8px hsl(${sec.hsl} / 0.4)`,
-                            border: `1.5px solid hsl(${sec.hsl} / 0.3)`,
+              {/* Cards */}
+              <div className="mt-6 flex-1 overflow-y-auto no-scrollbar">
+                <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4">
+                  {items.map((l, idx) => {
+                    const done = completed.includes(l.id);
+                    return (
+                      <motion.button
+                        key={l.id}
+                        initial={{ opacity: 0, y: 16, scale: 0.92 }}
+                        animate={{ opacity: 1, y: 0, scale: 1 }}
+                        transition={{ delay: idx * 0.04, type: "spring", stiffness: 220, damping: 18 }}
+                        whileHover={{ scale: 1.05, y: -6 }}
+                        whileTap={{ scale: 0.96 }}
+                        onClick={() => navigate(`/lesson/${l.id}`)}
+                        className="flex flex-col items-center text-center p-4 rounded-2xl bg-white/90 hover:bg-white transition-colors relative overflow-hidden"
+                        style={{
+                          boxShadow: `0 8px 24px -8px hsl(${sec.hsl} / 0.4)`,
+                          border: `1.5px solid hsl(${sec.hsl} / 0.3)`,
+                        }}
+                      >
+                        <div
+                          className="absolute -right-8 -top-8 w-24 h-24 rounded-full"
+                          style={{ background: `hsl(${sec.hsl} / 0.15)` }}
+                        />
+                        <motion.div
+                          className="text-5xl mb-2 inline-block relative"
+                          animate={{ scale: [1, 1.06, 1], rotate: [-1.5, 1.5, -1.5] }}
+                          transition={{
+                            duration: 6 + (l.id % 5) * 0.7,
+                            repeat: Infinity,
+                            ease: "easeInOut",
+                            delay: (l.id % 7) * 0.4,
                           }}
                         >
-                          <div
-                            className="absolute -right-8 -top-8 w-24 h-24 rounded-full"
-                            style={{ background: `hsl(${sec.hsl} / 0.15)` }}
-                          />
-                          <motion.div
-                            className="text-4xl md:text-5xl mb-1 inline-block relative"
-                            animate={{ scale: [1, 1.06, 1], rotate: [-1.5, 1.5, -1.5] }}
-                            transition={{
-                              duration: 6 + (l.id % 5) * 0.7,
-                              repeat: Infinity,
-                              ease: "easeInOut",
-                              delay: (l.id % 7) * 0.4,
-                            }}
-                          >
-                            {l.icon}
-                          </motion.div>
-                          <div className="text-[10px] font-bold tracking-wider uppercase relative" style={{ color: `hsl(${sec.hsl})` }}>
-                            {tr("lesson")} {l.id}
-                          </div>
-                          <div className="font-display font-bold text-forest-deep text-xs md:text-sm leading-tight mt-1 relative line-clamp-2">
-                            {l.title[lang]}
-                          </div>
-                          {done && (
-                            <div className="absolute top-2 right-2 w-6 h-6 md:w-7 md:h-7 rounded-full bg-sun grid place-items-center text-[12px] md:text-[14px] shadow">⭐</div>
-                          )}
-                        </motion.button>
-                      );
-                    })}
-                  </div>
+                          {l.icon}
+                        </motion.div>
+                        <div className="text-[10px] font-bold tracking-wider uppercase relative" style={{ color: `hsl(${sec.hsl})` }}>
+                          {tr("lesson")} {l.id}
+                        </div>
+                        <div className="font-display font-bold text-forest-deep text-sm leading-tight mt-1 relative line-clamp-2">
+                          {l.title[lang]}
+                        </div>
+                        {done && (
+                          <div className="absolute top-2 right-2 w-7 h-7 rounded-full bg-sun grid place-items-center text-[14px] shadow">⭐</div>
+                        )}
+                      </motion.button>
+                    );
+                  })}
                 </div>
-
-                {/* Scroll-down hint when there are many lessons */}
-                {items.length > 6 && (
-                  <div
-                    className="scroll-hint pointer-events-none absolute left-1/2 bottom-1 text-xs font-bold flex items-center gap-1 px-3 py-1 rounded-full"
-                    style={{ background: `hsl(${sec.hsl} / 0.95)`, color: "white" }}
-                  >
-                    ↓ {items.length}
-                  </div>
-                )}
               </div>
             </section>
           );
