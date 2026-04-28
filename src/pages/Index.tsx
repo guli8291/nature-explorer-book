@@ -1,7 +1,7 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useNavigate } from "react-router-dom";
-import { useEffect, useRef, useState } from "react";
-import { Sparkles, BookOpen, Volume2 } from "lucide-react";
+import { useEffect, useRef, useState, useCallback } from "react";
+import { Sparkles, BookOpen, Volume2, ChevronLeft, ChevronRight } from "lucide-react";
 import { TopBar } from "@/components/TopBar";
 import { Owl, type OwlAccessory } from "@/components/Owl";
 import { useLang } from "@/i18n/LangContext";
@@ -13,20 +13,19 @@ type SectionDef = {
   key: string;
   titleKey: TKey;
   range: [number, number];
-  /** main color (HSL string) */
   hsl: string;
-  /** soft tint for backgrounds */
   tint: string;
+  bgTint: string; // page background tint when active
   emoji: string;
   accessory: OwlAccessory;
 };
 
 const SECTIONS: SectionDef[] = [
-  { key: "explorer", titleKey: "sec_explorer", range: [1, 1],   hsl: "35 85% 50%",  tint: "45 90% 92%",  emoji: "🔬", accessory: "magnifier" },
-  { key: "living",   titleKey: "sec_living",   range: [2, 12],  hsl: "130 55% 32%", tint: "120 45% 90%", emoji: "🌳", accessory: "leaf" },
-  { key: "phys1",    titleKey: "sec_physics1", range: [13, 16], hsl: "12 70% 48%",  tint: "15 80% 92%",  emoji: "🔥", accessory: "flame" },
-  { key: "space",    titleKey: "sec_space",    range: [17, 22], hsl: "230 60% 30%", tint: "225 55% 92%", emoji: "🌍", accessory: "astronaut" },
-  { key: "phys2",    titleKey: "sec_physics2", range: [23, 33], hsl: "265 50% 45%", tint: "265 55% 93%", emoji: "💧", accessory: "droplet" },
+  { key: "explorer", titleKey: "sec_explorer", range: [1, 1],   hsl: "35 85% 50%",  tint: "45 90% 92%",  bgTint: "45 90% 95%",  emoji: "🔬", accessory: "magnifier" },
+  { key: "living",   titleKey: "sec_living",   range: [2, 12],  hsl: "130 55% 32%", tint: "120 45% 90%", bgTint: "120 45% 94%", emoji: "🌳", accessory: "leaf" },
+  { key: "phys1",    titleKey: "sec_physics1", range: [13, 16], hsl: "12 70% 48%",  tint: "15 80% 92%",  bgTint: "15 80% 95%",  emoji: "🔥", accessory: "flame" },
+  { key: "space",    titleKey: "sec_space",    range: [17, 22], hsl: "230 60% 30%", tint: "225 55% 92%", bgTint: "225 55% 95%", emoji: "🌍", accessory: "astronaut" },
+  { key: "phys2",    titleKey: "sec_physics2", range: [23, 33], hsl: "265 50% 45%", tint: "265 55% 93%", bgTint: "265 55% 96%", emoji: "💧", accessory: "droplet" },
 ];
 
 const Index = () => {
@@ -34,7 +33,9 @@ const Index = () => {
   const { speak } = useSpeech();
   const navigate = useNavigate();
   const [activeSection, setActiveSection] = useState<string>(SECTIONS[0].key);
+  const [winkTick, setWinkTick] = useState(0);
   const sectionRefs = useRef<Record<string, HTMLDivElement | null>>({});
+  const railRefs = useRef<Record<string, HTMLDivElement | null>>({});
 
   const completed = (() => {
     try { return JSON.parse(localStorage.getItem("completed") || "[]") as number[]; }
@@ -42,7 +43,7 @@ const Index = () => {
   })();
   const progress = (completed.length / lessons.length) * 100;
 
-  // Track which section is currently in view → owl follows
+  // Track which section is currently in view
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -54,23 +55,57 @@ const Index = () => {
           if (key) setActiveSection(key);
         }
       },
-      { rootMargin: "-30% 0px -50% 0px", threshold: [0, 0.25, 0.5, 0.75, 1] }
+      { rootMargin: "-25% 0px -55% 0px", threshold: [0, 0.25, 0.5, 0.75, 1] }
     );
     Object.values(sectionRefs.current).forEach((el) => el && observer.observe(el));
     return () => observer.disconnect();
   }, []);
 
+  // Owl winks while user scrolls
+  useEffect(() => {
+    let t: ReturnType<typeof setTimeout> | null = null;
+    const onScroll = () => {
+      if (t) return;
+      t = setTimeout(() => {
+        setWinkTick((w) => w + 1);
+        t = null;
+      }, 600);
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+      if (t) clearTimeout(t);
+    };
+  }, []);
+
+  const scrollRail = useCallback((key: string, dir: 1 | -1) => {
+    const rail = railRefs.current[key];
+    if (!rail) return;
+    const card = rail.querySelector<HTMLElement>("[data-card]");
+    const step = card ? card.offsetWidth + 16 : 280;
+    rail.scrollBy({ left: step * 2 * dir, behavior: "smooth" });
+  }, []);
+
+  const activeSec = SECTIONS.find((s) => s.key === activeSection) ?? SECTIONS[0];
+
   return (
-    <div className="min-h-screen pb-12">
+    <div className="min-h-screen pb-12 relative overflow-x-hidden">
+      {/* Animated background tint that follows the active section */}
+      <motion.div
+        className="fixed inset-0 -z-10"
+        animate={{ backgroundColor: `hsl(${activeSec.bgTint})` }}
+        transition={{ duration: 0.9, ease: "easeOut" }}
+      />
+
       <TopBar progress={progress} />
 
-      <main className="px-4 md:px-8 mt-8 max-w-7xl mx-auto">
+      <main className="mt-8 max-w-[100rem] mx-auto">
         {/* Hero */}
         <motion.section
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="glass rounded-[2rem] p-8 md:p-12 relative overflow-hidden mb-8"
+          className="glass rounded-[2rem] p-8 md:p-12 relative overflow-hidden mb-10 mx-4 md:mx-8"
         >
           <div className="absolute top-0 right-0 w-40 h-40 rounded-full blur-3xl bg-forest-light/30 -z-0" />
           <div className="absolute bottom-0 left-0 w-56 h-56 rounded-full blur-3xl bg-sun/20 -z-0" />
@@ -103,103 +138,137 @@ const Index = () => {
           </div>
         </motion.section>
 
-        {/* Sections */}
-        <div className="space-y-10">
+        {/* Sections — horizontal rails */}
+        <div className="space-y-12">
           {SECTIONS.map((sec) => {
             const items = lessons.filter((l) => l.id >= sec.range[0] && l.id <= sec.range[1]);
             const title = tr(sec.titleKey);
             const isActive = activeSection === sec.key;
             return (
-              <div
+              <section
                 key={sec.key}
                 data-section={sec.key}
                 ref={(el) => (sectionRefs.current[sec.key] = el)}
+                className="w-full"
               >
-                {/* Section header */}
+                {/* Big section heading */}
                 <motion.button
                   type="button"
                   onClick={() => speak(title, lang, `sec-${sec.key}`)}
-                  whileHover={{ scale: 1.01 }}
-                  whileTap={{ scale: 0.99 }}
-                  className="group w-full text-left rounded-2xl px-5 md:px-7 py-4 md:py-5 mb-4 flex items-center gap-4 relative overflow-hidden transition-shadow"
+                  whileHover={{ scale: 1.005 }}
+                  whileTap={{ scale: 0.995 }}
+                  className="group w-full text-left flex items-center gap-4 md:gap-6 px-5 md:px-10 py-5 md:py-6 mb-5 relative"
                   style={{
-                    background: `linear-gradient(100deg, hsl(${sec.hsl}) 0%, hsl(${sec.hsl} / 0.85) 60%, hsl(${sec.tint}) 100%)`,
+                    background: `linear-gradient(100deg, hsl(${sec.hsl}) 0%, hsl(${sec.hsl} / 0.9) 55%, hsl(${sec.tint}) 100%)`,
                     boxShadow: isActive
-                      ? `0 12px 40px -12px hsl(${sec.hsl} / 0.6), inset 0 0 0 2px hsl(0 0% 100% / 0.4)`
-                      : `0 6px 24px -10px hsl(${sec.hsl} / 0.45)`,
+                      ? `0 16px 48px -16px hsl(${sec.hsl} / 0.6)`
+                      : `0 8px 28px -14px hsl(${sec.hsl} / 0.45)`,
                   }}
                 >
                   <div
-                    className="shrink-0 w-12 h-12 md:w-14 md:h-14 rounded-2xl grid place-items-center text-2xl md:text-3xl"
-                    style={{ background: "hsl(0 0% 100% / 0.85)" }}
+                    className="shrink-0 w-14 h-14 md:w-16 md:h-16 rounded-2xl grid place-items-center text-3xl md:text-4xl"
+                    style={{ background: "hsl(0 0% 100% / 0.9)" }}
                   >
                     {sec.emoji}
                   </div>
                   <div className="flex-1 min-w-0">
-                    <div className="text-[10px] md:text-xs font-bold uppercase tracking-[0.2em] text-white/80">
+                    <div className="text-[10px] md:text-xs font-bold uppercase tracking-[0.25em] text-white/85">
                       {tr("lesson")} {sec.range[0]}{sec.range[0] !== sec.range[1] ? `–${sec.range[1]}` : ""}
                     </div>
-                    <h2 className="font-display text-xl md:text-3xl font-black text-white leading-tight truncate">
+                    <h2 className="font-display text-2xl md:text-4xl font-black text-white leading-tight truncate">
                       {title}
                     </h2>
                   </div>
                   <motion.div
                     animate={{ scale: [1, 1.15, 1] }}
                     transition={{ duration: 2, repeat: Infinity }}
-                    className="shrink-0 w-10 h-10 rounded-full grid place-items-center bg-white/90 text-forest-deep group-hover:bg-white"
+                    className="shrink-0 w-11 h-11 md:w-12 md:h-12 rounded-full grid place-items-center bg-white/95 text-forest-deep"
                     aria-label="Listen"
                   >
-                    <Volume2 size={18} />
+                    <Volume2 size={20} />
                   </motion.div>
-
-                  {/* Active marker */}
-                  <AnimatePresence>
-                    {isActive && (
-                      <motion.div
-                        layoutId="active-marker"
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        exit={{ opacity: 0 }}
-                        className="absolute left-0 top-0 bottom-0 w-1.5 bg-white/90"
-                      />
-                    )}
-                  </AnimatePresence>
+                  {isActive && (
+                    <motion.div
+                      layoutId="active-bar"
+                      className="absolute left-0 top-0 bottom-0 w-2 bg-white/95"
+                    />
+                  )}
                 </motion.button>
 
-                {/* Lesson cards */}
-                <div
-                  className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 md:gap-4 p-4 md:p-5 rounded-[1.75rem]"
-                  style={{ background: `hsl(${sec.tint} / 0.55)`, border: `1px solid hsl(${sec.hsl} / 0.15)` }}
-                >
-                  {items.map((l, idx) => {
-                    const done = completed.includes(l.id);
-                    return (
-                      <motion.button
-                        key={l.id}
-                        initial={{ opacity: 0, y: 16, scale: 0.92 }}
-                        whileInView={{ opacity: 1, y: 0, scale: 1 }}
-                        viewport={{ once: true, margin: "-50px" }}
-                        transition={{ delay: idx * 0.03, type: "spring", stiffness: 220, damping: 18 }}
-                        whileHover={{ scale: 1.06, y: -4, rotate: -1 }}
-                        whileTap={{ scale: 0.96 }}
-                        onClick={() => navigate(`/lesson/${l.id}`)}
-                        className="group relative text-left p-4 rounded-2xl bg-white/85 hover:bg-white transition-colors overflow-hidden"
-                        style={{
-                          boxShadow: `0 4px 18px -6px hsl(${sec.hsl} / 0.35)`,
-                          border: `1.5px solid hsl(${sec.hsl} / 0.25)`,
-                        }}
-                      >
-                        <div
-                          className="absolute -right-5 -top-5 w-16 h-16 rounded-full transition-colors"
-                          style={{ background: `hsl(${sec.hsl} / 0.18)` }}
-                        />
-                        <div className="relative">
+                {/* Horizontal rail */}
+                <div className="relative w-full">
+                  {/* Left arrow */}
+                  <motion.button
+                    type="button"
+                    onClick={() => scrollRail(sec.key, -1)}
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.92 }}
+                    animate={{ scale: [1, 1.06, 1] }}
+                    transition={{ duration: 2.4, repeat: Infinity, ease: "easeInOut" }}
+                    className="hidden md:grid absolute left-3 top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full glass place-items-center text-forest-deep hover:bg-white/80"
+                    aria-label="Scroll left"
+                  >
+                    <ChevronLeft size={22} />
+                  </motion.button>
+
+                  {/* Right arrow */}
+                  <motion.button
+                    type="button"
+                    onClick={() => scrollRail(sec.key, 1)}
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.92 }}
+                    animate={{ scale: [1, 1.06, 1] }}
+                    transition={{ duration: 2.4, repeat: Infinity, ease: "easeInOut", delay: 1.2 }}
+                    className="hidden md:grid absolute right-3 top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full glass place-items-center text-forest-deep hover:bg-white/80"
+                    aria-label="Scroll right"
+                  >
+                    <ChevronRight size={22} />
+                  </motion.button>
+
+                  {/* Edge fades */}
+                  <div
+                    className="pointer-events-none absolute left-0 top-0 bottom-0 w-16 z-10"
+                    style={{ background: `linear-gradient(90deg, hsl(${sec.bgTint}) 0%, transparent 100%)` }}
+                  />
+                  <div
+                    className="pointer-events-none absolute right-0 top-0 bottom-0 w-16 z-10"
+                    style={{ background: `linear-gradient(-90deg, hsl(${sec.bgTint}) 0%, transparent 100%)` }}
+                  />
+
+                  <div
+                    ref={(el) => (railRefs.current[sec.key] = el)}
+                    className="no-scrollbar snap-x-mandatory flex flex-row items-stretch gap-4 overflow-x-auto px-6 md:px-20 py-6"
+                    style={{ scrollPaddingLeft: "5rem", scrollPaddingRight: "5rem" }}
+                  >
+                    {items.map((l, idx) => {
+                      const done = completed.includes(l.id);
+                      return (
+                        <motion.button
+                          key={l.id}
+                          data-card
+                          initial={{ opacity: 0, y: 16, scale: 0.92 }}
+                          whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                          viewport={{ once: true, margin: "-50px" }}
+                          transition={{ delay: idx * 0.03, type: "spring", stiffness: 220, damping: 18 }}
+                          whileHover={{ scale: 1.05, y: -6 }}
+                          whileTap={{ scale: 0.96 }}
+                          onClick={() => navigate(`/lesson/${l.id}`)}
+                          className="snap-center-child shrink-0 w-[220px] md:w-[240px] flex flex-col items-center text-center p-5 rounded-2xl bg-white/90 hover:bg-white transition-colors relative overflow-hidden"
+                          style={{
+                            boxShadow: `0 8px 24px -8px hsl(${sec.hsl} / 0.4)`,
+                            border: `1.5px solid hsl(${sec.hsl} / 0.3)`,
+                          }}
+                        >
+                          <div
+                            className="absolute -right-8 -top-8 w-24 h-24 rounded-full"
+                            style={{ background: `hsl(${sec.hsl} / 0.15)` }}
+                          />
                           <motion.div
-                            className="text-3xl md:text-4xl mb-2 inline-block origin-bottom"
+                            className="text-5xl md:text-6xl mb-3 inline-block origin-bottom relative"
                             animate={{
                               scale: [1, 1.06, 1],
                               rotate: [-1.5, 1.5, -1.5],
-                              y: [0, -1.5, 0],
+                              y: [0, -2, 0],
                             }}
                             transition={{
                               duration: 6 + (l.id % 5) * 0.7,
@@ -211,91 +280,56 @@ const Index = () => {
                             {l.icon}
                           </motion.div>
                           <div
-                            className="text-[10px] font-bold tracking-wider uppercase"
+                            className="text-[10px] font-bold tracking-wider uppercase relative"
                             style={{ color: `hsl(${sec.hsl})` }}
                           >
                             {tr("lesson")} {l.id}
                           </div>
-                          <div className="font-display font-bold text-forest-deep text-sm md:text-base leading-tight mt-0.5 line-clamp-2">
+                          <div className="font-display font-bold text-forest-deep text-sm md:text-base leading-tight mt-1 relative line-clamp-2">
                             {l.title[lang]}
                           </div>
                           {done && (
-                            <div className="absolute -top-1 -right-1 w-6 h-6 rounded-full bg-sun grid place-items-center text-[12px] shadow">
+                            <div className="absolute top-2 right-2 w-7 h-7 rounded-full bg-sun grid place-items-center text-[14px] shadow">
                               ⭐
                             </div>
                           )}
-                        </div>
-                      </motion.button>
-                    );
-                  })}
+                        </motion.button>
+                      );
+                    })}
+                  </div>
                 </div>
-              </div>
+              </section>
             );
           })}
         </div>
       </main>
 
-      {/* Floating Owl that follows the active section */}
+      {/* Corner Owl that winks while scrolling */}
       <motion.div
-        className="fixed right-4 md:right-8 z-40 pointer-events-none hidden sm:block"
-        initial={{ opacity: 0, scale: 0.6 }}
-        animate={{ opacity: 1, scale: 1 }}
+        className="fixed bottom-4 right-4 md:bottom-6 md:right-6 z-40 pointer-events-none hidden sm:block"
+        initial={{ opacity: 0, scale: 0.6, y: 40 }}
+        animate={{ opacity: 1, scale: 1, y: 0 }}
         transition={{ delay: 0.4, type: "spring" }}
-        style={{ top: "auto" }}
       >
-        <FollowingOwl activeSection={activeSection} sectionRefs={sectionRefs} />
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={activeSec.key}
+            initial={{ opacity: 0, x: 30, rotate: -10 }}
+            animate={{ opacity: 1, x: 0, rotate: 0 }}
+            exit={{ opacity: 0, x: -20, rotate: 10 }}
+            transition={{ type: "spring", stiffness: 180, damping: 18 }}
+          >
+            <div
+              className="rounded-3xl px-3 py-1.5 mb-2 text-xs font-bold text-white shadow-lg max-w-[170px] truncate text-center"
+              style={{ background: `hsl(${activeSec.hsl})` }}
+            >
+              {tr(activeSec.titleKey)}
+            </div>
+            <Owl size={104} side="right" accessory={activeSec.accessory} winking={winkTick > 0} key={`owl-${winkTick}`} />
+          </motion.div>
+        </AnimatePresence>
       </motion.div>
     </div>
-  );
-};
-
-/** Owl that smoothly slides vertically to the active section's Y position */
-const FollowingOwl = ({
-  activeSection,
-  sectionRefs,
-}: {
-  activeSection: string;
-  sectionRefs: React.MutableRefObject<Record<string, HTMLDivElement | null>>;
-}) => {
-  const [y, setY] = useState<number>(120);
-  const { tr } = useLang();
-  const sec = SECTIONS.find((s) => s.key === activeSection) ?? SECTIONS[0];
-
-  useEffect(() => {
-    const update = () => {
-      const el = sectionRefs.current[activeSection];
-      if (!el) return;
-      const rect = el.getBoundingClientRect();
-      const target = Math.min(
-        Math.max(rect.top + 40, 100),
-        window.innerHeight - 160
-      );
-      setY(target);
-    };
-    update();
-    window.addEventListener("scroll", update, { passive: true });
-    window.addEventListener("resize", update);
-    return () => {
-      window.removeEventListener("scroll", update);
-      window.removeEventListener("resize", update);
-    };
-  }, [activeSection, sectionRefs]);
-
-  return (
-    <motion.div
-      animate={{ y }}
-      transition={{ type: "spring", stiffness: 80, damping: 18 }}
-      className="pointer-events-auto"
-      style={{ position: "fixed", right: 16 }}
-    >
-      <div
-        className="rounded-3xl px-3 py-2 mb-2 text-xs font-bold text-white shadow-lg max-w-[160px] truncate"
-        style={{ background: `hsl(${sec.hsl})` }}
-      >
-        {tr(sec.titleKey)}
-      </div>
-      <Owl size={96} side="right" accessory={sec.accessory} />
-    </motion.div>
   );
 };
 
