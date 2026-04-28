@@ -17,7 +17,7 @@ const sizes = {
 };
 
 export const SpeakButton = ({ text, size = "md", className = "" }: Props) => {
-  const { speak, stop, speakingId, supported } = useSpeech();
+  const { speak, stop, speakingId, speechLevel, supported } = useSpeech();
   const { lang } = useLang();
   const id = useId();
   const active = speakingId === id;
@@ -32,22 +32,29 @@ export const SpeakButton = ({ text, size = "md", className = "" }: Props) => {
     else speak(text, lang, id);
   };
 
+  // Sync opacity & scale to pseudo "volume" while speaking
+  const opacity = active ? 0.55 + speechLevel * 0.45 : 1;
+  const scale = active ? 1 + speechLevel * 0.18 : 1;
+
   return (
     <motion.button
       type="button"
       onClick={handle}
       whileHover={{ scale: 1.12 }}
       whileTap={{ scale: 0.92 }}
-      animate={active ? { scale: [1, 1.15, 1] } : { scale: 1 }}
-      transition={active ? { duration: 0.9, repeat: Infinity } : { duration: 0.2 }}
+      animate={{ opacity, scale }}
+      transition={{ duration: 0.12, ease: "easeOut" }}
       aria-label={active ? "Stop" : "Listen"}
-      className={`inline-flex items-center justify-center rounded-full shrink-0 align-middle shadow-md transition-colors ${
+      className={`relative inline-flex items-center justify-center rounded-full shrink-0 align-middle shadow-md transition-colors ${
         active ? "bg-sun text-forest-deep" : "bg-white/80 text-forest-deep hover:bg-white"
       } ${s.box} ${className}`}
     >
       {active ? <VolumeX size={s.icon} /> : <Volume2 size={s.icon} />}
       {active && (
-        <span className="absolute inline-flex h-full w-full rounded-full bg-sun/40 animate-ping" />
+        <span
+          className="absolute inset-0 rounded-full bg-sun/40"
+          style={{ opacity: speechLevel * 0.6, transform: `scale(${1 + speechLevel * 0.6})`, transition: "all 120ms ease-out" }}
+        />
       )}
     </motion.button>
   );
