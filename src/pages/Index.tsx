@@ -194,7 +194,22 @@ const Index = () => {
                           style={{ background: `hsl(${sec.hsl} / 0.18)` }}
                         />
                         <div className="relative">
-                          <div className="text-3xl md:text-4xl mb-2">{l.icon}</div>
+                          <motion.div
+                            className="text-3xl md:text-4xl mb-2 inline-block origin-bottom"
+                            animate={{
+                              scale: [1, 1.06, 1],
+                              rotate: [-1.5, 1.5, -1.5],
+                              y: [0, -1.5, 0],
+                            }}
+                            transition={{
+                              duration: 6 + (l.id % 5) * 0.7,
+                              repeat: Infinity,
+                              ease: "easeInOut",
+                              delay: (l.id % 7) * 0.4,
+                            }}
+                          >
+                            {l.icon}
+                          </motion.div>
                           <div
                             className="text-[10px] font-bold tracking-wider uppercase"
                             style={{ color: `hsl(${sec.hsl})` }}
