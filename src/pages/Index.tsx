@@ -279,7 +279,7 @@ const FollowingOwl = ({
       >
         {tr(sec.titleKey)}
       </div>
-      <Owl size={96} side="right" />
+      <Owl size={96} side="right" accessory={sec.accessory} />
     </motion.div>
   );
 };
