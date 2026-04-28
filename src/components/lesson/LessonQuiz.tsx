@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Owl } from "@/components/Owl";
+import { SpeakButton } from "@/components/SpeakButton";
 import { useLang } from "@/i18n/LangContext";
 import type { TKey } from "@/i18n/translations";
 
@@ -145,8 +146,9 @@ export const LessonQuiz = ({ isLesson1, onComplete }: { isLesson1: boolean; onCo
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: -30 }}
           >
-            <h2 className="font-display text-3xl md:text-4xl font-bold text-forest-deep text-balance">
-              {tr(current.q)}
+            <h2 className="font-display text-3xl md:text-4xl font-bold text-forest-deep text-balance flex items-start gap-3">
+              <span>{tr(current.q)}</span>
+              <SpeakButton text={tr(current.q)} size="lg" />
             </h2>
 
             <div className="mt-6 grid sm:grid-cols-3 gap-3">

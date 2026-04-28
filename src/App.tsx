@@ -7,6 +7,7 @@ import Index from "./pages/Index.tsx";
 import Lesson from "./pages/Lesson.tsx";
 import NotFound from "./pages/NotFound.tsx";
 import { LangProvider } from "./i18n/LangContext";
+import { SpeechProvider } from "./hooks/useSpeech";
 
 const queryClient = new QueryClient();
 
@@ -16,13 +17,15 @@ const App = () => (
       <Toaster />
       <Sonner />
       <LangProvider>
-        <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<Index />} />
-            <Route path="/lesson/:id" element={<Lesson />} />
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-        </BrowserRouter>
+        <SpeechProvider>
+          <BrowserRouter>
+            <Routes>
+              <Route path="/" element={<Index />} />
+              <Route path="/lesson/:id" element={<Lesson />} />
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+          </BrowserRouter>
+        </SpeechProvider>
       </LangProvider>
     </TooltipProvider>
   </QueryClientProvider>

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Owl } from "@/components/Owl";
+import { SpeakButton } from "@/components/SpeakButton";
 import { useLang } from "@/i18n/LangContext";
 
 type Item = { id: string; emoji: string; group: "living" | "nonliving" };
@@ -83,7 +84,7 @@ export const LessonPractice = ({ isLesson1 }: { isLesson1: boolean }) => {
   return (
     <div className="space-y-5">
       <div className="flex items-center justify-between gap-4 flex-wrap">
-        <p className="font-bold text-forest-mid text-lg">👉 {tr("dragHint")}</p>
+        <p className="font-bold text-forest-mid text-lg flex items-center gap-2">👉 {tr("dragHint")} <SpeakButton text={tr("dragHint")} size="sm" /></p>
         <Owl message={tr("owlPractice")} size={90} side="right" />
       </div>
 
