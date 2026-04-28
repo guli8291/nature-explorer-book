@@ -75,6 +75,104 @@ export const Owl = ({ message, size = 120, side = "left", speaking, accessory = 
             animate={{ rotate: [0, 15, 0] }}
             transition={{ duration: 2.5, repeat: Infinity, ease: "easeInOut" }}
           />
+
+          {/* Accessory layer — swaps per section */}
+          <AnimatePresence mode="wait">
+            <motion.g
+              key={accessory}
+              initial={{ opacity: 0, y: -12, scale: 0.6, rotate: -20 }}
+              animate={{ opacity: 1, y: 0, scale: 1, rotate: 0 }}
+              exit={{ opacity: 0, y: -10, scale: 0.6, rotate: 15 }}
+              transition={{ type: "spring", stiffness: 220, damping: 14 }}
+            >
+              {accessory === "magnifier" && (
+                <motion.g
+                  animate={{ rotate: [0, -8, 8, 0] }}
+                  transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+                  style={{ transformOrigin: "165px 145px" }}
+                >
+                  <line x1="150" y1="160" x2="172" y2="138" stroke="hsl(35 70% 30%)" strokeWidth="5" strokeLinecap="round" />
+                  <circle cx="178" cy="132" r="14" fill="hsl(200 80% 85% / 0.6)" stroke="hsl(35 70% 30%)" strokeWidth="4" />
+                  <circle cx="174" cy="128" r="4" fill="white" opacity="0.8" />
+                </motion.g>
+              )}
+              {accessory === "leaf" && (
+                <motion.g
+                  animate={{ rotate: [-8, 4, -8] }}
+                  transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+                  style={{ transformOrigin: "100px 60px" }}
+                >
+                  {/* small leaf tucked behind ear */}
+                  <path
+                    d="M70 58 Q55 40 40 48 Q42 68 60 72 Q72 70 70 58 Z"
+                    fill="hsl(120 55% 38%)"
+                    stroke="hsl(140 60% 22%)"
+                    strokeWidth="1.5"
+                  />
+                  <path d="M44 50 Q55 60 68 65" stroke="hsl(140 60% 22%)" strokeWidth="1.2" fill="none" />
+                  {/* tiny berry */}
+                  <circle cx="62" cy="56" r="3.5" fill="hsl(350 75% 55%)" />
+                </motion.g>
+              )}
+              {accessory === "flame" && (
+                <motion.g
+                  animate={{ scale: [1, 1.12, 1], y: [0, -2, 0] }}
+                  transition={{ duration: 0.9, repeat: Infinity, ease: "easeInOut" }}
+                  style={{ transformOrigin: "100px 38px" }}
+                >
+                  {/* hovering flame above head */}
+                  <path
+                    d="M100 20 Q88 38 92 50 Q96 58 100 56 Q104 58 108 50 Q112 38 100 20 Z"
+                    fill="hsl(20 95% 58%)"
+                  />
+                  <path
+                    d="M100 30 Q94 42 97 50 Q100 54 103 50 Q106 42 100 30 Z"
+                    fill="hsl(48 100% 70%)"
+                  />
+                </motion.g>
+              )}
+              {accessory === "astronaut" && (
+                <g>
+                  {/* glass dome helmet */}
+                  <ellipse cx="100" cy="100" rx="58" ry="62" fill="hsl(200 80% 90% / 0.28)" stroke="white" strokeWidth="3" />
+                  <ellipse cx="82" cy="80" rx="14" ry="8" fill="white" opacity="0.55" />
+                  {/* tiny stars orbiting */}
+                  <motion.g
+                    animate={{ rotate: 360 }}
+                    transition={{ duration: 8, repeat: Infinity, ease: "linear" }}
+                    style={{ transformOrigin: "100px 100px" }}
+                  >
+                    <circle cx="160" cy="100" r="2.5" fill="hsl(45 100% 70%)" />
+                    <circle cx="40" cy="100" r="2" fill="hsl(45 100% 70%)" />
+                    <circle cx="100" cy="38" r="2.2" fill="white" />
+                  </motion.g>
+                </g>
+              )}
+              {accessory === "droplet" && (
+                <motion.g
+                  animate={{ y: [0, 3, 0] }}
+                  transition={{ duration: 1.8, repeat: Infinity, ease: "easeInOut" }}
+                >
+                  {/* umbrella */}
+                  <path
+                    d="M55 78 Q100 38 145 78 Z"
+                    fill="hsl(265 60% 55%)"
+                    stroke="hsl(265 60% 30%)"
+                    strokeWidth="2"
+                  />
+                  <path d="M75 78 Q100 60 100 78 M125 78 Q100 60 100 78" stroke="hsl(265 60% 30%)" strokeWidth="1.5" fill="none" />
+                  <line x1="100" y1="78" x2="100" y2="118" stroke="hsl(35 70% 30%)" strokeWidth="2.5" />
+                  {/* droplet */}
+                  <motion.path
+                    d="M158 60 Q154 70 158 76 Q162 70 158 60 Z"
+                    fill="hsl(200 85% 55%)"
+                    animate={{ y: [0, 14, 0], opacity: [1, 0.3, 1] }}
+                    transition={{ duration: 1.4, repeat: Infinity }}
+                  />
+                </motion.g>
+              )}
+            </motion.g>
+          </AnimatePresence>
         </motion.svg>
       </motion.div>
 
