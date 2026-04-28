@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { useEffect, useRef, useState } from "react";
 import { Sparkles, BookOpen, Volume2 } from "lucide-react";
 import { TopBar } from "@/components/TopBar";
-import { Owl } from "@/components/Owl";
+import { Owl, type OwlAccessory } from "@/components/Owl";
 import { useLang } from "@/i18n/LangContext";
 import { useSpeech } from "@/hooks/useSpeech";
 import { lessons } from "@/data/lessons";
@@ -18,14 +18,15 @@ type SectionDef = {
   /** soft tint for backgrounds */
   tint: string;
   emoji: string;
+  accessory: OwlAccessory;
 };
 
 const SECTIONS: SectionDef[] = [
-  { key: "explorer", titleKey: "sec_explorer", range: [1, 1],   hsl: "35 85% 50%",  tint: "45 90% 92%",  emoji: "🔬" },
-  { key: "living",   titleKey: "sec_living",   range: [2, 12],  hsl: "130 55% 32%", tint: "120 45% 90%", emoji: "🌳" },
-  { key: "phys1",    titleKey: "sec_physics1", range: [13, 16], hsl: "12 70% 48%",  tint: "15 80% 92%",  emoji: "🔥" },
-  { key: "space",    titleKey: "sec_space",    range: [17, 22], hsl: "230 60% 30%", tint: "225 55% 92%", emoji: "🌍" },
-  { key: "phys2",    titleKey: "sec_physics2", range: [23, 33], hsl: "265 50% 45%", tint: "265 55% 93%", emoji: "💧" },
+  { key: "explorer", titleKey: "sec_explorer", range: [1, 1],   hsl: "35 85% 50%",  tint: "45 90% 92%",  emoji: "🔬", accessory: "magnifier" },
+  { key: "living",   titleKey: "sec_living",   range: [2, 12],  hsl: "130 55% 32%", tint: "120 45% 90%", emoji: "🌳", accessory: "leaf" },
+  { key: "phys1",    titleKey: "sec_physics1", range: [13, 16], hsl: "12 70% 48%",  tint: "15 80% 92%",  emoji: "🔥", accessory: "flame" },
+  { key: "space",    titleKey: "sec_space",    range: [17, 22], hsl: "230 60% 30%", tint: "225 55% 92%", emoji: "🌍", accessory: "astronaut" },
+  { key: "phys2",    titleKey: "sec_physics2", range: [23, 33], hsl: "265 50% 45%", tint: "265 55% 93%", emoji: "💧", accessory: "droplet" },
 ];
 
 const Index = () => {
@@ -278,7 +279,7 @@ const FollowingOwl = ({
       >
         {tr(sec.titleKey)}
       </div>
-      <Owl size={96} side="right" />
+      <Owl size={96} side="right" accessory={sec.accessory} />
     </motion.div>
   );
 };
