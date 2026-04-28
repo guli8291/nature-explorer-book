@@ -26,7 +26,7 @@ const sections: { key: Section; icon: any; tk: TKey }[] = [
 const Lesson = () => {
   const { id } = useParams();
   const navigate = useNavigate();
-  const { lang, tr } = useLang();
+  const { lang, tr, trOpt } = useLang();
   const { speak } = useSpeech();
   const lessonId = Number(id);
   const lesson = useMemo(() => lessons.find((l) => l.id === lessonId), [lessonId]);
@@ -68,10 +68,10 @@ const Lesson = () => {
       <div className="sticky top-[64px] z-30 px-4 md:px-8 pt-3 pb-2 backdrop-blur-md bg-forest-cream/70 border-b border-forest-pale/60">
         <div className="max-w-6xl mx-auto">
           <nav className="glass rounded-2xl p-1.5 flex gap-1 overflow-x-auto">
-            {sections.map((s) => {
+            {sections.map((s, i) => {
               const Icon = s.icon;
               const isActive = s.key === active;
-              const label = tr(s.tk);
+              const label = trOpt(`l${lessonId}_nav_${i + 1}`) ?? tr(s.tk);
               return (
                 <button
                   key={s.key}
