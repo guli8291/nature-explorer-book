@@ -1,14 +1,17 @@
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { useSpeech } from "@/hooks/useSpeech";
+
+export type OwlAccessory = "none" | "magnifier" | "leaf" | "flame" | "astronaut" | "droplet";
 
 type Props = {
   message?: string;
   size?: number;
   side?: "left" | "right";
   speaking?: boolean;
+  accessory?: OwlAccessory;
 };
 
-export const Owl = ({ message, size = 120, side = "left", speaking }: Props) => {
+export const Owl = ({ message, size = 120, side = "left", speaking, accessory = "none" }: Props) => {
   const { isSpeaking } = useSpeech();
   const talking = speaking ?? isSpeaking;
   return (
