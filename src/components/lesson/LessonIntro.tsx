@@ -3,12 +3,13 @@ import { Owl } from "@/components/Owl";
 import { SpeakButton } from "@/components/SpeakButton";
 import { useLang } from "@/i18n/LangContext";
 
-type Props = { isLesson1: boolean; lessonTitle: string };
+type Props = { lessonId: number; fallbackTitle: string };
 
-export const LessonIntro = ({ isLesson1, lessonTitle }: Props) => {
-  const { tr } = useLang();
-  const title = isLesson1 ? tr("l1_title") : lessonTitle;
-  const body = isLesson1 ? tr("l1_intro") : tr("comingSoon");
+export const LessonIntro = ({ lessonId, fallbackTitle }: Props) => {
+  const { tr, trOpt } = useLang();
+  const title = trOpt(`l${lessonId}_title`) ?? fallbackTitle;
+  const body = trOpt(`l${lessonId}_intro`) ?? tr("comingSoon");
+
   return (
     <div className="glass rounded-3xl p-6 md:p-12 min-h-[420px] relative overflow-hidden">
       <div className="absolute -right-10 -top-10 w-72 h-72 rounded-full bg-sun/30 blur-3xl" />

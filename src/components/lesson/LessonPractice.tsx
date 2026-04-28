@@ -15,13 +15,13 @@ const ITEMS: Item[] = [
   { id: "6", emoji: "☀️", group: "nonliving" },
 ];
 
-export const LessonPractice = ({ isLesson1 }: { isLesson1: boolean }) => {
+export const LessonPractice = ({ lessonId }: { lessonId: number }) => {
   const { tr } = useLang();
   const [placed, setPlaced] = useState<Record<string, "living" | "nonliving">>({});
   const [wrongShake, setWrongShake] = useState<string | null>(null);
   const [dragOver, setDragOver] = useState<string | null>(null);
 
-  if (!isLesson1) {
+  if (lessonId !== 1) {
     return (
       <div className="glass rounded-3xl p-8 md:p-12 min-h-[420px] grid place-items-center text-center">
         <div>

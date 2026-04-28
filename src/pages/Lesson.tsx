@@ -58,7 +58,7 @@ const Lesson = () => {
     } catch {}
   };
 
-  const isLesson1 = lessonId === 1;
+  
 
   return (
     <div className="min-h-screen pb-12">
@@ -111,7 +111,7 @@ const Lesson = () => {
               {tr("lesson")} {lesson.id}
             </div>
             <div className="font-display font-bold text-forest-deep text-lg md:text-xl">
-              {isLesson1 ? tr("l1_title") : lesson.title[lang]}
+              {tr(`l${lessonId}_title`) !== `l${lessonId}_title` ? tr(`l${lessonId}_title`) : lesson.title[lang]}
             </div>
           </div>
         </div>
@@ -125,11 +125,11 @@ const Lesson = () => {
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.35 }}
           >
-            {active === "intro" && <LessonIntro isLesson1={isLesson1} lessonTitle={lesson.title[lang]} />}
+            {active === "intro" && <LessonIntro lessonId={lessonId} fallbackTitle={lesson.title[lang]} />}
             {active === "scientists" && <LessonScientists />}
             {active === "observation" && <LessonObservation />}
-            {active === "experiments" && <LessonPractice isLesson1={isLesson1} />}
-            {active === "review" && <LessonQuiz isLesson1={isLesson1} onComplete={markComplete} />}
+            {active === "experiments" && <LessonPractice lessonId={lessonId} />}
+            {active === "review" && <LessonQuiz lessonId={lessonId} onComplete={markComplete} />}
           </motion.div>
         </AnimatePresence>
 
