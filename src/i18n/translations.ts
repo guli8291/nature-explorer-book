@@ -63,6 +63,12 @@ export const t = {
   },
   question: { kz: "Сұрақ", ru: "Вопрос", en: "Question" },
   of: { kz: "/", ru: "из", en: "of" },
+  // Sections
+  sec_explorer: { kz: "Мен — зерттеушімін", ru: "Я – исследователь", en: "I am an explorer" },
+  sec_living: { kz: "Тірі табиғат", ru: "Живая природа", en: "Living nature" },
+  sec_physics1: { kz: "Табиғат физикасы (1-бөлім)", ru: "Физика природы (часть 1)", en: "Physics of nature (part 1)" },
+  sec_space: { kz: "Жер және ғарыш", ru: "Земля и космос", en: "Earth and space" },
+  sec_physics2: { kz: "Табиғат физикасы (2-бөлім)", ru: "Физика природы (часть 2)", en: "Physics of nature (part 2)" },
   // Lesson 1 content
   l1_title: {
     kz: "Жаратылыстану дегеніміз не?",
