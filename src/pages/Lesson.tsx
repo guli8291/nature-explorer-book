@@ -58,7 +58,7 @@ const Lesson = () => {
     } catch {}
   };
 
-  const isLesson1 = lessonId === 1;
+  
 
   return (
     <div className="min-h-screen pb-12">
