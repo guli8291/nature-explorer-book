@@ -708,17 +708,17 @@ export const lessonBlocks: Partial<Record<number, Partial<Record<SectionKey, Blo
         data: {
           ru: {
             title: "Найди в энциклопедии",
-            text: "Открой книгу или интернет с помощью взрослых: какие лиственные и хвойные растения растут в твоей местности? Запиши 3 названия.",
+            prompt: "Открой книгу или интернет с помощью взрослых: какие лиственные и хвойные растения растут в твоей местности? Запиши 3 названия.",
             placeholder: "Например: берёза, сосна, тополь...",
           },
           kz: {
             title: "Энциклопедиядан тап",
-            text: "Үлкендердің көмегімен кітап немесе интернет аш: сенің өңіріңде қандай жапырақты және қылқан жапырақты өсімдіктер өседі? 3 атауын жаз.",
+            prompt: "Үлкендердің көмегімен кітап немесе интернет аш: сенің өңіріңде қандай жапырақты және қылқан жапырақты өсімдіктер өседі? 3 атауын жаз.",
             placeholder: "Мысалы: қайың, қарағай, терек...",
           },
           en: {
             title: "Find in an encyclopedia",
-            text: "With an adult, open a book or the internet: what deciduous and coniferous plants grow in your area? Write 3 names.",
+            prompt: "With an adult, open a book or the internet: what deciduous and coniferous plants grow in your area? Write 3 names.",
             placeholder: "For example: birch, pine, poplar...",
           },
         },
@@ -862,6 +862,402 @@ export const lessonBlocks: Partial<Record<number, Partial<Record<SectionKey, Blo
             title: "Self-check questions",
             text:
               "1) Into what groups are **plants** divided? 2) By what feature are they divided? 3) Into what groups are plants divided by **leaf** type? 4) What interesting plants grow in your area?",
+          },
+        },
+      },
+    ],
+  },
+
+  // ════════════════════════════════════════════════════════════════════════
+  // УРОК 3 — Основные части растений (трёхъязычные ключевые слова)
+  // ════════════════════════════════════════════════════════════════════════
+  3: {
+    // ──────────── intro: ключевые слова (карусель) + аудио ────────────
+    intro: [
+      {
+        type: "carousel",
+        data: {
+          ru: {
+            title: "Ключевые слова на трёх языках",
+            groupLabel: "RU · KZ · EN",
+            slides: [
+              { emoji: "🌿", caption: "корень · тамыр · root" },
+              { emoji: "🌱", caption: "стебель · сабақ · stem" },
+              { emoji: "🍃", caption: "лист · жапырақ · leaf" },
+              { emoji: "🌸", caption: "цветок · гүл · flower" },
+              { emoji: "🍎", caption: "плод с семенами · жеміс · fruit with seeds" },
+            ],
+          },
+          kz: {
+            title: "Үш тілдегі кілт сөздер",
+            groupLabel: "RU · KZ · EN",
+            slides: [
+              { emoji: "🌿", caption: "тамыр · корень · root" },
+              { emoji: "🌱", caption: "сабақ · стебель · stem" },
+              { emoji: "🍃", caption: "жапырақ · лист · leaf" },
+              { emoji: "🌸", caption: "гүл · цветок · flower" },
+              { emoji: "🍎", caption: "жеміс · плод · fruit with seeds" },
+            ],
+          },
+          en: {
+            title: "Key words in three languages",
+            groupLabel: "EN · RU · KZ",
+            slides: [
+              { emoji: "🌿", caption: "root · корень · тамыр" },
+              { emoji: "🌱", caption: "stem · стебель · сабақ" },
+              { emoji: "🍃", caption: "leaf · лист · жапырақ" },
+              { emoji: "🌸", caption: "flower · цветок · гүл" },
+              { emoji: "🍎", caption: "fruit with seeds · плод · жеміс" },
+            ],
+          },
+        },
+      },
+      {
+        type: "audio",
+        data: {
+          ru: {
+            title: "Аудио-урок: части растения",
+            text:
+              "У каждого растения есть основные части: корень, стебель, лист, цветок и плод с семенами. Корень находится под землёй, остальные части — над землёй.",
+            caption: "Послушай и запомни главные части",
+            durationLabel: "0:33",
+          },
+          kz: {
+            title: "Аудио-сабақ: өсімдіктің бөліктері",
+            text:
+              "Әр өсімдіктің негізгі бөліктері бар: тамыр, сабақ, жапырақ, гүл және тұқымды жеміс. Тамыр жер астында, қалғандары — жер үстінде.",
+            caption: "Тыңда және басты бөліктерді есте сақта",
+            durationLabel: "0:33",
+          },
+          en: {
+            title: "Audio lesson: parts of a plant",
+            text:
+              "Every plant has main parts: root, stem, leaf, flower and fruit with seeds. The root is underground, the other parts are above the ground.",
+            caption: "Listen and remember the main parts",
+            durationLabel: "0:33",
+          },
+        },
+      },
+    ],
+
+    // ──────────── scientists: основные части + работа в группах ────────────
+    scientists: [
+      {
+        type: "fact",
+        data: {
+          ru: {
+            title: "Основные части растений",
+            text:
+              "Посмотри на куст томата: 1 — корень, 2 — стебель, 3 — лист, 4 — цветок, 5 — плод с семенами. Каждая часть выполняет свою важную работу.",
+            keywords: ["корень", "стебель", "лист", "цветок", "плод"],
+            icon: "sparkles",
+          },
+          kz: {
+            title: "Өсімдіктің негізгі бөліктері",
+            text:
+              "Қызанақ бұтасына қара: 1 — тамыр, 2 — сабақ, 3 — жапырақ, 4 — гүл, 5 — тұқымды жеміс. Әр бөліктің өз маңызды қызметі бар.",
+            keywords: ["тамыр", "сабақ", "жапырақ", "гүл", "жеміс"],
+            icon: "sparkles",
+          },
+          en: {
+            title: "Main parts of a plant",
+            text:
+              "Look at the tomato bush: 1 — root, 2 — stem, 3 — leaf, 4 — flower, 5 — fruit with seeds. Each part does its own important job.",
+            keywords: ["root", "stem", "leaf", "flower", "fruit"],
+            icon: "sparkles",
+          },
+        },
+      },
+      {
+        type: "carousel",
+        data: {
+          ru: {
+            title: "Работа в группах · Календула",
+            groupLabel: "1-я группа",
+            slides: [
+              { emoji: "🌼", caption: "Календула — рассмотри растение целиком." },
+              { emoji: "🌿", question: "Каких частей этого растения не видно на рисунке?" },
+              { emoji: "🌍", question: "Где обычно расположена эта часть? Под землёй или над?" },
+            ],
+          },
+          kz: {
+            title: "Топта жұмыс · Күнтабан",
+            groupLabel: "1-топ",
+            slides: [
+              { emoji: "🌼", caption: "Күнтабан — өсімдікті толық қарап шық." },
+              { emoji: "🌿", question: "Бұл өсімдіктің қандай бөліктері суретте көрінбейді?" },
+              { emoji: "🌍", question: "Бұл бөлік әдетте қайда орналасқан? Жер астында ма, үстінде ме?" },
+            ],
+          },
+          en: {
+            title: "Group work · Marigold",
+            groupLabel: "Group 1",
+            slides: [
+              { emoji: "🌼", caption: "Marigold — examine the whole plant." },
+              { emoji: "🌿", question: "Which parts of this plant are not visible in the picture?" },
+              { emoji: "🌍", question: "Where is that part usually located — underground or above?" },
+            ],
+          },
+        },
+      },
+      {
+        type: "reveal",
+        data: {
+          ru: {
+            title: "Проверь ответ",
+            question: "Каких частей календулы не видно на рисунке и где они расположены?",
+            items: [
+              { emoji: "🌿", label: "Корень" },
+              { emoji: "🌍", label: "Под землёй" },
+            ],
+            answer:
+              "На рисунке не видно корня — он находится под землёй и удерживает растение, добывая воду и питание.",
+            buttonLabel: "Проверить ответ",
+          },
+          kz: {
+            title: "Жауапты тексер",
+            question: "Күнтабанның қандай бөлігі көрінбейді және ол қайда орналасқан?",
+            items: [
+              { emoji: "🌿", label: "Тамыр" },
+              { emoji: "🌍", label: "Жер астында" },
+            ],
+            answer:
+              "Суретте тамыр көрінбейді — ол жер астында және өсімдікті ұстап тұрып, су мен қоректі алады.",
+            buttonLabel: "Тексеру",
+          },
+          en: {
+            title: "Check the answer",
+            question: "Which part of the marigold is not visible and where is it located?",
+            items: [
+              { emoji: "🌿", label: "Root" },
+              { emoji: "🌍", label: "Underground" },
+            ],
+            answer:
+              "The root is not visible — it is underground, holding the plant in place and getting water and nutrients.",
+            buttonLabel: "Check answer",
+          },
+        },
+      },
+    ],
+
+    // ──────────── observation: сравнения + итог + видео ────────────
+    observation: [
+      {
+        type: "carousel",
+        data: {
+          ru: {
+            title: "Сравни растения",
+            groupLabel: "Жизненные формы",
+            slides: [
+              { emoji: "🌳", caption: "Берёза — высокое дерево с одним стволом." },
+              { emoji: "🌷", caption: "Тюльпан — травянистое растение с цветком." },
+              { emoji: "🤔", question: "Чем отличаются берёза и тюльпан? Какая у них жизненная форма?" },
+            ],
+          },
+          kz: {
+            title: "Өсімдіктерді салыстыр",
+            groupLabel: "Тіршілік формалары",
+            slides: [
+              { emoji: "🌳", caption: "Қайың — биік ағаш, бір діңі бар." },
+              { emoji: "🌷", caption: "Қызғалдақ — гүлі бар шөптесін өсімдік." },
+              { emoji: "🤔", question: "Қайың мен қызғалдақтың айырмашылығы неде?" },
+            ],
+          },
+          en: {
+            title: "Compare the plants",
+            groupLabel: "Life forms",
+            slides: [
+              { emoji: "🌳", caption: "Birch — a tall tree with a single trunk." },
+              { emoji: "🌷", caption: "Tulip — a herbaceous plant with a flower." },
+              { emoji: "🤔", question: "How do a birch and a tulip differ? What life forms are they?" },
+            ],
+          },
+        },
+      },
+      {
+        type: "action",
+        data: {
+          ru: {
+            title: "Сравни рисунки",
+            prompt:
+              "Слева яблоня в цвету, справа — яблоня с плодами. Определи, чем отличается одно и то же растение в разные периоды жизни.",
+            placeholder: "Напиши, чем отличаются рисунки...",
+            multiline: true,
+          },
+          kz: {
+            title: "Суреттерді салыстыр",
+            prompt:
+              "Сол жақта алма ағашы гүлдеп тұр, оң жақта — жемісімен. Бір өсімдіктің әр түрлі кезеңдегі айырмашылығын анықта.",
+            placeholder: "Айырмашылықты жаз...",
+            multiline: true,
+          },
+          en: {
+            title: "Compare the pictures",
+            prompt:
+              "On the left an apple tree in blossom, on the right — with fruits. Tell how the same plant differs in different periods of its life.",
+            placeholder: "Write what is different...",
+            multiline: true,
+          },
+        },
+      },
+      {
+        type: "summary",
+        data: {
+          ru: {
+            title: "Что я узнал",
+            text:
+              "У растения есть **подземная** часть — **корень**, и **надземные** части: **стебель**, **листья**, **цветы** и **плоды**. Все вместе они помогают растению жить и расти.",
+            terms: ["корень", "стебель", "лист", "цветок", "плод"],
+          },
+          kz: {
+            title: "Не білдім",
+            text:
+              "Өсімдіктің **жер асты** бөлігі — **тамыр**, ал **жер үсті** бөліктері: **сабақ**, **жапырақ**, **гүл** және **жеміс**. Олардың барлығы бірге өсімдіктің өсуіне көмектеседі.",
+            terms: ["тамыр", "сабақ", "жапырақ", "гүл", "жеміс"],
+          },
+          en: {
+            title: "What I learned",
+            text:
+              "A plant has an **underground** part — the **root**, and **above-ground** parts: **stem**, **leaves**, **flowers** and **fruits**. Together they help the plant live and grow.",
+            terms: ["root", "stem", "leaf", "flower", "fruit"],
+          },
+        },
+      },
+      {
+        type: "video",
+        data: {
+          ru: {
+            title: "Строение растения",
+            youtubeId: "p3St51F4kE8",
+            caption: "Короткий ролик о частях растения",
+            durationLabel: "0:40",
+          },
+          kz: {
+            title: "Өсімдіктің құрылысы",
+            youtubeId: "p3St51F4kE8",
+            caption: "Өсімдіктің бөліктері туралы қысқа ролик",
+            durationLabel: "0:40",
+          },
+          en: {
+            title: "Plant structure",
+            youtubeId: "p3St51F4kE8",
+            caption: "A short clip about the parts of a plant",
+            durationLabel: "0:40",
+          },
+        },
+      },
+    ],
+
+    // ──────────── experiments: интерактивная модель + итоговые вопросы ────────────
+    experiments: [
+      {
+        type: "sort",
+        data: {
+          ru: {
+            title: "Интерактивная модель · Анютины глазки",
+            instruction:
+              "Сопоставь номер с частью растения: выбери цифру, затем нажми на нужную часть.",
+            categories: [
+              { id: "root", label: "Корень", emoji: "🌿" },
+              { id: "stem", label: "Стебель", emoji: "🌱" },
+              { id: "leaf", label: "Лист", emoji: "🍃" },
+              { id: "flower", label: "Цветок", emoji: "🌸" },
+              { id: "fruit", label: "Плод", emoji: "🍎" },
+            ],
+            items: [
+              { id: "1", label: "1", categoryId: "root" },
+              { id: "2", label: "2", categoryId: "stem" },
+              { id: "3", label: "3", categoryId: "leaf" },
+              { id: "4", label: "4", categoryId: "flower" },
+              { id: "5", label: "5", categoryId: "fruit" },
+            ],
+            checkLabel: "Проверить ответ",
+          },
+          kz: {
+            title: "Интерактивті модель · Хош иісті шегіргүл",
+            instruction:
+              "Нөмірді өсімдіктің бөлігімен сәйкестендір: алдымен цифрды таңда, содан кейін бөлікті бас.",
+            categories: [
+              { id: "root", label: "Тамыр", emoji: "🌿" },
+              { id: "stem", label: "Сабақ", emoji: "🌱" },
+              { id: "leaf", label: "Жапырақ", emoji: "🍃" },
+              { id: "flower", label: "Гүл", emoji: "🌸" },
+              { id: "fruit", label: "Жеміс", emoji: "🍎" },
+            ],
+            items: [
+              { id: "1", label: "1", categoryId: "root" },
+              { id: "2", label: "2", categoryId: "stem" },
+              { id: "3", label: "3", categoryId: "leaf" },
+              { id: "4", label: "4", categoryId: "flower" },
+              { id: "5", label: "5", categoryId: "fruit" },
+            ],
+            checkLabel: "Тексеру",
+          },
+          en: {
+            title: "Interactive model · Pansy",
+            instruction:
+              "Match the number to the plant part: pick a digit, then click the matching part.",
+            categories: [
+              { id: "root", label: "Root", emoji: "🌿" },
+              { id: "stem", label: "Stem", emoji: "🌱" },
+              { id: "leaf", label: "Leaf", emoji: "🍃" },
+              { id: "flower", label: "Flower", emoji: "🌸" },
+              { id: "fruit", label: "Fruit", emoji: "🍎" },
+            ],
+            items: [
+              { id: "1", label: "1", categoryId: "root" },
+              { id: "2", label: "2", categoryId: "stem" },
+              { id: "3", label: "3", categoryId: "leaf" },
+              { id: "4", label: "4", categoryId: "flower" },
+              { id: "5", label: "5", categoryId: "fruit" },
+            ],
+            checkLabel: "Check answer",
+          },
+        },
+      },
+      {
+        type: "action",
+        data: {
+          ru: {
+            title: "Проблемный вопрос",
+            prompt:
+              "Как ты думаешь, что произойдёт, если растение лишится какой-либо своей части?",
+            placeholder: "Поразмышляй и напиши свой ответ...",
+            multiline: true,
+          },
+          kz: {
+            title: "Проблемалық сұрақ",
+            prompt:
+              "Қалай ойлайсың, өсімдік қандай да бір бөлігінен айырылса не болады?",
+            placeholder: "Ойлан да жауабыңды жаз...",
+            multiline: true,
+          },
+          en: {
+            title: "Problem question",
+            prompt:
+              "What do you think will happen if a plant loses one of its parts?",
+            placeholder: "Think and write your answer...",
+            multiline: true,
+          },
+        },
+      },
+      {
+        type: "summary",
+        data: {
+          ru: {
+            title: "Итоговые вопросы",
+            text:
+              "1) Из каких **частей** состоит растение? 2) Почему **корень** называют **подземной** частью растения? 3) Что произойдёт, если растение лишится какой-либо части?",
+          },
+          kz: {
+            title: "Қорытынды сұрақтар",
+            text:
+              "1) Өсімдік қандай **бөліктерден** тұрады? 2) Неліктен **тамырды** өсімдіктің **жер асты** бөлігі деп атайды? 3) Өсімдік бір бөлігінен айырылса не болады?",
+          },
+          en: {
+            title: "Wrap-up questions",
+            text:
+              "1) What **parts** make up a plant? 2) Why is the **root** called the **underground** part? 3) What will happen if a plant loses one of its parts?",
           },
         },
       },
