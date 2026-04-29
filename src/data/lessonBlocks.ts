@@ -2190,4 +2190,844 @@ export const lessonBlocks: Partial<Record<number, Partial<Record<SectionKey, Blo
       },
     ],
   },
+
+  // ════════════════════════════════════════════════════════════════════════
+  // УРОК 6. Растения и животные. Чем похожи и чем отличаются.
+  // ════════════════════════════════════════════════════════════════════════
+  6: {
+    intro: [
+      {
+        type: "audio",
+        data: {
+          ru: {
+            title: "Аудио-гид к уроку",
+            text:
+              "Сегодня мы узнаем, чем растения и животные похожи и чем отличаются. Это поможет нам лучше понимать живую природу.",
+            caption: "Послушай вступление к уроку",
+            durationLabel: "0:48",
+          },
+          kz: {
+            title: "Сабақтың аудио-гиді",
+            text:
+              "Бүгін біз өсімдіктер мен жануарлардың қандай ұқсастықтары мен айырмашылықтары бар екенін білеміз.",
+            caption: "Сабақтың кіріспесін тыңда",
+            durationLabel: "0:48",
+          },
+          en: {
+            title: "Lesson audio guide",
+            text:
+              "Today we'll learn how plants and animals are alike and how they differ. This helps us understand living nature better.",
+            caption: "Listen to the lesson intro",
+            durationLabel: "0:48",
+          },
+        },
+      },
+      {
+        type: "carousel",
+        data: {
+          ru: {
+            groupLabel: "Ключевые слова",
+            title: "Живые организмы",
+            slides: [
+              { emoji: "🐶", caption: "Животное / Жануар / Animal" },
+              { emoji: "🌳", caption: "Растение / Өсімдік / Plant" },
+              { emoji: "💨", caption: "Дышит / Тыныс алады / Breathes" },
+              { emoji: "🍽️", caption: "Питается / Қоректенеді / Eats" },
+            ],
+          },
+          kz: {
+            groupLabel: "Кілт сөздер",
+            title: "Тірі ағзалар",
+            slides: [
+              { emoji: "🐶", caption: "Жануар / Животное / Animal" },
+              { emoji: "🌳", caption: "Өсімдік / Растение / Plant" },
+              { emoji: "💨", caption: "Тыныс алады / Дышит / Breathes" },
+              { emoji: "🍽️", caption: "Қоректенеді / Питается / Eats" },
+            ],
+          },
+          en: {
+            groupLabel: "Key words",
+            title: "Living organisms",
+            slides: [
+              { emoji: "🐶", caption: "Animal / Животное / Жануар" },
+              { emoji: "🌳", caption: "Plant / Растение / Өсімдік" },
+              { emoji: "💨", caption: "Breathes / Дышит / Тыныс алады" },
+              { emoji: "🍽️", caption: "Eats / Питается / Қоректенеді" },
+            ],
+          },
+        },
+      },
+    ],
+
+    // Растения и животные — живые организмы
+    scientists: [
+      {
+        type: "carousel",
+        data: {
+          ru: {
+            groupLabel: "Работа в группах",
+            title: "Как растёт собака",
+            slides: [
+              { emoji: "🐶", caption: "1 месяц — маленький щенок." },
+              { emoji: "🐕", caption: "3 месяца — играет и быстро учится." },
+              { emoji: "🐕", caption: "6 месяцев — почти взрослый." },
+              { emoji: "🦮", caption: "1 год — взрослая собака." },
+              { emoji: "🦮", caption: "3 года — сильная и умная." },
+              { emoji: "🐕‍🦺", caption: "5 лет — настоящий друг человека." },
+            ],
+          },
+          kz: {
+            groupLabel: "Топта жұмыс",
+            title: "Ит қалай өседі",
+            slides: [
+              { emoji: "🐶", caption: "1 ай — кішкентай күшік." },
+              { emoji: "🐕", caption: "3 ай — ойнайды және тез үйренеді." },
+              { emoji: "🐕", caption: "6 ай — дерлік ересек." },
+              { emoji: "🦮", caption: "1 жас — ересек ит." },
+              { emoji: "🦮", caption: "3 жас — күшті де ақылды." },
+              { emoji: "🐕‍🦺", caption: "5 жас — адамның нағыз досы." },
+            ],
+          },
+          en: {
+            groupLabel: "Group work",
+            title: "How a dog grows",
+            slides: [
+              { emoji: "🐶", caption: "1 month — a tiny puppy." },
+              { emoji: "🐕", caption: "3 months — plays and learns fast." },
+              { emoji: "🐕", caption: "6 months — almost grown up." },
+              { emoji: "🦮", caption: "1 year — adult dog." },
+              { emoji: "🦮", caption: "3 years — strong and clever." },
+              { emoji: "🐕‍🦺", caption: "5 years — a true friend of people." },
+            ],
+          },
+        },
+      },
+      {
+        type: "fact",
+        data: {
+          ru: {
+            title: "Что нужно всему живому",
+            text:
+              "Всем живым существам нужны пища, вода, воздух и тепло — без этого они не могут жить и расти.",
+            keywords: ["пища", "вода", "воздух", "тепло"],
+            icon: "bulb",
+          },
+          kz: {
+            title: "Барлық тіршілік иесіне не керек",
+            text:
+              "Барлық тірі ағзаларға тамақ, су, ауа және жылу қажет — оларсыз олар өмір сүре алмайды.",
+            keywords: ["тамақ", "су", "ауа", "жылу"],
+            icon: "bulb",
+          },
+          en: {
+            title: "What all living things need",
+            text:
+              "All living things need food, water, air and warmth — without them they cannot live or grow.",
+            keywords: ["food", "water", "air", "warmth"],
+            icon: "bulb",
+          },
+        },
+      },
+      {
+        type: "action",
+        data: {
+          ru: {
+            title: "Подумай и запиши",
+            prompt:
+              "Что общего у щенка, цветка и тебя? Назови хотя бы 3 признака живого.",
+            placeholder: "Например: дышим, питаемся, растём...",
+            multiline: true,
+          },
+          kz: {
+            title: "Ойлан да жаз",
+            prompt:
+              "Күшік, гүл және сенің араңда не ортақ? Тіршіліктің кемінде 3 белгісін ата.",
+            placeholder: "Мысалы: тыныс аламыз, қоректенеміз, өсеміз...",
+            multiline: true,
+          },
+          en: {
+            title: "Think and write",
+            prompt:
+              "What do a puppy, a flower and you have in common? Name at least 3 signs of living things.",
+            placeholder: "For example: we breathe, eat, grow...",
+            multiline: true,
+          },
+        },
+      },
+    ],
+
+    // Чем похожи и чем отличаются
+    observation: [
+      {
+        type: "summary",
+        data: {
+          ru: {
+            title: "Чем похожи живые организмы",
+            text:
+              "И растения, и животные **дышат**, **питаются**, **растут**, **размножаются** и **умирают** — это признаки всего живого.",
+            terms: ["дышат", "питаются", "растут", "размножаются", "умирают"],
+          },
+          kz: {
+            title: "Тірі ағзалардың ұқсастығы",
+            text:
+              "Өсімдіктер де, жануарлар да **тыныс алады**, **қоректенеді**, **өседі**, **көбейеді** және **өледі** — бұл барлық тіршілік белгілері.",
+            terms: ["тыныс алады", "қоректенеді", "өседі", "көбейеді", "өледі"],
+          },
+          en: {
+            title: "How living things are alike",
+            text:
+              "Both plants and animals **breathe**, **eat**, **grow**, **reproduce** and **die** — these are the signs of all living things.",
+            terms: ["breathe", "eat", "grow", "reproduce", "die"],
+          },
+        },
+      },
+      {
+        type: "sort",
+        data: {
+          ru: {
+            title: "Работа в парах: кто это?",
+            instruction:
+              "Распредели животных по группам: дикие или домашние.",
+            categories: [
+              { id: "wild", label: "Дикие", emoji: "🌳" },
+              { id: "dom", label: "Домашние", emoji: "🏠" },
+            ],
+            items: [
+              { id: "a1", label: "лошадь", emoji: "🐴", categoryId: "dom" },
+              { id: "a2", label: "черепаха", emoji: "🐢", categoryId: "wild" },
+              { id: "a3", label: "ёж", emoji: "🦔", categoryId: "wild" },
+              { id: "a4", label: "корова", emoji: "🐄", categoryId: "dom" },
+              { id: "a5", label: "попугай ара", emoji: "🦜", categoryId: "wild" },
+              { id: "a6", label: "кошка", emoji: "🐱", categoryId: "dom" },
+            ],
+            checkLabel: "Проверить",
+          },
+          kz: {
+            title: "Жұппен жұмыс: кім бұл?",
+            instruction:
+              "Жануарларды топтарға бөл: жабайы ма, үй жануары ма.",
+            categories: [
+              { id: "wild", label: "Жабайы", emoji: "🌳" },
+              { id: "dom", label: "Үй", emoji: "🏠" },
+            ],
+            items: [
+              { id: "a1", label: "жылқы", emoji: "🐴", categoryId: "dom" },
+              { id: "a2", label: "тасбақа", emoji: "🐢", categoryId: "wild" },
+              { id: "a3", label: "кірпі", emoji: "🦔", categoryId: "wild" },
+              { id: "a4", label: "сиыр", emoji: "🐄", categoryId: "dom" },
+              { id: "a5", label: "ара тотықұс", emoji: "🦜", categoryId: "wild" },
+              { id: "a6", label: "мысық", emoji: "🐱", categoryId: "dom" },
+            ],
+            checkLabel: "Тексеру",
+          },
+          en: {
+            title: "Pair work: who is it?",
+            instruction:
+              "Sort the animals into groups: wild or domestic.",
+            categories: [
+              { id: "wild", label: "Wild", emoji: "🌳" },
+              { id: "dom", label: "Domestic", emoji: "🏠" },
+            ],
+            items: [
+              { id: "a1", label: "horse", emoji: "🐴", categoryId: "dom" },
+              { id: "a2", label: "turtle", emoji: "🐢", categoryId: "wild" },
+              { id: "a3", label: "hedgehog", emoji: "🦔", categoryId: "wild" },
+              { id: "a4", label: "cow", emoji: "🐄", categoryId: "dom" },
+              { id: "a5", label: "macaw parrot", emoji: "🦜", categoryId: "wild" },
+              { id: "a6", label: "cat", emoji: "🐱", categoryId: "dom" },
+            ],
+            checkLabel: "Check",
+          },
+        },
+      },
+      {
+        type: "fact",
+        data: {
+          ru: {
+            title: "Проведи исследование",
+            text:
+              "1) Выбери одно животное во дворе. 2) Понаблюдай за ним 5 минут. 3) Запиши: что оно делает, чем питается, как двигается.",
+            keywords: ["наблюдение", "исследование"],
+            icon: "sparkles",
+          },
+          kz: {
+            title: "Зерттеу жүргіз",
+            text:
+              "1) Аулаңнан бір жануар таңда. 2) Оны 5 минут бақыла. 3) Жаз: ол не істейді, немен қоректенеді, қалай қозғалады.",
+            keywords: ["бақылау", "зерттеу"],
+            icon: "sparkles",
+          },
+          en: {
+            title: "Run a study",
+            text:
+              "1) Pick one animal in the yard. 2) Watch it for 5 minutes. 3) Write down what it does, what it eats and how it moves.",
+            keywords: ["observation", "research"],
+            icon: "sparkles",
+          },
+        },
+      },
+      {
+        type: "carousel",
+        data: {
+          ru: {
+            groupLabel: "Движение и питание",
+            title: "Как двигаются и питаются животные",
+            slides: [
+              { emoji: "🐎", caption: "Лошадь пасётся на лугу — щиплет траву." },
+              { emoji: "🐿️", caption: "Белка ест орех, который сама нашла." },
+              { emoji: "🐿️", caption: "Белка прыгает по веткам — ищет еду." },
+            ],
+          },
+          kz: {
+            groupLabel: "Қозғалыс пен қоректену",
+            title: "Жануарлар қалай қозғалады",
+            slides: [
+              { emoji: "🐎", caption: "Жылқы шалғында жайылады — шөп жейді." },
+              { emoji: "🐿️", caption: "Тиін өзі тапқан жаңғақты жейді." },
+              { emoji: "🐿️", caption: "Тиін бұтақтарда секіреді — тамақ іздейді." },
+            ],
+          },
+          en: {
+            groupLabel: "Movement and feeding",
+            title: "How animals move and eat",
+            slides: [
+              { emoji: "🐎", caption: "A horse grazes on a meadow — eats grass." },
+              { emoji: "🐿️", caption: "A squirrel eats a nut it found." },
+              { emoji: "🐿️", caption: "A squirrel jumps on branches — looking for food." },
+            ],
+          },
+        },
+      },
+      {
+        type: "reveal",
+        data: {
+          ru: {
+            title: "Найди отличия",
+            question:
+              "Гепард бежит за добычей, а суслик прячется в норе. Как это им помогает?",
+            items: [
+              { emoji: "🐆", label: "гепард" },
+              { emoji: "🐹", label: "суслик" },
+            ],
+            answer:
+              "Гепард — самый быстрый, он догоняет добычу. Суслик быстро прячется в нору, чтобы спастись от хищников.",
+            buttonLabel: "Показать ответ",
+          },
+          kz: {
+            title: "Айырмашылықты тап",
+            question:
+              "Гепард олжасының соңынан жүгіреді, ал суыр ініне тығылады. Бұл оларға қалай көмектеседі?",
+            items: [
+              { emoji: "🐆", label: "гепард" },
+              { emoji: "🐹", label: "суыр" },
+            ],
+            answer:
+              "Гепард — ең жылдам, олжасын қуып жетеді. Суыр жыртқыштардан қорғану үшін тез ініне тығылады.",
+            buttonLabel: "Жауапты көрсету",
+          },
+          en: {
+            title: "Find the differences",
+            question:
+              "A cheetah chases its prey, a gopher hides in a burrow. How does it help them?",
+            items: [
+              { emoji: "🐆", label: "cheetah" },
+              { emoji: "🐹", label: "gopher" },
+            ],
+            answer:
+              "The cheetah is the fastest and catches its prey. The gopher quickly hides in its burrow to escape predators.",
+            buttonLabel: "Show answer",
+          },
+        },
+      },
+    ],
+
+    // Итоги
+    experiments: [
+      {
+        type: "fact",
+        data: {
+          ru: {
+            title: "4 октября — Всемирный день защиты животных",
+            text:
+              "В этот день люди по всему миру напоминают, что животных нужно беречь и относиться к ним с заботой.",
+            keywords: ["защита", "природа", "забота"],
+            icon: "sparkles",
+          },
+          kz: {
+            title: "4 қазан — Дүниежүзілік жануарларды қорғау күні",
+            text:
+              "Бұл күні әлем халқы жануарларды қорғау және оларға қамқорлықпен қарау керектігін еске салады.",
+            keywords: ["қорғау", "табиғат", "қамқорлық"],
+            icon: "sparkles",
+          },
+          en: {
+            title: "October 4 — World Animal Day",
+            text:
+              "On this day people around the world remind us to protect animals and treat them with care.",
+            keywords: ["protection", "nature", "care"],
+            icon: "sparkles",
+          },
+        },
+      },
+      {
+        type: "summary",
+        data: {
+          ru: {
+            title: "Чем отличаются растения и животные",
+            text:
+              "Растения **сами** создают питательные вещества из света и воды. Животные **поедают** готовую пищу — растения или других животных.",
+            terms: ["сами", "поедают"],
+          },
+          kz: {
+            title: "Өсімдіктер мен жануарлардың айырмашылығы",
+            text:
+              "Өсімдіктер қоректік заттарды күн мен судан **өздері** жасайды. Жануарлар дайын тағамды — өсімдіктерді немесе басқа жануарларды **жейді**.",
+            terms: ["өздері", "жейді"],
+          },
+          en: {
+            title: "How plants and animals differ",
+            text:
+              "Plants **make** nutrients themselves from light and water. Animals **eat** ready food — plants or other animals.",
+            terms: ["make", "eat"],
+          },
+        },
+      },
+      {
+        type: "summary",
+        data: {
+          ru: {
+            title: "Итоговые вопросы",
+            text:
+              "1) Чем растения и животные **похожи**? 2) Чем они **отличаются**? 3) Как растения и животные получают **пищу**?",
+          },
+          kz: {
+            title: "Қорытынды сұрақтар",
+            text:
+              "1) Өсімдіктер мен жануарлардың қандай **ұқсастықтары** бар? 2) Олардың **айырмашылықтары** қандай? 3) Олар **тамақты** қалай алады?",
+          },
+          en: {
+            title: "Wrap-up questions",
+            text:
+              "1) How are plants and animals **alike**? 2) How do they **differ**? 3) How do plants and animals get their **food**?",
+          },
+        },
+      },
+    ],
+  },
+
+  // ════════════════════════════════════════════════════════════════════════
+  // УРОК 7. Какие бывают животные. Дикие и домашние.
+  // ════════════════════════════════════════════════════════════════════════
+  7: {
+    intro: [
+      {
+        type: "audio",
+        data: {
+          ru: {
+            title: "Аудио-гид к уроку",
+            text:
+              "Сегодня мы узнаем, что животные бывают дикими и домашними, и в чём их главное отличие.",
+            caption: "Послушай вступление к уроку",
+            durationLabel: "0:22",
+          },
+          kz: {
+            title: "Сабақтың аудио-гиді",
+            text:
+              "Бүгін біз жануарлардың жабайы және үй жануарлары болып бөлінетінін, олардың айырмашылығы неде екенін білеміз.",
+            caption: "Сабақтың кіріспесін тыңда",
+            durationLabel: "0:22",
+          },
+          en: {
+            title: "Lesson audio guide",
+            text:
+              "Today we'll learn that animals can be wild or domestic, and what is the main difference between them.",
+            caption: "Listen to the lesson intro",
+            durationLabel: "0:22",
+          },
+        },
+      },
+      {
+        type: "carousel",
+        data: {
+          ru: {
+            groupLabel: "Ключевые слова",
+            title: "Дикие и домашние",
+            slides: [
+              { emoji: "🏠", caption: "Домашние животные / Үй жануарлары / Domestic animals" },
+              { emoji: "🌲", caption: "Дикие животные / Жабайы жануарлар / Wild animals" },
+              { emoji: "🌍", caption: "Среда обитания / Мекен орта / Habitat" },
+            ],
+          },
+          kz: {
+            groupLabel: "Кілт сөздер",
+            title: "Жабайы және үй",
+            slides: [
+              { emoji: "🏠", caption: "Үй жануарлары / Домашние / Domestic animals" },
+              { emoji: "🌲", caption: "Жабайы жануарлар / Дикие / Wild animals" },
+              { emoji: "🌍", caption: "Мекен орта / Среда обитания / Habitat" },
+            ],
+          },
+          en: {
+            groupLabel: "Key words",
+            title: "Wild and domestic",
+            slides: [
+              { emoji: "🏠", caption: "Domestic animals / Домашние / Үй жануарлары" },
+              { emoji: "🌲", caption: "Wild animals / Дикие / Жабайы жануарлар" },
+              { emoji: "🌍", caption: "Habitat / Среда обитания / Мекен орта" },
+            ],
+          },
+        },
+      },
+    ],
+
+    // Домашние животные
+    scientists: [
+      {
+        type: "carousel",
+        data: {
+          ru: {
+            groupLabel: "Работа в группах",
+            title: "Домашние животные",
+            slides: [
+              { emoji: "🐕", caption: "Собаки живут рядом с людьми — охраняют дом." },
+              { emoji: "🐄", caption: "Корова на пастбище даёт молоко." },
+              { emoji: "🐐", caption: "Коза у забора — даёт молоко и шерсть." },
+              { emoji: "🐎", caption: "Лошадь с жеребёнком — помогает человеку." },
+            ],
+          },
+          kz: {
+            groupLabel: "Топта жұмыс",
+            title: "Үй жануарлары",
+            slides: [
+              { emoji: "🐕", caption: "Иттер адаммен бірге тұрып, үйді күзетеді." },
+              { emoji: "🐄", caption: "Жайылымдағы сиыр сүт береді." },
+              { emoji: "🐐", caption: "Қоршау жанындағы ешкі — сүт пен жүн береді." },
+              { emoji: "🐎", caption: "Жылқы құлынымен — адамға көмектеседі." },
+            ],
+          },
+          en: {
+            groupLabel: "Group work",
+            title: "Domestic animals",
+            slides: [
+              { emoji: "🐕", caption: "Dogs live with people — they guard the house." },
+              { emoji: "🐄", caption: "A cow on the pasture gives milk." },
+              { emoji: "🐐", caption: "A goat by the fence gives milk and wool." },
+              { emoji: "🐎", caption: "A mare with her foal — helps people." },
+            ],
+          },
+        },
+      },
+      {
+        type: "reveal",
+        data: {
+          ru: {
+            title: "Проверь себя",
+            question:
+              "Кто из этих животных — домашний? Подумай и проверь ответ.",
+            items: [
+              { emoji: "🐕", label: "собака" },
+              { emoji: "🐄", label: "корова" },
+              { emoji: "🐐", label: "коза" },
+            ],
+            answer:
+              "Все трое — домашние животные. Они живут рядом с человеком, приносят пользу, а человек заботится о них.",
+            buttonLabel: "Проверить ответ",
+          },
+          kz: {
+            title: "Өзіңді тексер",
+            question:
+              "Бұлардың қайсысы үй жануары? Ойлан да жауапты тексер.",
+            items: [
+              { emoji: "🐕", label: "ит" },
+              { emoji: "🐄", label: "сиыр" },
+              { emoji: "🐐", label: "ешкі" },
+            ],
+            answer:
+              "Үшеуі де үй жануарлары. Олар адамның жанында тұрады, пайда әкеледі, адам оларды күтеді.",
+            buttonLabel: "Жауапты тексеру",
+          },
+          en: {
+            title: "Check yourself",
+            question:
+              "Which of these are domestic animals? Think, then check.",
+            items: [
+              { emoji: "🐕", label: "dog" },
+              { emoji: "🐄", label: "cow" },
+              { emoji: "🐐", label: "goat" },
+            ],
+            answer:
+              "All three are domestic animals. They live near people, are useful, and people take care of them.",
+            buttonLabel: "Check answer",
+          },
+        },
+      },
+      {
+        type: "summary",
+        data: {
+          ru: {
+            title: "Что я узнал",
+            text:
+              "**Домашние** животные живут рядом с человеком, приносят **пользу**, а человек **заботится** о них.",
+            terms: ["домашние", "пользу", "заботится"],
+          },
+          kz: {
+            title: "Мен нені білдім",
+            text:
+              "**Үй** жануарлары адамның жанында тұрады, **пайда** әкеледі, адам олар туралы **қамқорлық** жасайды.",
+            terms: ["үй", "пайда", "қамқорлық"],
+          },
+          en: {
+            title: "What I learned",
+            text:
+              "**Domestic** animals live near people, bring **benefit**, and people **take care** of them.",
+            terms: ["domestic", "benefit", "take care"],
+          },
+        },
+      },
+    ],
+
+    // Дикие животные
+    observation: [
+      {
+        type: "carousel",
+        data: {
+          ru: {
+            groupLabel: "Работа в группах",
+            title: "Дикие животные",
+            slides: [
+              { emoji: "🐘", caption: "Слон живёт в жарких странах." },
+              { emoji: "🦧", caption: "Орангутан живёт в тропических лесах." },
+              { emoji: "🦅", caption: "Беркут парит над горами." },
+              { emoji: "🦌", caption: "Сайгак бегает по степям Казахстана." },
+              { emoji: "🐱", caption: "Рысь живёт в густых лесах." },
+            ],
+          },
+          kz: {
+            groupLabel: "Топта жұмыс",
+            title: "Жабайы жануарлар",
+            slides: [
+              { emoji: "🐘", caption: "Піл ыстық елдерде тұрады." },
+              { emoji: "🦧", caption: "Орангутан тропиктік ормандарда тұрады." },
+              { emoji: "🦅", caption: "Бүркіт таулардың үстінде қалықтайды." },
+              { emoji: "🦌", caption: "Киік Қазақстан даласында жүгіреді." },
+              { emoji: "🐱", caption: "Сілеусін қалың орманда тұрады." },
+            ],
+          },
+          en: {
+            groupLabel: "Group work",
+            title: "Wild animals",
+            slides: [
+              { emoji: "🐘", caption: "An elephant lives in hot countries." },
+              { emoji: "🦧", caption: "An orangutan lives in tropical forests." },
+              { emoji: "🦅", caption: "A golden eagle soars above the mountains." },
+              { emoji: "🦌", caption: "A saiga runs across the steppes of Kazakhstan." },
+              { emoji: "🐱", caption: "A lynx lives in dense forests." },
+            ],
+          },
+        },
+      },
+      {
+        type: "reveal",
+        data: {
+          ru: {
+            title: "Где они обитают?",
+            question:
+              "К какой группе относятся эти животные? Где они обитают?",
+            items: [
+              { emoji: "🐘", label: "слон" },
+              { emoji: "🦅", label: "беркут" },
+              { emoji: "🦌", label: "сайгак" },
+            ],
+            answer:
+              "Все они — дикие животные. Слон живёт в саваннах, беркут — в горах, сайгак — в степях. Они сами добывают пищу.",
+            buttonLabel: "Проверить ответ",
+          },
+          kz: {
+            title: "Олар қайда тұрады?",
+            question:
+              "Бұл жануарлар қай топқа жатады? Олар қайда тұрады?",
+            items: [
+              { emoji: "🐘", label: "піл" },
+              { emoji: "🦅", label: "бүркіт" },
+              { emoji: "🦌", label: "киік" },
+            ],
+            answer:
+              "Олардың барлығы — жабайы жануарлар. Піл саваннада, бүркіт тауда, киік далада тұрады. Олар тамағын өздері табады.",
+            buttonLabel: "Жауапты тексеру",
+          },
+          en: {
+            title: "Where do they live?",
+            question:
+              "What group do these animals belong to? Where do they live?",
+            items: [
+              { emoji: "🐘", label: "elephant" },
+              { emoji: "🦅", label: "eagle" },
+              { emoji: "🦌", label: "saiga" },
+            ],
+            answer:
+              "They are all wild animals. The elephant lives in savannas, the eagle in the mountains, the saiga in the steppes. They find food on their own.",
+            buttonLabel: "Check answer",
+          },
+        },
+      },
+      {
+        type: "summary",
+        data: {
+          ru: {
+            title: "Что я узнал",
+            text:
+              "**Дикие** животные живут в **лесах**, **степях** и **горах**. Они сами добывают пищу и находят жильё.",
+            terms: ["дикие", "лесах", "степях", "горах"],
+          },
+          kz: {
+            title: "Мен нені білдім",
+            text:
+              "**Жабайы** жануарлар **ормандарда**, **далада** және **тауларда** тұрады. Олар тамағын өздері табады, паналайтын жерін өздері іздейді.",
+            terms: ["жабайы", "ормандарда", "далада", "тауларда"],
+          },
+          en: {
+            title: "What I learned",
+            text:
+              "**Wild** animals live in **forests**, **steppes** and **mountains**. They find food and shelter on their own.",
+            terms: ["wild", "forests", "steppes", "mountains"],
+          },
+        },
+      },
+      {
+        type: "sort",
+        data: {
+          ru: {
+            title: "Где обитают эти животные?",
+            instruction:
+              "Распредели животных по среде обитания.",
+            categories: [
+              { id: "land", label: "На земле / в лесу", emoji: "🌳" },
+              { id: "water", label: "В воде", emoji: "🌊" },
+              { id: "mount", label: "В горах", emoji: "⛰️" },
+            ],
+            items: [
+              { id: "s1", label: "корова", emoji: "🐄", categoryId: "land" },
+              { id: "s2", label: "заяц", emoji: "🐰", categoryId: "land" },
+              { id: "s3", label: "лиса", emoji: "🦊", categoryId: "land" },
+              { id: "s4", label: "дельфин", emoji: "🐬", categoryId: "water" },
+              { id: "s5", label: "архар", emoji: "🐏", categoryId: "mount" },
+            ],
+            checkLabel: "Проверить",
+          },
+          kz: {
+            title: "Бұл жануарлар қайда тұрады?",
+            instruction:
+              "Жануарларды мекен ортасы бойынша бөл.",
+            categories: [
+              { id: "land", label: "Жерде / орманда", emoji: "🌳" },
+              { id: "water", label: "Суда", emoji: "🌊" },
+              { id: "mount", label: "Тауда", emoji: "⛰️" },
+            ],
+            items: [
+              { id: "s1", label: "сиыр", emoji: "🐄", categoryId: "land" },
+              { id: "s2", label: "қоян", emoji: "🐰", categoryId: "land" },
+              { id: "s3", label: "түлкі", emoji: "🦊", categoryId: "land" },
+              { id: "s4", label: "дельфин", emoji: "🐬", categoryId: "water" },
+              { id: "s5", label: "арқар", emoji: "🐏", categoryId: "mount" },
+            ],
+            checkLabel: "Тексеру",
+          },
+          en: {
+            title: "Where do these animals live?",
+            instruction:
+              "Sort the animals by their habitat.",
+            categories: [
+              { id: "land", label: "On land / in forest", emoji: "🌳" },
+              { id: "water", label: "In water", emoji: "🌊" },
+              { id: "mount", label: "In mountains", emoji: "⛰️" },
+            ],
+            items: [
+              { id: "s1", label: "cow", emoji: "🐄", categoryId: "land" },
+              { id: "s2", label: "hare", emoji: "🐰", categoryId: "land" },
+              { id: "s3", label: "fox", emoji: "🦊", categoryId: "land" },
+              { id: "s4", label: "dolphin", emoji: "🐬", categoryId: "water" },
+              { id: "s5", label: "argali", emoji: "🐏", categoryId: "mount" },
+            ],
+            checkLabel: "Check",
+          },
+        },
+      },
+    ],
+
+    // Итоги
+    experiments: [
+      {
+        type: "fact",
+        data: {
+          ru: {
+            title: "Найди в энциклопедии",
+            text:
+              "Узнай, какие редкие дикие животные живут в Казахстане. Запиши 3 примера и где они обитают.",
+            keywords: ["энциклопедия", "Казахстан", "редкие"],
+            icon: "sparkles",
+          },
+          kz: {
+            title: "Энциклопедиядан тап",
+            text:
+              "Қазақстанда қандай сирек кездесетін жабайы жануарлар бар? 3 мысал жазып, қайда тұратынын көрсет.",
+            keywords: ["энциклопедия", "Қазақстан", "сирек"],
+            icon: "sparkles",
+          },
+          en: {
+            title: "Find in the encyclopedia",
+            text:
+              "Find out which rare wild animals live in Kazakhstan. Write down 3 examples and where they live.",
+            keywords: ["encyclopedia", "Kazakhstan", "rare"],
+            icon: "sparkles",
+          },
+        },
+      },
+      {
+        type: "fact",
+        data: {
+          ru: {
+            title: "Это интересно!",
+            text:
+              "У молодых пингвинов хвост похож на белый мех. Это помогает их мамам быстро находить своих птенцов в большой стае.",
+            keywords: ["пингвины", "хвост", "мех"],
+            icon: "bulb",
+          },
+          kz: {
+            title: "Бұл қызық!",
+            text:
+              "Жас пингвиндердің құйрығы ақ жүнге ұқсайды. Бұл аналарына үлкен топтан өз балапандарын тез табуға көмектеседі.",
+            keywords: ["пингвин", "құйрық", "жүн"],
+            icon: "bulb",
+          },
+          en: {
+            title: "Did you know?",
+            text:
+              "Young penguins have tails that look like white fur. It helps their mothers quickly find their chicks in a large flock.",
+            keywords: ["penguins", "tail", "fur"],
+            icon: "bulb",
+          },
+        },
+      },
+      {
+        type: "summary",
+        data: {
+          ru: {
+            title: "Итоговые вопросы",
+            text:
+              "1) Чем **дикие** животные отличаются от **домашних**? 2) Почему человек должен **заботиться** о домашних животных?",
+          },
+          kz: {
+            title: "Қорытынды сұрақтар",
+            text:
+              "1) **Жабайы** жануарлар **үй** жануарларынан немен ерекшеленеді? 2) Адам үй жануарларына неліктен **қамқорлық** жасауы керек?",
+          },
+          en: {
+            title: "Wrap-up questions",
+            text:
+              "1) How do **wild** animals differ from **domestic** ones? 2) Why should people **take care** of domestic animals?",
+          },
+        },
+      },
+    ],
+  },
 };
