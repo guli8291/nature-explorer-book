@@ -1832,30 +1832,18 @@ export const lessonBlocks: Partial<Record<number, Partial<Record<SectionKey, Blo
         data: {
           ru: {
             title: "Сравни два пейзажа",
-            sentence: "На первом фото растения {0}, а на втором — {1}.",
-            blanks: [
-              { answers: ["дикорастущие", "дикие"] },
-              { answers: ["культурные"] },
-            ],
-            hint: "Луг — это дикорастущие, засеянное поле — культурные.",
+            template: "На первом фото растения ___, а на втором — ___.",
+            hints: ["дикорастущие", "культурные"],
           },
           kz: {
             title: "Екі көріністі салыстыр",
-            sentence: "Бірінші суретте өсімдіктер {0}, ал екіншісінде — {1}.",
-            blanks: [
-              { answers: ["жабайы"] },
-              { answers: ["мәдени"] },
-            ],
-            hint: "Шалғын — жабайы, егілген егіс — мәдени.",
+            template: "Бірінші суретте өсімдіктер ___, ал екіншісінде — ___.",
+            hints: ["жабайы", "мәдени"],
           },
           en: {
             title: "Compare two landscapes",
-            sentence: "In the first photo the plants are {0}, in the second — {1}.",
-            blanks: [
-              { answers: ["wild"] },
-              { answers: ["cultivated"] },
-            ],
-            hint: "A meadow is wild, a sown field is cultivated.",
+            template: "In the first photo the plants are ___, in the second — ___.",
+            hints: ["wild", "cultivated"],
           },
         },
       },
