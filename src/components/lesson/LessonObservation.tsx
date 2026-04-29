@@ -3,9 +3,9 @@ import { Owl } from "@/components/Owl";
 import { SpeakButton } from "@/components/SpeakButton";
 import { useLang } from "@/i18n/LangContext";
 
-export const LessonObservation = () => {
-  const { tr } = useLang();
-  const body = tr("observation_body");
+export const LessonObservation = ({ lessonId }: { lessonId?: number }) => {
+  const { tr, trOpt } = useLang();
+  const body = (lessonId && trOpt(`l${lessonId}_observation`)) ?? tr("observation_body");
   return (
     <div className="glass rounded-3xl p-6 md:p-12 min-h-[420px] relative overflow-hidden">
       <div className="absolute -left-10 -bottom-10 w-72 h-72 rounded-full bg-sun/30 blur-3xl" />
@@ -23,7 +23,7 @@ export const LessonObservation = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.2 }}
-            className="mt-4 flex items-start gap-3 max-w-xl"
+            className="mt-4 flex items-start gap-3 max-w-2xl"
           >
             <p className="text-lg md:text-xl text-forest-mid font-semibold">{body}</p>
             <SpeakButton text={body} size="md" />
