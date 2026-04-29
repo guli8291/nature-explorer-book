@@ -137,14 +137,14 @@ const Lesson = () => {
               <LessonSection
                 lessonId={lessonId}
                 section="scientists"
-                header={<LessonScientists />}
+                header={<LessonScientists lessonId={lessonId} />}
               />
             )}
             {active === "observation" && (
               <LessonSection
                 lessonId={lessonId}
                 section="observation"
-                header={<LessonObservation />}
+                header={<LessonObservation lessonId={lessonId} />}
               />
             )}
             {active === "experiments" && (
