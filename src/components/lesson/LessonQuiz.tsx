@@ -16,7 +16,7 @@ const QUESTIONS: Q[] = [
 type Star = { id: number; x: number; y: number; tx: number; ty: number };
 
 export const LessonQuiz = ({ lessonId, onComplete }: { lessonId: number; onComplete: () => void }) => {
-  const { tr } = useLang();
+  const { tr, trOpt } = useLang();
   const [step, setStep] = useState(0);
   const [score, setScore] = useState(0);
   const [picked, setPicked] = useState<number | null>(null);
@@ -24,12 +24,22 @@ export const LessonQuiz = ({ lessonId, onComplete }: { lessonId: number; onCompl
   const [done, setDone] = useState(false);
 
   if (lessonId !== 1) {
+    const body = trOpt(`l${lessonId}_review`) ?? tr("comingSoon");
     return (
-      <div className="glass rounded-3xl p-8 md:p-12 min-h-[420px] grid place-items-center text-center">
-        <div>
-          <div className="text-6xl mb-4">🎯</div>
-          <h3 className="font-display text-3xl text-forest-deep">{tr("quiz")}</h3>
-          <p className="mt-2 text-forest-mid font-semibold">{tr("comingSoon")}</p>
+      <div className="glass rounded-3xl p-6 md:p-12 min-h-[420px] relative overflow-hidden">
+        <div className="absolute -left-10 -bottom-10 w-72 h-72 rounded-full bg-forest-light/30 blur-3xl" />
+        <div className="relative grid md:grid-cols-[1fr_auto] gap-8 items-center">
+          <div>
+            <h3 className="font-display font-black text-3xl md:text-5xl text-forest-deep flex items-start gap-3">
+              <span>🎓 {tr("nav_review")}</span>
+              <SpeakButton text={tr("nav_review")} size="lg" />
+            </h3>
+            <div className="mt-4 flex items-start gap-3 max-w-2xl">
+              <p className="text-lg md:text-xl text-forest-mid font-semibold whitespace-pre-line">{body}</p>
+              <SpeakButton text={body} size="md" />
+            </div>
+          </div>
+          <Owl message={tr("owlQuiz")} size={120} side="right" />
         </div>
       </div>
     );
