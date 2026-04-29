@@ -3030,4 +3030,10717 @@ export const lessonBlocks: Partial<Record<number, Partial<Record<SectionKey, Blo
       },
     ],
   },
+
+  8: {
+    intro: [
+      {
+        type: "audio",
+        data: {
+          ru: {
+            title: "Аудио-гид к уроку",
+            text:
+              "Сегодня мы узнаем, что животные бывают дикими и домашними, и в чём их главное отличие.",
+            caption: "Послушай вступление к уроку",
+            durationLabel: "0:22",
+          },
+          kz: {
+            title: "Сабақтың аудио-гиді",
+            text:
+              "Бүгін біз жануарлардың жабайы және үй жануарлары болып бөлінетінін, олардың айырмашылығы неде екенін білеміз.",
+            caption: "Сабақтың кіріспесін тыңда",
+            durationLabel: "0:22",
+          },
+          en: {
+            title: "Lesson audio guide",
+            text:
+              "Today we'll learn that animals can be wild or domestic, and what is the main difference between them.",
+            caption: "Listen to the lesson intro",
+            durationLabel: "0:22",
+          },
+        },
+      },
+      {
+        type: "carousel",
+        data: {
+          ru: {
+            groupLabel: "Ключевые слова",
+            title: "Дикие и домашние",
+            slides: [
+              { emoji: "🏠", caption: "Домашние животные / Үй жануарлары / Domestic animals" },
+              { emoji: "🌲", caption: "Дикие животные / Жабайы жануарлар / Wild animals" },
+              { emoji: "🌍", caption: "Среда обитания / Мекен орта / Habitat" },
+            ],
+          },
+          kz: {
+            groupLabel: "Кілт сөздер",
+            title: "Жабайы және үй",
+            slides: [
+              { emoji: "🏠", caption: "Үй жануарлары / Домашние / Domestic animals" },
+              { emoji: "🌲", caption: "Жабайы жануарлар / Дикие / Wild animals" },
+              { emoji: "🌍", caption: "Мекен орта / Среда обитания / Habitat" },
+            ],
+          },
+          en: {
+            groupLabel: "Key words",
+            title: "Wild and domestic",
+            slides: [
+              { emoji: "🏠", caption: "Domestic animals / Домашние / Үй жануарлары" },
+              { emoji: "🌲", caption: "Wild animals / Дикие / Жабайы жануарлар" },
+              { emoji: "🌍", caption: "Habitat / Среда обитания / Мекен орта" },
+            ],
+          },
+        },
+      },
+    ],
+
+    // Домашние животные
+    scientists: [
+      {
+        type: "carousel",
+        data: {
+          ru: {
+            groupLabel: "Работа в группах",
+            title: "Домашние животные",
+            slides: [
+              { emoji: "🐕", caption: "Собаки живут рядом с людьми — охраняют дом." },
+              { emoji: "🐄", caption: "Корова на пастбище даёт молоко." },
+              { emoji: "🐐", caption: "Коза у забора — даёт молоко и шерсть." },
+              { emoji: "🐎", caption: "Лошадь с жеребёнком — помогает человеку." },
+            ],
+          },
+          kz: {
+            groupLabel: "Топта жұмыс",
+            title: "Үй жануарлары",
+            slides: [
+              { emoji: "🐕", caption: "Иттер адаммен бірге тұрып, үйді күзетеді." },
+              { emoji: "🐄", caption: "Жайылымдағы сиыр сүт береді." },
+              { emoji: "🐐", caption: "Қоршау жанындағы ешкі — сүт пен жүн береді." },
+              { emoji: "🐎", caption: "Жылқы құлынымен — адамға көмектеседі." },
+            ],
+          },
+          en: {
+            groupLabel: "Group work",
+            title: "Domestic animals",
+            slides: [
+              { emoji: "🐕", caption: "Dogs live with people — they guard the house." },
+              { emoji: "🐄", caption: "A cow on the pasture gives milk." },
+              { emoji: "🐐", caption: "A goat by the fence gives milk and wool." },
+              { emoji: "🐎", caption: "A mare with her foal — helps people." },
+            ],
+          },
+        },
+      },
+      {
+        type: "reveal",
+        data: {
+          ru: {
+            title: "Проверь себя",
+            question:
+              "Кто из этих животных — домашний? Подумай и проверь ответ.",
+            items: [
+              { emoji: "🐕", label: "собака" },
+              { emoji: "🐄", label: "корова" },
+              { emoji: "🐐", label: "коза" },
+            ],
+            answer:
+              "Все трое — домашние животные. Они живут рядом с человеком, приносят пользу, а человек заботится о них.",
+            buttonLabel: "Проверить ответ",
+          },
+          kz: {
+            title: "Өзіңді тексер",
+            question:
+              "Бұлардың қайсысы үй жануары? Ойлан да жауапты тексер.",
+            items: [
+              { emoji: "🐕", label: "ит" },
+              { emoji: "🐄", label: "сиыр" },
+              { emoji: "🐐", label: "ешкі" },
+            ],
+            answer:
+              "Үшеуі де үй жануарлары. Олар адамның жанында тұрады, пайда әкеледі, адам оларды күтеді.",
+            buttonLabel: "Жауапты тексеру",
+          },
+          en: {
+            title: "Check yourself",
+            question:
+              "Which of these are domestic animals? Think, then check.",
+            items: [
+              { emoji: "🐕", label: "dog" },
+              { emoji: "🐄", label: "cow" },
+              { emoji: "🐐", label: "goat" },
+            ],
+            answer:
+              "All three are domestic animals. They live near people, are useful, and people take care of them.",
+            buttonLabel: "Check answer",
+          },
+        },
+      },
+      {
+        type: "summary",
+        data: {
+          ru: {
+            title: "Что я узнал",
+            text:
+              "**Домашние** животные живут рядом с человеком, приносят **пользу**, а человек **заботится** о них.",
+            terms: ["домашние", "пользу", "заботится"],
+          },
+          kz: {
+            title: "Мен нені білдім",
+            text:
+              "**Үй** жануарлары адамның жанында тұрады, **пайда** әкеледі, адам олар туралы **қамқорлық** жасайды.",
+            terms: ["үй", "пайда", "қамқорлық"],
+          },
+          en: {
+            title: "What I learned",
+            text:
+              "**Domestic** animals live near people, bring **benefit**, and people **take care** of them.",
+            terms: ["domestic", "benefit", "take care"],
+          },
+        },
+      },
+    ],
+
+    // Дикие животные
+    observation: [
+      {
+        type: "carousel",
+        data: {
+          ru: {
+            groupLabel: "Работа в группах",
+            title: "Дикие животные",
+            slides: [
+              { emoji: "🐘", caption: "Слон живёт в жарких странах." },
+              { emoji: "🦧", caption: "Орангутан живёт в тропических лесах." },
+              { emoji: "🦅", caption: "Беркут парит над горами." },
+              { emoji: "🦌", caption: "Сайгак бегает по степям Казахстана." },
+              { emoji: "🐱", caption: "Рысь живёт в густых лесах." },
+            ],
+          },
+          kz: {
+            groupLabel: "Топта жұмыс",
+            title: "Жабайы жануарлар",
+            slides: [
+              { emoji: "🐘", caption: "Піл ыстық елдерде тұрады." },
+              { emoji: "🦧", caption: "Орангутан тропиктік ормандарда тұрады." },
+              { emoji: "🦅", caption: "Бүркіт таулардың үстінде қалықтайды." },
+              { emoji: "🦌", caption: "Киік Қазақстан даласында жүгіреді." },
+              { emoji: "🐱", caption: "Сілеусін қалың орманда тұрады." },
+            ],
+          },
+          en: {
+            groupLabel: "Group work",
+            title: "Wild animals",
+            slides: [
+              { emoji: "🐘", caption: "An elephant lives in hot countries." },
+              { emoji: "🦧", caption: "An orangutan lives in tropical forests." },
+              { emoji: "🦅", caption: "A golden eagle soars above the mountains." },
+              { emoji: "🦌", caption: "A saiga runs across the steppes of Kazakhstan." },
+              { emoji: "🐱", caption: "A lynx lives in dense forests." },
+            ],
+          },
+        },
+      },
+      {
+        type: "reveal",
+        data: {
+          ru: {
+            title: "Где они обитают?",
+            question:
+              "К какой группе относятся эти животные? Где они обитают?",
+            items: [
+              { emoji: "🐘", label: "слон" },
+              { emoji: "🦅", label: "беркут" },
+              { emoji: "🦌", label: "сайгак" },
+            ],
+            answer:
+              "Все они — дикие животные. Слон живёт в саваннах, беркут — в горах, сайгак — в степях. Они сами добывают пищу.",
+            buttonLabel: "Проверить ответ",
+          },
+          kz: {
+            title: "Олар қайда тұрады?",
+            question:
+              "Бұл жануарлар қай топқа жатады? Олар қайда тұрады?",
+            items: [
+              { emoji: "🐘", label: "піл" },
+              { emoji: "🦅", label: "бүркіт" },
+              { emoji: "🦌", label: "киік" },
+            ],
+            answer:
+              "Олардың барлығы — жабайы жануарлар. Піл саваннада, бүркіт тауда, киік далада тұрады. Олар тамағын өздері табады.",
+            buttonLabel: "Жауапты тексеру",
+          },
+          en: {
+            title: "Where do they live?",
+            question:
+              "What group do these animals belong to? Where do they live?",
+            items: [
+              { emoji: "🐘", label: "elephant" },
+              { emoji: "🦅", label: "eagle" },
+              { emoji: "🦌", label: "saiga" },
+            ],
+            answer:
+              "They are all wild animals. The elephant lives in savannas, the eagle in the mountains, the saiga in the steppes. They find food on their own.",
+            buttonLabel: "Check answer",
+          },
+        },
+      },
+      {
+        type: "summary",
+        data: {
+          ru: {
+            title: "Что я узнал",
+            text:
+              "**Дикие** животные живут в **лесах**, **степях** и **горах**. Они сами добывают пищу и находят жильё.",
+            terms: ["дикие", "лесах", "степях", "горах"],
+          },
+          kz: {
+            title: "Мен нені білдім",
+            text:
+              "**Жабайы** жануарлар **ормандарда**, **далада** және **тауларда** тұрады. Олар тамағын өздері табады, паналайтын жерін өздері іздейді.",
+            terms: ["жабайы", "ормандарда", "далада", "тауларда"],
+          },
+          en: {
+            title: "What I learned",
+            text:
+              "**Wild** animals live in **forests**, **steppes** and **mountains**. They find food and shelter on their own.",
+            terms: ["wild", "forests", "steppes", "mountains"],
+          },
+        },
+      },
+      {
+        type: "sort",
+        data: {
+          ru: {
+            title: "Где обитают эти животные?",
+            instruction:
+              "Распредели животных по среде обитания.",
+            categories: [
+              { id: "land", label: "На земле / в лесу", emoji: "🌳" },
+              { id: "water", label: "В воде", emoji: "🌊" },
+              { id: "mount", label: "В горах", emoji: "⛰️" },
+            ],
+            items: [
+              { id: "s1", label: "корова", emoji: "🐄", categoryId: "land" },
+              { id: "s2", label: "заяц", emoji: "🐰", categoryId: "land" },
+              { id: "s3", label: "лиса", emoji: "🦊", categoryId: "land" },
+              { id: "s4", label: "дельфин", emoji: "🐬", categoryId: "water" },
+              { id: "s5", label: "архар", emoji: "🐏", categoryId: "mount" },
+            ],
+            checkLabel: "Проверить",
+          },
+          kz: {
+            title: "Бұл жануарлар қайда тұрады?",
+            instruction:
+              "Жануарларды мекен ортасы бойынша бөл.",
+            categories: [
+              { id: "land", label: "Жерде / орманда", emoji: "🌳" },
+              { id: "water", label: "Суда", emoji: "🌊" },
+              { id: "mount", label: "Тауда", emoji: "⛰️" },
+            ],
+            items: [
+              { id: "s1", label: "сиыр", emoji: "🐄", categoryId: "land" },
+              { id: "s2", label: "қоян", emoji: "🐰", categoryId: "land" },
+              { id: "s3", label: "түлкі", emoji: "🦊", categoryId: "land" },
+              { id: "s4", label: "дельфин", emoji: "🐬", categoryId: "water" },
+              { id: "s5", label: "арқар", emoji: "🐏", categoryId: "mount" },
+            ],
+            checkLabel: "Тексеру",
+          },
+          en: {
+            title: "Where do these animals live?",
+            instruction:
+              "Sort the animals by their habitat.",
+            categories: [
+              { id: "land", label: "On land / in forest", emoji: "🌳" },
+              { id: "water", label: "In water", emoji: "🌊" },
+              { id: "mount", label: "In mountains", emoji: "⛰️" },
+            ],
+            items: [
+              { id: "s1", label: "cow", emoji: "🐄", categoryId: "land" },
+              { id: "s2", label: "hare", emoji: "🐰", categoryId: "land" },
+              { id: "s3", label: "fox", emoji: "🦊", categoryId: "land" },
+              { id: "s4", label: "dolphin", emoji: "🐬", categoryId: "water" },
+              { id: "s5", label: "argali", emoji: "🐏", categoryId: "mount" },
+            ],
+            checkLabel: "Check",
+          },
+        },
+      },
+    ],
+
+    // Итоги
+    experiments: [
+      {
+        type: "fact",
+        data: {
+          ru: {
+            title: "Найди в энциклопедии",
+            text:
+              "Узнай, какие редкие дикие животные живут в Казахстане. Запиши 3 примера и где они обитают.",
+            keywords: ["энциклопедия", "Казахстан", "редкие"],
+            icon: "sparkles",
+          },
+          kz: {
+            title: "Энциклопедиядан тап",
+            text:
+              "Қазақстанда қандай сирек кездесетін жабайы жануарлар бар? 3 мысал жазып, қайда тұратынын көрсет.",
+            keywords: ["энциклопедия", "Қазақстан", "сирек"],
+            icon: "sparkles",
+          },
+          en: {
+            title: "Find in the encyclopedia",
+            text:
+              "Find out which rare wild animals live in Kazakhstan. Write down 3 examples and where they live.",
+            keywords: ["encyclopedia", "Kazakhstan", "rare"],
+            icon: "sparkles",
+          },
+        },
+      },
+      {
+        type: "fact",
+        data: {
+          ru: {
+            title: "Это интересно!",
+            text:
+              "У молодых пингвинов хвост похож на белый мех. Это помогает их мамам быстро находить своих птенцов в большой стае.",
+            keywords: ["пингвины", "хвост", "мех"],
+            icon: "bulb",
+          },
+          kz: {
+            title: "Бұл қызық!",
+            text:
+              "Жас пингвиндердің құйрығы ақ жүнге ұқсайды. Бұл аналарына үлкен топтан өз балапандарын тез табуға көмектеседі.",
+            keywords: ["пингвин", "құйрық", "жүн"],
+            icon: "bulb",
+          },
+          en: {
+            title: "Did you know?",
+            text:
+              "Young penguins have tails that look like white fur. It helps their mothers quickly find their chicks in a large flock.",
+            keywords: ["penguins", "tail", "fur"],
+            icon: "bulb",
+          },
+        },
+      },
+      {
+        type: "summary",
+        data: {
+          ru: {
+            title: "Итоговые вопросы",
+            text:
+              "1) Чем **дикие** животные отличаются от **домашних**? 2) Почему человек должен **заботиться** о домашних животных?",
+          },
+          kz: {
+            title: "Қорытынды сұрақтар",
+            text:
+              "1) **Жабайы** жануарлар **үй** жануарларынан немен ерекшеленеді? 2) Адам үй жануарларына неліктен **қамқорлық** жасауы керек?",
+          },
+          en: {
+            title: "Wrap-up questions",
+            text:
+              "1) How do **wild** animals differ from **domestic** ones? 2) Why should people **take care** of domestic animals?",
+          },
+        },
+      },
+    ],
+  },
+  9: {
+    intro: [
+      {
+        type: "audio",
+        data: {
+          ru: {
+            title: "Аудио-гид к уроку",
+            text:
+              "Сегодня мы узнаем, что животные бывают дикими и домашними, и в чём их главное отличие.",
+            caption: "Послушай вступление к уроку",
+            durationLabel: "0:22",
+          },
+          kz: {
+            title: "Сабақтың аудио-гиді",
+            text:
+              "Бүгін біз жануарлардың жабайы және үй жануарлары болып бөлінетінін, олардың айырмашылығы неде екенін білеміз.",
+            caption: "Сабақтың кіріспесін тыңда",
+            durationLabel: "0:22",
+          },
+          en: {
+            title: "Lesson audio guide",
+            text:
+              "Today we'll learn that animals can be wild or domestic, and what is the main difference between them.",
+            caption: "Listen to the lesson intro",
+            durationLabel: "0:22",
+          },
+        },
+      },
+      {
+        type: "carousel",
+        data: {
+          ru: {
+            groupLabel: "Ключевые слова",
+            title: "Дикие и домашние",
+            slides: [
+              { emoji: "🏠", caption: "Домашние животные / Үй жануарлары / Domestic animals" },
+              { emoji: "🌲", caption: "Дикие животные / Жабайы жануарлар / Wild animals" },
+              { emoji: "🌍", caption: "Среда обитания / Мекен орта / Habitat" },
+            ],
+          },
+          kz: {
+            groupLabel: "Кілт сөздер",
+            title: "Жабайы және үй",
+            slides: [
+              { emoji: "🏠", caption: "Үй жануарлары / Домашние / Domestic animals" },
+              { emoji: "🌲", caption: "Жабайы жануарлар / Дикие / Wild animals" },
+              { emoji: "🌍", caption: "Мекен орта / Среда обитания / Habitat" },
+            ],
+          },
+          en: {
+            groupLabel: "Key words",
+            title: "Wild and domestic",
+            slides: [
+              { emoji: "🏠", caption: "Domestic animals / Домашние / Үй жануарлары" },
+              { emoji: "🌲", caption: "Wild animals / Дикие / Жабайы жануарлар" },
+              { emoji: "🌍", caption: "Habitat / Среда обитания / Мекен орта" },
+            ],
+          },
+        },
+      },
+    ],
+
+    // Домашние животные
+    scientists: [
+      {
+        type: "carousel",
+        data: {
+          ru: {
+            groupLabel: "Работа в группах",
+            title: "Домашние животные",
+            slides: [
+              { emoji: "🐕", caption: "Собаки живут рядом с людьми — охраняют дом." },
+              { emoji: "🐄", caption: "Корова на пастбище даёт молоко." },
+              { emoji: "🐐", caption: "Коза у забора — даёт молоко и шерсть." },
+              { emoji: "🐎", caption: "Лошадь с жеребёнком — помогает человеку." },
+            ],
+          },
+          kz: {
+            groupLabel: "Топта жұмыс",
+            title: "Үй жануарлары",
+            slides: [
+              { emoji: "🐕", caption: "Иттер адаммен бірге тұрып, үйді күзетеді." },
+              { emoji: "🐄", caption: "Жайылымдағы сиыр сүт береді." },
+              { emoji: "🐐", caption: "Қоршау жанындағы ешкі — сүт пен жүн береді." },
+              { emoji: "🐎", caption: "Жылқы құлынымен — адамға көмектеседі." },
+            ],
+          },
+          en: {
+            groupLabel: "Group work",
+            title: "Domestic animals",
+            slides: [
+              { emoji: "🐕", caption: "Dogs live with people — they guard the house." },
+              { emoji: "🐄", caption: "A cow on the pasture gives milk." },
+              { emoji: "🐐", caption: "A goat by the fence gives milk and wool." },
+              { emoji: "🐎", caption: "A mare with her foal — helps people." },
+            ],
+          },
+        },
+      },
+      {
+        type: "reveal",
+        data: {
+          ru: {
+            title: "Проверь себя",
+            question:
+              "Кто из этих животных — домашний? Подумай и проверь ответ.",
+            items: [
+              { emoji: "🐕", label: "собака" },
+              { emoji: "🐄", label: "корова" },
+              { emoji: "🐐", label: "коза" },
+            ],
+            answer:
+              "Все трое — домашние животные. Они живут рядом с человеком, приносят пользу, а человек заботится о них.",
+            buttonLabel: "Проверить ответ",
+          },
+          kz: {
+            title: "Өзіңді тексер",
+            question:
+              "Бұлардың қайсысы үй жануары? Ойлан да жауапты тексер.",
+            items: [
+              { emoji: "🐕", label: "ит" },
+              { emoji: "🐄", label: "сиыр" },
+              { emoji: "🐐", label: "ешкі" },
+            ],
+            answer:
+              "Үшеуі де үй жануарлары. Олар адамның жанында тұрады, пайда әкеледі, адам оларды күтеді.",
+            buttonLabel: "Жауапты тексеру",
+          },
+          en: {
+            title: "Check yourself",
+            question:
+              "Which of these are domestic animals? Think, then check.",
+            items: [
+              { emoji: "🐕", label: "dog" },
+              { emoji: "🐄", label: "cow" },
+              { emoji: "🐐", label: "goat" },
+            ],
+            answer:
+              "All three are domestic animals. They live near people, are useful, and people take care of them.",
+            buttonLabel: "Check answer",
+          },
+        },
+      },
+      {
+        type: "summary",
+        data: {
+          ru: {
+            title: "Что я узнал",
+            text:
+              "**Домашние** животные живут рядом с человеком, приносят **пользу**, а человек **заботится** о них.",
+            terms: ["домашние", "пользу", "заботится"],
+          },
+          kz: {
+            title: "Мен нені білдім",
+            text:
+              "**Үй** жануарлары адамның жанында тұрады, **пайда** әкеледі, адам олар туралы **қамқорлық** жасайды.",
+            terms: ["үй", "пайда", "қамқорлық"],
+          },
+          en: {
+            title: "What I learned",
+            text:
+              "**Domestic** animals live near people, bring **benefit**, and people **take care** of them.",
+            terms: ["domestic", "benefit", "take care"],
+          },
+        },
+      },
+    ],
+
+    // Дикие животные
+    observation: [
+      {
+        type: "carousel",
+        data: {
+          ru: {
+            groupLabel: "Работа в группах",
+            title: "Дикие животные",
+            slides: [
+              { emoji: "🐘", caption: "Слон живёт в жарких странах." },
+              { emoji: "🦧", caption: "Орангутан живёт в тропических лесах." },
+              { emoji: "🦅", caption: "Беркут парит над горами." },
+              { emoji: "🦌", caption: "Сайгак бегает по степям Казахстана." },
+              { emoji: "🐱", caption: "Рысь живёт в густых лесах." },
+            ],
+          },
+          kz: {
+            groupLabel: "Топта жұмыс",
+            title: "Жабайы жануарлар",
+            slides: [
+              { emoji: "🐘", caption: "Піл ыстық елдерде тұрады." },
+              { emoji: "🦧", caption: "Орангутан тропиктік ормандарда тұрады." },
+              { emoji: "🦅", caption: "Бүркіт таулардың үстінде қалықтайды." },
+              { emoji: "🦌", caption: "Киік Қазақстан даласында жүгіреді." },
+              { emoji: "🐱", caption: "Сілеусін қалың орманда тұрады." },
+            ],
+          },
+          en: {
+            groupLabel: "Group work",
+            title: "Wild animals",
+            slides: [
+              { emoji: "🐘", caption: "An elephant lives in hot countries." },
+              { emoji: "🦧", caption: "An orangutan lives in tropical forests." },
+              { emoji: "🦅", caption: "A golden eagle soars above the mountains." },
+              { emoji: "🦌", caption: "A saiga runs across the steppes of Kazakhstan." },
+              { emoji: "🐱", caption: "A lynx lives in dense forests." },
+            ],
+          },
+        },
+      },
+      {
+        type: "reveal",
+        data: {
+          ru: {
+            title: "Где они обитают?",
+            question:
+              "К какой группе относятся эти животные? Где они обитают?",
+            items: [
+              { emoji: "🐘", label: "слон" },
+              { emoji: "🦅", label: "беркут" },
+              { emoji: "🦌", label: "сайгак" },
+            ],
+            answer:
+              "Все они — дикие животные. Слон живёт в саваннах, беркут — в горах, сайгак — в степях. Они сами добывают пищу.",
+            buttonLabel: "Проверить ответ",
+          },
+          kz: {
+            title: "Олар қайда тұрады?",
+            question:
+              "Бұл жануарлар қай топқа жатады? Олар қайда тұрады?",
+            items: [
+              { emoji: "🐘", label: "піл" },
+              { emoji: "🦅", label: "бүркіт" },
+              { emoji: "🦌", label: "киік" },
+            ],
+            answer:
+              "Олардың барлығы — жабайы жануарлар. Піл саваннада, бүркіт тауда, киік далада тұрады. Олар тамағын өздері табады.",
+            buttonLabel: "Жауапты тексеру",
+          },
+          en: {
+            title: "Where do they live?",
+            question:
+              "What group do these animals belong to? Where do they live?",
+            items: [
+              { emoji: "🐘", label: "elephant" },
+              { emoji: "🦅", label: "eagle" },
+              { emoji: "🦌", label: "saiga" },
+            ],
+            answer:
+              "They are all wild animals. The elephant lives in savannas, the eagle in the mountains, the saiga in the steppes. They find food on their own.",
+            buttonLabel: "Check answer",
+          },
+        },
+      },
+      {
+        type: "summary",
+        data: {
+          ru: {
+            title: "Что я узнал",
+            text:
+              "**Дикие** животные живут в **лесах**, **степях** и **горах**. Они сами добывают пищу и находят жильё.",
+            terms: ["дикие", "лесах", "степях", "горах"],
+          },
+          kz: {
+            title: "Мен нені білдім",
+            text:
+              "**Жабайы** жануарлар **ормандарда**, **далада** және **тауларда** тұрады. Олар тамағын өздері табады, паналайтын жерін өздері іздейді.",
+            terms: ["жабайы", "ормандарда", "далада", "тауларда"],
+          },
+          en: {
+            title: "What I learned",
+            text:
+              "**Wild** animals live in **forests**, **steppes** and **mountains**. They find food and shelter on their own.",
+            terms: ["wild", "forests", "steppes", "mountains"],
+          },
+        },
+      },
+      {
+        type: "sort",
+        data: {
+          ru: {
+            title: "Где обитают эти животные?",
+            instruction:
+              "Распредели животных по среде обитания.",
+            categories: [
+              { id: "land", label: "На земле / в лесу", emoji: "🌳" },
+              { id: "water", label: "В воде", emoji: "🌊" },
+              { id: "mount", label: "В горах", emoji: "⛰️" },
+            ],
+            items: [
+              { id: "s1", label: "корова", emoji: "🐄", categoryId: "land" },
+              { id: "s2", label: "заяц", emoji: "🐰", categoryId: "land" },
+              { id: "s3", label: "лиса", emoji: "🦊", categoryId: "land" },
+              { id: "s4", label: "дельфин", emoji: "🐬", categoryId: "water" },
+              { id: "s5", label: "архар", emoji: "🐏", categoryId: "mount" },
+            ],
+            checkLabel: "Проверить",
+          },
+          kz: {
+            title: "Бұл жануарлар қайда тұрады?",
+            instruction:
+              "Жануарларды мекен ортасы бойынша бөл.",
+            categories: [
+              { id: "land", label: "Жерде / орманда", emoji: "🌳" },
+              { id: "water", label: "Суда", emoji: "🌊" },
+              { id: "mount", label: "Тауда", emoji: "⛰️" },
+            ],
+            items: [
+              { id: "s1", label: "сиыр", emoji: "🐄", categoryId: "land" },
+              { id: "s2", label: "қоян", emoji: "🐰", categoryId: "land" },
+              { id: "s3", label: "түлкі", emoji: "🦊", categoryId: "land" },
+              { id: "s4", label: "дельфин", emoji: "🐬", categoryId: "water" },
+              { id: "s5", label: "арқар", emoji: "🐏", categoryId: "mount" },
+            ],
+            checkLabel: "Тексеру",
+          },
+          en: {
+            title: "Where do these animals live?",
+            instruction:
+              "Sort the animals by their habitat.",
+            categories: [
+              { id: "land", label: "On land / in forest", emoji: "🌳" },
+              { id: "water", label: "In water", emoji: "🌊" },
+              { id: "mount", label: "In mountains", emoji: "⛰️" },
+            ],
+            items: [
+              { id: "s1", label: "cow", emoji: "🐄", categoryId: "land" },
+              { id: "s2", label: "hare", emoji: "🐰", categoryId: "land" },
+              { id: "s3", label: "fox", emoji: "🦊", categoryId: "land" },
+              { id: "s4", label: "dolphin", emoji: "🐬", categoryId: "water" },
+              { id: "s5", label: "argali", emoji: "🐏", categoryId: "mount" },
+            ],
+            checkLabel: "Check",
+          },
+        },
+      },
+    ],
+
+    // Итоги
+    experiments: [
+      {
+        type: "fact",
+        data: {
+          ru: {
+            title: "Найди в энциклопедии",
+            text:
+              "Узнай, какие редкие дикие животные живут в Казахстане. Запиши 3 примера и где они обитают.",
+            keywords: ["энциклопедия", "Казахстан", "редкие"],
+            icon: "sparkles",
+          },
+          kz: {
+            title: "Энциклопедиядан тап",
+            text:
+              "Қазақстанда қандай сирек кездесетін жабайы жануарлар бар? 3 мысал жазып, қайда тұратынын көрсет.",
+            keywords: ["энциклопедия", "Қазақстан", "сирек"],
+            icon: "sparkles",
+          },
+          en: {
+            title: "Find in the encyclopedia",
+            text:
+              "Find out which rare wild animals live in Kazakhstan. Write down 3 examples and where they live.",
+            keywords: ["encyclopedia", "Kazakhstan", "rare"],
+            icon: "sparkles",
+          },
+        },
+      },
+      {
+        type: "fact",
+        data: {
+          ru: {
+            title: "Это интересно!",
+            text:
+              "У молодых пингвинов хвост похож на белый мех. Это помогает их мамам быстро находить своих птенцов в большой стае.",
+            keywords: ["пингвины", "хвост", "мех"],
+            icon: "bulb",
+          },
+          kz: {
+            title: "Бұл қызық!",
+            text:
+              "Жас пингвиндердің құйрығы ақ жүнге ұқсайды. Бұл аналарына үлкен топтан өз балапандарын тез табуға көмектеседі.",
+            keywords: ["пингвин", "құйрық", "жүн"],
+            icon: "bulb",
+          },
+          en: {
+            title: "Did you know?",
+            text:
+              "Young penguins have tails that look like white fur. It helps their mothers quickly find their chicks in a large flock.",
+            keywords: ["penguins", "tail", "fur"],
+            icon: "bulb",
+          },
+        },
+      },
+      {
+        type: "summary",
+        data: {
+          ru: {
+            title: "Итоговые вопросы",
+            text:
+              "1) Чем **дикие** животные отличаются от **домашних**? 2) Почему человек должен **заботиться** о домашних животных?",
+          },
+          kz: {
+            title: "Қорытынды сұрақтар",
+            text:
+              "1) **Жабайы** жануарлар **үй** жануарларынан немен ерекшеленеді? 2) Адам үй жануарларына неліктен **қамқорлық** жасауы керек?",
+          },
+          en: {
+            title: "Wrap-up questions",
+            text:
+              "1) How do **wild** animals differ from **domestic** ones? 2) Why should people **take care** of domestic animals?",
+          },
+        },
+      },
+    ],
+  },
+  10: {
+    intro: [
+      {
+        type: "audio",
+        data: {
+          ru: {
+            title: "Аудио-гид к уроку",
+            text:
+              "Сегодня мы узнаем, что животные бывают дикими и домашними, и в чём их главное отличие.",
+            caption: "Послушай вступление к уроку",
+            durationLabel: "0:22",
+          },
+          kz: {
+            title: "Сабақтың аудио-гиді",
+            text:
+              "Бүгін біз жануарлардың жабайы және үй жануарлары болып бөлінетінін, олардың айырмашылығы неде екенін білеміз.",
+            caption: "Сабақтың кіріспесін тыңда",
+            durationLabel: "0:22",
+          },
+          en: {
+            title: "Lesson audio guide",
+            text:
+              "Today we'll learn that animals can be wild or domestic, and what is the main difference between them.",
+            caption: "Listen to the lesson intro",
+            durationLabel: "0:22",
+          },
+        },
+      },
+      {
+        type: "carousel",
+        data: {
+          ru: {
+            groupLabel: "Ключевые слова",
+            title: "Дикие и домашние",
+            slides: [
+              { emoji: "🏠", caption: "Домашние животные / Үй жануарлары / Domestic animals" },
+              { emoji: "🌲", caption: "Дикие животные / Жабайы жануарлар / Wild animals" },
+              { emoji: "🌍", caption: "Среда обитания / Мекен орта / Habitat" },
+            ],
+          },
+          kz: {
+            groupLabel: "Кілт сөздер",
+            title: "Жабайы және үй",
+            slides: [
+              { emoji: "🏠", caption: "Үй жануарлары / Домашние / Domestic animals" },
+              { emoji: "🌲", caption: "Жабайы жануарлар / Дикие / Wild animals" },
+              { emoji: "🌍", caption: "Мекен орта / Среда обитания / Habitat" },
+            ],
+          },
+          en: {
+            groupLabel: "Key words",
+            title: "Wild and domestic",
+            slides: [
+              { emoji: "🏠", caption: "Domestic animals / Домашние / Үй жануарлары" },
+              { emoji: "🌲", caption: "Wild animals / Дикие / Жабайы жануарлар" },
+              { emoji: "🌍", caption: "Habitat / Среда обитания / Мекен орта" },
+            ],
+          },
+        },
+      },
+    ],
+
+    // Домашние животные
+    scientists: [
+      {
+        type: "carousel",
+        data: {
+          ru: {
+            groupLabel: "Работа в группах",
+            title: "Домашние животные",
+            slides: [
+              { emoji: "🐕", caption: "Собаки живут рядом с людьми — охраняют дом." },
+              { emoji: "🐄", caption: "Корова на пастбище даёт молоко." },
+              { emoji: "🐐", caption: "Коза у забора — даёт молоко и шерсть." },
+              { emoji: "🐎", caption: "Лошадь с жеребёнком — помогает человеку." },
+            ],
+          },
+          kz: {
+            groupLabel: "Топта жұмыс",
+            title: "Үй жануарлары",
+            slides: [
+              { emoji: "🐕", caption: "Иттер адаммен бірге тұрып, үйді күзетеді." },
+              { emoji: "🐄", caption: "Жайылымдағы сиыр сүт береді." },
+              { emoji: "🐐", caption: "Қоршау жанындағы ешкі — сүт пен жүн береді." },
+              { emoji: "🐎", caption: "Жылқы құлынымен — адамға көмектеседі." },
+            ],
+          },
+          en: {
+            groupLabel: "Group work",
+            title: "Domestic animals",
+            slides: [
+              { emoji: "🐕", caption: "Dogs live with people — they guard the house." },
+              { emoji: "🐄", caption: "A cow on the pasture gives milk." },
+              { emoji: "🐐", caption: "A goat by the fence gives milk and wool." },
+              { emoji: "🐎", caption: "A mare with her foal — helps people." },
+            ],
+          },
+        },
+      },
+      {
+        type: "reveal",
+        data: {
+          ru: {
+            title: "Проверь себя",
+            question:
+              "Кто из этих животных — домашний? Подумай и проверь ответ.",
+            items: [
+              { emoji: "🐕", label: "собака" },
+              { emoji: "🐄", label: "корова" },
+              { emoji: "🐐", label: "коза" },
+            ],
+            answer:
+              "Все трое — домашние животные. Они живут рядом с человеком, приносят пользу, а человек заботится о них.",
+            buttonLabel: "Проверить ответ",
+          },
+          kz: {
+            title: "Өзіңді тексер",
+            question:
+              "Бұлардың қайсысы үй жануары? Ойлан да жауапты тексер.",
+            items: [
+              { emoji: "🐕", label: "ит" },
+              { emoji: "🐄", label: "сиыр" },
+              { emoji: "🐐", label: "ешкі" },
+            ],
+            answer:
+              "Үшеуі де үй жануарлары. Олар адамның жанында тұрады, пайда әкеледі, адам оларды күтеді.",
+            buttonLabel: "Жауапты тексеру",
+          },
+          en: {
+            title: "Check yourself",
+            question:
+              "Which of these are domestic animals? Think, then check.",
+            items: [
+              { emoji: "🐕", label: "dog" },
+              { emoji: "🐄", label: "cow" },
+              { emoji: "🐐", label: "goat" },
+            ],
+            answer:
+              "All three are domestic animals. They live near people, are useful, and people take care of them.",
+            buttonLabel: "Check answer",
+          },
+        },
+      },
+      {
+        type: "summary",
+        data: {
+          ru: {
+            title: "Что я узнал",
+            text:
+              "**Домашние** животные живут рядом с человеком, приносят **пользу**, а человек **заботится** о них.",
+            terms: ["домашние", "пользу", "заботится"],
+          },
+          kz: {
+            title: "Мен нені білдім",
+            text:
+              "**Үй** жануарлары адамның жанында тұрады, **пайда** әкеледі, адам олар туралы **қамқорлық** жасайды.",
+            terms: ["үй", "пайда", "қамқорлық"],
+          },
+          en: {
+            title: "What I learned",
+            text:
+              "**Domestic** animals live near people, bring **benefit**, and people **take care** of them.",
+            terms: ["domestic", "benefit", "take care"],
+          },
+        },
+      },
+    ],
+
+    // Дикие животные
+    observation: [
+      {
+        type: "carousel",
+        data: {
+          ru: {
+            groupLabel: "Работа в группах",
+            title: "Дикие животные",
+            slides: [
+              { emoji: "🐘", caption: "Слон живёт в жарких странах." },
+              { emoji: "🦧", caption: "Орангутан живёт в тропических лесах." },
+              { emoji: "🦅", caption: "Беркут парит над горами." },
+              { emoji: "🦌", caption: "Сайгак бегает по степям Казахстана." },
+              { emoji: "🐱", caption: "Рысь живёт в густых лесах." },
+            ],
+          },
+          kz: {
+            groupLabel: "Топта жұмыс",
+            title: "Жабайы жануарлар",
+            slides: [
+              { emoji: "🐘", caption: "Піл ыстық елдерде тұрады." },
+              { emoji: "🦧", caption: "Орангутан тропиктік ормандарда тұрады." },
+              { emoji: "🦅", caption: "Бүркіт таулардың үстінде қалықтайды." },
+              { emoji: "🦌", caption: "Киік Қазақстан даласында жүгіреді." },
+              { emoji: "🐱", caption: "Сілеусін қалың орманда тұрады." },
+            ],
+          },
+          en: {
+            groupLabel: "Group work",
+            title: "Wild animals",
+            slides: [
+              { emoji: "🐘", caption: "An elephant lives in hot countries." },
+              { emoji: "🦧", caption: "An orangutan lives in tropical forests." },
+              { emoji: "🦅", caption: "A golden eagle soars above the mountains." },
+              { emoji: "🦌", caption: "A saiga runs across the steppes of Kazakhstan." },
+              { emoji: "🐱", caption: "A lynx lives in dense forests." },
+            ],
+          },
+        },
+      },
+      {
+        type: "reveal",
+        data: {
+          ru: {
+            title: "Где они обитают?",
+            question:
+              "К какой группе относятся эти животные? Где они обитают?",
+            items: [
+              { emoji: "🐘", label: "слон" },
+              { emoji: "🦅", label: "беркут" },
+              { emoji: "🦌", label: "сайгак" },
+            ],
+            answer:
+              "Все они — дикие животные. Слон живёт в саваннах, беркут — в горах, сайгак — в степях. Они сами добывают пищу.",
+            buttonLabel: "Проверить ответ",
+          },
+          kz: {
+            title: "Олар қайда тұрады?",
+            question:
+              "Бұл жануарлар қай топқа жатады? Олар қайда тұрады?",
+            items: [
+              { emoji: "🐘", label: "піл" },
+              { emoji: "🦅", label: "бүркіт" },
+              { emoji: "🦌", label: "киік" },
+            ],
+            answer:
+              "Олардың барлығы — жабайы жануарлар. Піл саваннада, бүркіт тауда, киік далада тұрады. Олар тамағын өздері табады.",
+            buttonLabel: "Жауапты тексеру",
+          },
+          en: {
+            title: "Where do they live?",
+            question:
+              "What group do these animals belong to? Where do they live?",
+            items: [
+              { emoji: "🐘", label: "elephant" },
+              { emoji: "🦅", label: "eagle" },
+              { emoji: "🦌", label: "saiga" },
+            ],
+            answer:
+              "They are all wild animals. The elephant lives in savannas, the eagle in the mountains, the saiga in the steppes. They find food on their own.",
+            buttonLabel: "Check answer",
+          },
+        },
+      },
+      {
+        type: "summary",
+        data: {
+          ru: {
+            title: "Что я узнал",
+            text:
+              "**Дикие** животные живут в **лесах**, **степях** и **горах**. Они сами добывают пищу и находят жильё.",
+            terms: ["дикие", "лесах", "степях", "горах"],
+          },
+          kz: {
+            title: "Мен нені білдім",
+            text:
+              "**Жабайы** жануарлар **ормандарда**, **далада** және **тауларда** тұрады. Олар тамағын өздері табады, паналайтын жерін өздері іздейді.",
+            terms: ["жабайы", "ормандарда", "далада", "тауларда"],
+          },
+          en: {
+            title: "What I learned",
+            text:
+              "**Wild** animals live in **forests**, **steppes** and **mountains**. They find food and shelter on their own.",
+            terms: ["wild", "forests", "steppes", "mountains"],
+          },
+        },
+      },
+      {
+        type: "sort",
+        data: {
+          ru: {
+            title: "Где обитают эти животные?",
+            instruction:
+              "Распредели животных по среде обитания.",
+            categories: [
+              { id: "land", label: "На земле / в лесу", emoji: "🌳" },
+              { id: "water", label: "В воде", emoji: "🌊" },
+              { id: "mount", label: "В горах", emoji: "⛰️" },
+            ],
+            items: [
+              { id: "s1", label: "корова", emoji: "🐄", categoryId: "land" },
+              { id: "s2", label: "заяц", emoji: "🐰", categoryId: "land" },
+              { id: "s3", label: "лиса", emoji: "🦊", categoryId: "land" },
+              { id: "s4", label: "дельфин", emoji: "🐬", categoryId: "water" },
+              { id: "s5", label: "архар", emoji: "🐏", categoryId: "mount" },
+            ],
+            checkLabel: "Проверить",
+          },
+          kz: {
+            title: "Бұл жануарлар қайда тұрады?",
+            instruction:
+              "Жануарларды мекен ортасы бойынша бөл.",
+            categories: [
+              { id: "land", label: "Жерде / орманда", emoji: "🌳" },
+              { id: "water", label: "Суда", emoji: "🌊" },
+              { id: "mount", label: "Тауда", emoji: "⛰️" },
+            ],
+            items: [
+              { id: "s1", label: "сиыр", emoji: "🐄", categoryId: "land" },
+              { id: "s2", label: "қоян", emoji: "🐰", categoryId: "land" },
+              { id: "s3", label: "түлкі", emoji: "🦊", categoryId: "land" },
+              { id: "s4", label: "дельфин", emoji: "🐬", categoryId: "water" },
+              { id: "s5", label: "арқар", emoji: "🐏", categoryId: "mount" },
+            ],
+            checkLabel: "Тексеру",
+          },
+          en: {
+            title: "Where do these animals live?",
+            instruction:
+              "Sort the animals by their habitat.",
+            categories: [
+              { id: "land", label: "On land / in forest", emoji: "🌳" },
+              { id: "water", label: "In water", emoji: "🌊" },
+              { id: "mount", label: "In mountains", emoji: "⛰️" },
+            ],
+            items: [
+              { id: "s1", label: "cow", emoji: "🐄", categoryId: "land" },
+              { id: "s2", label: "hare", emoji: "🐰", categoryId: "land" },
+              { id: "s3", label: "fox", emoji: "🦊", categoryId: "land" },
+              { id: "s4", label: "dolphin", emoji: "🐬", categoryId: "water" },
+              { id: "s5", label: "argali", emoji: "🐏", categoryId: "mount" },
+            ],
+            checkLabel: "Check",
+          },
+        },
+      },
+    ],
+
+    // Итоги
+    experiments: [
+      {
+        type: "fact",
+        data: {
+          ru: {
+            title: "Найди в энциклопедии",
+            text:
+              "Узнай, какие редкие дикие животные живут в Казахстане. Запиши 3 примера и где они обитают.",
+            keywords: ["энциклопедия", "Казахстан", "редкие"],
+            icon: "sparkles",
+          },
+          kz: {
+            title: "Энциклопедиядан тап",
+            text:
+              "Қазақстанда қандай сирек кездесетін жабайы жануарлар бар? 3 мысал жазып, қайда тұратынын көрсет.",
+            keywords: ["энциклопедия", "Қазақстан", "сирек"],
+            icon: "sparkles",
+          },
+          en: {
+            title: "Find in the encyclopedia",
+            text:
+              "Find out which rare wild animals live in Kazakhstan. Write down 3 examples and where they live.",
+            keywords: ["encyclopedia", "Kazakhstan", "rare"],
+            icon: "sparkles",
+          },
+        },
+      },
+      {
+        type: "fact",
+        data: {
+          ru: {
+            title: "Это интересно!",
+            text:
+              "У молодых пингвинов хвост похож на белый мех. Это помогает их мамам быстро находить своих птенцов в большой стае.",
+            keywords: ["пингвины", "хвост", "мех"],
+            icon: "bulb",
+          },
+          kz: {
+            title: "Бұл қызық!",
+            text:
+              "Жас пингвиндердің құйрығы ақ жүнге ұқсайды. Бұл аналарына үлкен топтан өз балапандарын тез табуға көмектеседі.",
+            keywords: ["пингвин", "құйрық", "жүн"],
+            icon: "bulb",
+          },
+          en: {
+            title: "Did you know?",
+            text:
+              "Young penguins have tails that look like white fur. It helps their mothers quickly find their chicks in a large flock.",
+            keywords: ["penguins", "tail", "fur"],
+            icon: "bulb",
+          },
+        },
+      },
+      {
+        type: "summary",
+        data: {
+          ru: {
+            title: "Итоговые вопросы",
+            text:
+              "1) Чем **дикие** животные отличаются от **домашних**? 2) Почему человек должен **заботиться** о домашних животных?",
+          },
+          kz: {
+            title: "Қорытынды сұрақтар",
+            text:
+              "1) **Жабайы** жануарлар **үй** жануарларынан немен ерекшеленеді? 2) Адам үй жануарларына неліктен **қамқорлық** жасауы керек?",
+          },
+          en: {
+            title: "Wrap-up questions",
+            text:
+              "1) How do **wild** animals differ from **domestic** ones? 2) Why should people **take care** of domestic animals?",
+          },
+        },
+      },
+    ],
+  },
+  11: {
+    intro: [
+      {
+        type: "audio",
+        data: {
+          ru: {
+            title: "Аудио-гид к уроку",
+            text:
+              "Сегодня мы узнаем, что животные бывают дикими и домашними, и в чём их главное отличие.",
+            caption: "Послушай вступление к уроку",
+            durationLabel: "0:22",
+          },
+          kz: {
+            title: "Сабақтың аудио-гиді",
+            text:
+              "Бүгін біз жануарлардың жабайы және үй жануарлары болып бөлінетінін, олардың айырмашылығы неде екенін білеміз.",
+            caption: "Сабақтың кіріспесін тыңда",
+            durationLabel: "0:22",
+          },
+          en: {
+            title: "Lesson audio guide",
+            text:
+              "Today we'll learn that animals can be wild or domestic, and what is the main difference between them.",
+            caption: "Listen to the lesson intro",
+            durationLabel: "0:22",
+          },
+        },
+      },
+      {
+        type: "carousel",
+        data: {
+          ru: {
+            groupLabel: "Ключевые слова",
+            title: "Дикие и домашние",
+            slides: [
+              { emoji: "🏠", caption: "Домашние животные / Үй жануарлары / Domestic animals" },
+              { emoji: "🌲", caption: "Дикие животные / Жабайы жануарлар / Wild animals" },
+              { emoji: "🌍", caption: "Среда обитания / Мекен орта / Habitat" },
+            ],
+          },
+          kz: {
+            groupLabel: "Кілт сөздер",
+            title: "Жабайы және үй",
+            slides: [
+              { emoji: "🏠", caption: "Үй жануарлары / Домашние / Domestic animals" },
+              { emoji: "🌲", caption: "Жабайы жануарлар / Дикие / Wild animals" },
+              { emoji: "🌍", caption: "Мекен орта / Среда обитания / Habitat" },
+            ],
+          },
+          en: {
+            groupLabel: "Key words",
+            title: "Wild and domestic",
+            slides: [
+              { emoji: "🏠", caption: "Domestic animals / Домашние / Үй жануарлары" },
+              { emoji: "🌲", caption: "Wild animals / Дикие / Жабайы жануарлар" },
+              { emoji: "🌍", caption: "Habitat / Среда обитания / Мекен орта" },
+            ],
+          },
+        },
+      },
+    ],
+
+    // Домашние животные
+    scientists: [
+      {
+        type: "carousel",
+        data: {
+          ru: {
+            groupLabel: "Работа в группах",
+            title: "Домашние животные",
+            slides: [
+              { emoji: "🐕", caption: "Собаки живут рядом с людьми — охраняют дом." },
+              { emoji: "🐄", caption: "Корова на пастбище даёт молоко." },
+              { emoji: "🐐", caption: "Коза у забора — даёт молоко и шерсть." },
+              { emoji: "🐎", caption: "Лошадь с жеребёнком — помогает человеку." },
+            ],
+          },
+          kz: {
+            groupLabel: "Топта жұмыс",
+            title: "Үй жануарлары",
+            slides: [
+              { emoji: "🐕", caption: "Иттер адаммен бірге тұрып, үйді күзетеді." },
+              { emoji: "🐄", caption: "Жайылымдағы сиыр сүт береді." },
+              { emoji: "🐐", caption: "Қоршау жанындағы ешкі — сүт пен жүн береді." },
+              { emoji: "🐎", caption: "Жылқы құлынымен — адамға көмектеседі." },
+            ],
+          },
+          en: {
+            groupLabel: "Group work",
+            title: "Domestic animals",
+            slides: [
+              { emoji: "🐕", caption: "Dogs live with people — they guard the house." },
+              { emoji: "🐄", caption: "A cow on the pasture gives milk." },
+              { emoji: "🐐", caption: "A goat by the fence gives milk and wool." },
+              { emoji: "🐎", caption: "A mare with her foal — helps people." },
+            ],
+          },
+        },
+      },
+      {
+        type: "reveal",
+        data: {
+          ru: {
+            title: "Проверь себя",
+            question:
+              "Кто из этих животных — домашний? Подумай и проверь ответ.",
+            items: [
+              { emoji: "🐕", label: "собака" },
+              { emoji: "🐄", label: "корова" },
+              { emoji: "🐐", label: "коза" },
+            ],
+            answer:
+              "Все трое — домашние животные. Они живут рядом с человеком, приносят пользу, а человек заботится о них.",
+            buttonLabel: "Проверить ответ",
+          },
+          kz: {
+            title: "Өзіңді тексер",
+            question:
+              "Бұлардың қайсысы үй жануары? Ойлан да жауапты тексер.",
+            items: [
+              { emoji: "🐕", label: "ит" },
+              { emoji: "🐄", label: "сиыр" },
+              { emoji: "🐐", label: "ешкі" },
+            ],
+            answer:
+              "Үшеуі де үй жануарлары. Олар адамның жанында тұрады, пайда әкеледі, адам оларды күтеді.",
+            buttonLabel: "Жауапты тексеру",
+          },
+          en: {
+            title: "Check yourself",
+            question:
+              "Which of these are domestic animals? Think, then check.",
+            items: [
+              { emoji: "🐕", label: "dog" },
+              { emoji: "🐄", label: "cow" },
+              { emoji: "🐐", label: "goat" },
+            ],
+            answer:
+              "All three are domestic animals. They live near people, are useful, and people take care of them.",
+            buttonLabel: "Check answer",
+          },
+        },
+      },
+      {
+        type: "summary",
+        data: {
+          ru: {
+            title: "Что я узнал",
+            text:
+              "**Домашние** животные живут рядом с человеком, приносят **пользу**, а человек **заботится** о них.",
+            terms: ["домашние", "пользу", "заботится"],
+          },
+          kz: {
+            title: "Мен нені білдім",
+            text:
+              "**Үй** жануарлары адамның жанында тұрады, **пайда** әкеледі, адам олар туралы **қамқорлық** жасайды.",
+            terms: ["үй", "пайда", "қамқорлық"],
+          },
+          en: {
+            title: "What I learned",
+            text:
+              "**Domestic** animals live near people, bring **benefit**, and people **take care** of them.",
+            terms: ["domestic", "benefit", "take care"],
+          },
+        },
+      },
+    ],
+
+    // Дикие животные
+    observation: [
+      {
+        type: "carousel",
+        data: {
+          ru: {
+            groupLabel: "Работа в группах",
+            title: "Дикие животные",
+            slides: [
+              { emoji: "🐘", caption: "Слон живёт в жарких странах." },
+              { emoji: "🦧", caption: "Орангутан живёт в тропических лесах." },
+              { emoji: "🦅", caption: "Беркут парит над горами." },
+              { emoji: "🦌", caption: "Сайгак бегает по степям Казахстана." },
+              { emoji: "🐱", caption: "Рысь живёт в густых лесах." },
+            ],
+          },
+          kz: {
+            groupLabel: "Топта жұмыс",
+            title: "Жабайы жануарлар",
+            slides: [
+              { emoji: "🐘", caption: "Піл ыстық елдерде тұрады." },
+              { emoji: "🦧", caption: "Орангутан тропиктік ормандарда тұрады." },
+              { emoji: "🦅", caption: "Бүркіт таулардың үстінде қалықтайды." },
+              { emoji: "🦌", caption: "Киік Қазақстан даласында жүгіреді." },
+              { emoji: "🐱", caption: "Сілеусін қалың орманда тұрады." },
+            ],
+          },
+          en: {
+            groupLabel: "Group work",
+            title: "Wild animals",
+            slides: [
+              { emoji: "🐘", caption: "An elephant lives in hot countries." },
+              { emoji: "🦧", caption: "An orangutan lives in tropical forests." },
+              { emoji: "🦅", caption: "A golden eagle soars above the mountains." },
+              { emoji: "🦌", caption: "A saiga runs across the steppes of Kazakhstan." },
+              { emoji: "🐱", caption: "A lynx lives in dense forests." },
+            ],
+          },
+        },
+      },
+      {
+        type: "reveal",
+        data: {
+          ru: {
+            title: "Где они обитают?",
+            question:
+              "К какой группе относятся эти животные? Где они обитают?",
+            items: [
+              { emoji: "🐘", label: "слон" },
+              { emoji: "🦅", label: "беркут" },
+              { emoji: "🦌", label: "сайгак" },
+            ],
+            answer:
+              "Все они — дикие животные. Слон живёт в саваннах, беркут — в горах, сайгак — в степях. Они сами добывают пищу.",
+            buttonLabel: "Проверить ответ",
+          },
+          kz: {
+            title: "Олар қайда тұрады?",
+            question:
+              "Бұл жануарлар қай топқа жатады? Олар қайда тұрады?",
+            items: [
+              { emoji: "🐘", label: "піл" },
+              { emoji: "🦅", label: "бүркіт" },
+              { emoji: "🦌", label: "киік" },
+            ],
+            answer:
+              "Олардың барлығы — жабайы жануарлар. Піл саваннада, бүркіт тауда, киік далада тұрады. Олар тамағын өздері табады.",
+            buttonLabel: "Жауапты тексеру",
+          },
+          en: {
+            title: "Where do they live?",
+            question:
+              "What group do these animals belong to? Where do they live?",
+            items: [
+              { emoji: "🐘", label: "elephant" },
+              { emoji: "🦅", label: "eagle" },
+              { emoji: "🦌", label: "saiga" },
+            ],
+            answer:
+              "They are all wild animals. The elephant lives in savannas, the eagle in the mountains, the saiga in the steppes. They find food on their own.",
+            buttonLabel: "Check answer",
+          },
+        },
+      },
+      {
+        type: "summary",
+        data: {
+          ru: {
+            title: "Что я узнал",
+            text:
+              "**Дикие** животные живут в **лесах**, **степях** и **горах**. Они сами добывают пищу и находят жильё.",
+            terms: ["дикие", "лесах", "степях", "горах"],
+          },
+          kz: {
+            title: "Мен нені білдім",
+            text:
+              "**Жабайы** жануарлар **ормандарда**, **далада** және **тауларда** тұрады. Олар тамағын өздері табады, паналайтын жерін өздері іздейді.",
+            terms: ["жабайы", "ормандарда", "далада", "тауларда"],
+          },
+          en: {
+            title: "What I learned",
+            text:
+              "**Wild** animals live in **forests**, **steppes** and **mountains**. They find food and shelter on their own.",
+            terms: ["wild", "forests", "steppes", "mountains"],
+          },
+        },
+      },
+      {
+        type: "sort",
+        data: {
+          ru: {
+            title: "Где обитают эти животные?",
+            instruction:
+              "Распредели животных по среде обитания.",
+            categories: [
+              { id: "land", label: "На земле / в лесу", emoji: "🌳" },
+              { id: "water", label: "В воде", emoji: "🌊" },
+              { id: "mount", label: "В горах", emoji: "⛰️" },
+            ],
+            items: [
+              { id: "s1", label: "корова", emoji: "🐄", categoryId: "land" },
+              { id: "s2", label: "заяц", emoji: "🐰", categoryId: "land" },
+              { id: "s3", label: "лиса", emoji: "🦊", categoryId: "land" },
+              { id: "s4", label: "дельфин", emoji: "🐬", categoryId: "water" },
+              { id: "s5", label: "архар", emoji: "🐏", categoryId: "mount" },
+            ],
+            checkLabel: "Проверить",
+          },
+          kz: {
+            title: "Бұл жануарлар қайда тұрады?",
+            instruction:
+              "Жануарларды мекен ортасы бойынша бөл.",
+            categories: [
+              { id: "land", label: "Жерде / орманда", emoji: "🌳" },
+              { id: "water", label: "Суда", emoji: "🌊" },
+              { id: "mount", label: "Тауда", emoji: "⛰️" },
+            ],
+            items: [
+              { id: "s1", label: "сиыр", emoji: "🐄", categoryId: "land" },
+              { id: "s2", label: "қоян", emoji: "🐰", categoryId: "land" },
+              { id: "s3", label: "түлкі", emoji: "🦊", categoryId: "land" },
+              { id: "s4", label: "дельфин", emoji: "🐬", categoryId: "water" },
+              { id: "s5", label: "арқар", emoji: "🐏", categoryId: "mount" },
+            ],
+            checkLabel: "Тексеру",
+          },
+          en: {
+            title: "Where do these animals live?",
+            instruction:
+              "Sort the animals by their habitat.",
+            categories: [
+              { id: "land", label: "On land / in forest", emoji: "🌳" },
+              { id: "water", label: "In water", emoji: "🌊" },
+              { id: "mount", label: "In mountains", emoji: "⛰️" },
+            ],
+            items: [
+              { id: "s1", label: "cow", emoji: "🐄", categoryId: "land" },
+              { id: "s2", label: "hare", emoji: "🐰", categoryId: "land" },
+              { id: "s3", label: "fox", emoji: "🦊", categoryId: "land" },
+              { id: "s4", label: "dolphin", emoji: "🐬", categoryId: "water" },
+              { id: "s5", label: "argali", emoji: "🐏", categoryId: "mount" },
+            ],
+            checkLabel: "Check",
+          },
+        },
+      },
+    ],
+
+    // Итоги
+    experiments: [
+      {
+        type: "fact",
+        data: {
+          ru: {
+            title: "Найди в энциклопедии",
+            text:
+              "Узнай, какие редкие дикие животные живут в Казахстане. Запиши 3 примера и где они обитают.",
+            keywords: ["энциклопедия", "Казахстан", "редкие"],
+            icon: "sparkles",
+          },
+          kz: {
+            title: "Энциклопедиядан тап",
+            text:
+              "Қазақстанда қандай сирек кездесетін жабайы жануарлар бар? 3 мысал жазып, қайда тұратынын көрсет.",
+            keywords: ["энциклопедия", "Қазақстан", "сирек"],
+            icon: "sparkles",
+          },
+          en: {
+            title: "Find in the encyclopedia",
+            text:
+              "Find out which rare wild animals live in Kazakhstan. Write down 3 examples and where they live.",
+            keywords: ["encyclopedia", "Kazakhstan", "rare"],
+            icon: "sparkles",
+          },
+        },
+      },
+      {
+        type: "fact",
+        data: {
+          ru: {
+            title: "Это интересно!",
+            text:
+              "У молодых пингвинов хвост похож на белый мех. Это помогает их мамам быстро находить своих птенцов в большой стае.",
+            keywords: ["пингвины", "хвост", "мех"],
+            icon: "bulb",
+          },
+          kz: {
+            title: "Бұл қызық!",
+            text:
+              "Жас пингвиндердің құйрығы ақ жүнге ұқсайды. Бұл аналарына үлкен топтан өз балапандарын тез табуға көмектеседі.",
+            keywords: ["пингвин", "құйрық", "жүн"],
+            icon: "bulb",
+          },
+          en: {
+            title: "Did you know?",
+            text:
+              "Young penguins have tails that look like white fur. It helps their mothers quickly find their chicks in a large flock.",
+            keywords: ["penguins", "tail", "fur"],
+            icon: "bulb",
+          },
+        },
+      },
+      {
+        type: "summary",
+        data: {
+          ru: {
+            title: "Итоговые вопросы",
+            text:
+              "1) Чем **дикие** животные отличаются от **домашних**? 2) Почему человек должен **заботиться** о домашних животных?",
+          },
+          kz: {
+            title: "Қорытынды сұрақтар",
+            text:
+              "1) **Жабайы** жануарлар **үй** жануарларынан немен ерекшеленеді? 2) Адам үй жануарларына неліктен **қамқорлық** жасауы керек?",
+          },
+          en: {
+            title: "Wrap-up questions",
+            text:
+              "1) How do **wild** animals differ from **domestic** ones? 2) Why should people **take care** of domestic animals?",
+          },
+        },
+      },
+    ],
+  },
+  12: {
+    intro: [
+      {
+        type: "audio",
+        data: {
+          ru: {
+            title: "Аудио-гид к уроку",
+            text:
+              "Сегодня мы узнаем, что животные бывают дикими и домашними, и в чём их главное отличие.",
+            caption: "Послушай вступление к уроку",
+            durationLabel: "0:22",
+          },
+          kz: {
+            title: "Сабақтың аудио-гиді",
+            text:
+              "Бүгін біз жануарлардың жабайы және үй жануарлары болып бөлінетінін, олардың айырмашылығы неде екенін білеміз.",
+            caption: "Сабақтың кіріспесін тыңда",
+            durationLabel: "0:22",
+          },
+          en: {
+            title: "Lesson audio guide",
+            text:
+              "Today we'll learn that animals can be wild or domestic, and what is the main difference between them.",
+            caption: "Listen to the lesson intro",
+            durationLabel: "0:22",
+          },
+        },
+      },
+      {
+        type: "carousel",
+        data: {
+          ru: {
+            groupLabel: "Ключевые слова",
+            title: "Дикие и домашние",
+            slides: [
+              { emoji: "🏠", caption: "Домашние животные / Үй жануарлары / Domestic animals" },
+              { emoji: "🌲", caption: "Дикие животные / Жабайы жануарлар / Wild animals" },
+              { emoji: "🌍", caption: "Среда обитания / Мекен орта / Habitat" },
+            ],
+          },
+          kz: {
+            groupLabel: "Кілт сөздер",
+            title: "Жабайы және үй",
+            slides: [
+              { emoji: "🏠", caption: "Үй жануарлары / Домашние / Domestic animals" },
+              { emoji: "🌲", caption: "Жабайы жануарлар / Дикие / Wild animals" },
+              { emoji: "🌍", caption: "Мекен орта / Среда обитания / Habitat" },
+            ],
+          },
+          en: {
+            groupLabel: "Key words",
+            title: "Wild and domestic",
+            slides: [
+              { emoji: "🏠", caption: "Domestic animals / Домашние / Үй жануарлары" },
+              { emoji: "🌲", caption: "Wild animals / Дикие / Жабайы жануарлар" },
+              { emoji: "🌍", caption: "Habitat / Среда обитания / Мекен орта" },
+            ],
+          },
+        },
+      },
+    ],
+
+    // Домашние животные
+    scientists: [
+      {
+        type: "carousel",
+        data: {
+          ru: {
+            groupLabel: "Работа в группах",
+            title: "Домашние животные",
+            slides: [
+              { emoji: "🐕", caption: "Собаки живут рядом с людьми — охраняют дом." },
+              { emoji: "🐄", caption: "Корова на пастбище даёт молоко." },
+              { emoji: "🐐", caption: "Коза у забора — даёт молоко и шерсть." },
+              { emoji: "🐎", caption: "Лошадь с жеребёнком — помогает человеку." },
+            ],
+          },
+          kz: {
+            groupLabel: "Топта жұмыс",
+            title: "Үй жануарлары",
+            slides: [
+              { emoji: "🐕", caption: "Иттер адаммен бірге тұрып, үйді күзетеді." },
+              { emoji: "🐄", caption: "Жайылымдағы сиыр сүт береді." },
+              { emoji: "🐐", caption: "Қоршау жанындағы ешкі — сүт пен жүн береді." },
+              { emoji: "🐎", caption: "Жылқы құлынымен — адамға көмектеседі." },
+            ],
+          },
+          en: {
+            groupLabel: "Group work",
+            title: "Domestic animals",
+            slides: [
+              { emoji: "🐕", caption: "Dogs live with people — they guard the house." },
+              { emoji: "🐄", caption: "A cow on the pasture gives milk." },
+              { emoji: "🐐", caption: "A goat by the fence gives milk and wool." },
+              { emoji: "🐎", caption: "A mare with her foal — helps people." },
+            ],
+          },
+        },
+      },
+      {
+        type: "reveal",
+        data: {
+          ru: {
+            title: "Проверь себя",
+            question:
+              "Кто из этих животных — домашний? Подумай и проверь ответ.",
+            items: [
+              { emoji: "🐕", label: "собака" },
+              { emoji: "🐄", label: "корова" },
+              { emoji: "🐐", label: "коза" },
+            ],
+            answer:
+              "Все трое — домашние животные. Они живут рядом с человеком, приносят пользу, а человек заботится о них.",
+            buttonLabel: "Проверить ответ",
+          },
+          kz: {
+            title: "Өзіңді тексер",
+            question:
+              "Бұлардың қайсысы үй жануары? Ойлан да жауапты тексер.",
+            items: [
+              { emoji: "🐕", label: "ит" },
+              { emoji: "🐄", label: "сиыр" },
+              { emoji: "🐐", label: "ешкі" },
+            ],
+            answer:
+              "Үшеуі де үй жануарлары. Олар адамның жанында тұрады, пайда әкеледі, адам оларды күтеді.",
+            buttonLabel: "Жауапты тексеру",
+          },
+          en: {
+            title: "Check yourself",
+            question:
+              "Which of these are domestic animals? Think, then check.",
+            items: [
+              { emoji: "🐕", label: "dog" },
+              { emoji: "🐄", label: "cow" },
+              { emoji: "🐐", label: "goat" },
+            ],
+            answer:
+              "All three are domestic animals. They live near people, are useful, and people take care of them.",
+            buttonLabel: "Check answer",
+          },
+        },
+      },
+      {
+        type: "summary",
+        data: {
+          ru: {
+            title: "Что я узнал",
+            text:
+              "**Домашние** животные живут рядом с человеком, приносят **пользу**, а человек **заботится** о них.",
+            terms: ["домашние", "пользу", "заботится"],
+          },
+          kz: {
+            title: "Мен нені білдім",
+            text:
+              "**Үй** жануарлары адамның жанында тұрады, **пайда** әкеледі, адам олар туралы **қамқорлық** жасайды.",
+            terms: ["үй", "пайда", "қамқорлық"],
+          },
+          en: {
+            title: "What I learned",
+            text:
+              "**Domestic** animals live near people, bring **benefit**, and people **take care** of them.",
+            terms: ["domestic", "benefit", "take care"],
+          },
+        },
+      },
+    ],
+
+    // Дикие животные
+    observation: [
+      {
+        type: "carousel",
+        data: {
+          ru: {
+            groupLabel: "Работа в группах",
+            title: "Дикие животные",
+            slides: [
+              { emoji: "🐘", caption: "Слон живёт в жарких странах." },
+              { emoji: "🦧", caption: "Орангутан живёт в тропических лесах." },
+              { emoji: "🦅", caption: "Беркут парит над горами." },
+              { emoji: "🦌", caption: "Сайгак бегает по степям Казахстана." },
+              { emoji: "🐱", caption: "Рысь живёт в густых лесах." },
+            ],
+          },
+          kz: {
+            groupLabel: "Топта жұмыс",
+            title: "Жабайы жануарлар",
+            slides: [
+              { emoji: "🐘", caption: "Піл ыстық елдерде тұрады." },
+              { emoji: "🦧", caption: "Орангутан тропиктік ормандарда тұрады." },
+              { emoji: "🦅", caption: "Бүркіт таулардың үстінде қалықтайды." },
+              { emoji: "🦌", caption: "Киік Қазақстан даласында жүгіреді." },
+              { emoji: "🐱", caption: "Сілеусін қалың орманда тұрады." },
+            ],
+          },
+          en: {
+            groupLabel: "Group work",
+            title: "Wild animals",
+            slides: [
+              { emoji: "🐘", caption: "An elephant lives in hot countries." },
+              { emoji: "🦧", caption: "An orangutan lives in tropical forests." },
+              { emoji: "🦅", caption: "A golden eagle soars above the mountains." },
+              { emoji: "🦌", caption: "A saiga runs across the steppes of Kazakhstan." },
+              { emoji: "🐱", caption: "A lynx lives in dense forests." },
+            ],
+          },
+        },
+      },
+      {
+        type: "reveal",
+        data: {
+          ru: {
+            title: "Где они обитают?",
+            question:
+              "К какой группе относятся эти животные? Где они обитают?",
+            items: [
+              { emoji: "🐘", label: "слон" },
+              { emoji: "🦅", label: "беркут" },
+              { emoji: "🦌", label: "сайгак" },
+            ],
+            answer:
+              "Все они — дикие животные. Слон живёт в саваннах, беркут — в горах, сайгак — в степях. Они сами добывают пищу.",
+            buttonLabel: "Проверить ответ",
+          },
+          kz: {
+            title: "Олар қайда тұрады?",
+            question:
+              "Бұл жануарлар қай топқа жатады? Олар қайда тұрады?",
+            items: [
+              { emoji: "🐘", label: "піл" },
+              { emoji: "🦅", label: "бүркіт" },
+              { emoji: "🦌", label: "киік" },
+            ],
+            answer:
+              "Олардың барлығы — жабайы жануарлар. Піл саваннада, бүркіт тауда, киік далада тұрады. Олар тамағын өздері табады.",
+            buttonLabel: "Жауапты тексеру",
+          },
+          en: {
+            title: "Where do they live?",
+            question:
+              "What group do these animals belong to? Where do they live?",
+            items: [
+              { emoji: "🐘", label: "elephant" },
+              { emoji: "🦅", label: "eagle" },
+              { emoji: "🦌", label: "saiga" },
+            ],
+            answer:
+              "They are all wild animals. The elephant lives in savannas, the eagle in the mountains, the saiga in the steppes. They find food on their own.",
+            buttonLabel: "Check answer",
+          },
+        },
+      },
+      {
+        type: "summary",
+        data: {
+          ru: {
+            title: "Что я узнал",
+            text:
+              "**Дикие** животные живут в **лесах**, **степях** и **горах**. Они сами добывают пищу и находят жильё.",
+            terms: ["дикие", "лесах", "степях", "горах"],
+          },
+          kz: {
+            title: "Мен нені білдім",
+            text:
+              "**Жабайы** жануарлар **ормандарда**, **далада** және **тауларда** тұрады. Олар тамағын өздері табады, паналайтын жерін өздері іздейді.",
+            terms: ["жабайы", "ормандарда", "далада", "тауларда"],
+          },
+          en: {
+            title: "What I learned",
+            text:
+              "**Wild** animals live in **forests**, **steppes** and **mountains**. They find food and shelter on their own.",
+            terms: ["wild", "forests", "steppes", "mountains"],
+          },
+        },
+      },
+      {
+        type: "sort",
+        data: {
+          ru: {
+            title: "Где обитают эти животные?",
+            instruction:
+              "Распредели животных по среде обитания.",
+            categories: [
+              { id: "land", label: "На земле / в лесу", emoji: "🌳" },
+              { id: "water", label: "В воде", emoji: "🌊" },
+              { id: "mount", label: "В горах", emoji: "⛰️" },
+            ],
+            items: [
+              { id: "s1", label: "корова", emoji: "🐄", categoryId: "land" },
+              { id: "s2", label: "заяц", emoji: "🐰", categoryId: "land" },
+              { id: "s3", label: "лиса", emoji: "🦊", categoryId: "land" },
+              { id: "s4", label: "дельфин", emoji: "🐬", categoryId: "water" },
+              { id: "s5", label: "архар", emoji: "🐏", categoryId: "mount" },
+            ],
+            checkLabel: "Проверить",
+          },
+          kz: {
+            title: "Бұл жануарлар қайда тұрады?",
+            instruction:
+              "Жануарларды мекен ортасы бойынша бөл.",
+            categories: [
+              { id: "land", label: "Жерде / орманда", emoji: "🌳" },
+              { id: "water", label: "Суда", emoji: "🌊" },
+              { id: "mount", label: "Тауда", emoji: "⛰️" },
+            ],
+            items: [
+              { id: "s1", label: "сиыр", emoji: "🐄", categoryId: "land" },
+              { id: "s2", label: "қоян", emoji: "🐰", categoryId: "land" },
+              { id: "s3", label: "түлкі", emoji: "🦊", categoryId: "land" },
+              { id: "s4", label: "дельфин", emoji: "🐬", categoryId: "water" },
+              { id: "s5", label: "арқар", emoji: "🐏", categoryId: "mount" },
+            ],
+            checkLabel: "Тексеру",
+          },
+          en: {
+            title: "Where do these animals live?",
+            instruction:
+              "Sort the animals by their habitat.",
+            categories: [
+              { id: "land", label: "On land / in forest", emoji: "🌳" },
+              { id: "water", label: "In water", emoji: "🌊" },
+              { id: "mount", label: "In mountains", emoji: "⛰️" },
+            ],
+            items: [
+              { id: "s1", label: "cow", emoji: "🐄", categoryId: "land" },
+              { id: "s2", label: "hare", emoji: "🐰", categoryId: "land" },
+              { id: "s3", label: "fox", emoji: "🦊", categoryId: "land" },
+              { id: "s4", label: "dolphin", emoji: "🐬", categoryId: "water" },
+              { id: "s5", label: "argali", emoji: "🐏", categoryId: "mount" },
+            ],
+            checkLabel: "Check",
+          },
+        },
+      },
+    ],
+
+    // Итоги
+    experiments: [
+      {
+        type: "fact",
+        data: {
+          ru: {
+            title: "Найди в энциклопедии",
+            text:
+              "Узнай, какие редкие дикие животные живут в Казахстане. Запиши 3 примера и где они обитают.",
+            keywords: ["энциклопедия", "Казахстан", "редкие"],
+            icon: "sparkles",
+          },
+          kz: {
+            title: "Энциклопедиядан тап",
+            text:
+              "Қазақстанда қандай сирек кездесетін жабайы жануарлар бар? 3 мысал жазып, қайда тұратынын көрсет.",
+            keywords: ["энциклопедия", "Қазақстан", "сирек"],
+            icon: "sparkles",
+          },
+          en: {
+            title: "Find in the encyclopedia",
+            text:
+              "Find out which rare wild animals live in Kazakhstan. Write down 3 examples and where they live.",
+            keywords: ["encyclopedia", "Kazakhstan", "rare"],
+            icon: "sparkles",
+          },
+        },
+      },
+      {
+        type: "fact",
+        data: {
+          ru: {
+            title: "Это интересно!",
+            text:
+              "У молодых пингвинов хвост похож на белый мех. Это помогает их мамам быстро находить своих птенцов в большой стае.",
+            keywords: ["пингвины", "хвост", "мех"],
+            icon: "bulb",
+          },
+          kz: {
+            title: "Бұл қызық!",
+            text:
+              "Жас пингвиндердің құйрығы ақ жүнге ұқсайды. Бұл аналарына үлкен топтан өз балапандарын тез табуға көмектеседі.",
+            keywords: ["пингвин", "құйрық", "жүн"],
+            icon: "bulb",
+          },
+          en: {
+            title: "Did you know?",
+            text:
+              "Young penguins have tails that look like white fur. It helps their mothers quickly find their chicks in a large flock.",
+            keywords: ["penguins", "tail", "fur"],
+            icon: "bulb",
+          },
+        },
+      },
+      {
+        type: "summary",
+        data: {
+          ru: {
+            title: "Итоговые вопросы",
+            text:
+              "1) Чем **дикие** животные отличаются от **домашних**? 2) Почему человек должен **заботиться** о домашних животных?",
+          },
+          kz: {
+            title: "Қорытынды сұрақтар",
+            text:
+              "1) **Жабайы** жануарлар **үй** жануарларынан немен ерекшеленеді? 2) Адам үй жануарларына неліктен **қамқорлық** жасауы керек?",
+          },
+          en: {
+            title: "Wrap-up questions",
+            text:
+              "1) How do **wild** animals differ from **domestic** ones? 2) Why should people **take care** of domestic animals?",
+          },
+        },
+      },
+    ],
+  },
+  13: {
+    intro: [
+      {
+        type: "audio",
+        data: {
+          ru: {
+            title: "Аудио-гид к уроку",
+            text:
+              "Сегодня мы узнаем, что животные бывают дикими и домашними, и в чём их главное отличие.",
+            caption: "Послушай вступление к уроку",
+            durationLabel: "0:22",
+          },
+          kz: {
+            title: "Сабақтың аудио-гиді",
+            text:
+              "Бүгін біз жануарлардың жабайы және үй жануарлары болып бөлінетінін, олардың айырмашылығы неде екенін білеміз.",
+            caption: "Сабақтың кіріспесін тыңда",
+            durationLabel: "0:22",
+          },
+          en: {
+            title: "Lesson audio guide",
+            text:
+              "Today we'll learn that animals can be wild or domestic, and what is the main difference between them.",
+            caption: "Listen to the lesson intro",
+            durationLabel: "0:22",
+          },
+        },
+      },
+      {
+        type: "carousel",
+        data: {
+          ru: {
+            groupLabel: "Ключевые слова",
+            title: "Дикие и домашние",
+            slides: [
+              { emoji: "🏠", caption: "Домашние животные / Үй жануарлары / Domestic animals" },
+              { emoji: "🌲", caption: "Дикие животные / Жабайы жануарлар / Wild animals" },
+              { emoji: "🌍", caption: "Среда обитания / Мекен орта / Habitat" },
+            ],
+          },
+          kz: {
+            groupLabel: "Кілт сөздер",
+            title: "Жабайы және үй",
+            slides: [
+              { emoji: "🏠", caption: "Үй жануарлары / Домашние / Domestic animals" },
+              { emoji: "🌲", caption: "Жабайы жануарлар / Дикие / Wild animals" },
+              { emoji: "🌍", caption: "Мекен орта / Среда обитания / Habitat" },
+            ],
+          },
+          en: {
+            groupLabel: "Key words",
+            title: "Wild and domestic",
+            slides: [
+              { emoji: "🏠", caption: "Domestic animals / Домашние / Үй жануарлары" },
+              { emoji: "🌲", caption: "Wild animals / Дикие / Жабайы жануарлар" },
+              { emoji: "🌍", caption: "Habitat / Среда обитания / Мекен орта" },
+            ],
+          },
+        },
+      },
+    ],
+
+    // Домашние животные
+    scientists: [
+      {
+        type: "carousel",
+        data: {
+          ru: {
+            groupLabel: "Работа в группах",
+            title: "Домашние животные",
+            slides: [
+              { emoji: "🐕", caption: "Собаки живут рядом с людьми — охраняют дом." },
+              { emoji: "🐄", caption: "Корова на пастбище даёт молоко." },
+              { emoji: "🐐", caption: "Коза у забора — даёт молоко и шерсть." },
+              { emoji: "🐎", caption: "Лошадь с жеребёнком — помогает человеку." },
+            ],
+          },
+          kz: {
+            groupLabel: "Топта жұмыс",
+            title: "Үй жануарлары",
+            slides: [
+              { emoji: "🐕", caption: "Иттер адаммен бірге тұрып, үйді күзетеді." },
+              { emoji: "🐄", caption: "Жайылымдағы сиыр сүт береді." },
+              { emoji: "🐐", caption: "Қоршау жанындағы ешкі — сүт пен жүн береді." },
+              { emoji: "🐎", caption: "Жылқы құлынымен — адамға көмектеседі." },
+            ],
+          },
+          en: {
+            groupLabel: "Group work",
+            title: "Domestic animals",
+            slides: [
+              { emoji: "🐕", caption: "Dogs live with people — they guard the house." },
+              { emoji: "🐄", caption: "A cow on the pasture gives milk." },
+              { emoji: "🐐", caption: "A goat by the fence gives milk and wool." },
+              { emoji: "🐎", caption: "A mare with her foal — helps people." },
+            ],
+          },
+        },
+      },
+      {
+        type: "reveal",
+        data: {
+          ru: {
+            title: "Проверь себя",
+            question:
+              "Кто из этих животных — домашний? Подумай и проверь ответ.",
+            items: [
+              { emoji: "🐕", label: "собака" },
+              { emoji: "🐄", label: "корова" },
+              { emoji: "🐐", label: "коза" },
+            ],
+            answer:
+              "Все трое — домашние животные. Они живут рядом с человеком, приносят пользу, а человек заботится о них.",
+            buttonLabel: "Проверить ответ",
+          },
+          kz: {
+            title: "Өзіңді тексер",
+            question:
+              "Бұлардың қайсысы үй жануары? Ойлан да жауапты тексер.",
+            items: [
+              { emoji: "🐕", label: "ит" },
+              { emoji: "🐄", label: "сиыр" },
+              { emoji: "🐐", label: "ешкі" },
+            ],
+            answer:
+              "Үшеуі де үй жануарлары. Олар адамның жанында тұрады, пайда әкеледі, адам оларды күтеді.",
+            buttonLabel: "Жауапты тексеру",
+          },
+          en: {
+            title: "Check yourself",
+            question:
+              "Which of these are domestic animals? Think, then check.",
+            items: [
+              { emoji: "🐕", label: "dog" },
+              { emoji: "🐄", label: "cow" },
+              { emoji: "🐐", label: "goat" },
+            ],
+            answer:
+              "All three are domestic animals. They live near people, are useful, and people take care of them.",
+            buttonLabel: "Check answer",
+          },
+        },
+      },
+      {
+        type: "summary",
+        data: {
+          ru: {
+            title: "Что я узнал",
+            text:
+              "**Домашние** животные живут рядом с человеком, приносят **пользу**, а человек **заботится** о них.",
+            terms: ["домашние", "пользу", "заботится"],
+          },
+          kz: {
+            title: "Мен нені білдім",
+            text:
+              "**Үй** жануарлары адамның жанында тұрады, **пайда** әкеледі, адам олар туралы **қамқорлық** жасайды.",
+            terms: ["үй", "пайда", "қамқорлық"],
+          },
+          en: {
+            title: "What I learned",
+            text:
+              "**Domestic** animals live near people, bring **benefit**, and people **take care** of them.",
+            terms: ["domestic", "benefit", "take care"],
+          },
+        },
+      },
+    ],
+
+    // Дикие животные
+    observation: [
+      {
+        type: "carousel",
+        data: {
+          ru: {
+            groupLabel: "Работа в группах",
+            title: "Дикие животные",
+            slides: [
+              { emoji: "🐘", caption: "Слон живёт в жарких странах." },
+              { emoji: "🦧", caption: "Орангутан живёт в тропических лесах." },
+              { emoji: "🦅", caption: "Беркут парит над горами." },
+              { emoji: "🦌", caption: "Сайгак бегает по степям Казахстана." },
+              { emoji: "🐱", caption: "Рысь живёт в густых лесах." },
+            ],
+          },
+          kz: {
+            groupLabel: "Топта жұмыс",
+            title: "Жабайы жануарлар",
+            slides: [
+              { emoji: "🐘", caption: "Піл ыстық елдерде тұрады." },
+              { emoji: "🦧", caption: "Орангутан тропиктік ормандарда тұрады." },
+              { emoji: "🦅", caption: "Бүркіт таулардың үстінде қалықтайды." },
+              { emoji: "🦌", caption: "Киік Қазақстан даласында жүгіреді." },
+              { emoji: "🐱", caption: "Сілеусін қалың орманда тұрады." },
+            ],
+          },
+          en: {
+            groupLabel: "Group work",
+            title: "Wild animals",
+            slides: [
+              { emoji: "🐘", caption: "An elephant lives in hot countries." },
+              { emoji: "🦧", caption: "An orangutan lives in tropical forests." },
+              { emoji: "🦅", caption: "A golden eagle soars above the mountains." },
+              { emoji: "🦌", caption: "A saiga runs across the steppes of Kazakhstan." },
+              { emoji: "🐱", caption: "A lynx lives in dense forests." },
+            ],
+          },
+        },
+      },
+      {
+        type: "reveal",
+        data: {
+          ru: {
+            title: "Где они обитают?",
+            question:
+              "К какой группе относятся эти животные? Где они обитают?",
+            items: [
+              { emoji: "🐘", label: "слон" },
+              { emoji: "🦅", label: "беркут" },
+              { emoji: "🦌", label: "сайгак" },
+            ],
+            answer:
+              "Все они — дикие животные. Слон живёт в саваннах, беркут — в горах, сайгак — в степях. Они сами добывают пищу.",
+            buttonLabel: "Проверить ответ",
+          },
+          kz: {
+            title: "Олар қайда тұрады?",
+            question:
+              "Бұл жануарлар қай топқа жатады? Олар қайда тұрады?",
+            items: [
+              { emoji: "🐘", label: "піл" },
+              { emoji: "🦅", label: "бүркіт" },
+              { emoji: "🦌", label: "киік" },
+            ],
+            answer:
+              "Олардың барлығы — жабайы жануарлар. Піл саваннада, бүркіт тауда, киік далада тұрады. Олар тамағын өздері табады.",
+            buttonLabel: "Жауапты тексеру",
+          },
+          en: {
+            title: "Where do they live?",
+            question:
+              "What group do these animals belong to? Where do they live?",
+            items: [
+              { emoji: "🐘", label: "elephant" },
+              { emoji: "🦅", label: "eagle" },
+              { emoji: "🦌", label: "saiga" },
+            ],
+            answer:
+              "They are all wild animals. The elephant lives in savannas, the eagle in the mountains, the saiga in the steppes. They find food on their own.",
+            buttonLabel: "Check answer",
+          },
+        },
+      },
+      {
+        type: "summary",
+        data: {
+          ru: {
+            title: "Что я узнал",
+            text:
+              "**Дикие** животные живут в **лесах**, **степях** и **горах**. Они сами добывают пищу и находят жильё.",
+            terms: ["дикие", "лесах", "степях", "горах"],
+          },
+          kz: {
+            title: "Мен нені білдім",
+            text:
+              "**Жабайы** жануарлар **ормандарда**, **далада** және **тауларда** тұрады. Олар тамағын өздері табады, паналайтын жерін өздері іздейді.",
+            terms: ["жабайы", "ормандарда", "далада", "тауларда"],
+          },
+          en: {
+            title: "What I learned",
+            text:
+              "**Wild** animals live in **forests**, **steppes** and **mountains**. They find food and shelter on their own.",
+            terms: ["wild", "forests", "steppes", "mountains"],
+          },
+        },
+      },
+      {
+        type: "sort",
+        data: {
+          ru: {
+            title: "Где обитают эти животные?",
+            instruction:
+              "Распредели животных по среде обитания.",
+            categories: [
+              { id: "land", label: "На земле / в лесу", emoji: "🌳" },
+              { id: "water", label: "В воде", emoji: "🌊" },
+              { id: "mount", label: "В горах", emoji: "⛰️" },
+            ],
+            items: [
+              { id: "s1", label: "корова", emoji: "🐄", categoryId: "land" },
+              { id: "s2", label: "заяц", emoji: "🐰", categoryId: "land" },
+              { id: "s3", label: "лиса", emoji: "🦊", categoryId: "land" },
+              { id: "s4", label: "дельфин", emoji: "🐬", categoryId: "water" },
+              { id: "s5", label: "архар", emoji: "🐏", categoryId: "mount" },
+            ],
+            checkLabel: "Проверить",
+          },
+          kz: {
+            title: "Бұл жануарлар қайда тұрады?",
+            instruction:
+              "Жануарларды мекен ортасы бойынша бөл.",
+            categories: [
+              { id: "land", label: "Жерде / орманда", emoji: "🌳" },
+              { id: "water", label: "Суда", emoji: "🌊" },
+              { id: "mount", label: "Тауда", emoji: "⛰️" },
+            ],
+            items: [
+              { id: "s1", label: "сиыр", emoji: "🐄", categoryId: "land" },
+              { id: "s2", label: "қоян", emoji: "🐰", categoryId: "land" },
+              { id: "s3", label: "түлкі", emoji: "🦊", categoryId: "land" },
+              { id: "s4", label: "дельфин", emoji: "🐬", categoryId: "water" },
+              { id: "s5", label: "арқар", emoji: "🐏", categoryId: "mount" },
+            ],
+            checkLabel: "Тексеру",
+          },
+          en: {
+            title: "Where do these animals live?",
+            instruction:
+              "Sort the animals by their habitat.",
+            categories: [
+              { id: "land", label: "On land / in forest", emoji: "🌳" },
+              { id: "water", label: "In water", emoji: "🌊" },
+              { id: "mount", label: "In mountains", emoji: "⛰️" },
+            ],
+            items: [
+              { id: "s1", label: "cow", emoji: "🐄", categoryId: "land" },
+              { id: "s2", label: "hare", emoji: "🐰", categoryId: "land" },
+              { id: "s3", label: "fox", emoji: "🦊", categoryId: "land" },
+              { id: "s4", label: "dolphin", emoji: "🐬", categoryId: "water" },
+              { id: "s5", label: "argali", emoji: "🐏", categoryId: "mount" },
+            ],
+            checkLabel: "Check",
+          },
+        },
+      },
+    ],
+
+    // Итоги
+    experiments: [
+      {
+        type: "fact",
+        data: {
+          ru: {
+            title: "Найди в энциклопедии",
+            text:
+              "Узнай, какие редкие дикие животные живут в Казахстане. Запиши 3 примера и где они обитают.",
+            keywords: ["энциклопедия", "Казахстан", "редкие"],
+            icon: "sparkles",
+          },
+          kz: {
+            title: "Энциклопедиядан тап",
+            text:
+              "Қазақстанда қандай сирек кездесетін жабайы жануарлар бар? 3 мысал жазып, қайда тұратынын көрсет.",
+            keywords: ["энциклопедия", "Қазақстан", "сирек"],
+            icon: "sparkles",
+          },
+          en: {
+            title: "Find in the encyclopedia",
+            text:
+              "Find out which rare wild animals live in Kazakhstan. Write down 3 examples and where they live.",
+            keywords: ["encyclopedia", "Kazakhstan", "rare"],
+            icon: "sparkles",
+          },
+        },
+      },
+      {
+        type: "fact",
+        data: {
+          ru: {
+            title: "Это интересно!",
+            text:
+              "У молодых пингвинов хвост похож на белый мех. Это помогает их мамам быстро находить своих птенцов в большой стае.",
+            keywords: ["пингвины", "хвост", "мех"],
+            icon: "bulb",
+          },
+          kz: {
+            title: "Бұл қызық!",
+            text:
+              "Жас пингвиндердің құйрығы ақ жүнге ұқсайды. Бұл аналарына үлкен топтан өз балапандарын тез табуға көмектеседі.",
+            keywords: ["пингвин", "құйрық", "жүн"],
+            icon: "bulb",
+          },
+          en: {
+            title: "Did you know?",
+            text:
+              "Young penguins have tails that look like white fur. It helps their mothers quickly find their chicks in a large flock.",
+            keywords: ["penguins", "tail", "fur"],
+            icon: "bulb",
+          },
+        },
+      },
+      {
+        type: "summary",
+        data: {
+          ru: {
+            title: "Итоговые вопросы",
+            text:
+              "1) Чем **дикие** животные отличаются от **домашних**? 2) Почему человек должен **заботиться** о домашних животных?",
+          },
+          kz: {
+            title: "Қорытынды сұрақтар",
+            text:
+              "1) **Жабайы** жануарлар **үй** жануарларынан немен ерекшеленеді? 2) Адам үй жануарларына неліктен **қамқорлық** жасауы керек?",
+          },
+          en: {
+            title: "Wrap-up questions",
+            text:
+              "1) How do **wild** animals differ from **domestic** ones? 2) Why should people **take care** of domestic animals?",
+          },
+        },
+      },
+    ],
+  },
+  14: {
+    intro: [
+      {
+        type: "audio",
+        data: {
+          ru: {
+            title: "Аудио-гид к уроку",
+            text:
+              "Сегодня мы узнаем, что животные бывают дикими и домашними, и в чём их главное отличие.",
+            caption: "Послушай вступление к уроку",
+            durationLabel: "0:22",
+          },
+          kz: {
+            title: "Сабақтың аудио-гиді",
+            text:
+              "Бүгін біз жануарлардың жабайы және үй жануарлары болып бөлінетінін, олардың айырмашылығы неде екенін білеміз.",
+            caption: "Сабақтың кіріспесін тыңда",
+            durationLabel: "0:22",
+          },
+          en: {
+            title: "Lesson audio guide",
+            text:
+              "Today we'll learn that animals can be wild or domestic, and what is the main difference between them.",
+            caption: "Listen to the lesson intro",
+            durationLabel: "0:22",
+          },
+        },
+      },
+      {
+        type: "carousel",
+        data: {
+          ru: {
+            groupLabel: "Ключевые слова",
+            title: "Дикие и домашние",
+            slides: [
+              { emoji: "🏠", caption: "Домашние животные / Үй жануарлары / Domestic animals" },
+              { emoji: "🌲", caption: "Дикие животные / Жабайы жануарлар / Wild animals" },
+              { emoji: "🌍", caption: "Среда обитания / Мекен орта / Habitat" },
+            ],
+          },
+          kz: {
+            groupLabel: "Кілт сөздер",
+            title: "Жабайы және үй",
+            slides: [
+              { emoji: "🏠", caption: "Үй жануарлары / Домашние / Domestic animals" },
+              { emoji: "🌲", caption: "Жабайы жануарлар / Дикие / Wild animals" },
+              { emoji: "🌍", caption: "Мекен орта / Среда обитания / Habitat" },
+            ],
+          },
+          en: {
+            groupLabel: "Key words",
+            title: "Wild and domestic",
+            slides: [
+              { emoji: "🏠", caption: "Domestic animals / Домашние / Үй жануарлары" },
+              { emoji: "🌲", caption: "Wild animals / Дикие / Жабайы жануарлар" },
+              { emoji: "🌍", caption: "Habitat / Среда обитания / Мекен орта" },
+            ],
+          },
+        },
+      },
+    ],
+
+    // Домашние животные
+    scientists: [
+      {
+        type: "carousel",
+        data: {
+          ru: {
+            groupLabel: "Работа в группах",
+            title: "Домашние животные",
+            slides: [
+              { emoji: "🐕", caption: "Собаки живут рядом с людьми — охраняют дом." },
+              { emoji: "🐄", caption: "Корова на пастбище даёт молоко." },
+              { emoji: "🐐", caption: "Коза у забора — даёт молоко и шерсть." },
+              { emoji: "🐎", caption: "Лошадь с жеребёнком — помогает человеку." },
+            ],
+          },
+          kz: {
+            groupLabel: "Топта жұмыс",
+            title: "Үй жануарлары",
+            slides: [
+              { emoji: "🐕", caption: "Иттер адаммен бірге тұрып, үйді күзетеді." },
+              { emoji: "🐄", caption: "Жайылымдағы сиыр сүт береді." },
+              { emoji: "🐐", caption: "Қоршау жанындағы ешкі — сүт пен жүн береді." },
+              { emoji: "🐎", caption: "Жылқы құлынымен — адамға көмектеседі." },
+            ],
+          },
+          en: {
+            groupLabel: "Group work",
+            title: "Domestic animals",
+            slides: [
+              { emoji: "🐕", caption: "Dogs live with people — they guard the house." },
+              { emoji: "🐄", caption: "A cow on the pasture gives milk." },
+              { emoji: "🐐", caption: "A goat by the fence gives milk and wool." },
+              { emoji: "🐎", caption: "A mare with her foal — helps people." },
+            ],
+          },
+        },
+      },
+      {
+        type: "reveal",
+        data: {
+          ru: {
+            title: "Проверь себя",
+            question:
+              "Кто из этих животных — домашний? Подумай и проверь ответ.",
+            items: [
+              { emoji: "🐕", label: "собака" },
+              { emoji: "🐄", label: "корова" },
+              { emoji: "🐐", label: "коза" },
+            ],
+            answer:
+              "Все трое — домашние животные. Они живут рядом с человеком, приносят пользу, а человек заботится о них.",
+            buttonLabel: "Проверить ответ",
+          },
+          kz: {
+            title: "Өзіңді тексер",
+            question:
+              "Бұлардың қайсысы үй жануары? Ойлан да жауапты тексер.",
+            items: [
+              { emoji: "🐕", label: "ит" },
+              { emoji: "🐄", label: "сиыр" },
+              { emoji: "🐐", label: "ешкі" },
+            ],
+            answer:
+              "Үшеуі де үй жануарлары. Олар адамның жанында тұрады, пайда әкеледі, адам оларды күтеді.",
+            buttonLabel: "Жауапты тексеру",
+          },
+          en: {
+            title: "Check yourself",
+            question:
+              "Which of these are domestic animals? Think, then check.",
+            items: [
+              { emoji: "🐕", label: "dog" },
+              { emoji: "🐄", label: "cow" },
+              { emoji: "🐐", label: "goat" },
+            ],
+            answer:
+              "All three are domestic animals. They live near people, are useful, and people take care of them.",
+            buttonLabel: "Check answer",
+          },
+        },
+      },
+      {
+        type: "summary",
+        data: {
+          ru: {
+            title: "Что я узнал",
+            text:
+              "**Домашние** животные живут рядом с человеком, приносят **пользу**, а человек **заботится** о них.",
+            terms: ["домашние", "пользу", "заботится"],
+          },
+          kz: {
+            title: "Мен нені білдім",
+            text:
+              "**Үй** жануарлары адамның жанында тұрады, **пайда** әкеледі, адам олар туралы **қамқорлық** жасайды.",
+            terms: ["үй", "пайда", "қамқорлық"],
+          },
+          en: {
+            title: "What I learned",
+            text:
+              "**Domestic** animals live near people, bring **benefit**, and people **take care** of them.",
+            terms: ["domestic", "benefit", "take care"],
+          },
+        },
+      },
+    ],
+
+    // Дикие животные
+    observation: [
+      {
+        type: "carousel",
+        data: {
+          ru: {
+            groupLabel: "Работа в группах",
+            title: "Дикие животные",
+            slides: [
+              { emoji: "🐘", caption: "Слон живёт в жарких странах." },
+              { emoji: "🦧", caption: "Орангутан живёт в тропических лесах." },
+              { emoji: "🦅", caption: "Беркут парит над горами." },
+              { emoji: "🦌", caption: "Сайгак бегает по степям Казахстана." },
+              { emoji: "🐱", caption: "Рысь живёт в густых лесах." },
+            ],
+          },
+          kz: {
+            groupLabel: "Топта жұмыс",
+            title: "Жабайы жануарлар",
+            slides: [
+              { emoji: "🐘", caption: "Піл ыстық елдерде тұрады." },
+              { emoji: "🦧", caption: "Орангутан тропиктік ормандарда тұрады." },
+              { emoji: "🦅", caption: "Бүркіт таулардың үстінде қалықтайды." },
+              { emoji: "🦌", caption: "Киік Қазақстан даласында жүгіреді." },
+              { emoji: "🐱", caption: "Сілеусін қалың орманда тұрады." },
+            ],
+          },
+          en: {
+            groupLabel: "Group work",
+            title: "Wild animals",
+            slides: [
+              { emoji: "🐘", caption: "An elephant lives in hot countries." },
+              { emoji: "🦧", caption: "An orangutan lives in tropical forests." },
+              { emoji: "🦅", caption: "A golden eagle soars above the mountains." },
+              { emoji: "🦌", caption: "A saiga runs across the steppes of Kazakhstan." },
+              { emoji: "🐱", caption: "A lynx lives in dense forests." },
+            ],
+          },
+        },
+      },
+      {
+        type: "reveal",
+        data: {
+          ru: {
+            title: "Где они обитают?",
+            question:
+              "К какой группе относятся эти животные? Где они обитают?",
+            items: [
+              { emoji: "🐘", label: "слон" },
+              { emoji: "🦅", label: "беркут" },
+              { emoji: "🦌", label: "сайгак" },
+            ],
+            answer:
+              "Все они — дикие животные. Слон живёт в саваннах, беркут — в горах, сайгак — в степях. Они сами добывают пищу.",
+            buttonLabel: "Проверить ответ",
+          },
+          kz: {
+            title: "Олар қайда тұрады?",
+            question:
+              "Бұл жануарлар қай топқа жатады? Олар қайда тұрады?",
+            items: [
+              { emoji: "🐘", label: "піл" },
+              { emoji: "🦅", label: "бүркіт" },
+              { emoji: "🦌", label: "киік" },
+            ],
+            answer:
+              "Олардың барлығы — жабайы жануарлар. Піл саваннада, бүркіт тауда, киік далада тұрады. Олар тамағын өздері табады.",
+            buttonLabel: "Жауапты тексеру",
+          },
+          en: {
+            title: "Where do they live?",
+            question:
+              "What group do these animals belong to? Where do they live?",
+            items: [
+              { emoji: "🐘", label: "elephant" },
+              { emoji: "🦅", label: "eagle" },
+              { emoji: "🦌", label: "saiga" },
+            ],
+            answer:
+              "They are all wild animals. The elephant lives in savannas, the eagle in the mountains, the saiga in the steppes. They find food on their own.",
+            buttonLabel: "Check answer",
+          },
+        },
+      },
+      {
+        type: "summary",
+        data: {
+          ru: {
+            title: "Что я узнал",
+            text:
+              "**Дикие** животные живут в **лесах**, **степях** и **горах**. Они сами добывают пищу и находят жильё.",
+            terms: ["дикие", "лесах", "степях", "горах"],
+          },
+          kz: {
+            title: "Мен нені білдім",
+            text:
+              "**Жабайы** жануарлар **ормандарда**, **далада** және **тауларда** тұрады. Олар тамағын өздері табады, паналайтын жерін өздері іздейді.",
+            terms: ["жабайы", "ормандарда", "далада", "тауларда"],
+          },
+          en: {
+            title: "What I learned",
+            text:
+              "**Wild** animals live in **forests**, **steppes** and **mountains**. They find food and shelter on their own.",
+            terms: ["wild", "forests", "steppes", "mountains"],
+          },
+        },
+      },
+      {
+        type: "sort",
+        data: {
+          ru: {
+            title: "Где обитают эти животные?",
+            instruction:
+              "Распредели животных по среде обитания.",
+            categories: [
+              { id: "land", label: "На земле / в лесу", emoji: "🌳" },
+              { id: "water", label: "В воде", emoji: "🌊" },
+              { id: "mount", label: "В горах", emoji: "⛰️" },
+            ],
+            items: [
+              { id: "s1", label: "корова", emoji: "🐄", categoryId: "land" },
+              { id: "s2", label: "заяц", emoji: "🐰", categoryId: "land" },
+              { id: "s3", label: "лиса", emoji: "🦊", categoryId: "land" },
+              { id: "s4", label: "дельфин", emoji: "🐬", categoryId: "water" },
+              { id: "s5", label: "архар", emoji: "🐏", categoryId: "mount" },
+            ],
+            checkLabel: "Проверить",
+          },
+          kz: {
+            title: "Бұл жануарлар қайда тұрады?",
+            instruction:
+              "Жануарларды мекен ортасы бойынша бөл.",
+            categories: [
+              { id: "land", label: "Жерде / орманда", emoji: "🌳" },
+              { id: "water", label: "Суда", emoji: "🌊" },
+              { id: "mount", label: "Тауда", emoji: "⛰️" },
+            ],
+            items: [
+              { id: "s1", label: "сиыр", emoji: "🐄", categoryId: "land" },
+              { id: "s2", label: "қоян", emoji: "🐰", categoryId: "land" },
+              { id: "s3", label: "түлкі", emoji: "🦊", categoryId: "land" },
+              { id: "s4", label: "дельфин", emoji: "🐬", categoryId: "water" },
+              { id: "s5", label: "арқар", emoji: "🐏", categoryId: "mount" },
+            ],
+            checkLabel: "Тексеру",
+          },
+          en: {
+            title: "Where do these animals live?",
+            instruction:
+              "Sort the animals by their habitat.",
+            categories: [
+              { id: "land", label: "On land / in forest", emoji: "🌳" },
+              { id: "water", label: "In water", emoji: "🌊" },
+              { id: "mount", label: "In mountains", emoji: "⛰️" },
+            ],
+            items: [
+              { id: "s1", label: "cow", emoji: "🐄", categoryId: "land" },
+              { id: "s2", label: "hare", emoji: "🐰", categoryId: "land" },
+              { id: "s3", label: "fox", emoji: "🦊", categoryId: "land" },
+              { id: "s4", label: "dolphin", emoji: "🐬", categoryId: "water" },
+              { id: "s5", label: "argali", emoji: "🐏", categoryId: "mount" },
+            ],
+            checkLabel: "Check",
+          },
+        },
+      },
+    ],
+
+    // Итоги
+    experiments: [
+      {
+        type: "fact",
+        data: {
+          ru: {
+            title: "Найди в энциклопедии",
+            text:
+              "Узнай, какие редкие дикие животные живут в Казахстане. Запиши 3 примера и где они обитают.",
+            keywords: ["энциклопедия", "Казахстан", "редкие"],
+            icon: "sparkles",
+          },
+          kz: {
+            title: "Энциклопедиядан тап",
+            text:
+              "Қазақстанда қандай сирек кездесетін жабайы жануарлар бар? 3 мысал жазып, қайда тұратынын көрсет.",
+            keywords: ["энциклопедия", "Қазақстан", "сирек"],
+            icon: "sparkles",
+          },
+          en: {
+            title: "Find in the encyclopedia",
+            text:
+              "Find out which rare wild animals live in Kazakhstan. Write down 3 examples and where they live.",
+            keywords: ["encyclopedia", "Kazakhstan", "rare"],
+            icon: "sparkles",
+          },
+        },
+      },
+      {
+        type: "fact",
+        data: {
+          ru: {
+            title: "Это интересно!",
+            text:
+              "У молодых пингвинов хвост похож на белый мех. Это помогает их мамам быстро находить своих птенцов в большой стае.",
+            keywords: ["пингвины", "хвост", "мех"],
+            icon: "bulb",
+          },
+          kz: {
+            title: "Бұл қызық!",
+            text:
+              "Жас пингвиндердің құйрығы ақ жүнге ұқсайды. Бұл аналарына үлкен топтан өз балапандарын тез табуға көмектеседі.",
+            keywords: ["пингвин", "құйрық", "жүн"],
+            icon: "bulb",
+          },
+          en: {
+            title: "Did you know?",
+            text:
+              "Young penguins have tails that look like white fur. It helps their mothers quickly find their chicks in a large flock.",
+            keywords: ["penguins", "tail", "fur"],
+            icon: "bulb",
+          },
+        },
+      },
+      {
+        type: "summary",
+        data: {
+          ru: {
+            title: "Итоговые вопросы",
+            text:
+              "1) Чем **дикие** животные отличаются от **домашних**? 2) Почему человек должен **заботиться** о домашних животных?",
+          },
+          kz: {
+            title: "Қорытынды сұрақтар",
+            text:
+              "1) **Жабайы** жануарлар **үй** жануарларынан немен ерекшеленеді? 2) Адам үй жануарларына неліктен **қамқорлық** жасауы керек?",
+          },
+          en: {
+            title: "Wrap-up questions",
+            text:
+              "1) How do **wild** animals differ from **domestic** ones? 2) Why should people **take care** of domestic animals?",
+          },
+        },
+      },
+    ],
+  },
+  15: {
+    intro: [
+      {
+        type: "audio",
+        data: {
+          ru: {
+            title: "Аудио-гид к уроку",
+            text:
+              "Сегодня мы узнаем, что животные бывают дикими и домашними, и в чём их главное отличие.",
+            caption: "Послушай вступление к уроку",
+            durationLabel: "0:22",
+          },
+          kz: {
+            title: "Сабақтың аудио-гиді",
+            text:
+              "Бүгін біз жануарлардың жабайы және үй жануарлары болып бөлінетінін, олардың айырмашылығы неде екенін білеміз.",
+            caption: "Сабақтың кіріспесін тыңда",
+            durationLabel: "0:22",
+          },
+          en: {
+            title: "Lesson audio guide",
+            text:
+              "Today we'll learn that animals can be wild or domestic, and what is the main difference between them.",
+            caption: "Listen to the lesson intro",
+            durationLabel: "0:22",
+          },
+        },
+      },
+      {
+        type: "carousel",
+        data: {
+          ru: {
+            groupLabel: "Ключевые слова",
+            title: "Дикие и домашние",
+            slides: [
+              { emoji: "🏠", caption: "Домашние животные / Үй жануарлары / Domestic animals" },
+              { emoji: "🌲", caption: "Дикие животные / Жабайы жануарлар / Wild animals" },
+              { emoji: "🌍", caption: "Среда обитания / Мекен орта / Habitat" },
+            ],
+          },
+          kz: {
+            groupLabel: "Кілт сөздер",
+            title: "Жабайы және үй",
+            slides: [
+              { emoji: "🏠", caption: "Үй жануарлары / Домашние / Domestic animals" },
+              { emoji: "🌲", caption: "Жабайы жануарлар / Дикие / Wild animals" },
+              { emoji: "🌍", caption: "Мекен орта / Среда обитания / Habitat" },
+            ],
+          },
+          en: {
+            groupLabel: "Key words",
+            title: "Wild and domestic",
+            slides: [
+              { emoji: "🏠", caption: "Domestic animals / Домашние / Үй жануарлары" },
+              { emoji: "🌲", caption: "Wild animals / Дикие / Жабайы жануарлар" },
+              { emoji: "🌍", caption: "Habitat / Среда обитания / Мекен орта" },
+            ],
+          },
+        },
+      },
+    ],
+
+    // Домашние животные
+    scientists: [
+      {
+        type: "carousel",
+        data: {
+          ru: {
+            groupLabel: "Работа в группах",
+            title: "Домашние животные",
+            slides: [
+              { emoji: "🐕", caption: "Собаки живут рядом с людьми — охраняют дом." },
+              { emoji: "🐄", caption: "Корова на пастбище даёт молоко." },
+              { emoji: "🐐", caption: "Коза у забора — даёт молоко и шерсть." },
+              { emoji: "🐎", caption: "Лошадь с жеребёнком — помогает человеку." },
+            ],
+          },
+          kz: {
+            groupLabel: "Топта жұмыс",
+            title: "Үй жануарлары",
+            slides: [
+              { emoji: "🐕", caption: "Иттер адаммен бірге тұрып, үйді күзетеді." },
+              { emoji: "🐄", caption: "Жайылымдағы сиыр сүт береді." },
+              { emoji: "🐐", caption: "Қоршау жанындағы ешкі — сүт пен жүн береді." },
+              { emoji: "🐎", caption: "Жылқы құлынымен — адамға көмектеседі." },
+            ],
+          },
+          en: {
+            groupLabel: "Group work",
+            title: "Domestic animals",
+            slides: [
+              { emoji: "🐕", caption: "Dogs live with people — they guard the house." },
+              { emoji: "🐄", caption: "A cow on the pasture gives milk." },
+              { emoji: "🐐", caption: "A goat by the fence gives milk and wool." },
+              { emoji: "🐎", caption: "A mare with her foal — helps people." },
+            ],
+          },
+        },
+      },
+      {
+        type: "reveal",
+        data: {
+          ru: {
+            title: "Проверь себя",
+            question:
+              "Кто из этих животных — домашний? Подумай и проверь ответ.",
+            items: [
+              { emoji: "🐕", label: "собака" },
+              { emoji: "🐄", label: "корова" },
+              { emoji: "🐐", label: "коза" },
+            ],
+            answer:
+              "Все трое — домашние животные. Они живут рядом с человеком, приносят пользу, а человек заботится о них.",
+            buttonLabel: "Проверить ответ",
+          },
+          kz: {
+            title: "Өзіңді тексер",
+            question:
+              "Бұлардың қайсысы үй жануары? Ойлан да жауапты тексер.",
+            items: [
+              { emoji: "🐕", label: "ит" },
+              { emoji: "🐄", label: "сиыр" },
+              { emoji: "🐐", label: "ешкі" },
+            ],
+            answer:
+              "Үшеуі де үй жануарлары. Олар адамның жанында тұрады, пайда әкеледі, адам оларды күтеді.",
+            buttonLabel: "Жауапты тексеру",
+          },
+          en: {
+            title: "Check yourself",
+            question:
+              "Which of these are domestic animals? Think, then check.",
+            items: [
+              { emoji: "🐕", label: "dog" },
+              { emoji: "🐄", label: "cow" },
+              { emoji: "🐐", label: "goat" },
+            ],
+            answer:
+              "All three are domestic animals. They live near people, are useful, and people take care of them.",
+            buttonLabel: "Check answer",
+          },
+        },
+      },
+      {
+        type: "summary",
+        data: {
+          ru: {
+            title: "Что я узнал",
+            text:
+              "**Домашние** животные живут рядом с человеком, приносят **пользу**, а человек **заботится** о них.",
+            terms: ["домашние", "пользу", "заботится"],
+          },
+          kz: {
+            title: "Мен нені білдім",
+            text:
+              "**Үй** жануарлары адамның жанында тұрады, **пайда** әкеледі, адам олар туралы **қамқорлық** жасайды.",
+            terms: ["үй", "пайда", "қамқорлық"],
+          },
+          en: {
+            title: "What I learned",
+            text:
+              "**Domestic** animals live near people, bring **benefit**, and people **take care** of them.",
+            terms: ["domestic", "benefit", "take care"],
+          },
+        },
+      },
+    ],
+
+    // Дикие животные
+    observation: [
+      {
+        type: "carousel",
+        data: {
+          ru: {
+            groupLabel: "Работа в группах",
+            title: "Дикие животные",
+            slides: [
+              { emoji: "🐘", caption: "Слон живёт в жарких странах." },
+              { emoji: "🦧", caption: "Орангутан живёт в тропических лесах." },
+              { emoji: "🦅", caption: "Беркут парит над горами." },
+              { emoji: "🦌", caption: "Сайгак бегает по степям Казахстана." },
+              { emoji: "🐱", caption: "Рысь живёт в густых лесах." },
+            ],
+          },
+          kz: {
+            groupLabel: "Топта жұмыс",
+            title: "Жабайы жануарлар",
+            slides: [
+              { emoji: "🐘", caption: "Піл ыстық елдерде тұрады." },
+              { emoji: "🦧", caption: "Орангутан тропиктік ормандарда тұрады." },
+              { emoji: "🦅", caption: "Бүркіт таулардың үстінде қалықтайды." },
+              { emoji: "🦌", caption: "Киік Қазақстан даласында жүгіреді." },
+              { emoji: "🐱", caption: "Сілеусін қалың орманда тұрады." },
+            ],
+          },
+          en: {
+            groupLabel: "Group work",
+            title: "Wild animals",
+            slides: [
+              { emoji: "🐘", caption: "An elephant lives in hot countries." },
+              { emoji: "🦧", caption: "An orangutan lives in tropical forests." },
+              { emoji: "🦅", caption: "A golden eagle soars above the mountains." },
+              { emoji: "🦌", caption: "A saiga runs across the steppes of Kazakhstan." },
+              { emoji: "🐱", caption: "A lynx lives in dense forests." },
+            ],
+          },
+        },
+      },
+      {
+        type: "reveal",
+        data: {
+          ru: {
+            title: "Где они обитают?",
+            question:
+              "К какой группе относятся эти животные? Где они обитают?",
+            items: [
+              { emoji: "🐘", label: "слон" },
+              { emoji: "🦅", label: "беркут" },
+              { emoji: "🦌", label: "сайгак" },
+            ],
+            answer:
+              "Все они — дикие животные. Слон живёт в саваннах, беркут — в горах, сайгак — в степях. Они сами добывают пищу.",
+            buttonLabel: "Проверить ответ",
+          },
+          kz: {
+            title: "Олар қайда тұрады?",
+            question:
+              "Бұл жануарлар қай топқа жатады? Олар қайда тұрады?",
+            items: [
+              { emoji: "🐘", label: "піл" },
+              { emoji: "🦅", label: "бүркіт" },
+              { emoji: "🦌", label: "киік" },
+            ],
+            answer:
+              "Олардың барлығы — жабайы жануарлар. Піл саваннада, бүркіт тауда, киік далада тұрады. Олар тамағын өздері табады.",
+            buttonLabel: "Жауапты тексеру",
+          },
+          en: {
+            title: "Where do they live?",
+            question:
+              "What group do these animals belong to? Where do they live?",
+            items: [
+              { emoji: "🐘", label: "elephant" },
+              { emoji: "🦅", label: "eagle" },
+              { emoji: "🦌", label: "saiga" },
+            ],
+            answer:
+              "They are all wild animals. The elephant lives in savannas, the eagle in the mountains, the saiga in the steppes. They find food on their own.",
+            buttonLabel: "Check answer",
+          },
+        },
+      },
+      {
+        type: "summary",
+        data: {
+          ru: {
+            title: "Что я узнал",
+            text:
+              "**Дикие** животные живут в **лесах**, **степях** и **горах**. Они сами добывают пищу и находят жильё.",
+            terms: ["дикие", "лесах", "степях", "горах"],
+          },
+          kz: {
+            title: "Мен нені білдім",
+            text:
+              "**Жабайы** жануарлар **ормандарда**, **далада** және **тауларда** тұрады. Олар тамағын өздері табады, паналайтын жерін өздері іздейді.",
+            terms: ["жабайы", "ормандарда", "далада", "тауларда"],
+          },
+          en: {
+            title: "What I learned",
+            text:
+              "**Wild** animals live in **forests**, **steppes** and **mountains**. They find food and shelter on their own.",
+            terms: ["wild", "forests", "steppes", "mountains"],
+          },
+        },
+      },
+      {
+        type: "sort",
+        data: {
+          ru: {
+            title: "Где обитают эти животные?",
+            instruction:
+              "Распредели животных по среде обитания.",
+            categories: [
+              { id: "land", label: "На земле / в лесу", emoji: "🌳" },
+              { id: "water", label: "В воде", emoji: "🌊" },
+              { id: "mount", label: "В горах", emoji: "⛰️" },
+            ],
+            items: [
+              { id: "s1", label: "корова", emoji: "🐄", categoryId: "land" },
+              { id: "s2", label: "заяц", emoji: "🐰", categoryId: "land" },
+              { id: "s3", label: "лиса", emoji: "🦊", categoryId: "land" },
+              { id: "s4", label: "дельфин", emoji: "🐬", categoryId: "water" },
+              { id: "s5", label: "архар", emoji: "🐏", categoryId: "mount" },
+            ],
+            checkLabel: "Проверить",
+          },
+          kz: {
+            title: "Бұл жануарлар қайда тұрады?",
+            instruction:
+              "Жануарларды мекен ортасы бойынша бөл.",
+            categories: [
+              { id: "land", label: "Жерде / орманда", emoji: "🌳" },
+              { id: "water", label: "Суда", emoji: "🌊" },
+              { id: "mount", label: "Тауда", emoji: "⛰️" },
+            ],
+            items: [
+              { id: "s1", label: "сиыр", emoji: "🐄", categoryId: "land" },
+              { id: "s2", label: "қоян", emoji: "🐰", categoryId: "land" },
+              { id: "s3", label: "түлкі", emoji: "🦊", categoryId: "land" },
+              { id: "s4", label: "дельфин", emoji: "🐬", categoryId: "water" },
+              { id: "s5", label: "арқар", emoji: "🐏", categoryId: "mount" },
+            ],
+            checkLabel: "Тексеру",
+          },
+          en: {
+            title: "Where do these animals live?",
+            instruction:
+              "Sort the animals by their habitat.",
+            categories: [
+              { id: "land", label: "On land / in forest", emoji: "🌳" },
+              { id: "water", label: "In water", emoji: "🌊" },
+              { id: "mount", label: "In mountains", emoji: "⛰️" },
+            ],
+            items: [
+              { id: "s1", label: "cow", emoji: "🐄", categoryId: "land" },
+              { id: "s2", label: "hare", emoji: "🐰", categoryId: "land" },
+              { id: "s3", label: "fox", emoji: "🦊", categoryId: "land" },
+              { id: "s4", label: "dolphin", emoji: "🐬", categoryId: "water" },
+              { id: "s5", label: "argali", emoji: "🐏", categoryId: "mount" },
+            ],
+            checkLabel: "Check",
+          },
+        },
+      },
+    ],
+
+    // Итоги
+    experiments: [
+      {
+        type: "fact",
+        data: {
+          ru: {
+            title: "Найди в энциклопедии",
+            text:
+              "Узнай, какие редкие дикие животные живут в Казахстане. Запиши 3 примера и где они обитают.",
+            keywords: ["энциклопедия", "Казахстан", "редкие"],
+            icon: "sparkles",
+          },
+          kz: {
+            title: "Энциклопедиядан тап",
+            text:
+              "Қазақстанда қандай сирек кездесетін жабайы жануарлар бар? 3 мысал жазып, қайда тұратынын көрсет.",
+            keywords: ["энциклопедия", "Қазақстан", "сирек"],
+            icon: "sparkles",
+          },
+          en: {
+            title: "Find in the encyclopedia",
+            text:
+              "Find out which rare wild animals live in Kazakhstan. Write down 3 examples and where they live.",
+            keywords: ["encyclopedia", "Kazakhstan", "rare"],
+            icon: "sparkles",
+          },
+        },
+      },
+      {
+        type: "fact",
+        data: {
+          ru: {
+            title: "Это интересно!",
+            text:
+              "У молодых пингвинов хвост похож на белый мех. Это помогает их мамам быстро находить своих птенцов в большой стае.",
+            keywords: ["пингвины", "хвост", "мех"],
+            icon: "bulb",
+          },
+          kz: {
+            title: "Бұл қызық!",
+            text:
+              "Жас пингвиндердің құйрығы ақ жүнге ұқсайды. Бұл аналарына үлкен топтан өз балапандарын тез табуға көмектеседі.",
+            keywords: ["пингвин", "құйрық", "жүн"],
+            icon: "bulb",
+          },
+          en: {
+            title: "Did you know?",
+            text:
+              "Young penguins have tails that look like white fur. It helps their mothers quickly find their chicks in a large flock.",
+            keywords: ["penguins", "tail", "fur"],
+            icon: "bulb",
+          },
+        },
+      },
+      {
+        type: "summary",
+        data: {
+          ru: {
+            title: "Итоговые вопросы",
+            text:
+              "1) Чем **дикие** животные отличаются от **домашних**? 2) Почему человек должен **заботиться** о домашних животных?",
+          },
+          kz: {
+            title: "Қорытынды сұрақтар",
+            text:
+              "1) **Жабайы** жануарлар **үй** жануарларынан немен ерекшеленеді? 2) Адам үй жануарларына неліктен **қамқорлық** жасауы керек?",
+          },
+          en: {
+            title: "Wrap-up questions",
+            text:
+              "1) How do **wild** animals differ from **domestic** ones? 2) Why should people **take care** of domestic animals?",
+          },
+        },
+      },
+    ],
+  },
+  16: {
+    intro: [
+      {
+        type: "audio",
+        data: {
+          ru: {
+            title: "Аудио-гид к уроку",
+            text:
+              "Сегодня мы узнаем, что животные бывают дикими и домашними, и в чём их главное отличие.",
+            caption: "Послушай вступление к уроку",
+            durationLabel: "0:22",
+          },
+          kz: {
+            title: "Сабақтың аудио-гиді",
+            text:
+              "Бүгін біз жануарлардың жабайы және үй жануарлары болып бөлінетінін, олардың айырмашылығы неде екенін білеміз.",
+            caption: "Сабақтың кіріспесін тыңда",
+            durationLabel: "0:22",
+          },
+          en: {
+            title: "Lesson audio guide",
+            text:
+              "Today we'll learn that animals can be wild or domestic, and what is the main difference between them.",
+            caption: "Listen to the lesson intro",
+            durationLabel: "0:22",
+          },
+        },
+      },
+      {
+        type: "carousel",
+        data: {
+          ru: {
+            groupLabel: "Ключевые слова",
+            title: "Дикие и домашние",
+            slides: [
+              { emoji: "🏠", caption: "Домашние животные / Үй жануарлары / Domestic animals" },
+              { emoji: "🌲", caption: "Дикие животные / Жабайы жануарлар / Wild animals" },
+              { emoji: "🌍", caption: "Среда обитания / Мекен орта / Habitat" },
+            ],
+          },
+          kz: {
+            groupLabel: "Кілт сөздер",
+            title: "Жабайы және үй",
+            slides: [
+              { emoji: "🏠", caption: "Үй жануарлары / Домашние / Domestic animals" },
+              { emoji: "🌲", caption: "Жабайы жануарлар / Дикие / Wild animals" },
+              { emoji: "🌍", caption: "Мекен орта / Среда обитания / Habitat" },
+            ],
+          },
+          en: {
+            groupLabel: "Key words",
+            title: "Wild and domestic",
+            slides: [
+              { emoji: "🏠", caption: "Domestic animals / Домашние / Үй жануарлары" },
+              { emoji: "🌲", caption: "Wild animals / Дикие / Жабайы жануарлар" },
+              { emoji: "🌍", caption: "Habitat / Среда обитания / Мекен орта" },
+            ],
+          },
+        },
+      },
+    ],
+
+    // Домашние животные
+    scientists: [
+      {
+        type: "carousel",
+        data: {
+          ru: {
+            groupLabel: "Работа в группах",
+            title: "Домашние животные",
+            slides: [
+              { emoji: "🐕", caption: "Собаки живут рядом с людьми — охраняют дом." },
+              { emoji: "🐄", caption: "Корова на пастбище даёт молоко." },
+              { emoji: "🐐", caption: "Коза у забора — даёт молоко и шерсть." },
+              { emoji: "🐎", caption: "Лошадь с жеребёнком — помогает человеку." },
+            ],
+          },
+          kz: {
+            groupLabel: "Топта жұмыс",
+            title: "Үй жануарлары",
+            slides: [
+              { emoji: "🐕", caption: "Иттер адаммен бірге тұрып, үйді күзетеді." },
+              { emoji: "🐄", caption: "Жайылымдағы сиыр сүт береді." },
+              { emoji: "🐐", caption: "Қоршау жанындағы ешкі — сүт пен жүн береді." },
+              { emoji: "🐎", caption: "Жылқы құлынымен — адамға көмектеседі." },
+            ],
+          },
+          en: {
+            groupLabel: "Group work",
+            title: "Domestic animals",
+            slides: [
+              { emoji: "🐕", caption: "Dogs live with people — they guard the house." },
+              { emoji: "🐄", caption: "A cow on the pasture gives milk." },
+              { emoji: "🐐", caption: "A goat by the fence gives milk and wool." },
+              { emoji: "🐎", caption: "A mare with her foal — helps people." },
+            ],
+          },
+        },
+      },
+      {
+        type: "reveal",
+        data: {
+          ru: {
+            title: "Проверь себя",
+            question:
+              "Кто из этих животных — домашний? Подумай и проверь ответ.",
+            items: [
+              { emoji: "🐕", label: "собака" },
+              { emoji: "🐄", label: "корова" },
+              { emoji: "🐐", label: "коза" },
+            ],
+            answer:
+              "Все трое — домашние животные. Они живут рядом с человеком, приносят пользу, а человек заботится о них.",
+            buttonLabel: "Проверить ответ",
+          },
+          kz: {
+            title: "Өзіңді тексер",
+            question:
+              "Бұлардың қайсысы үй жануары? Ойлан да жауапты тексер.",
+            items: [
+              { emoji: "🐕", label: "ит" },
+              { emoji: "🐄", label: "сиыр" },
+              { emoji: "🐐", label: "ешкі" },
+            ],
+            answer:
+              "Үшеуі де үй жануарлары. Олар адамның жанында тұрады, пайда әкеледі, адам оларды күтеді.",
+            buttonLabel: "Жауапты тексеру",
+          },
+          en: {
+            title: "Check yourself",
+            question:
+              "Which of these are domestic animals? Think, then check.",
+            items: [
+              { emoji: "🐕", label: "dog" },
+              { emoji: "🐄", label: "cow" },
+              { emoji: "🐐", label: "goat" },
+            ],
+            answer:
+              "All three are domestic animals. They live near people, are useful, and people take care of them.",
+            buttonLabel: "Check answer",
+          },
+        },
+      },
+      {
+        type: "summary",
+        data: {
+          ru: {
+            title: "Что я узнал",
+            text:
+              "**Домашние** животные живут рядом с человеком, приносят **пользу**, а человек **заботится** о них.",
+            terms: ["домашние", "пользу", "заботится"],
+          },
+          kz: {
+            title: "Мен нені білдім",
+            text:
+              "**Үй** жануарлары адамның жанында тұрады, **пайда** әкеледі, адам олар туралы **қамқорлық** жасайды.",
+            terms: ["үй", "пайда", "қамқорлық"],
+          },
+          en: {
+            title: "What I learned",
+            text:
+              "**Domestic** animals live near people, bring **benefit**, and people **take care** of them.",
+            terms: ["domestic", "benefit", "take care"],
+          },
+        },
+      },
+    ],
+
+    // Дикие животные
+    observation: [
+      {
+        type: "carousel",
+        data: {
+          ru: {
+            groupLabel: "Работа в группах",
+            title: "Дикие животные",
+            slides: [
+              { emoji: "🐘", caption: "Слон живёт в жарких странах." },
+              { emoji: "🦧", caption: "Орангутан живёт в тропических лесах." },
+              { emoji: "🦅", caption: "Беркут парит над горами." },
+              { emoji: "🦌", caption: "Сайгак бегает по степям Казахстана." },
+              { emoji: "🐱", caption: "Рысь живёт в густых лесах." },
+            ],
+          },
+          kz: {
+            groupLabel: "Топта жұмыс",
+            title: "Жабайы жануарлар",
+            slides: [
+              { emoji: "🐘", caption: "Піл ыстық елдерде тұрады." },
+              { emoji: "🦧", caption: "Орангутан тропиктік ормандарда тұрады." },
+              { emoji: "🦅", caption: "Бүркіт таулардың үстінде қалықтайды." },
+              { emoji: "🦌", caption: "Киік Қазақстан даласында жүгіреді." },
+              { emoji: "🐱", caption: "Сілеусін қалың орманда тұрады." },
+            ],
+          },
+          en: {
+            groupLabel: "Group work",
+            title: "Wild animals",
+            slides: [
+              { emoji: "🐘", caption: "An elephant lives in hot countries." },
+              { emoji: "🦧", caption: "An orangutan lives in tropical forests." },
+              { emoji: "🦅", caption: "A golden eagle soars above the mountains." },
+              { emoji: "🦌", caption: "A saiga runs across the steppes of Kazakhstan." },
+              { emoji: "🐱", caption: "A lynx lives in dense forests." },
+            ],
+          },
+        },
+      },
+      {
+        type: "reveal",
+        data: {
+          ru: {
+            title: "Где они обитают?",
+            question:
+              "К какой группе относятся эти животные? Где они обитают?",
+            items: [
+              { emoji: "🐘", label: "слон" },
+              { emoji: "🦅", label: "беркут" },
+              { emoji: "🦌", label: "сайгак" },
+            ],
+            answer:
+              "Все они — дикие животные. Слон живёт в саваннах, беркут — в горах, сайгак — в степях. Они сами добывают пищу.",
+            buttonLabel: "Проверить ответ",
+          },
+          kz: {
+            title: "Олар қайда тұрады?",
+            question:
+              "Бұл жануарлар қай топқа жатады? Олар қайда тұрады?",
+            items: [
+              { emoji: "🐘", label: "піл" },
+              { emoji: "🦅", label: "бүркіт" },
+              { emoji: "🦌", label: "киік" },
+            ],
+            answer:
+              "Олардың барлығы — жабайы жануарлар. Піл саваннада, бүркіт тауда, киік далада тұрады. Олар тамағын өздері табады.",
+            buttonLabel: "Жауапты тексеру",
+          },
+          en: {
+            title: "Where do they live?",
+            question:
+              "What group do these animals belong to? Where do they live?",
+            items: [
+              { emoji: "🐘", label: "elephant" },
+              { emoji: "🦅", label: "eagle" },
+              { emoji: "🦌", label: "saiga" },
+            ],
+            answer:
+              "They are all wild animals. The elephant lives in savannas, the eagle in the mountains, the saiga in the steppes. They find food on their own.",
+            buttonLabel: "Check answer",
+          },
+        },
+      },
+      {
+        type: "summary",
+        data: {
+          ru: {
+            title: "Что я узнал",
+            text:
+              "**Дикие** животные живут в **лесах**, **степях** и **горах**. Они сами добывают пищу и находят жильё.",
+            terms: ["дикие", "лесах", "степях", "горах"],
+          },
+          kz: {
+            title: "Мен нені білдім",
+            text:
+              "**Жабайы** жануарлар **ормандарда**, **далада** және **тауларда** тұрады. Олар тамағын өздері табады, паналайтын жерін өздері іздейді.",
+            terms: ["жабайы", "ормандарда", "далада", "тауларда"],
+          },
+          en: {
+            title: "What I learned",
+            text:
+              "**Wild** animals live in **forests**, **steppes** and **mountains**. They find food and shelter on their own.",
+            terms: ["wild", "forests", "steppes", "mountains"],
+          },
+        },
+      },
+      {
+        type: "sort",
+        data: {
+          ru: {
+            title: "Где обитают эти животные?",
+            instruction:
+              "Распредели животных по среде обитания.",
+            categories: [
+              { id: "land", label: "На земле / в лесу", emoji: "🌳" },
+              { id: "water", label: "В воде", emoji: "🌊" },
+              { id: "mount", label: "В горах", emoji: "⛰️" },
+            ],
+            items: [
+              { id: "s1", label: "корова", emoji: "🐄", categoryId: "land" },
+              { id: "s2", label: "заяц", emoji: "🐰", categoryId: "land" },
+              { id: "s3", label: "лиса", emoji: "🦊", categoryId: "land" },
+              { id: "s4", label: "дельфин", emoji: "🐬", categoryId: "water" },
+              { id: "s5", label: "архар", emoji: "🐏", categoryId: "mount" },
+            ],
+            checkLabel: "Проверить",
+          },
+          kz: {
+            title: "Бұл жануарлар қайда тұрады?",
+            instruction:
+              "Жануарларды мекен ортасы бойынша бөл.",
+            categories: [
+              { id: "land", label: "Жерде / орманда", emoji: "🌳" },
+              { id: "water", label: "Суда", emoji: "🌊" },
+              { id: "mount", label: "Тауда", emoji: "⛰️" },
+            ],
+            items: [
+              { id: "s1", label: "сиыр", emoji: "🐄", categoryId: "land" },
+              { id: "s2", label: "қоян", emoji: "🐰", categoryId: "land" },
+              { id: "s3", label: "түлкі", emoji: "🦊", categoryId: "land" },
+              { id: "s4", label: "дельфин", emoji: "🐬", categoryId: "water" },
+              { id: "s5", label: "арқар", emoji: "🐏", categoryId: "mount" },
+            ],
+            checkLabel: "Тексеру",
+          },
+          en: {
+            title: "Where do these animals live?",
+            instruction:
+              "Sort the animals by their habitat.",
+            categories: [
+              { id: "land", label: "On land / in forest", emoji: "🌳" },
+              { id: "water", label: "In water", emoji: "🌊" },
+              { id: "mount", label: "In mountains", emoji: "⛰️" },
+            ],
+            items: [
+              { id: "s1", label: "cow", emoji: "🐄", categoryId: "land" },
+              { id: "s2", label: "hare", emoji: "🐰", categoryId: "land" },
+              { id: "s3", label: "fox", emoji: "🦊", categoryId: "land" },
+              { id: "s4", label: "dolphin", emoji: "🐬", categoryId: "water" },
+              { id: "s5", label: "argali", emoji: "🐏", categoryId: "mount" },
+            ],
+            checkLabel: "Check",
+          },
+        },
+      },
+    ],
+
+    // Итоги
+    experiments: [
+      {
+        type: "fact",
+        data: {
+          ru: {
+            title: "Найди в энциклопедии",
+            text:
+              "Узнай, какие редкие дикие животные живут в Казахстане. Запиши 3 примера и где они обитают.",
+            keywords: ["энциклопедия", "Казахстан", "редкие"],
+            icon: "sparkles",
+          },
+          kz: {
+            title: "Энциклопедиядан тап",
+            text:
+              "Қазақстанда қандай сирек кездесетін жабайы жануарлар бар? 3 мысал жазып, қайда тұратынын көрсет.",
+            keywords: ["энциклопедия", "Қазақстан", "сирек"],
+            icon: "sparkles",
+          },
+          en: {
+            title: "Find in the encyclopedia",
+            text:
+              "Find out which rare wild animals live in Kazakhstan. Write down 3 examples and where they live.",
+            keywords: ["encyclopedia", "Kazakhstan", "rare"],
+            icon: "sparkles",
+          },
+        },
+      },
+      {
+        type: "fact",
+        data: {
+          ru: {
+            title: "Это интересно!",
+            text:
+              "У молодых пингвинов хвост похож на белый мех. Это помогает их мамам быстро находить своих птенцов в большой стае.",
+            keywords: ["пингвины", "хвост", "мех"],
+            icon: "bulb",
+          },
+          kz: {
+            title: "Бұл қызық!",
+            text:
+              "Жас пингвиндердің құйрығы ақ жүнге ұқсайды. Бұл аналарына үлкен топтан өз балапандарын тез табуға көмектеседі.",
+            keywords: ["пингвин", "құйрық", "жүн"],
+            icon: "bulb",
+          },
+          en: {
+            title: "Did you know?",
+            text:
+              "Young penguins have tails that look like white fur. It helps their mothers quickly find their chicks in a large flock.",
+            keywords: ["penguins", "tail", "fur"],
+            icon: "bulb",
+          },
+        },
+      },
+      {
+        type: "summary",
+        data: {
+          ru: {
+            title: "Итоговые вопросы",
+            text:
+              "1) Чем **дикие** животные отличаются от **домашних**? 2) Почему человек должен **заботиться** о домашних животных?",
+          },
+          kz: {
+            title: "Қорытынды сұрақтар",
+            text:
+              "1) **Жабайы** жануарлар **үй** жануарларынан немен ерекшеленеді? 2) Адам үй жануарларына неліктен **қамқорлық** жасауы керек?",
+          },
+          en: {
+            title: "Wrap-up questions",
+            text:
+              "1) How do **wild** animals differ from **domestic** ones? 2) Why should people **take care** of domestic animals?",
+          },
+        },
+      },
+    ],
+  },
+  17: {
+    intro: [
+      {
+        type: "audio",
+        data: {
+          ru: {
+            title: "Аудио-гид к уроку",
+            text:
+              "Сегодня мы узнаем, что животные бывают дикими и домашними, и в чём их главное отличие.",
+            caption: "Послушай вступление к уроку",
+            durationLabel: "0:22",
+          },
+          kz: {
+            title: "Сабақтың аудио-гиді",
+            text:
+              "Бүгін біз жануарлардың жабайы және үй жануарлары болып бөлінетінін, олардың айырмашылығы неде екенін білеміз.",
+            caption: "Сабақтың кіріспесін тыңда",
+            durationLabel: "0:22",
+          },
+          en: {
+            title: "Lesson audio guide",
+            text:
+              "Today we'll learn that animals can be wild or domestic, and what is the main difference between them.",
+            caption: "Listen to the lesson intro",
+            durationLabel: "0:22",
+          },
+        },
+      },
+      {
+        type: "carousel",
+        data: {
+          ru: {
+            groupLabel: "Ключевые слова",
+            title: "Дикие и домашние",
+            slides: [
+              { emoji: "🏠", caption: "Домашние животные / Үй жануарлары / Domestic animals" },
+              { emoji: "🌲", caption: "Дикие животные / Жабайы жануарлар / Wild animals" },
+              { emoji: "🌍", caption: "Среда обитания / Мекен орта / Habitat" },
+            ],
+          },
+          kz: {
+            groupLabel: "Кілт сөздер",
+            title: "Жабайы және үй",
+            slides: [
+              { emoji: "🏠", caption: "Үй жануарлары / Домашние / Domestic animals" },
+              { emoji: "🌲", caption: "Жабайы жануарлар / Дикие / Wild animals" },
+              { emoji: "🌍", caption: "Мекен орта / Среда обитания / Habitat" },
+            ],
+          },
+          en: {
+            groupLabel: "Key words",
+            title: "Wild and domestic",
+            slides: [
+              { emoji: "🏠", caption: "Domestic animals / Домашние / Үй жануарлары" },
+              { emoji: "🌲", caption: "Wild animals / Дикие / Жабайы жануарлар" },
+              { emoji: "🌍", caption: "Habitat / Среда обитания / Мекен орта" },
+            ],
+          },
+        },
+      },
+    ],
+
+    // Домашние животные
+    scientists: [
+      {
+        type: "carousel",
+        data: {
+          ru: {
+            groupLabel: "Работа в группах",
+            title: "Домашние животные",
+            slides: [
+              { emoji: "🐕", caption: "Собаки живут рядом с людьми — охраняют дом." },
+              { emoji: "🐄", caption: "Корова на пастбище даёт молоко." },
+              { emoji: "🐐", caption: "Коза у забора — даёт молоко и шерсть." },
+              { emoji: "🐎", caption: "Лошадь с жеребёнком — помогает человеку." },
+            ],
+          },
+          kz: {
+            groupLabel: "Топта жұмыс",
+            title: "Үй жануарлары",
+            slides: [
+              { emoji: "🐕", caption: "Иттер адаммен бірге тұрып, үйді күзетеді." },
+              { emoji: "🐄", caption: "Жайылымдағы сиыр сүт береді." },
+              { emoji: "🐐", caption: "Қоршау жанындағы ешкі — сүт пен жүн береді." },
+              { emoji: "🐎", caption: "Жылқы құлынымен — адамға көмектеседі." },
+            ],
+          },
+          en: {
+            groupLabel: "Group work",
+            title: "Domestic animals",
+            slides: [
+              { emoji: "🐕", caption: "Dogs live with people — they guard the house." },
+              { emoji: "🐄", caption: "A cow on the pasture gives milk." },
+              { emoji: "🐐", caption: "A goat by the fence gives milk and wool." },
+              { emoji: "🐎", caption: "A mare with her foal — helps people." },
+            ],
+          },
+        },
+      },
+      {
+        type: "reveal",
+        data: {
+          ru: {
+            title: "Проверь себя",
+            question:
+              "Кто из этих животных — домашний? Подумай и проверь ответ.",
+            items: [
+              { emoji: "🐕", label: "собака" },
+              { emoji: "🐄", label: "корова" },
+              { emoji: "🐐", label: "коза" },
+            ],
+            answer:
+              "Все трое — домашние животные. Они живут рядом с человеком, приносят пользу, а человек заботится о них.",
+            buttonLabel: "Проверить ответ",
+          },
+          kz: {
+            title: "Өзіңді тексер",
+            question:
+              "Бұлардың қайсысы үй жануары? Ойлан да жауапты тексер.",
+            items: [
+              { emoji: "🐕", label: "ит" },
+              { emoji: "🐄", label: "сиыр" },
+              { emoji: "🐐", label: "ешкі" },
+            ],
+            answer:
+              "Үшеуі де үй жануарлары. Олар адамның жанында тұрады, пайда әкеледі, адам оларды күтеді.",
+            buttonLabel: "Жауапты тексеру",
+          },
+          en: {
+            title: "Check yourself",
+            question:
+              "Which of these are domestic animals? Think, then check.",
+            items: [
+              { emoji: "🐕", label: "dog" },
+              { emoji: "🐄", label: "cow" },
+              { emoji: "🐐", label: "goat" },
+            ],
+            answer:
+              "All three are domestic animals. They live near people, are useful, and people take care of them.",
+            buttonLabel: "Check answer",
+          },
+        },
+      },
+      {
+        type: "summary",
+        data: {
+          ru: {
+            title: "Что я узнал",
+            text:
+              "**Домашние** животные живут рядом с человеком, приносят **пользу**, а человек **заботится** о них.",
+            terms: ["домашние", "пользу", "заботится"],
+          },
+          kz: {
+            title: "Мен нені білдім",
+            text:
+              "**Үй** жануарлары адамның жанында тұрады, **пайда** әкеледі, адам олар туралы **қамқорлық** жасайды.",
+            terms: ["үй", "пайда", "қамқорлық"],
+          },
+          en: {
+            title: "What I learned",
+            text:
+              "**Domestic** animals live near people, bring **benefit**, and people **take care** of them.",
+            terms: ["domestic", "benefit", "take care"],
+          },
+        },
+      },
+    ],
+
+    // Дикие животные
+    observation: [
+      {
+        type: "carousel",
+        data: {
+          ru: {
+            groupLabel: "Работа в группах",
+            title: "Дикие животные",
+            slides: [
+              { emoji: "🐘", caption: "Слон живёт в жарких странах." },
+              { emoji: "🦧", caption: "Орангутан живёт в тропических лесах." },
+              { emoji: "🦅", caption: "Беркут парит над горами." },
+              { emoji: "🦌", caption: "Сайгак бегает по степям Казахстана." },
+              { emoji: "🐱", caption: "Рысь живёт в густых лесах." },
+            ],
+          },
+          kz: {
+            groupLabel: "Топта жұмыс",
+            title: "Жабайы жануарлар",
+            slides: [
+              { emoji: "🐘", caption: "Піл ыстық елдерде тұрады." },
+              { emoji: "🦧", caption: "Орангутан тропиктік ормандарда тұрады." },
+              { emoji: "🦅", caption: "Бүркіт таулардың үстінде қалықтайды." },
+              { emoji: "🦌", caption: "Киік Қазақстан даласында жүгіреді." },
+              { emoji: "🐱", caption: "Сілеусін қалың орманда тұрады." },
+            ],
+          },
+          en: {
+            groupLabel: "Group work",
+            title: "Wild animals",
+            slides: [
+              { emoji: "🐘", caption: "An elephant lives in hot countries." },
+              { emoji: "🦧", caption: "An orangutan lives in tropical forests." },
+              { emoji: "🦅", caption: "A golden eagle soars above the mountains." },
+              { emoji: "🦌", caption: "A saiga runs across the steppes of Kazakhstan." },
+              { emoji: "🐱", caption: "A lynx lives in dense forests." },
+            ],
+          },
+        },
+      },
+      {
+        type: "reveal",
+        data: {
+          ru: {
+            title: "Где они обитают?",
+            question:
+              "К какой группе относятся эти животные? Где они обитают?",
+            items: [
+              { emoji: "🐘", label: "слон" },
+              { emoji: "🦅", label: "беркут" },
+              { emoji: "🦌", label: "сайгак" },
+            ],
+            answer:
+              "Все они — дикие животные. Слон живёт в саваннах, беркут — в горах, сайгак — в степях. Они сами добывают пищу.",
+            buttonLabel: "Проверить ответ",
+          },
+          kz: {
+            title: "Олар қайда тұрады?",
+            question:
+              "Бұл жануарлар қай топқа жатады? Олар қайда тұрады?",
+            items: [
+              { emoji: "🐘", label: "піл" },
+              { emoji: "🦅", label: "бүркіт" },
+              { emoji: "🦌", label: "киік" },
+            ],
+            answer:
+              "Олардың барлығы — жабайы жануарлар. Піл саваннада, бүркіт тауда, киік далада тұрады. Олар тамағын өздері табады.",
+            buttonLabel: "Жауапты тексеру",
+          },
+          en: {
+            title: "Where do they live?",
+            question:
+              "What group do these animals belong to? Where do they live?",
+            items: [
+              { emoji: "🐘", label: "elephant" },
+              { emoji: "🦅", label: "eagle" },
+              { emoji: "🦌", label: "saiga" },
+            ],
+            answer:
+              "They are all wild animals. The elephant lives in savannas, the eagle in the mountains, the saiga in the steppes. They find food on their own.",
+            buttonLabel: "Check answer",
+          },
+        },
+      },
+      {
+        type: "summary",
+        data: {
+          ru: {
+            title: "Что я узнал",
+            text:
+              "**Дикие** животные живут в **лесах**, **степях** и **горах**. Они сами добывают пищу и находят жильё.",
+            terms: ["дикие", "лесах", "степях", "горах"],
+          },
+          kz: {
+            title: "Мен нені білдім",
+            text:
+              "**Жабайы** жануарлар **ормандарда**, **далада** және **тауларда** тұрады. Олар тамағын өздері табады, паналайтын жерін өздері іздейді.",
+            terms: ["жабайы", "ормандарда", "далада", "тауларда"],
+          },
+          en: {
+            title: "What I learned",
+            text:
+              "**Wild** animals live in **forests**, **steppes** and **mountains**. They find food and shelter on their own.",
+            terms: ["wild", "forests", "steppes", "mountains"],
+          },
+        },
+      },
+      {
+        type: "sort",
+        data: {
+          ru: {
+            title: "Где обитают эти животные?",
+            instruction:
+              "Распредели животных по среде обитания.",
+            categories: [
+              { id: "land", label: "На земле / в лесу", emoji: "🌳" },
+              { id: "water", label: "В воде", emoji: "🌊" },
+              { id: "mount", label: "В горах", emoji: "⛰️" },
+            ],
+            items: [
+              { id: "s1", label: "корова", emoji: "🐄", categoryId: "land" },
+              { id: "s2", label: "заяц", emoji: "🐰", categoryId: "land" },
+              { id: "s3", label: "лиса", emoji: "🦊", categoryId: "land" },
+              { id: "s4", label: "дельфин", emoji: "🐬", categoryId: "water" },
+              { id: "s5", label: "архар", emoji: "🐏", categoryId: "mount" },
+            ],
+            checkLabel: "Проверить",
+          },
+          kz: {
+            title: "Бұл жануарлар қайда тұрады?",
+            instruction:
+              "Жануарларды мекен ортасы бойынша бөл.",
+            categories: [
+              { id: "land", label: "Жерде / орманда", emoji: "🌳" },
+              { id: "water", label: "Суда", emoji: "🌊" },
+              { id: "mount", label: "Тауда", emoji: "⛰️" },
+            ],
+            items: [
+              { id: "s1", label: "сиыр", emoji: "🐄", categoryId: "land" },
+              { id: "s2", label: "қоян", emoji: "🐰", categoryId: "land" },
+              { id: "s3", label: "түлкі", emoji: "🦊", categoryId: "land" },
+              { id: "s4", label: "дельфин", emoji: "🐬", categoryId: "water" },
+              { id: "s5", label: "арқар", emoji: "🐏", categoryId: "mount" },
+            ],
+            checkLabel: "Тексеру",
+          },
+          en: {
+            title: "Where do these animals live?",
+            instruction:
+              "Sort the animals by their habitat.",
+            categories: [
+              { id: "land", label: "On land / in forest", emoji: "🌳" },
+              { id: "water", label: "In water", emoji: "🌊" },
+              { id: "mount", label: "In mountains", emoji: "⛰️" },
+            ],
+            items: [
+              { id: "s1", label: "cow", emoji: "🐄", categoryId: "land" },
+              { id: "s2", label: "hare", emoji: "🐰", categoryId: "land" },
+              { id: "s3", label: "fox", emoji: "🦊", categoryId: "land" },
+              { id: "s4", label: "dolphin", emoji: "🐬", categoryId: "water" },
+              { id: "s5", label: "argali", emoji: "🐏", categoryId: "mount" },
+            ],
+            checkLabel: "Check",
+          },
+        },
+      },
+    ],
+
+    // Итоги
+    experiments: [
+      {
+        type: "fact",
+        data: {
+          ru: {
+            title: "Найди в энциклопедии",
+            text:
+              "Узнай, какие редкие дикие животные живут в Казахстане. Запиши 3 примера и где они обитают.",
+            keywords: ["энциклопедия", "Казахстан", "редкие"],
+            icon: "sparkles",
+          },
+          kz: {
+            title: "Энциклопедиядан тап",
+            text:
+              "Қазақстанда қандай сирек кездесетін жабайы жануарлар бар? 3 мысал жазып, қайда тұратынын көрсет.",
+            keywords: ["энциклопедия", "Қазақстан", "сирек"],
+            icon: "sparkles",
+          },
+          en: {
+            title: "Find in the encyclopedia",
+            text:
+              "Find out which rare wild animals live in Kazakhstan. Write down 3 examples and where they live.",
+            keywords: ["encyclopedia", "Kazakhstan", "rare"],
+            icon: "sparkles",
+          },
+        },
+      },
+      {
+        type: "fact",
+        data: {
+          ru: {
+            title: "Это интересно!",
+            text:
+              "У молодых пингвинов хвост похож на белый мех. Это помогает их мамам быстро находить своих птенцов в большой стае.",
+            keywords: ["пингвины", "хвост", "мех"],
+            icon: "bulb",
+          },
+          kz: {
+            title: "Бұл қызық!",
+            text:
+              "Жас пингвиндердің құйрығы ақ жүнге ұқсайды. Бұл аналарына үлкен топтан өз балапандарын тез табуға көмектеседі.",
+            keywords: ["пингвин", "құйрық", "жүн"],
+            icon: "bulb",
+          },
+          en: {
+            title: "Did you know?",
+            text:
+              "Young penguins have tails that look like white fur. It helps their mothers quickly find their chicks in a large flock.",
+            keywords: ["penguins", "tail", "fur"],
+            icon: "bulb",
+          },
+        },
+      },
+      {
+        type: "summary",
+        data: {
+          ru: {
+            title: "Итоговые вопросы",
+            text:
+              "1) Чем **дикие** животные отличаются от **домашних**? 2) Почему человек должен **заботиться** о домашних животных?",
+          },
+          kz: {
+            title: "Қорытынды сұрақтар",
+            text:
+              "1) **Жабайы** жануарлар **үй** жануарларынан немен ерекшеленеді? 2) Адам үй жануарларына неліктен **қамқорлық** жасауы керек?",
+          },
+          en: {
+            title: "Wrap-up questions",
+            text:
+              "1) How do **wild** animals differ from **domestic** ones? 2) Why should people **take care** of domestic animals?",
+          },
+        },
+      },
+    ],
+  },
+  18: {
+    intro: [
+      {
+        type: "audio",
+        data: {
+          ru: {
+            title: "Аудио-гид к уроку",
+            text:
+              "Сегодня мы узнаем, что животные бывают дикими и домашними, и в чём их главное отличие.",
+            caption: "Послушай вступление к уроку",
+            durationLabel: "0:22",
+          },
+          kz: {
+            title: "Сабақтың аудио-гиді",
+            text:
+              "Бүгін біз жануарлардың жабайы және үй жануарлары болып бөлінетінін, олардың айырмашылығы неде екенін білеміз.",
+            caption: "Сабақтың кіріспесін тыңда",
+            durationLabel: "0:22",
+          },
+          en: {
+            title: "Lesson audio guide",
+            text:
+              "Today we'll learn that animals can be wild or domestic, and what is the main difference between them.",
+            caption: "Listen to the lesson intro",
+            durationLabel: "0:22",
+          },
+        },
+      },
+      {
+        type: "carousel",
+        data: {
+          ru: {
+            groupLabel: "Ключевые слова",
+            title: "Дикие и домашние",
+            slides: [
+              { emoji: "🏠", caption: "Домашние животные / Үй жануарлары / Domestic animals" },
+              { emoji: "🌲", caption: "Дикие животные / Жабайы жануарлар / Wild animals" },
+              { emoji: "🌍", caption: "Среда обитания / Мекен орта / Habitat" },
+            ],
+          },
+          kz: {
+            groupLabel: "Кілт сөздер",
+            title: "Жабайы және үй",
+            slides: [
+              { emoji: "🏠", caption: "Үй жануарлары / Домашние / Domestic animals" },
+              { emoji: "🌲", caption: "Жабайы жануарлар / Дикие / Wild animals" },
+              { emoji: "🌍", caption: "Мекен орта / Среда обитания / Habitat" },
+            ],
+          },
+          en: {
+            groupLabel: "Key words",
+            title: "Wild and domestic",
+            slides: [
+              { emoji: "🏠", caption: "Domestic animals / Домашние / Үй жануарлары" },
+              { emoji: "🌲", caption: "Wild animals / Дикие / Жабайы жануарлар" },
+              { emoji: "🌍", caption: "Habitat / Среда обитания / Мекен орта" },
+            ],
+          },
+        },
+      },
+    ],
+
+    // Домашние животные
+    scientists: [
+      {
+        type: "carousel",
+        data: {
+          ru: {
+            groupLabel: "Работа в группах",
+            title: "Домашние животные",
+            slides: [
+              { emoji: "🐕", caption: "Собаки живут рядом с людьми — охраняют дом." },
+              { emoji: "🐄", caption: "Корова на пастбище даёт молоко." },
+              { emoji: "🐐", caption: "Коза у забора — даёт молоко и шерсть." },
+              { emoji: "🐎", caption: "Лошадь с жеребёнком — помогает человеку." },
+            ],
+          },
+          kz: {
+            groupLabel: "Топта жұмыс",
+            title: "Үй жануарлары",
+            slides: [
+              { emoji: "🐕", caption: "Иттер адаммен бірге тұрып, үйді күзетеді." },
+              { emoji: "🐄", caption: "Жайылымдағы сиыр сүт береді." },
+              { emoji: "🐐", caption: "Қоршау жанындағы ешкі — сүт пен жүн береді." },
+              { emoji: "🐎", caption: "Жылқы құлынымен — адамға көмектеседі." },
+            ],
+          },
+          en: {
+            groupLabel: "Group work",
+            title: "Domestic animals",
+            slides: [
+              { emoji: "🐕", caption: "Dogs live with people — they guard the house." },
+              { emoji: "🐄", caption: "A cow on the pasture gives milk." },
+              { emoji: "🐐", caption: "A goat by the fence gives milk and wool." },
+              { emoji: "🐎", caption: "A mare with her foal — helps people." },
+            ],
+          },
+        },
+      },
+      {
+        type: "reveal",
+        data: {
+          ru: {
+            title: "Проверь себя",
+            question:
+              "Кто из этих животных — домашний? Подумай и проверь ответ.",
+            items: [
+              { emoji: "🐕", label: "собака" },
+              { emoji: "🐄", label: "корова" },
+              { emoji: "🐐", label: "коза" },
+            ],
+            answer:
+              "Все трое — домашние животные. Они живут рядом с человеком, приносят пользу, а человек заботится о них.",
+            buttonLabel: "Проверить ответ",
+          },
+          kz: {
+            title: "Өзіңді тексер",
+            question:
+              "Бұлардың қайсысы үй жануары? Ойлан да жауапты тексер.",
+            items: [
+              { emoji: "🐕", label: "ит" },
+              { emoji: "🐄", label: "сиыр" },
+              { emoji: "🐐", label: "ешкі" },
+            ],
+            answer:
+              "Үшеуі де үй жануарлары. Олар адамның жанында тұрады, пайда әкеледі, адам оларды күтеді.",
+            buttonLabel: "Жауапты тексеру",
+          },
+          en: {
+            title: "Check yourself",
+            question:
+              "Which of these are domestic animals? Think, then check.",
+            items: [
+              { emoji: "🐕", label: "dog" },
+              { emoji: "🐄", label: "cow" },
+              { emoji: "🐐", label: "goat" },
+            ],
+            answer:
+              "All three are domestic animals. They live near people, are useful, and people take care of them.",
+            buttonLabel: "Check answer",
+          },
+        },
+      },
+      {
+        type: "summary",
+        data: {
+          ru: {
+            title: "Что я узнал",
+            text:
+              "**Домашние** животные живут рядом с человеком, приносят **пользу**, а человек **заботится** о них.",
+            terms: ["домашние", "пользу", "заботится"],
+          },
+          kz: {
+            title: "Мен нені білдім",
+            text:
+              "**Үй** жануарлары адамның жанында тұрады, **пайда** әкеледі, адам олар туралы **қамқорлық** жасайды.",
+            terms: ["үй", "пайда", "қамқорлық"],
+          },
+          en: {
+            title: "What I learned",
+            text:
+              "**Domestic** animals live near people, bring **benefit**, and people **take care** of them.",
+            terms: ["domestic", "benefit", "take care"],
+          },
+        },
+      },
+    ],
+
+    // Дикие животные
+    observation: [
+      {
+        type: "carousel",
+        data: {
+          ru: {
+            groupLabel: "Работа в группах",
+            title: "Дикие животные",
+            slides: [
+              { emoji: "🐘", caption: "Слон живёт в жарких странах." },
+              { emoji: "🦧", caption: "Орангутан живёт в тропических лесах." },
+              { emoji: "🦅", caption: "Беркут парит над горами." },
+              { emoji: "🦌", caption: "Сайгак бегает по степям Казахстана." },
+              { emoji: "🐱", caption: "Рысь живёт в густых лесах." },
+            ],
+          },
+          kz: {
+            groupLabel: "Топта жұмыс",
+            title: "Жабайы жануарлар",
+            slides: [
+              { emoji: "🐘", caption: "Піл ыстық елдерде тұрады." },
+              { emoji: "🦧", caption: "Орангутан тропиктік ормандарда тұрады." },
+              { emoji: "🦅", caption: "Бүркіт таулардың үстінде қалықтайды." },
+              { emoji: "🦌", caption: "Киік Қазақстан даласында жүгіреді." },
+              { emoji: "🐱", caption: "Сілеусін қалың орманда тұрады." },
+            ],
+          },
+          en: {
+            groupLabel: "Group work",
+            title: "Wild animals",
+            slides: [
+              { emoji: "🐘", caption: "An elephant lives in hot countries." },
+              { emoji: "🦧", caption: "An orangutan lives in tropical forests." },
+              { emoji: "🦅", caption: "A golden eagle soars above the mountains." },
+              { emoji: "🦌", caption: "A saiga runs across the steppes of Kazakhstan." },
+              { emoji: "🐱", caption: "A lynx lives in dense forests." },
+            ],
+          },
+        },
+      },
+      {
+        type: "reveal",
+        data: {
+          ru: {
+            title: "Где они обитают?",
+            question:
+              "К какой группе относятся эти животные? Где они обитают?",
+            items: [
+              { emoji: "🐘", label: "слон" },
+              { emoji: "🦅", label: "беркут" },
+              { emoji: "🦌", label: "сайгак" },
+            ],
+            answer:
+              "Все они — дикие животные. Слон живёт в саваннах, беркут — в горах, сайгак — в степях. Они сами добывают пищу.",
+            buttonLabel: "Проверить ответ",
+          },
+          kz: {
+            title: "Олар қайда тұрады?",
+            question:
+              "Бұл жануарлар қай топқа жатады? Олар қайда тұрады?",
+            items: [
+              { emoji: "🐘", label: "піл" },
+              { emoji: "🦅", label: "бүркіт" },
+              { emoji: "🦌", label: "киік" },
+            ],
+            answer:
+              "Олардың барлығы — жабайы жануарлар. Піл саваннада, бүркіт тауда, киік далада тұрады. Олар тамағын өздері табады.",
+            buttonLabel: "Жауапты тексеру",
+          },
+          en: {
+            title: "Where do they live?",
+            question:
+              "What group do these animals belong to? Where do they live?",
+            items: [
+              { emoji: "🐘", label: "elephant" },
+              { emoji: "🦅", label: "eagle" },
+              { emoji: "🦌", label: "saiga" },
+            ],
+            answer:
+              "They are all wild animals. The elephant lives in savannas, the eagle in the mountains, the saiga in the steppes. They find food on their own.",
+            buttonLabel: "Check answer",
+          },
+        },
+      },
+      {
+        type: "summary",
+        data: {
+          ru: {
+            title: "Что я узнал",
+            text:
+              "**Дикие** животные живут в **лесах**, **степях** и **горах**. Они сами добывают пищу и находят жильё.",
+            terms: ["дикие", "лесах", "степях", "горах"],
+          },
+          kz: {
+            title: "Мен нені білдім",
+            text:
+              "**Жабайы** жануарлар **ормандарда**, **далада** және **тауларда** тұрады. Олар тамағын өздері табады, паналайтын жерін өздері іздейді.",
+            terms: ["жабайы", "ормандарда", "далада", "тауларда"],
+          },
+          en: {
+            title: "What I learned",
+            text:
+              "**Wild** animals live in **forests**, **steppes** and **mountains**. They find food and shelter on their own.",
+            terms: ["wild", "forests", "steppes", "mountains"],
+          },
+        },
+      },
+      {
+        type: "sort",
+        data: {
+          ru: {
+            title: "Где обитают эти животные?",
+            instruction:
+              "Распредели животных по среде обитания.",
+            categories: [
+              { id: "land", label: "На земле / в лесу", emoji: "🌳" },
+              { id: "water", label: "В воде", emoji: "🌊" },
+              { id: "mount", label: "В горах", emoji: "⛰️" },
+            ],
+            items: [
+              { id: "s1", label: "корова", emoji: "🐄", categoryId: "land" },
+              { id: "s2", label: "заяц", emoji: "🐰", categoryId: "land" },
+              { id: "s3", label: "лиса", emoji: "🦊", categoryId: "land" },
+              { id: "s4", label: "дельфин", emoji: "🐬", categoryId: "water" },
+              { id: "s5", label: "архар", emoji: "🐏", categoryId: "mount" },
+            ],
+            checkLabel: "Проверить",
+          },
+          kz: {
+            title: "Бұл жануарлар қайда тұрады?",
+            instruction:
+              "Жануарларды мекен ортасы бойынша бөл.",
+            categories: [
+              { id: "land", label: "Жерде / орманда", emoji: "🌳" },
+              { id: "water", label: "Суда", emoji: "🌊" },
+              { id: "mount", label: "Тауда", emoji: "⛰️" },
+            ],
+            items: [
+              { id: "s1", label: "сиыр", emoji: "🐄", categoryId: "land" },
+              { id: "s2", label: "қоян", emoji: "🐰", categoryId: "land" },
+              { id: "s3", label: "түлкі", emoji: "🦊", categoryId: "land" },
+              { id: "s4", label: "дельфин", emoji: "🐬", categoryId: "water" },
+              { id: "s5", label: "арқар", emoji: "🐏", categoryId: "mount" },
+            ],
+            checkLabel: "Тексеру",
+          },
+          en: {
+            title: "Where do these animals live?",
+            instruction:
+              "Sort the animals by their habitat.",
+            categories: [
+              { id: "land", label: "On land / in forest", emoji: "🌳" },
+              { id: "water", label: "In water", emoji: "🌊" },
+              { id: "mount", label: "In mountains", emoji: "⛰️" },
+            ],
+            items: [
+              { id: "s1", label: "cow", emoji: "🐄", categoryId: "land" },
+              { id: "s2", label: "hare", emoji: "🐰", categoryId: "land" },
+              { id: "s3", label: "fox", emoji: "🦊", categoryId: "land" },
+              { id: "s4", label: "dolphin", emoji: "🐬", categoryId: "water" },
+              { id: "s5", label: "argali", emoji: "🐏", categoryId: "mount" },
+            ],
+            checkLabel: "Check",
+          },
+        },
+      },
+    ],
+
+    // Итоги
+    experiments: [
+      {
+        type: "fact",
+        data: {
+          ru: {
+            title: "Найди в энциклопедии",
+            text:
+              "Узнай, какие редкие дикие животные живут в Казахстане. Запиши 3 примера и где они обитают.",
+            keywords: ["энциклопедия", "Казахстан", "редкие"],
+            icon: "sparkles",
+          },
+          kz: {
+            title: "Энциклопедиядан тап",
+            text:
+              "Қазақстанда қандай сирек кездесетін жабайы жануарлар бар? 3 мысал жазып, қайда тұратынын көрсет.",
+            keywords: ["энциклопедия", "Қазақстан", "сирек"],
+            icon: "sparkles",
+          },
+          en: {
+            title: "Find in the encyclopedia",
+            text:
+              "Find out which rare wild animals live in Kazakhstan. Write down 3 examples and where they live.",
+            keywords: ["encyclopedia", "Kazakhstan", "rare"],
+            icon: "sparkles",
+          },
+        },
+      },
+      {
+        type: "fact",
+        data: {
+          ru: {
+            title: "Это интересно!",
+            text:
+              "У молодых пингвинов хвост похож на белый мех. Это помогает их мамам быстро находить своих птенцов в большой стае.",
+            keywords: ["пингвины", "хвост", "мех"],
+            icon: "bulb",
+          },
+          kz: {
+            title: "Бұл қызық!",
+            text:
+              "Жас пингвиндердің құйрығы ақ жүнге ұқсайды. Бұл аналарына үлкен топтан өз балапандарын тез табуға көмектеседі.",
+            keywords: ["пингвин", "құйрық", "жүн"],
+            icon: "bulb",
+          },
+          en: {
+            title: "Did you know?",
+            text:
+              "Young penguins have tails that look like white fur. It helps their mothers quickly find their chicks in a large flock.",
+            keywords: ["penguins", "tail", "fur"],
+            icon: "bulb",
+          },
+        },
+      },
+      {
+        type: "summary",
+        data: {
+          ru: {
+            title: "Итоговые вопросы",
+            text:
+              "1) Чем **дикие** животные отличаются от **домашних**? 2) Почему человек должен **заботиться** о домашних животных?",
+          },
+          kz: {
+            title: "Қорытынды сұрақтар",
+            text:
+              "1) **Жабайы** жануарлар **үй** жануарларынан немен ерекшеленеді? 2) Адам үй жануарларына неліктен **қамқорлық** жасауы керек?",
+          },
+          en: {
+            title: "Wrap-up questions",
+            text:
+              "1) How do **wild** animals differ from **domestic** ones? 2) Why should people **take care** of domestic animals?",
+          },
+        },
+      },
+    ],
+  },
+  19: {
+    intro: [
+      {
+        type: "audio",
+        data: {
+          ru: {
+            title: "Аудио-гид к уроку",
+            text:
+              "Сегодня мы узнаем, что животные бывают дикими и домашними, и в чём их главное отличие.",
+            caption: "Послушай вступление к уроку",
+            durationLabel: "0:22",
+          },
+          kz: {
+            title: "Сабақтың аудио-гиді",
+            text:
+              "Бүгін біз жануарлардың жабайы және үй жануарлары болып бөлінетінін, олардың айырмашылығы неде екенін білеміз.",
+            caption: "Сабақтың кіріспесін тыңда",
+            durationLabel: "0:22",
+          },
+          en: {
+            title: "Lesson audio guide",
+            text:
+              "Today we'll learn that animals can be wild or domestic, and what is the main difference between them.",
+            caption: "Listen to the lesson intro",
+            durationLabel: "0:22",
+          },
+        },
+      },
+      {
+        type: "carousel",
+        data: {
+          ru: {
+            groupLabel: "Ключевые слова",
+            title: "Дикие и домашние",
+            slides: [
+              { emoji: "🏠", caption: "Домашние животные / Үй жануарлары / Domestic animals" },
+              { emoji: "🌲", caption: "Дикие животные / Жабайы жануарлар / Wild animals" },
+              { emoji: "🌍", caption: "Среда обитания / Мекен орта / Habitat" },
+            ],
+          },
+          kz: {
+            groupLabel: "Кілт сөздер",
+            title: "Жабайы және үй",
+            slides: [
+              { emoji: "🏠", caption: "Үй жануарлары / Домашние / Domestic animals" },
+              { emoji: "🌲", caption: "Жабайы жануарлар / Дикие / Wild animals" },
+              { emoji: "🌍", caption: "Мекен орта / Среда обитания / Habitat" },
+            ],
+          },
+          en: {
+            groupLabel: "Key words",
+            title: "Wild and domestic",
+            slides: [
+              { emoji: "🏠", caption: "Domestic animals / Домашние / Үй жануарлары" },
+              { emoji: "🌲", caption: "Wild animals / Дикие / Жабайы жануарлар" },
+              { emoji: "🌍", caption: "Habitat / Среда обитания / Мекен орта" },
+            ],
+          },
+        },
+      },
+    ],
+
+    // Домашние животные
+    scientists: [
+      {
+        type: "carousel",
+        data: {
+          ru: {
+            groupLabel: "Работа в группах",
+            title: "Домашние животные",
+            slides: [
+              { emoji: "🐕", caption: "Собаки живут рядом с людьми — охраняют дом." },
+              { emoji: "🐄", caption: "Корова на пастбище даёт молоко." },
+              { emoji: "🐐", caption: "Коза у забора — даёт молоко и шерсть." },
+              { emoji: "🐎", caption: "Лошадь с жеребёнком — помогает человеку." },
+            ],
+          },
+          kz: {
+            groupLabel: "Топта жұмыс",
+            title: "Үй жануарлары",
+            slides: [
+              { emoji: "🐕", caption: "Иттер адаммен бірге тұрып, үйді күзетеді." },
+              { emoji: "🐄", caption: "Жайылымдағы сиыр сүт береді." },
+              { emoji: "🐐", caption: "Қоршау жанындағы ешкі — сүт пен жүн береді." },
+              { emoji: "🐎", caption: "Жылқы құлынымен — адамға көмектеседі." },
+            ],
+          },
+          en: {
+            groupLabel: "Group work",
+            title: "Domestic animals",
+            slides: [
+              { emoji: "🐕", caption: "Dogs live with people — they guard the house." },
+              { emoji: "🐄", caption: "A cow on the pasture gives milk." },
+              { emoji: "🐐", caption: "A goat by the fence gives milk and wool." },
+              { emoji: "🐎", caption: "A mare with her foal — helps people." },
+            ],
+          },
+        },
+      },
+      {
+        type: "reveal",
+        data: {
+          ru: {
+            title: "Проверь себя",
+            question:
+              "Кто из этих животных — домашний? Подумай и проверь ответ.",
+            items: [
+              { emoji: "🐕", label: "собака" },
+              { emoji: "🐄", label: "корова" },
+              { emoji: "🐐", label: "коза" },
+            ],
+            answer:
+              "Все трое — домашние животные. Они живут рядом с человеком, приносят пользу, а человек заботится о них.",
+            buttonLabel: "Проверить ответ",
+          },
+          kz: {
+            title: "Өзіңді тексер",
+            question:
+              "Бұлардың қайсысы үй жануары? Ойлан да жауапты тексер.",
+            items: [
+              { emoji: "🐕", label: "ит" },
+              { emoji: "🐄", label: "сиыр" },
+              { emoji: "🐐", label: "ешкі" },
+            ],
+            answer:
+              "Үшеуі де үй жануарлары. Олар адамның жанында тұрады, пайда әкеледі, адам оларды күтеді.",
+            buttonLabel: "Жауапты тексеру",
+          },
+          en: {
+            title: "Check yourself",
+            question:
+              "Which of these are domestic animals? Think, then check.",
+            items: [
+              { emoji: "🐕", label: "dog" },
+              { emoji: "🐄", label: "cow" },
+              { emoji: "🐐", label: "goat" },
+            ],
+            answer:
+              "All three are domestic animals. They live near people, are useful, and people take care of them.",
+            buttonLabel: "Check answer",
+          },
+        },
+      },
+      {
+        type: "summary",
+        data: {
+          ru: {
+            title: "Что я узнал",
+            text:
+              "**Домашние** животные живут рядом с человеком, приносят **пользу**, а человек **заботится** о них.",
+            terms: ["домашние", "пользу", "заботится"],
+          },
+          kz: {
+            title: "Мен нені білдім",
+            text:
+              "**Үй** жануарлары адамның жанында тұрады, **пайда** әкеледі, адам олар туралы **қамқорлық** жасайды.",
+            terms: ["үй", "пайда", "қамқорлық"],
+          },
+          en: {
+            title: "What I learned",
+            text:
+              "**Domestic** animals live near people, bring **benefit**, and people **take care** of them.",
+            terms: ["domestic", "benefit", "take care"],
+          },
+        },
+      },
+    ],
+
+    // Дикие животные
+    observation: [
+      {
+        type: "carousel",
+        data: {
+          ru: {
+            groupLabel: "Работа в группах",
+            title: "Дикие животные",
+            slides: [
+              { emoji: "🐘", caption: "Слон живёт в жарких странах." },
+              { emoji: "🦧", caption: "Орангутан живёт в тропических лесах." },
+              { emoji: "🦅", caption: "Беркут парит над горами." },
+              { emoji: "🦌", caption: "Сайгак бегает по степям Казахстана." },
+              { emoji: "🐱", caption: "Рысь живёт в густых лесах." },
+            ],
+          },
+          kz: {
+            groupLabel: "Топта жұмыс",
+            title: "Жабайы жануарлар",
+            slides: [
+              { emoji: "🐘", caption: "Піл ыстық елдерде тұрады." },
+              { emoji: "🦧", caption: "Орангутан тропиктік ормандарда тұрады." },
+              { emoji: "🦅", caption: "Бүркіт таулардың үстінде қалықтайды." },
+              { emoji: "🦌", caption: "Киік Қазақстан даласында жүгіреді." },
+              { emoji: "🐱", caption: "Сілеусін қалың орманда тұрады." },
+            ],
+          },
+          en: {
+            groupLabel: "Group work",
+            title: "Wild animals",
+            slides: [
+              { emoji: "🐘", caption: "An elephant lives in hot countries." },
+              { emoji: "🦧", caption: "An orangutan lives in tropical forests." },
+              { emoji: "🦅", caption: "A golden eagle soars above the mountains." },
+              { emoji: "🦌", caption: "A saiga runs across the steppes of Kazakhstan." },
+              { emoji: "🐱", caption: "A lynx lives in dense forests." },
+            ],
+          },
+        },
+      },
+      {
+        type: "reveal",
+        data: {
+          ru: {
+            title: "Где они обитают?",
+            question:
+              "К какой группе относятся эти животные? Где они обитают?",
+            items: [
+              { emoji: "🐘", label: "слон" },
+              { emoji: "🦅", label: "беркут" },
+              { emoji: "🦌", label: "сайгак" },
+            ],
+            answer:
+              "Все они — дикие животные. Слон живёт в саваннах, беркут — в горах, сайгак — в степях. Они сами добывают пищу.",
+            buttonLabel: "Проверить ответ",
+          },
+          kz: {
+            title: "Олар қайда тұрады?",
+            question:
+              "Бұл жануарлар қай топқа жатады? Олар қайда тұрады?",
+            items: [
+              { emoji: "🐘", label: "піл" },
+              { emoji: "🦅", label: "бүркіт" },
+              { emoji: "🦌", label: "киік" },
+            ],
+            answer:
+              "Олардың барлығы — жабайы жануарлар. Піл саваннада, бүркіт тауда, киік далада тұрады. Олар тамағын өздері табады.",
+            buttonLabel: "Жауапты тексеру",
+          },
+          en: {
+            title: "Where do they live?",
+            question:
+              "What group do these animals belong to? Where do they live?",
+            items: [
+              { emoji: "🐘", label: "elephant" },
+              { emoji: "🦅", label: "eagle" },
+              { emoji: "🦌", label: "saiga" },
+            ],
+            answer:
+              "They are all wild animals. The elephant lives in savannas, the eagle in the mountains, the saiga in the steppes. They find food on their own.",
+            buttonLabel: "Check answer",
+          },
+        },
+      },
+      {
+        type: "summary",
+        data: {
+          ru: {
+            title: "Что я узнал",
+            text:
+              "**Дикие** животные живут в **лесах**, **степях** и **горах**. Они сами добывают пищу и находят жильё.",
+            terms: ["дикие", "лесах", "степях", "горах"],
+          },
+          kz: {
+            title: "Мен нені білдім",
+            text:
+              "**Жабайы** жануарлар **ормандарда**, **далада** және **тауларда** тұрады. Олар тамағын өздері табады, паналайтын жерін өздері іздейді.",
+            terms: ["жабайы", "ормандарда", "далада", "тауларда"],
+          },
+          en: {
+            title: "What I learned",
+            text:
+              "**Wild** animals live in **forests**, **steppes** and **mountains**. They find food and shelter on their own.",
+            terms: ["wild", "forests", "steppes", "mountains"],
+          },
+        },
+      },
+      {
+        type: "sort",
+        data: {
+          ru: {
+            title: "Где обитают эти животные?",
+            instruction:
+              "Распредели животных по среде обитания.",
+            categories: [
+              { id: "land", label: "На земле / в лесу", emoji: "🌳" },
+              { id: "water", label: "В воде", emoji: "🌊" },
+              { id: "mount", label: "В горах", emoji: "⛰️" },
+            ],
+            items: [
+              { id: "s1", label: "корова", emoji: "🐄", categoryId: "land" },
+              { id: "s2", label: "заяц", emoji: "🐰", categoryId: "land" },
+              { id: "s3", label: "лиса", emoji: "🦊", categoryId: "land" },
+              { id: "s4", label: "дельфин", emoji: "🐬", categoryId: "water" },
+              { id: "s5", label: "архар", emoji: "🐏", categoryId: "mount" },
+            ],
+            checkLabel: "Проверить",
+          },
+          kz: {
+            title: "Бұл жануарлар қайда тұрады?",
+            instruction:
+              "Жануарларды мекен ортасы бойынша бөл.",
+            categories: [
+              { id: "land", label: "Жерде / орманда", emoji: "🌳" },
+              { id: "water", label: "Суда", emoji: "🌊" },
+              { id: "mount", label: "Тауда", emoji: "⛰️" },
+            ],
+            items: [
+              { id: "s1", label: "сиыр", emoji: "🐄", categoryId: "land" },
+              { id: "s2", label: "қоян", emoji: "🐰", categoryId: "land" },
+              { id: "s3", label: "түлкі", emoji: "🦊", categoryId: "land" },
+              { id: "s4", label: "дельфин", emoji: "🐬", categoryId: "water" },
+              { id: "s5", label: "арқар", emoji: "🐏", categoryId: "mount" },
+            ],
+            checkLabel: "Тексеру",
+          },
+          en: {
+            title: "Where do these animals live?",
+            instruction:
+              "Sort the animals by their habitat.",
+            categories: [
+              { id: "land", label: "On land / in forest", emoji: "🌳" },
+              { id: "water", label: "In water", emoji: "🌊" },
+              { id: "mount", label: "In mountains", emoji: "⛰️" },
+            ],
+            items: [
+              { id: "s1", label: "cow", emoji: "🐄", categoryId: "land" },
+              { id: "s2", label: "hare", emoji: "🐰", categoryId: "land" },
+              { id: "s3", label: "fox", emoji: "🦊", categoryId: "land" },
+              { id: "s4", label: "dolphin", emoji: "🐬", categoryId: "water" },
+              { id: "s5", label: "argali", emoji: "🐏", categoryId: "mount" },
+            ],
+            checkLabel: "Check",
+          },
+        },
+      },
+    ],
+
+    // Итоги
+    experiments: [
+      {
+        type: "fact",
+        data: {
+          ru: {
+            title: "Найди в энциклопедии",
+            text:
+              "Узнай, какие редкие дикие животные живут в Казахстане. Запиши 3 примера и где они обитают.",
+            keywords: ["энциклопедия", "Казахстан", "редкие"],
+            icon: "sparkles",
+          },
+          kz: {
+            title: "Энциклопедиядан тап",
+            text:
+              "Қазақстанда қандай сирек кездесетін жабайы жануарлар бар? 3 мысал жазып, қайда тұратынын көрсет.",
+            keywords: ["энциклопедия", "Қазақстан", "сирек"],
+            icon: "sparkles",
+          },
+          en: {
+            title: "Find in the encyclopedia",
+            text:
+              "Find out which rare wild animals live in Kazakhstan. Write down 3 examples and where they live.",
+            keywords: ["encyclopedia", "Kazakhstan", "rare"],
+            icon: "sparkles",
+          },
+        },
+      },
+      {
+        type: "fact",
+        data: {
+          ru: {
+            title: "Это интересно!",
+            text:
+              "У молодых пингвинов хвост похож на белый мех. Это помогает их мамам быстро находить своих птенцов в большой стае.",
+            keywords: ["пингвины", "хвост", "мех"],
+            icon: "bulb",
+          },
+          kz: {
+            title: "Бұл қызық!",
+            text:
+              "Жас пингвиндердің құйрығы ақ жүнге ұқсайды. Бұл аналарына үлкен топтан өз балапандарын тез табуға көмектеседі.",
+            keywords: ["пингвин", "құйрық", "жүн"],
+            icon: "bulb",
+          },
+          en: {
+            title: "Did you know?",
+            text:
+              "Young penguins have tails that look like white fur. It helps their mothers quickly find their chicks in a large flock.",
+            keywords: ["penguins", "tail", "fur"],
+            icon: "bulb",
+          },
+        },
+      },
+      {
+        type: "summary",
+        data: {
+          ru: {
+            title: "Итоговые вопросы",
+            text:
+              "1) Чем **дикие** животные отличаются от **домашних**? 2) Почему человек должен **заботиться** о домашних животных?",
+          },
+          kz: {
+            title: "Қорытынды сұрақтар",
+            text:
+              "1) **Жабайы** жануарлар **үй** жануарларынан немен ерекшеленеді? 2) Адам үй жануарларына неліктен **қамқорлық** жасауы керек?",
+          },
+          en: {
+            title: "Wrap-up questions",
+            text:
+              "1) How do **wild** animals differ from **domestic** ones? 2) Why should people **take care** of domestic animals?",
+          },
+        },
+      },
+    ],
+  },
+  20: {
+    intro: [
+      {
+        type: "audio",
+        data: {
+          ru: {
+            title: "Аудио-гид к уроку",
+            text:
+              "Сегодня мы узнаем, что животные бывают дикими и домашними, и в чём их главное отличие.",
+            caption: "Послушай вступление к уроку",
+            durationLabel: "0:22",
+          },
+          kz: {
+            title: "Сабақтың аудио-гиді",
+            text:
+              "Бүгін біз жануарлардың жабайы және үй жануарлары болып бөлінетінін, олардың айырмашылығы неде екенін білеміз.",
+            caption: "Сабақтың кіріспесін тыңда",
+            durationLabel: "0:22",
+          },
+          en: {
+            title: "Lesson audio guide",
+            text:
+              "Today we'll learn that animals can be wild or domestic, and what is the main difference between them.",
+            caption: "Listen to the lesson intro",
+            durationLabel: "0:22",
+          },
+        },
+      },
+      {
+        type: "carousel",
+        data: {
+          ru: {
+            groupLabel: "Ключевые слова",
+            title: "Дикие и домашние",
+            slides: [
+              { emoji: "🏠", caption: "Домашние животные / Үй жануарлары / Domestic animals" },
+              { emoji: "🌲", caption: "Дикие животные / Жабайы жануарлар / Wild animals" },
+              { emoji: "🌍", caption: "Среда обитания / Мекен орта / Habitat" },
+            ],
+          },
+          kz: {
+            groupLabel: "Кілт сөздер",
+            title: "Жабайы және үй",
+            slides: [
+              { emoji: "🏠", caption: "Үй жануарлары / Домашние / Domestic animals" },
+              { emoji: "🌲", caption: "Жабайы жануарлар / Дикие / Wild animals" },
+              { emoji: "🌍", caption: "Мекен орта / Среда обитания / Habitat" },
+            ],
+          },
+          en: {
+            groupLabel: "Key words",
+            title: "Wild and domestic",
+            slides: [
+              { emoji: "🏠", caption: "Domestic animals / Домашние / Үй жануарлары" },
+              { emoji: "🌲", caption: "Wild animals / Дикие / Жабайы жануарлар" },
+              { emoji: "🌍", caption: "Habitat / Среда обитания / Мекен орта" },
+            ],
+          },
+        },
+      },
+    ],
+
+    // Домашние животные
+    scientists: [
+      {
+        type: "carousel",
+        data: {
+          ru: {
+            groupLabel: "Работа в группах",
+            title: "Домашние животные",
+            slides: [
+              { emoji: "🐕", caption: "Собаки живут рядом с людьми — охраняют дом." },
+              { emoji: "🐄", caption: "Корова на пастбище даёт молоко." },
+              { emoji: "🐐", caption: "Коза у забора — даёт молоко и шерсть." },
+              { emoji: "🐎", caption: "Лошадь с жеребёнком — помогает человеку." },
+            ],
+          },
+          kz: {
+            groupLabel: "Топта жұмыс",
+            title: "Үй жануарлары",
+            slides: [
+              { emoji: "🐕", caption: "Иттер адаммен бірге тұрып, үйді күзетеді." },
+              { emoji: "🐄", caption: "Жайылымдағы сиыр сүт береді." },
+              { emoji: "🐐", caption: "Қоршау жанындағы ешкі — сүт пен жүн береді." },
+              { emoji: "🐎", caption: "Жылқы құлынымен — адамға көмектеседі." },
+            ],
+          },
+          en: {
+            groupLabel: "Group work",
+            title: "Domestic animals",
+            slides: [
+              { emoji: "🐕", caption: "Dogs live with people — they guard the house." },
+              { emoji: "🐄", caption: "A cow on the pasture gives milk." },
+              { emoji: "🐐", caption: "A goat by the fence gives milk and wool." },
+              { emoji: "🐎", caption: "A mare with her foal — helps people." },
+            ],
+          },
+        },
+      },
+      {
+        type: "reveal",
+        data: {
+          ru: {
+            title: "Проверь себя",
+            question:
+              "Кто из этих животных — домашний? Подумай и проверь ответ.",
+            items: [
+              { emoji: "🐕", label: "собака" },
+              { emoji: "🐄", label: "корова" },
+              { emoji: "🐐", label: "коза" },
+            ],
+            answer:
+              "Все трое — домашние животные. Они живут рядом с человеком, приносят пользу, а человек заботится о них.",
+            buttonLabel: "Проверить ответ",
+          },
+          kz: {
+            title: "Өзіңді тексер",
+            question:
+              "Бұлардың қайсысы үй жануары? Ойлан да жауапты тексер.",
+            items: [
+              { emoji: "🐕", label: "ит" },
+              { emoji: "🐄", label: "сиыр" },
+              { emoji: "🐐", label: "ешкі" },
+            ],
+            answer:
+              "Үшеуі де үй жануарлары. Олар адамның жанында тұрады, пайда әкеледі, адам оларды күтеді.",
+            buttonLabel: "Жауапты тексеру",
+          },
+          en: {
+            title: "Check yourself",
+            question:
+              "Which of these are domestic animals? Think, then check.",
+            items: [
+              { emoji: "🐕", label: "dog" },
+              { emoji: "🐄", label: "cow" },
+              { emoji: "🐐", label: "goat" },
+            ],
+            answer:
+              "All three are domestic animals. They live near people, are useful, and people take care of them.",
+            buttonLabel: "Check answer",
+          },
+        },
+      },
+      {
+        type: "summary",
+        data: {
+          ru: {
+            title: "Что я узнал",
+            text:
+              "**Домашние** животные живут рядом с человеком, приносят **пользу**, а человек **заботится** о них.",
+            terms: ["домашние", "пользу", "заботится"],
+          },
+          kz: {
+            title: "Мен нені білдім",
+            text:
+              "**Үй** жануарлары адамның жанында тұрады, **пайда** әкеледі, адам олар туралы **қамқорлық** жасайды.",
+            terms: ["үй", "пайда", "қамқорлық"],
+          },
+          en: {
+            title: "What I learned",
+            text:
+              "**Domestic** animals live near people, bring **benefit**, and people **take care** of them.",
+            terms: ["domestic", "benefit", "take care"],
+          },
+        },
+      },
+    ],
+
+    // Дикие животные
+    observation: [
+      {
+        type: "carousel",
+        data: {
+          ru: {
+            groupLabel: "Работа в группах",
+            title: "Дикие животные",
+            slides: [
+              { emoji: "🐘", caption: "Слон живёт в жарких странах." },
+              { emoji: "🦧", caption: "Орангутан живёт в тропических лесах." },
+              { emoji: "🦅", caption: "Беркут парит над горами." },
+              { emoji: "🦌", caption: "Сайгак бегает по степям Казахстана." },
+              { emoji: "🐱", caption: "Рысь живёт в густых лесах." },
+            ],
+          },
+          kz: {
+            groupLabel: "Топта жұмыс",
+            title: "Жабайы жануарлар",
+            slides: [
+              { emoji: "🐘", caption: "Піл ыстық елдерде тұрады." },
+              { emoji: "🦧", caption: "Орангутан тропиктік ормандарда тұрады." },
+              { emoji: "🦅", caption: "Бүркіт таулардың үстінде қалықтайды." },
+              { emoji: "🦌", caption: "Киік Қазақстан даласында жүгіреді." },
+              { emoji: "🐱", caption: "Сілеусін қалың орманда тұрады." },
+            ],
+          },
+          en: {
+            groupLabel: "Group work",
+            title: "Wild animals",
+            slides: [
+              { emoji: "🐘", caption: "An elephant lives in hot countries." },
+              { emoji: "🦧", caption: "An orangutan lives in tropical forests." },
+              { emoji: "🦅", caption: "A golden eagle soars above the mountains." },
+              { emoji: "🦌", caption: "A saiga runs across the steppes of Kazakhstan." },
+              { emoji: "🐱", caption: "A lynx lives in dense forests." },
+            ],
+          },
+        },
+      },
+      {
+        type: "reveal",
+        data: {
+          ru: {
+            title: "Где они обитают?",
+            question:
+              "К какой группе относятся эти животные? Где они обитают?",
+            items: [
+              { emoji: "🐘", label: "слон" },
+              { emoji: "🦅", label: "беркут" },
+              { emoji: "🦌", label: "сайгак" },
+            ],
+            answer:
+              "Все они — дикие животные. Слон живёт в саваннах, беркут — в горах, сайгак — в степях. Они сами добывают пищу.",
+            buttonLabel: "Проверить ответ",
+          },
+          kz: {
+            title: "Олар қайда тұрады?",
+            question:
+              "Бұл жануарлар қай топқа жатады? Олар қайда тұрады?",
+            items: [
+              { emoji: "🐘", label: "піл" },
+              { emoji: "🦅", label: "бүркіт" },
+              { emoji: "🦌", label: "киік" },
+            ],
+            answer:
+              "Олардың барлығы — жабайы жануарлар. Піл саваннада, бүркіт тауда, киік далада тұрады. Олар тамағын өздері табады.",
+            buttonLabel: "Жауапты тексеру",
+          },
+          en: {
+            title: "Where do they live?",
+            question:
+              "What group do these animals belong to? Where do they live?",
+            items: [
+              { emoji: "🐘", label: "elephant" },
+              { emoji: "🦅", label: "eagle" },
+              { emoji: "🦌", label: "saiga" },
+            ],
+            answer:
+              "They are all wild animals. The elephant lives in savannas, the eagle in the mountains, the saiga in the steppes. They find food on their own.",
+            buttonLabel: "Check answer",
+          },
+        },
+      },
+      {
+        type: "summary",
+        data: {
+          ru: {
+            title: "Что я узнал",
+            text:
+              "**Дикие** животные живут в **лесах**, **степях** и **горах**. Они сами добывают пищу и находят жильё.",
+            terms: ["дикие", "лесах", "степях", "горах"],
+          },
+          kz: {
+            title: "Мен нені білдім",
+            text:
+              "**Жабайы** жануарлар **ормандарда**, **далада** және **тауларда** тұрады. Олар тамағын өздері табады, паналайтын жерін өздері іздейді.",
+            terms: ["жабайы", "ормандарда", "далада", "тауларда"],
+          },
+          en: {
+            title: "What I learned",
+            text:
+              "**Wild** animals live in **forests**, **steppes** and **mountains**. They find food and shelter on their own.",
+            terms: ["wild", "forests", "steppes", "mountains"],
+          },
+        },
+      },
+      {
+        type: "sort",
+        data: {
+          ru: {
+            title: "Где обитают эти животные?",
+            instruction:
+              "Распредели животных по среде обитания.",
+            categories: [
+              { id: "land", label: "На земле / в лесу", emoji: "🌳" },
+              { id: "water", label: "В воде", emoji: "🌊" },
+              { id: "mount", label: "В горах", emoji: "⛰️" },
+            ],
+            items: [
+              { id: "s1", label: "корова", emoji: "🐄", categoryId: "land" },
+              { id: "s2", label: "заяц", emoji: "🐰", categoryId: "land" },
+              { id: "s3", label: "лиса", emoji: "🦊", categoryId: "land" },
+              { id: "s4", label: "дельфин", emoji: "🐬", categoryId: "water" },
+              { id: "s5", label: "архар", emoji: "🐏", categoryId: "mount" },
+            ],
+            checkLabel: "Проверить",
+          },
+          kz: {
+            title: "Бұл жануарлар қайда тұрады?",
+            instruction:
+              "Жануарларды мекен ортасы бойынша бөл.",
+            categories: [
+              { id: "land", label: "Жерде / орманда", emoji: "🌳" },
+              { id: "water", label: "Суда", emoji: "🌊" },
+              { id: "mount", label: "Тауда", emoji: "⛰️" },
+            ],
+            items: [
+              { id: "s1", label: "сиыр", emoji: "🐄", categoryId: "land" },
+              { id: "s2", label: "қоян", emoji: "🐰", categoryId: "land" },
+              { id: "s3", label: "түлкі", emoji: "🦊", categoryId: "land" },
+              { id: "s4", label: "дельфин", emoji: "🐬", categoryId: "water" },
+              { id: "s5", label: "арқар", emoji: "🐏", categoryId: "mount" },
+            ],
+            checkLabel: "Тексеру",
+          },
+          en: {
+            title: "Where do these animals live?",
+            instruction:
+              "Sort the animals by their habitat.",
+            categories: [
+              { id: "land", label: "On land / in forest", emoji: "🌳" },
+              { id: "water", label: "In water", emoji: "🌊" },
+              { id: "mount", label: "In mountains", emoji: "⛰️" },
+            ],
+            items: [
+              { id: "s1", label: "cow", emoji: "🐄", categoryId: "land" },
+              { id: "s2", label: "hare", emoji: "🐰", categoryId: "land" },
+              { id: "s3", label: "fox", emoji: "🦊", categoryId: "land" },
+              { id: "s4", label: "dolphin", emoji: "🐬", categoryId: "water" },
+              { id: "s5", label: "argali", emoji: "🐏", categoryId: "mount" },
+            ],
+            checkLabel: "Check",
+          },
+        },
+      },
+    ],
+
+    // Итоги
+    experiments: [
+      {
+        type: "fact",
+        data: {
+          ru: {
+            title: "Найди в энциклопедии",
+            text:
+              "Узнай, какие редкие дикие животные живут в Казахстане. Запиши 3 примера и где они обитают.",
+            keywords: ["энциклопедия", "Казахстан", "редкие"],
+            icon: "sparkles",
+          },
+          kz: {
+            title: "Энциклопедиядан тап",
+            text:
+              "Қазақстанда қандай сирек кездесетін жабайы жануарлар бар? 3 мысал жазып, қайда тұратынын көрсет.",
+            keywords: ["энциклопедия", "Қазақстан", "сирек"],
+            icon: "sparkles",
+          },
+          en: {
+            title: "Find in the encyclopedia",
+            text:
+              "Find out which rare wild animals live in Kazakhstan. Write down 3 examples and where they live.",
+            keywords: ["encyclopedia", "Kazakhstan", "rare"],
+            icon: "sparkles",
+          },
+        },
+      },
+      {
+        type: "fact",
+        data: {
+          ru: {
+            title: "Это интересно!",
+            text:
+              "У молодых пингвинов хвост похож на белый мех. Это помогает их мамам быстро находить своих птенцов в большой стае.",
+            keywords: ["пингвины", "хвост", "мех"],
+            icon: "bulb",
+          },
+          kz: {
+            title: "Бұл қызық!",
+            text:
+              "Жас пингвиндердің құйрығы ақ жүнге ұқсайды. Бұл аналарына үлкен топтан өз балапандарын тез табуға көмектеседі.",
+            keywords: ["пингвин", "құйрық", "жүн"],
+            icon: "bulb",
+          },
+          en: {
+            title: "Did you know?",
+            text:
+              "Young penguins have tails that look like white fur. It helps their mothers quickly find their chicks in a large flock.",
+            keywords: ["penguins", "tail", "fur"],
+            icon: "bulb",
+          },
+        },
+      },
+      {
+        type: "summary",
+        data: {
+          ru: {
+            title: "Итоговые вопросы",
+            text:
+              "1) Чем **дикие** животные отличаются от **домашних**? 2) Почему человек должен **заботиться** о домашних животных?",
+          },
+          kz: {
+            title: "Қорытынды сұрақтар",
+            text:
+              "1) **Жабайы** жануарлар **үй** жануарларынан немен ерекшеленеді? 2) Адам үй жануарларына неліктен **қамқорлық** жасауы керек?",
+          },
+          en: {
+            title: "Wrap-up questions",
+            text:
+              "1) How do **wild** animals differ from **domestic** ones? 2) Why should people **take care** of domestic animals?",
+          },
+        },
+      },
+    ],
+  },
+  21: {
+    intro: [
+      {
+        type: "audio",
+        data: {
+          ru: {
+            title: "Аудио-гид к уроку",
+            text:
+              "Сегодня мы узнаем, что животные бывают дикими и домашними, и в чём их главное отличие.",
+            caption: "Послушай вступление к уроку",
+            durationLabel: "0:22",
+          },
+          kz: {
+            title: "Сабақтың аудио-гиді",
+            text:
+              "Бүгін біз жануарлардың жабайы және үй жануарлары болып бөлінетінін, олардың айырмашылығы неде екенін білеміз.",
+            caption: "Сабақтың кіріспесін тыңда",
+            durationLabel: "0:22",
+          },
+          en: {
+            title: "Lesson audio guide",
+            text:
+              "Today we'll learn that animals can be wild or domestic, and what is the main difference between them.",
+            caption: "Listen to the lesson intro",
+            durationLabel: "0:22",
+          },
+        },
+      },
+      {
+        type: "carousel",
+        data: {
+          ru: {
+            groupLabel: "Ключевые слова",
+            title: "Дикие и домашние",
+            slides: [
+              { emoji: "🏠", caption: "Домашние животные / Үй жануарлары / Domestic animals" },
+              { emoji: "🌲", caption: "Дикие животные / Жабайы жануарлар / Wild animals" },
+              { emoji: "🌍", caption: "Среда обитания / Мекен орта / Habitat" },
+            ],
+          },
+          kz: {
+            groupLabel: "Кілт сөздер",
+            title: "Жабайы және үй",
+            slides: [
+              { emoji: "🏠", caption: "Үй жануарлары / Домашние / Domestic animals" },
+              { emoji: "🌲", caption: "Жабайы жануарлар / Дикие / Wild animals" },
+              { emoji: "🌍", caption: "Мекен орта / Среда обитания / Habitat" },
+            ],
+          },
+          en: {
+            groupLabel: "Key words",
+            title: "Wild and domestic",
+            slides: [
+              { emoji: "🏠", caption: "Domestic animals / Домашние / Үй жануарлары" },
+              { emoji: "🌲", caption: "Wild animals / Дикие / Жабайы жануарлар" },
+              { emoji: "🌍", caption: "Habitat / Среда обитания / Мекен орта" },
+            ],
+          },
+        },
+      },
+    ],
+
+    // Домашние животные
+    scientists: [
+      {
+        type: "carousel",
+        data: {
+          ru: {
+            groupLabel: "Работа в группах",
+            title: "Домашние животные",
+            slides: [
+              { emoji: "🐕", caption: "Собаки живут рядом с людьми — охраняют дом." },
+              { emoji: "🐄", caption: "Корова на пастбище даёт молоко." },
+              { emoji: "🐐", caption: "Коза у забора — даёт молоко и шерсть." },
+              { emoji: "🐎", caption: "Лошадь с жеребёнком — помогает человеку." },
+            ],
+          },
+          kz: {
+            groupLabel: "Топта жұмыс",
+            title: "Үй жануарлары",
+            slides: [
+              { emoji: "🐕", caption: "Иттер адаммен бірге тұрып, үйді күзетеді." },
+              { emoji: "🐄", caption: "Жайылымдағы сиыр сүт береді." },
+              { emoji: "🐐", caption: "Қоршау жанындағы ешкі — сүт пен жүн береді." },
+              { emoji: "🐎", caption: "Жылқы құлынымен — адамға көмектеседі." },
+            ],
+          },
+          en: {
+            groupLabel: "Group work",
+            title: "Domestic animals",
+            slides: [
+              { emoji: "🐕", caption: "Dogs live with people — they guard the house." },
+              { emoji: "🐄", caption: "A cow on the pasture gives milk." },
+              { emoji: "🐐", caption: "A goat by the fence gives milk and wool." },
+              { emoji: "🐎", caption: "A mare with her foal — helps people." },
+            ],
+          },
+        },
+      },
+      {
+        type: "reveal",
+        data: {
+          ru: {
+            title: "Проверь себя",
+            question:
+              "Кто из этих животных — домашний? Подумай и проверь ответ.",
+            items: [
+              { emoji: "🐕", label: "собака" },
+              { emoji: "🐄", label: "корова" },
+              { emoji: "🐐", label: "коза" },
+            ],
+            answer:
+              "Все трое — домашние животные. Они живут рядом с человеком, приносят пользу, а человек заботится о них.",
+            buttonLabel: "Проверить ответ",
+          },
+          kz: {
+            title: "Өзіңді тексер",
+            question:
+              "Бұлардың қайсысы үй жануары? Ойлан да жауапты тексер.",
+            items: [
+              { emoji: "🐕", label: "ит" },
+              { emoji: "🐄", label: "сиыр" },
+              { emoji: "🐐", label: "ешкі" },
+            ],
+            answer:
+              "Үшеуі де үй жануарлары. Олар адамның жанында тұрады, пайда әкеледі, адам оларды күтеді.",
+            buttonLabel: "Жауапты тексеру",
+          },
+          en: {
+            title: "Check yourself",
+            question:
+              "Which of these are domestic animals? Think, then check.",
+            items: [
+              { emoji: "🐕", label: "dog" },
+              { emoji: "🐄", label: "cow" },
+              { emoji: "🐐", label: "goat" },
+            ],
+            answer:
+              "All three are domestic animals. They live near people, are useful, and people take care of them.",
+            buttonLabel: "Check answer",
+          },
+        },
+      },
+      {
+        type: "summary",
+        data: {
+          ru: {
+            title: "Что я узнал",
+            text:
+              "**Домашние** животные живут рядом с человеком, приносят **пользу**, а человек **заботится** о них.",
+            terms: ["домашние", "пользу", "заботится"],
+          },
+          kz: {
+            title: "Мен нені білдім",
+            text:
+              "**Үй** жануарлары адамның жанында тұрады, **пайда** әкеледі, адам олар туралы **қамқорлық** жасайды.",
+            terms: ["үй", "пайда", "қамқорлық"],
+          },
+          en: {
+            title: "What I learned",
+            text:
+              "**Domestic** animals live near people, bring **benefit**, and people **take care** of them.",
+            terms: ["domestic", "benefit", "take care"],
+          },
+        },
+      },
+    ],
+
+    // Дикие животные
+    observation: [
+      {
+        type: "carousel",
+        data: {
+          ru: {
+            groupLabel: "Работа в группах",
+            title: "Дикие животные",
+            slides: [
+              { emoji: "🐘", caption: "Слон живёт в жарких странах." },
+              { emoji: "🦧", caption: "Орангутан живёт в тропических лесах." },
+              { emoji: "🦅", caption: "Беркут парит над горами." },
+              { emoji: "🦌", caption: "Сайгак бегает по степям Казахстана." },
+              { emoji: "🐱", caption: "Рысь живёт в густых лесах." },
+            ],
+          },
+          kz: {
+            groupLabel: "Топта жұмыс",
+            title: "Жабайы жануарлар",
+            slides: [
+              { emoji: "🐘", caption: "Піл ыстық елдерде тұрады." },
+              { emoji: "🦧", caption: "Орангутан тропиктік ормандарда тұрады." },
+              { emoji: "🦅", caption: "Бүркіт таулардың үстінде қалықтайды." },
+              { emoji: "🦌", caption: "Киік Қазақстан даласында жүгіреді." },
+              { emoji: "🐱", caption: "Сілеусін қалың орманда тұрады." },
+            ],
+          },
+          en: {
+            groupLabel: "Group work",
+            title: "Wild animals",
+            slides: [
+              { emoji: "🐘", caption: "An elephant lives in hot countries." },
+              { emoji: "🦧", caption: "An orangutan lives in tropical forests." },
+              { emoji: "🦅", caption: "A golden eagle soars above the mountains." },
+              { emoji: "🦌", caption: "A saiga runs across the steppes of Kazakhstan." },
+              { emoji: "🐱", caption: "A lynx lives in dense forests." },
+            ],
+          },
+        },
+      },
+      {
+        type: "reveal",
+        data: {
+          ru: {
+            title: "Где они обитают?",
+            question:
+              "К какой группе относятся эти животные? Где они обитают?",
+            items: [
+              { emoji: "🐘", label: "слон" },
+              { emoji: "🦅", label: "беркут" },
+              { emoji: "🦌", label: "сайгак" },
+            ],
+            answer:
+              "Все они — дикие животные. Слон живёт в саваннах, беркут — в горах, сайгак — в степях. Они сами добывают пищу.",
+            buttonLabel: "Проверить ответ",
+          },
+          kz: {
+            title: "Олар қайда тұрады?",
+            question:
+              "Бұл жануарлар қай топқа жатады? Олар қайда тұрады?",
+            items: [
+              { emoji: "🐘", label: "піл" },
+              { emoji: "🦅", label: "бүркіт" },
+              { emoji: "🦌", label: "киік" },
+            ],
+            answer:
+              "Олардың барлығы — жабайы жануарлар. Піл саваннада, бүркіт тауда, киік далада тұрады. Олар тамағын өздері табады.",
+            buttonLabel: "Жауапты тексеру",
+          },
+          en: {
+            title: "Where do they live?",
+            question:
+              "What group do these animals belong to? Where do they live?",
+            items: [
+              { emoji: "🐘", label: "elephant" },
+              { emoji: "🦅", label: "eagle" },
+              { emoji: "🦌", label: "saiga" },
+            ],
+            answer:
+              "They are all wild animals. The elephant lives in savannas, the eagle in the mountains, the saiga in the steppes. They find food on their own.",
+            buttonLabel: "Check answer",
+          },
+        },
+      },
+      {
+        type: "summary",
+        data: {
+          ru: {
+            title: "Что я узнал",
+            text:
+              "**Дикие** животные живут в **лесах**, **степях** и **горах**. Они сами добывают пищу и находят жильё.",
+            terms: ["дикие", "лесах", "степях", "горах"],
+          },
+          kz: {
+            title: "Мен нені білдім",
+            text:
+              "**Жабайы** жануарлар **ормандарда**, **далада** және **тауларда** тұрады. Олар тамағын өздері табады, паналайтын жерін өздері іздейді.",
+            terms: ["жабайы", "ормандарда", "далада", "тауларда"],
+          },
+          en: {
+            title: "What I learned",
+            text:
+              "**Wild** animals live in **forests**, **steppes** and **mountains**. They find food and shelter on their own.",
+            terms: ["wild", "forests", "steppes", "mountains"],
+          },
+        },
+      },
+      {
+        type: "sort",
+        data: {
+          ru: {
+            title: "Где обитают эти животные?",
+            instruction:
+              "Распредели животных по среде обитания.",
+            categories: [
+              { id: "land", label: "На земле / в лесу", emoji: "🌳" },
+              { id: "water", label: "В воде", emoji: "🌊" },
+              { id: "mount", label: "В горах", emoji: "⛰️" },
+            ],
+            items: [
+              { id: "s1", label: "корова", emoji: "🐄", categoryId: "land" },
+              { id: "s2", label: "заяц", emoji: "🐰", categoryId: "land" },
+              { id: "s3", label: "лиса", emoji: "🦊", categoryId: "land" },
+              { id: "s4", label: "дельфин", emoji: "🐬", categoryId: "water" },
+              { id: "s5", label: "архар", emoji: "🐏", categoryId: "mount" },
+            ],
+            checkLabel: "Проверить",
+          },
+          kz: {
+            title: "Бұл жануарлар қайда тұрады?",
+            instruction:
+              "Жануарларды мекен ортасы бойынша бөл.",
+            categories: [
+              { id: "land", label: "Жерде / орманда", emoji: "🌳" },
+              { id: "water", label: "Суда", emoji: "🌊" },
+              { id: "mount", label: "Тауда", emoji: "⛰️" },
+            ],
+            items: [
+              { id: "s1", label: "сиыр", emoji: "🐄", categoryId: "land" },
+              { id: "s2", label: "қоян", emoji: "🐰", categoryId: "land" },
+              { id: "s3", label: "түлкі", emoji: "🦊", categoryId: "land" },
+              { id: "s4", label: "дельфин", emoji: "🐬", categoryId: "water" },
+              { id: "s5", label: "арқар", emoji: "🐏", categoryId: "mount" },
+            ],
+            checkLabel: "Тексеру",
+          },
+          en: {
+            title: "Where do these animals live?",
+            instruction:
+              "Sort the animals by their habitat.",
+            categories: [
+              { id: "land", label: "On land / in forest", emoji: "🌳" },
+              { id: "water", label: "In water", emoji: "🌊" },
+              { id: "mount", label: "In mountains", emoji: "⛰️" },
+            ],
+            items: [
+              { id: "s1", label: "cow", emoji: "🐄", categoryId: "land" },
+              { id: "s2", label: "hare", emoji: "🐰", categoryId: "land" },
+              { id: "s3", label: "fox", emoji: "🦊", categoryId: "land" },
+              { id: "s4", label: "dolphin", emoji: "🐬", categoryId: "water" },
+              { id: "s5", label: "argali", emoji: "🐏", categoryId: "mount" },
+            ],
+            checkLabel: "Check",
+          },
+        },
+      },
+    ],
+
+    // Итоги
+    experiments: [
+      {
+        type: "fact",
+        data: {
+          ru: {
+            title: "Найди в энциклопедии",
+            text:
+              "Узнай, какие редкие дикие животные живут в Казахстане. Запиши 3 примера и где они обитают.",
+            keywords: ["энциклопедия", "Казахстан", "редкие"],
+            icon: "sparkles",
+          },
+          kz: {
+            title: "Энциклопедиядан тап",
+            text:
+              "Қазақстанда қандай сирек кездесетін жабайы жануарлар бар? 3 мысал жазып, қайда тұратынын көрсет.",
+            keywords: ["энциклопедия", "Қазақстан", "сирек"],
+            icon: "sparkles",
+          },
+          en: {
+            title: "Find in the encyclopedia",
+            text:
+              "Find out which rare wild animals live in Kazakhstan. Write down 3 examples and where they live.",
+            keywords: ["encyclopedia", "Kazakhstan", "rare"],
+            icon: "sparkles",
+          },
+        },
+      },
+      {
+        type: "fact",
+        data: {
+          ru: {
+            title: "Это интересно!",
+            text:
+              "У молодых пингвинов хвост похож на белый мех. Это помогает их мамам быстро находить своих птенцов в большой стае.",
+            keywords: ["пингвины", "хвост", "мех"],
+            icon: "bulb",
+          },
+          kz: {
+            title: "Бұл қызық!",
+            text:
+              "Жас пингвиндердің құйрығы ақ жүнге ұқсайды. Бұл аналарына үлкен топтан өз балапандарын тез табуға көмектеседі.",
+            keywords: ["пингвин", "құйрық", "жүн"],
+            icon: "bulb",
+          },
+          en: {
+            title: "Did you know?",
+            text:
+              "Young penguins have tails that look like white fur. It helps their mothers quickly find their chicks in a large flock.",
+            keywords: ["penguins", "tail", "fur"],
+            icon: "bulb",
+          },
+        },
+      },
+      {
+        type: "summary",
+        data: {
+          ru: {
+            title: "Итоговые вопросы",
+            text:
+              "1) Чем **дикие** животные отличаются от **домашних**? 2) Почему человек должен **заботиться** о домашних животных?",
+          },
+          kz: {
+            title: "Қорытынды сұрақтар",
+            text:
+              "1) **Жабайы** жануарлар **үй** жануарларынан немен ерекшеленеді? 2) Адам үй жануарларына неліктен **қамқорлық** жасауы керек?",
+          },
+          en: {
+            title: "Wrap-up questions",
+            text:
+              "1) How do **wild** animals differ from **domestic** ones? 2) Why should people **take care** of domestic animals?",
+          },
+        },
+      },
+    ],
+  },
+  22: {
+    intro: [
+      {
+        type: "audio",
+        data: {
+          ru: {
+            title: "Аудио-гид к уроку",
+            text:
+              "Сегодня мы узнаем, что животные бывают дикими и домашними, и в чём их главное отличие.",
+            caption: "Послушай вступление к уроку",
+            durationLabel: "0:22",
+          },
+          kz: {
+            title: "Сабақтың аудио-гиді",
+            text:
+              "Бүгін біз жануарлардың жабайы және үй жануарлары болып бөлінетінін, олардың айырмашылығы неде екенін білеміз.",
+            caption: "Сабақтың кіріспесін тыңда",
+            durationLabel: "0:22",
+          },
+          en: {
+            title: "Lesson audio guide",
+            text:
+              "Today we'll learn that animals can be wild or domestic, and what is the main difference between them.",
+            caption: "Listen to the lesson intro",
+            durationLabel: "0:22",
+          },
+        },
+      },
+      {
+        type: "carousel",
+        data: {
+          ru: {
+            groupLabel: "Ключевые слова",
+            title: "Дикие и домашние",
+            slides: [
+              { emoji: "🏠", caption: "Домашние животные / Үй жануарлары / Domestic animals" },
+              { emoji: "🌲", caption: "Дикие животные / Жабайы жануарлар / Wild animals" },
+              { emoji: "🌍", caption: "Среда обитания / Мекен орта / Habitat" },
+            ],
+          },
+          kz: {
+            groupLabel: "Кілт сөздер",
+            title: "Жабайы және үй",
+            slides: [
+              { emoji: "🏠", caption: "Үй жануарлары / Домашние / Domestic animals" },
+              { emoji: "🌲", caption: "Жабайы жануарлар / Дикие / Wild animals" },
+              { emoji: "🌍", caption: "Мекен орта / Среда обитания / Habitat" },
+            ],
+          },
+          en: {
+            groupLabel: "Key words",
+            title: "Wild and domestic",
+            slides: [
+              { emoji: "🏠", caption: "Domestic animals / Домашние / Үй жануарлары" },
+              { emoji: "🌲", caption: "Wild animals / Дикие / Жабайы жануарлар" },
+              { emoji: "🌍", caption: "Habitat / Среда обитания / Мекен орта" },
+            ],
+          },
+        },
+      },
+    ],
+
+    // Домашние животные
+    scientists: [
+      {
+        type: "carousel",
+        data: {
+          ru: {
+            groupLabel: "Работа в группах",
+            title: "Домашние животные",
+            slides: [
+              { emoji: "🐕", caption: "Собаки живут рядом с людьми — охраняют дом." },
+              { emoji: "🐄", caption: "Корова на пастбище даёт молоко." },
+              { emoji: "🐐", caption: "Коза у забора — даёт молоко и шерсть." },
+              { emoji: "🐎", caption: "Лошадь с жеребёнком — помогает человеку." },
+            ],
+          },
+          kz: {
+            groupLabel: "Топта жұмыс",
+            title: "Үй жануарлары",
+            slides: [
+              { emoji: "🐕", caption: "Иттер адаммен бірге тұрып, үйді күзетеді." },
+              { emoji: "🐄", caption: "Жайылымдағы сиыр сүт береді." },
+              { emoji: "🐐", caption: "Қоршау жанындағы ешкі — сүт пен жүн береді." },
+              { emoji: "🐎", caption: "Жылқы құлынымен — адамға көмектеседі." },
+            ],
+          },
+          en: {
+            groupLabel: "Group work",
+            title: "Domestic animals",
+            slides: [
+              { emoji: "🐕", caption: "Dogs live with people — they guard the house." },
+              { emoji: "🐄", caption: "A cow on the pasture gives milk." },
+              { emoji: "🐐", caption: "A goat by the fence gives milk and wool." },
+              { emoji: "🐎", caption: "A mare with her foal — helps people." },
+            ],
+          },
+        },
+      },
+      {
+        type: "reveal",
+        data: {
+          ru: {
+            title: "Проверь себя",
+            question:
+              "Кто из этих животных — домашний? Подумай и проверь ответ.",
+            items: [
+              { emoji: "🐕", label: "собака" },
+              { emoji: "🐄", label: "корова" },
+              { emoji: "🐐", label: "коза" },
+            ],
+            answer:
+              "Все трое — домашние животные. Они живут рядом с человеком, приносят пользу, а человек заботится о них.",
+            buttonLabel: "Проверить ответ",
+          },
+          kz: {
+            title: "Өзіңді тексер",
+            question:
+              "Бұлардың қайсысы үй жануары? Ойлан да жауапты тексер.",
+            items: [
+              { emoji: "🐕", label: "ит" },
+              { emoji: "🐄", label: "сиыр" },
+              { emoji: "🐐", label: "ешкі" },
+            ],
+            answer:
+              "Үшеуі де үй жануарлары. Олар адамның жанында тұрады, пайда әкеледі, адам оларды күтеді.",
+            buttonLabel: "Жауапты тексеру",
+          },
+          en: {
+            title: "Check yourself",
+            question:
+              "Which of these are domestic animals? Think, then check.",
+            items: [
+              { emoji: "🐕", label: "dog" },
+              { emoji: "🐄", label: "cow" },
+              { emoji: "🐐", label: "goat" },
+            ],
+            answer:
+              "All three are domestic animals. They live near people, are useful, and people take care of them.",
+            buttonLabel: "Check answer",
+          },
+        },
+      },
+      {
+        type: "summary",
+        data: {
+          ru: {
+            title: "Что я узнал",
+            text:
+              "**Домашние** животные живут рядом с человеком, приносят **пользу**, а человек **заботится** о них.",
+            terms: ["домашние", "пользу", "заботится"],
+          },
+          kz: {
+            title: "Мен нені білдім",
+            text:
+              "**Үй** жануарлары адамның жанында тұрады, **пайда** әкеледі, адам олар туралы **қамқорлық** жасайды.",
+            terms: ["үй", "пайда", "қамқорлық"],
+          },
+          en: {
+            title: "What I learned",
+            text:
+              "**Domestic** animals live near people, bring **benefit**, and people **take care** of them.",
+            terms: ["domestic", "benefit", "take care"],
+          },
+        },
+      },
+    ],
+
+    // Дикие животные
+    observation: [
+      {
+        type: "carousel",
+        data: {
+          ru: {
+            groupLabel: "Работа в группах",
+            title: "Дикие животные",
+            slides: [
+              { emoji: "🐘", caption: "Слон живёт в жарких странах." },
+              { emoji: "🦧", caption: "Орангутан живёт в тропических лесах." },
+              { emoji: "🦅", caption: "Беркут парит над горами." },
+              { emoji: "🦌", caption: "Сайгак бегает по степям Казахстана." },
+              { emoji: "🐱", caption: "Рысь живёт в густых лесах." },
+            ],
+          },
+          kz: {
+            groupLabel: "Топта жұмыс",
+            title: "Жабайы жануарлар",
+            slides: [
+              { emoji: "🐘", caption: "Піл ыстық елдерде тұрады." },
+              { emoji: "🦧", caption: "Орангутан тропиктік ормандарда тұрады." },
+              { emoji: "🦅", caption: "Бүркіт таулардың үстінде қалықтайды." },
+              { emoji: "🦌", caption: "Киік Қазақстан даласында жүгіреді." },
+              { emoji: "🐱", caption: "Сілеусін қалың орманда тұрады." },
+            ],
+          },
+          en: {
+            groupLabel: "Group work",
+            title: "Wild animals",
+            slides: [
+              { emoji: "🐘", caption: "An elephant lives in hot countries." },
+              { emoji: "🦧", caption: "An orangutan lives in tropical forests." },
+              { emoji: "🦅", caption: "A golden eagle soars above the mountains." },
+              { emoji: "🦌", caption: "A saiga runs across the steppes of Kazakhstan." },
+              { emoji: "🐱", caption: "A lynx lives in dense forests." },
+            ],
+          },
+        },
+      },
+      {
+        type: "reveal",
+        data: {
+          ru: {
+            title: "Где они обитают?",
+            question:
+              "К какой группе относятся эти животные? Где они обитают?",
+            items: [
+              { emoji: "🐘", label: "слон" },
+              { emoji: "🦅", label: "беркут" },
+              { emoji: "🦌", label: "сайгак" },
+            ],
+            answer:
+              "Все они — дикие животные. Слон живёт в саваннах, беркут — в горах, сайгак — в степях. Они сами добывают пищу.",
+            buttonLabel: "Проверить ответ",
+          },
+          kz: {
+            title: "Олар қайда тұрады?",
+            question:
+              "Бұл жануарлар қай топқа жатады? Олар қайда тұрады?",
+            items: [
+              { emoji: "🐘", label: "піл" },
+              { emoji: "🦅", label: "бүркіт" },
+              { emoji: "🦌", label: "киік" },
+            ],
+            answer:
+              "Олардың барлығы — жабайы жануарлар. Піл саваннада, бүркіт тауда, киік далада тұрады. Олар тамағын өздері табады.",
+            buttonLabel: "Жауапты тексеру",
+          },
+          en: {
+            title: "Where do they live?",
+            question:
+              "What group do these animals belong to? Where do they live?",
+            items: [
+              { emoji: "🐘", label: "elephant" },
+              { emoji: "🦅", label: "eagle" },
+              { emoji: "🦌", label: "saiga" },
+            ],
+            answer:
+              "They are all wild animals. The elephant lives in savannas, the eagle in the mountains, the saiga in the steppes. They find food on their own.",
+            buttonLabel: "Check answer",
+          },
+        },
+      },
+      {
+        type: "summary",
+        data: {
+          ru: {
+            title: "Что я узнал",
+            text:
+              "**Дикие** животные живут в **лесах**, **степях** и **горах**. Они сами добывают пищу и находят жильё.",
+            terms: ["дикие", "лесах", "степях", "горах"],
+          },
+          kz: {
+            title: "Мен нені білдім",
+            text:
+              "**Жабайы** жануарлар **ормандарда**, **далада** және **тауларда** тұрады. Олар тамағын өздері табады, паналайтын жерін өздері іздейді.",
+            terms: ["жабайы", "ормандарда", "далада", "тауларда"],
+          },
+          en: {
+            title: "What I learned",
+            text:
+              "**Wild** animals live in **forests**, **steppes** and **mountains**. They find food and shelter on their own.",
+            terms: ["wild", "forests", "steppes", "mountains"],
+          },
+        },
+      },
+      {
+        type: "sort",
+        data: {
+          ru: {
+            title: "Где обитают эти животные?",
+            instruction:
+              "Распредели животных по среде обитания.",
+            categories: [
+              { id: "land", label: "На земле / в лесу", emoji: "🌳" },
+              { id: "water", label: "В воде", emoji: "🌊" },
+              { id: "mount", label: "В горах", emoji: "⛰️" },
+            ],
+            items: [
+              { id: "s1", label: "корова", emoji: "🐄", categoryId: "land" },
+              { id: "s2", label: "заяц", emoji: "🐰", categoryId: "land" },
+              { id: "s3", label: "лиса", emoji: "🦊", categoryId: "land" },
+              { id: "s4", label: "дельфин", emoji: "🐬", categoryId: "water" },
+              { id: "s5", label: "архар", emoji: "🐏", categoryId: "mount" },
+            ],
+            checkLabel: "Проверить",
+          },
+          kz: {
+            title: "Бұл жануарлар қайда тұрады?",
+            instruction:
+              "Жануарларды мекен ортасы бойынша бөл.",
+            categories: [
+              { id: "land", label: "Жерде / орманда", emoji: "🌳" },
+              { id: "water", label: "Суда", emoji: "🌊" },
+              { id: "mount", label: "Тауда", emoji: "⛰️" },
+            ],
+            items: [
+              { id: "s1", label: "сиыр", emoji: "🐄", categoryId: "land" },
+              { id: "s2", label: "қоян", emoji: "🐰", categoryId: "land" },
+              { id: "s3", label: "түлкі", emoji: "🦊", categoryId: "land" },
+              { id: "s4", label: "дельфин", emoji: "🐬", categoryId: "water" },
+              { id: "s5", label: "арқар", emoji: "🐏", categoryId: "mount" },
+            ],
+            checkLabel: "Тексеру",
+          },
+          en: {
+            title: "Where do these animals live?",
+            instruction:
+              "Sort the animals by their habitat.",
+            categories: [
+              { id: "land", label: "On land / in forest", emoji: "🌳" },
+              { id: "water", label: "In water", emoji: "🌊" },
+              { id: "mount", label: "In mountains", emoji: "⛰️" },
+            ],
+            items: [
+              { id: "s1", label: "cow", emoji: "🐄", categoryId: "land" },
+              { id: "s2", label: "hare", emoji: "🐰", categoryId: "land" },
+              { id: "s3", label: "fox", emoji: "🦊", categoryId: "land" },
+              { id: "s4", label: "dolphin", emoji: "🐬", categoryId: "water" },
+              { id: "s5", label: "argali", emoji: "🐏", categoryId: "mount" },
+            ],
+            checkLabel: "Check",
+          },
+        },
+      },
+    ],
+
+    // Итоги
+    experiments: [
+      {
+        type: "fact",
+        data: {
+          ru: {
+            title: "Найди в энциклопедии",
+            text:
+              "Узнай, какие редкие дикие животные живут в Казахстане. Запиши 3 примера и где они обитают.",
+            keywords: ["энциклопедия", "Казахстан", "редкие"],
+            icon: "sparkles",
+          },
+          kz: {
+            title: "Энциклопедиядан тап",
+            text:
+              "Қазақстанда қандай сирек кездесетін жабайы жануарлар бар? 3 мысал жазып, қайда тұратынын көрсет.",
+            keywords: ["энциклопедия", "Қазақстан", "сирек"],
+            icon: "sparkles",
+          },
+          en: {
+            title: "Find in the encyclopedia",
+            text:
+              "Find out which rare wild animals live in Kazakhstan. Write down 3 examples and where they live.",
+            keywords: ["encyclopedia", "Kazakhstan", "rare"],
+            icon: "sparkles",
+          },
+        },
+      },
+      {
+        type: "fact",
+        data: {
+          ru: {
+            title: "Это интересно!",
+            text:
+              "У молодых пингвинов хвост похож на белый мех. Это помогает их мамам быстро находить своих птенцов в большой стае.",
+            keywords: ["пингвины", "хвост", "мех"],
+            icon: "bulb",
+          },
+          kz: {
+            title: "Бұл қызық!",
+            text:
+              "Жас пингвиндердің құйрығы ақ жүнге ұқсайды. Бұл аналарына үлкен топтан өз балапандарын тез табуға көмектеседі.",
+            keywords: ["пингвин", "құйрық", "жүн"],
+            icon: "bulb",
+          },
+          en: {
+            title: "Did you know?",
+            text:
+              "Young penguins have tails that look like white fur. It helps their mothers quickly find their chicks in a large flock.",
+            keywords: ["penguins", "tail", "fur"],
+            icon: "bulb",
+          },
+        },
+      },
+      {
+        type: "summary",
+        data: {
+          ru: {
+            title: "Итоговые вопросы",
+            text:
+              "1) Чем **дикие** животные отличаются от **домашних**? 2) Почему человек должен **заботиться** о домашних животных?",
+          },
+          kz: {
+            title: "Қорытынды сұрақтар",
+            text:
+              "1) **Жабайы** жануарлар **үй** жануарларынан немен ерекшеленеді? 2) Адам үй жануарларына неліктен **қамқорлық** жасауы керек?",
+          },
+          en: {
+            title: "Wrap-up questions",
+            text:
+              "1) How do **wild** animals differ from **domestic** ones? 2) Why should people **take care** of domestic animals?",
+          },
+        },
+      },
+    ],
+  },
+  23: {
+    intro: [
+      {
+        type: "audio",
+        data: {
+          ru: {
+            title: "Аудио-гид к уроку",
+            text:
+              "Сегодня мы узнаем, что животные бывают дикими и домашними, и в чём их главное отличие.",
+            caption: "Послушай вступление к уроку",
+            durationLabel: "0:22",
+          },
+          kz: {
+            title: "Сабақтың аудио-гиді",
+            text:
+              "Бүгін біз жануарлардың жабайы және үй жануарлары болып бөлінетінін, олардың айырмашылығы неде екенін білеміз.",
+            caption: "Сабақтың кіріспесін тыңда",
+            durationLabel: "0:22",
+          },
+          en: {
+            title: "Lesson audio guide",
+            text:
+              "Today we'll learn that animals can be wild or domestic, and what is the main difference between them.",
+            caption: "Listen to the lesson intro",
+            durationLabel: "0:22",
+          },
+        },
+      },
+      {
+        type: "carousel",
+        data: {
+          ru: {
+            groupLabel: "Ключевые слова",
+            title: "Дикие и домашние",
+            slides: [
+              { emoji: "🏠", caption: "Домашние животные / Үй жануарлары / Domestic animals" },
+              { emoji: "🌲", caption: "Дикие животные / Жабайы жануарлар / Wild animals" },
+              { emoji: "🌍", caption: "Среда обитания / Мекен орта / Habitat" },
+            ],
+          },
+          kz: {
+            groupLabel: "Кілт сөздер",
+            title: "Жабайы және үй",
+            slides: [
+              { emoji: "🏠", caption: "Үй жануарлары / Домашние / Domestic animals" },
+              { emoji: "🌲", caption: "Жабайы жануарлар / Дикие / Wild animals" },
+              { emoji: "🌍", caption: "Мекен орта / Среда обитания / Habitat" },
+            ],
+          },
+          en: {
+            groupLabel: "Key words",
+            title: "Wild and domestic",
+            slides: [
+              { emoji: "🏠", caption: "Domestic animals / Домашние / Үй жануарлары" },
+              { emoji: "🌲", caption: "Wild animals / Дикие / Жабайы жануарлар" },
+              { emoji: "🌍", caption: "Habitat / Среда обитания / Мекен орта" },
+            ],
+          },
+        },
+      },
+    ],
+
+    // Домашние животные
+    scientists: [
+      {
+        type: "carousel",
+        data: {
+          ru: {
+            groupLabel: "Работа в группах",
+            title: "Домашние животные",
+            slides: [
+              { emoji: "🐕", caption: "Собаки живут рядом с людьми — охраняют дом." },
+              { emoji: "🐄", caption: "Корова на пастбище даёт молоко." },
+              { emoji: "🐐", caption: "Коза у забора — даёт молоко и шерсть." },
+              { emoji: "🐎", caption: "Лошадь с жеребёнком — помогает человеку." },
+            ],
+          },
+          kz: {
+            groupLabel: "Топта жұмыс",
+            title: "Үй жануарлары",
+            slides: [
+              { emoji: "🐕", caption: "Иттер адаммен бірге тұрып, үйді күзетеді." },
+              { emoji: "🐄", caption: "Жайылымдағы сиыр сүт береді." },
+              { emoji: "🐐", caption: "Қоршау жанындағы ешкі — сүт пен жүн береді." },
+              { emoji: "🐎", caption: "Жылқы құлынымен — адамға көмектеседі." },
+            ],
+          },
+          en: {
+            groupLabel: "Group work",
+            title: "Domestic animals",
+            slides: [
+              { emoji: "🐕", caption: "Dogs live with people — they guard the house." },
+              { emoji: "🐄", caption: "A cow on the pasture gives milk." },
+              { emoji: "🐐", caption: "A goat by the fence gives milk and wool." },
+              { emoji: "🐎", caption: "A mare with her foal — helps people." },
+            ],
+          },
+        },
+      },
+      {
+        type: "reveal",
+        data: {
+          ru: {
+            title: "Проверь себя",
+            question:
+              "Кто из этих животных — домашний? Подумай и проверь ответ.",
+            items: [
+              { emoji: "🐕", label: "собака" },
+              { emoji: "🐄", label: "корова" },
+              { emoji: "🐐", label: "коза" },
+            ],
+            answer:
+              "Все трое — домашние животные. Они живут рядом с человеком, приносят пользу, а человек заботится о них.",
+            buttonLabel: "Проверить ответ",
+          },
+          kz: {
+            title: "Өзіңді тексер",
+            question:
+              "Бұлардың қайсысы үй жануары? Ойлан да жауапты тексер.",
+            items: [
+              { emoji: "🐕", label: "ит" },
+              { emoji: "🐄", label: "сиыр" },
+              { emoji: "🐐", label: "ешкі" },
+            ],
+            answer:
+              "Үшеуі де үй жануарлары. Олар адамның жанында тұрады, пайда әкеледі, адам оларды күтеді.",
+            buttonLabel: "Жауапты тексеру",
+          },
+          en: {
+            title: "Check yourself",
+            question:
+              "Which of these are domestic animals? Think, then check.",
+            items: [
+              { emoji: "🐕", label: "dog" },
+              { emoji: "🐄", label: "cow" },
+              { emoji: "🐐", label: "goat" },
+            ],
+            answer:
+              "All three are domestic animals. They live near people, are useful, and people take care of them.",
+            buttonLabel: "Check answer",
+          },
+        },
+      },
+      {
+        type: "summary",
+        data: {
+          ru: {
+            title: "Что я узнал",
+            text:
+              "**Домашние** животные живут рядом с человеком, приносят **пользу**, а человек **заботится** о них.",
+            terms: ["домашние", "пользу", "заботится"],
+          },
+          kz: {
+            title: "Мен нені білдім",
+            text:
+              "**Үй** жануарлары адамның жанында тұрады, **пайда** әкеледі, адам олар туралы **қамқорлық** жасайды.",
+            terms: ["үй", "пайда", "қамқорлық"],
+          },
+          en: {
+            title: "What I learned",
+            text:
+              "**Domestic** animals live near people, bring **benefit**, and people **take care** of them.",
+            terms: ["domestic", "benefit", "take care"],
+          },
+        },
+      },
+    ],
+
+    // Дикие животные
+    observation: [
+      {
+        type: "carousel",
+        data: {
+          ru: {
+            groupLabel: "Работа в группах",
+            title: "Дикие животные",
+            slides: [
+              { emoji: "🐘", caption: "Слон живёт в жарких странах." },
+              { emoji: "🦧", caption: "Орангутан живёт в тропических лесах." },
+              { emoji: "🦅", caption: "Беркут парит над горами." },
+              { emoji: "🦌", caption: "Сайгак бегает по степям Казахстана." },
+              { emoji: "🐱", caption: "Рысь живёт в густых лесах." },
+            ],
+          },
+          kz: {
+            groupLabel: "Топта жұмыс",
+            title: "Жабайы жануарлар",
+            slides: [
+              { emoji: "🐘", caption: "Піл ыстық елдерде тұрады." },
+              { emoji: "🦧", caption: "Орангутан тропиктік ормандарда тұрады." },
+              { emoji: "🦅", caption: "Бүркіт таулардың үстінде қалықтайды." },
+              { emoji: "🦌", caption: "Киік Қазақстан даласында жүгіреді." },
+              { emoji: "🐱", caption: "Сілеусін қалың орманда тұрады." },
+            ],
+          },
+          en: {
+            groupLabel: "Group work",
+            title: "Wild animals",
+            slides: [
+              { emoji: "🐘", caption: "An elephant lives in hot countries." },
+              { emoji: "🦧", caption: "An orangutan lives in tropical forests." },
+              { emoji: "🦅", caption: "A golden eagle soars above the mountains." },
+              { emoji: "🦌", caption: "A saiga runs across the steppes of Kazakhstan." },
+              { emoji: "🐱", caption: "A lynx lives in dense forests." },
+            ],
+          },
+        },
+      },
+      {
+        type: "reveal",
+        data: {
+          ru: {
+            title: "Где они обитают?",
+            question:
+              "К какой группе относятся эти животные? Где они обитают?",
+            items: [
+              { emoji: "🐘", label: "слон" },
+              { emoji: "🦅", label: "беркут" },
+              { emoji: "🦌", label: "сайгак" },
+            ],
+            answer:
+              "Все они — дикие животные. Слон живёт в саваннах, беркут — в горах, сайгак — в степях. Они сами добывают пищу.",
+            buttonLabel: "Проверить ответ",
+          },
+          kz: {
+            title: "Олар қайда тұрады?",
+            question:
+              "Бұл жануарлар қай топқа жатады? Олар қайда тұрады?",
+            items: [
+              { emoji: "🐘", label: "піл" },
+              { emoji: "🦅", label: "бүркіт" },
+              { emoji: "🦌", label: "киік" },
+            ],
+            answer:
+              "Олардың барлығы — жабайы жануарлар. Піл саваннада, бүркіт тауда, киік далада тұрады. Олар тамағын өздері табады.",
+            buttonLabel: "Жауапты тексеру",
+          },
+          en: {
+            title: "Where do they live?",
+            question:
+              "What group do these animals belong to? Where do they live?",
+            items: [
+              { emoji: "🐘", label: "elephant" },
+              { emoji: "🦅", label: "eagle" },
+              { emoji: "🦌", label: "saiga" },
+            ],
+            answer:
+              "They are all wild animals. The elephant lives in savannas, the eagle in the mountains, the saiga in the steppes. They find food on their own.",
+            buttonLabel: "Check answer",
+          },
+        },
+      },
+      {
+        type: "summary",
+        data: {
+          ru: {
+            title: "Что я узнал",
+            text:
+              "**Дикие** животные живут в **лесах**, **степях** и **горах**. Они сами добывают пищу и находят жильё.",
+            terms: ["дикие", "лесах", "степях", "горах"],
+          },
+          kz: {
+            title: "Мен нені білдім",
+            text:
+              "**Жабайы** жануарлар **ормандарда**, **далада** және **тауларда** тұрады. Олар тамағын өздері табады, паналайтын жерін өздері іздейді.",
+            terms: ["жабайы", "ормандарда", "далада", "тауларда"],
+          },
+          en: {
+            title: "What I learned",
+            text:
+              "**Wild** animals live in **forests**, **steppes** and **mountains**. They find food and shelter on their own.",
+            terms: ["wild", "forests", "steppes", "mountains"],
+          },
+        },
+      },
+      {
+        type: "sort",
+        data: {
+          ru: {
+            title: "Где обитают эти животные?",
+            instruction:
+              "Распредели животных по среде обитания.",
+            categories: [
+              { id: "land", label: "На земле / в лесу", emoji: "🌳" },
+              { id: "water", label: "В воде", emoji: "🌊" },
+              { id: "mount", label: "В горах", emoji: "⛰️" },
+            ],
+            items: [
+              { id: "s1", label: "корова", emoji: "🐄", categoryId: "land" },
+              { id: "s2", label: "заяц", emoji: "🐰", categoryId: "land" },
+              { id: "s3", label: "лиса", emoji: "🦊", categoryId: "land" },
+              { id: "s4", label: "дельфин", emoji: "🐬", categoryId: "water" },
+              { id: "s5", label: "архар", emoji: "🐏", categoryId: "mount" },
+            ],
+            checkLabel: "Проверить",
+          },
+          kz: {
+            title: "Бұл жануарлар қайда тұрады?",
+            instruction:
+              "Жануарларды мекен ортасы бойынша бөл.",
+            categories: [
+              { id: "land", label: "Жерде / орманда", emoji: "🌳" },
+              { id: "water", label: "Суда", emoji: "🌊" },
+              { id: "mount", label: "Тауда", emoji: "⛰️" },
+            ],
+            items: [
+              { id: "s1", label: "сиыр", emoji: "🐄", categoryId: "land" },
+              { id: "s2", label: "қоян", emoji: "🐰", categoryId: "land" },
+              { id: "s3", label: "түлкі", emoji: "🦊", categoryId: "land" },
+              { id: "s4", label: "дельфин", emoji: "🐬", categoryId: "water" },
+              { id: "s5", label: "арқар", emoji: "🐏", categoryId: "mount" },
+            ],
+            checkLabel: "Тексеру",
+          },
+          en: {
+            title: "Where do these animals live?",
+            instruction:
+              "Sort the animals by their habitat.",
+            categories: [
+              { id: "land", label: "On land / in forest", emoji: "🌳" },
+              { id: "water", label: "In water", emoji: "🌊" },
+              { id: "mount", label: "In mountains", emoji: "⛰️" },
+            ],
+            items: [
+              { id: "s1", label: "cow", emoji: "🐄", categoryId: "land" },
+              { id: "s2", label: "hare", emoji: "🐰", categoryId: "land" },
+              { id: "s3", label: "fox", emoji: "🦊", categoryId: "land" },
+              { id: "s4", label: "dolphin", emoji: "🐬", categoryId: "water" },
+              { id: "s5", label: "argali", emoji: "🐏", categoryId: "mount" },
+            ],
+            checkLabel: "Check",
+          },
+        },
+      },
+    ],
+
+    // Итоги
+    experiments: [
+      {
+        type: "fact",
+        data: {
+          ru: {
+            title: "Найди в энциклопедии",
+            text:
+              "Узнай, какие редкие дикие животные живут в Казахстане. Запиши 3 примера и где они обитают.",
+            keywords: ["энциклопедия", "Казахстан", "редкие"],
+            icon: "sparkles",
+          },
+          kz: {
+            title: "Энциклопедиядан тап",
+            text:
+              "Қазақстанда қандай сирек кездесетін жабайы жануарлар бар? 3 мысал жазып, қайда тұратынын көрсет.",
+            keywords: ["энциклопедия", "Қазақстан", "сирек"],
+            icon: "sparkles",
+          },
+          en: {
+            title: "Find in the encyclopedia",
+            text:
+              "Find out which rare wild animals live in Kazakhstan. Write down 3 examples and where they live.",
+            keywords: ["encyclopedia", "Kazakhstan", "rare"],
+            icon: "sparkles",
+          },
+        },
+      },
+      {
+        type: "fact",
+        data: {
+          ru: {
+            title: "Это интересно!",
+            text:
+              "У молодых пингвинов хвост похож на белый мех. Это помогает их мамам быстро находить своих птенцов в большой стае.",
+            keywords: ["пингвины", "хвост", "мех"],
+            icon: "bulb",
+          },
+          kz: {
+            title: "Бұл қызық!",
+            text:
+              "Жас пингвиндердің құйрығы ақ жүнге ұқсайды. Бұл аналарына үлкен топтан өз балапандарын тез табуға көмектеседі.",
+            keywords: ["пингвин", "құйрық", "жүн"],
+            icon: "bulb",
+          },
+          en: {
+            title: "Did you know?",
+            text:
+              "Young penguins have tails that look like white fur. It helps their mothers quickly find their chicks in a large flock.",
+            keywords: ["penguins", "tail", "fur"],
+            icon: "bulb",
+          },
+        },
+      },
+      {
+        type: "summary",
+        data: {
+          ru: {
+            title: "Итоговые вопросы",
+            text:
+              "1) Чем **дикие** животные отличаются от **домашних**? 2) Почему человек должен **заботиться** о домашних животных?",
+          },
+          kz: {
+            title: "Қорытынды сұрақтар",
+            text:
+              "1) **Жабайы** жануарлар **үй** жануарларынан немен ерекшеленеді? 2) Адам үй жануарларына неліктен **қамқорлық** жасауы керек?",
+          },
+          en: {
+            title: "Wrap-up questions",
+            text:
+              "1) How do **wild** animals differ from **domestic** ones? 2) Why should people **take care** of domestic animals?",
+          },
+        },
+      },
+    ],
+  },
+  24: {
+    intro: [
+      {
+        type: "audio",
+        data: {
+          ru: {
+            title: "Аудио-гид к уроку",
+            text:
+              "Сегодня мы узнаем, что животные бывают дикими и домашними, и в чём их главное отличие.",
+            caption: "Послушай вступление к уроку",
+            durationLabel: "0:22",
+          },
+          kz: {
+            title: "Сабақтың аудио-гиді",
+            text:
+              "Бүгін біз жануарлардың жабайы және үй жануарлары болып бөлінетінін, олардың айырмашылығы неде екенін білеміз.",
+            caption: "Сабақтың кіріспесін тыңда",
+            durationLabel: "0:22",
+          },
+          en: {
+            title: "Lesson audio guide",
+            text:
+              "Today we'll learn that animals can be wild or domestic, and what is the main difference between them.",
+            caption: "Listen to the lesson intro",
+            durationLabel: "0:22",
+          },
+        },
+      },
+      {
+        type: "carousel",
+        data: {
+          ru: {
+            groupLabel: "Ключевые слова",
+            title: "Дикие и домашние",
+            slides: [
+              { emoji: "🏠", caption: "Домашние животные / Үй жануарлары / Domestic animals" },
+              { emoji: "🌲", caption: "Дикие животные / Жабайы жануарлар / Wild animals" },
+              { emoji: "🌍", caption: "Среда обитания / Мекен орта / Habitat" },
+            ],
+          },
+          kz: {
+            groupLabel: "Кілт сөздер",
+            title: "Жабайы және үй",
+            slides: [
+              { emoji: "🏠", caption: "Үй жануарлары / Домашние / Domestic animals" },
+              { emoji: "🌲", caption: "Жабайы жануарлар / Дикие / Wild animals" },
+              { emoji: "🌍", caption: "Мекен орта / Среда обитания / Habitat" },
+            ],
+          },
+          en: {
+            groupLabel: "Key words",
+            title: "Wild and domestic",
+            slides: [
+              { emoji: "🏠", caption: "Domestic animals / Домашние / Үй жануарлары" },
+              { emoji: "🌲", caption: "Wild animals / Дикие / Жабайы жануарлар" },
+              { emoji: "🌍", caption: "Habitat / Среда обитания / Мекен орта" },
+            ],
+          },
+        },
+      },
+    ],
+
+    // Домашние животные
+    scientists: [
+      {
+        type: "carousel",
+        data: {
+          ru: {
+            groupLabel: "Работа в группах",
+            title: "Домашние животные",
+            slides: [
+              { emoji: "🐕", caption: "Собаки живут рядом с людьми — охраняют дом." },
+              { emoji: "🐄", caption: "Корова на пастбище даёт молоко." },
+              { emoji: "🐐", caption: "Коза у забора — даёт молоко и шерсть." },
+              { emoji: "🐎", caption: "Лошадь с жеребёнком — помогает человеку." },
+            ],
+          },
+          kz: {
+            groupLabel: "Топта жұмыс",
+            title: "Үй жануарлары",
+            slides: [
+              { emoji: "🐕", caption: "Иттер адаммен бірге тұрып, үйді күзетеді." },
+              { emoji: "🐄", caption: "Жайылымдағы сиыр сүт береді." },
+              { emoji: "🐐", caption: "Қоршау жанындағы ешкі — сүт пен жүн береді." },
+              { emoji: "🐎", caption: "Жылқы құлынымен — адамға көмектеседі." },
+            ],
+          },
+          en: {
+            groupLabel: "Group work",
+            title: "Domestic animals",
+            slides: [
+              { emoji: "🐕", caption: "Dogs live with people — they guard the house." },
+              { emoji: "🐄", caption: "A cow on the pasture gives milk." },
+              { emoji: "🐐", caption: "A goat by the fence gives milk and wool." },
+              { emoji: "🐎", caption: "A mare with her foal — helps people." },
+            ],
+          },
+        },
+      },
+      {
+        type: "reveal",
+        data: {
+          ru: {
+            title: "Проверь себя",
+            question:
+              "Кто из этих животных — домашний? Подумай и проверь ответ.",
+            items: [
+              { emoji: "🐕", label: "собака" },
+              { emoji: "🐄", label: "корова" },
+              { emoji: "🐐", label: "коза" },
+            ],
+            answer:
+              "Все трое — домашние животные. Они живут рядом с человеком, приносят пользу, а человек заботится о них.",
+            buttonLabel: "Проверить ответ",
+          },
+          kz: {
+            title: "Өзіңді тексер",
+            question:
+              "Бұлардың қайсысы үй жануары? Ойлан да жауапты тексер.",
+            items: [
+              { emoji: "🐕", label: "ит" },
+              { emoji: "🐄", label: "сиыр" },
+              { emoji: "🐐", label: "ешкі" },
+            ],
+            answer:
+              "Үшеуі де үй жануарлары. Олар адамның жанында тұрады, пайда әкеледі, адам оларды күтеді.",
+            buttonLabel: "Жауапты тексеру",
+          },
+          en: {
+            title: "Check yourself",
+            question:
+              "Which of these are domestic animals? Think, then check.",
+            items: [
+              { emoji: "🐕", label: "dog" },
+              { emoji: "🐄", label: "cow" },
+              { emoji: "🐐", label: "goat" },
+            ],
+            answer:
+              "All three are domestic animals. They live near people, are useful, and people take care of them.",
+            buttonLabel: "Check answer",
+          },
+        },
+      },
+      {
+        type: "summary",
+        data: {
+          ru: {
+            title: "Что я узнал",
+            text:
+              "**Домашние** животные живут рядом с человеком, приносят **пользу**, а человек **заботится** о них.",
+            terms: ["домашние", "пользу", "заботится"],
+          },
+          kz: {
+            title: "Мен нені білдім",
+            text:
+              "**Үй** жануарлары адамның жанында тұрады, **пайда** әкеледі, адам олар туралы **қамқорлық** жасайды.",
+            terms: ["үй", "пайда", "қамқорлық"],
+          },
+          en: {
+            title: "What I learned",
+            text:
+              "**Domestic** animals live near people, bring **benefit**, and people **take care** of them.",
+            terms: ["domestic", "benefit", "take care"],
+          },
+        },
+      },
+    ],
+
+    // Дикие животные
+    observation: [
+      {
+        type: "carousel",
+        data: {
+          ru: {
+            groupLabel: "Работа в группах",
+            title: "Дикие животные",
+            slides: [
+              { emoji: "🐘", caption: "Слон живёт в жарких странах." },
+              { emoji: "🦧", caption: "Орангутан живёт в тропических лесах." },
+              { emoji: "🦅", caption: "Беркут парит над горами." },
+              { emoji: "🦌", caption: "Сайгак бегает по степям Казахстана." },
+              { emoji: "🐱", caption: "Рысь живёт в густых лесах." },
+            ],
+          },
+          kz: {
+            groupLabel: "Топта жұмыс",
+            title: "Жабайы жануарлар",
+            slides: [
+              { emoji: "🐘", caption: "Піл ыстық елдерде тұрады." },
+              { emoji: "🦧", caption: "Орангутан тропиктік ормандарда тұрады." },
+              { emoji: "🦅", caption: "Бүркіт таулардың үстінде қалықтайды." },
+              { emoji: "🦌", caption: "Киік Қазақстан даласында жүгіреді." },
+              { emoji: "🐱", caption: "Сілеусін қалың орманда тұрады." },
+            ],
+          },
+          en: {
+            groupLabel: "Group work",
+            title: "Wild animals",
+            slides: [
+              { emoji: "🐘", caption: "An elephant lives in hot countries." },
+              { emoji: "🦧", caption: "An orangutan lives in tropical forests." },
+              { emoji: "🦅", caption: "A golden eagle soars above the mountains." },
+              { emoji: "🦌", caption: "A saiga runs across the steppes of Kazakhstan." },
+              { emoji: "🐱", caption: "A lynx lives in dense forests." },
+            ],
+          },
+        },
+      },
+      {
+        type: "reveal",
+        data: {
+          ru: {
+            title: "Где они обитают?",
+            question:
+              "К какой группе относятся эти животные? Где они обитают?",
+            items: [
+              { emoji: "🐘", label: "слон" },
+              { emoji: "🦅", label: "беркут" },
+              { emoji: "🦌", label: "сайгак" },
+            ],
+            answer:
+              "Все они — дикие животные. Слон живёт в саваннах, беркут — в горах, сайгак — в степях. Они сами добывают пищу.",
+            buttonLabel: "Проверить ответ",
+          },
+          kz: {
+            title: "Олар қайда тұрады?",
+            question:
+              "Бұл жануарлар қай топқа жатады? Олар қайда тұрады?",
+            items: [
+              { emoji: "🐘", label: "піл" },
+              { emoji: "🦅", label: "бүркіт" },
+              { emoji: "🦌", label: "киік" },
+            ],
+            answer:
+              "Олардың барлығы — жабайы жануарлар. Піл саваннада, бүркіт тауда, киік далада тұрады. Олар тамағын өздері табады.",
+            buttonLabel: "Жауапты тексеру",
+          },
+          en: {
+            title: "Where do they live?",
+            question:
+              "What group do these animals belong to? Where do they live?",
+            items: [
+              { emoji: "🐘", label: "elephant" },
+              { emoji: "🦅", label: "eagle" },
+              { emoji: "🦌", label: "saiga" },
+            ],
+            answer:
+              "They are all wild animals. The elephant lives in savannas, the eagle in the mountains, the saiga in the steppes. They find food on their own.",
+            buttonLabel: "Check answer",
+          },
+        },
+      },
+      {
+        type: "summary",
+        data: {
+          ru: {
+            title: "Что я узнал",
+            text:
+              "**Дикие** животные живут в **лесах**, **степях** и **горах**. Они сами добывают пищу и находят жильё.",
+            terms: ["дикие", "лесах", "степях", "горах"],
+          },
+          kz: {
+            title: "Мен нені білдім",
+            text:
+              "**Жабайы** жануарлар **ормандарда**, **далада** және **тауларда** тұрады. Олар тамағын өздері табады, паналайтын жерін өздері іздейді.",
+            terms: ["жабайы", "ормандарда", "далада", "тауларда"],
+          },
+          en: {
+            title: "What I learned",
+            text:
+              "**Wild** animals live in **forests**, **steppes** and **mountains**. They find food and shelter on their own.",
+            terms: ["wild", "forests", "steppes", "mountains"],
+          },
+        },
+      },
+      {
+        type: "sort",
+        data: {
+          ru: {
+            title: "Где обитают эти животные?",
+            instruction:
+              "Распредели животных по среде обитания.",
+            categories: [
+              { id: "land", label: "На земле / в лесу", emoji: "🌳" },
+              { id: "water", label: "В воде", emoji: "🌊" },
+              { id: "mount", label: "В горах", emoji: "⛰️" },
+            ],
+            items: [
+              { id: "s1", label: "корова", emoji: "🐄", categoryId: "land" },
+              { id: "s2", label: "заяц", emoji: "🐰", categoryId: "land" },
+              { id: "s3", label: "лиса", emoji: "🦊", categoryId: "land" },
+              { id: "s4", label: "дельфин", emoji: "🐬", categoryId: "water" },
+              { id: "s5", label: "архар", emoji: "🐏", categoryId: "mount" },
+            ],
+            checkLabel: "Проверить",
+          },
+          kz: {
+            title: "Бұл жануарлар қайда тұрады?",
+            instruction:
+              "Жануарларды мекен ортасы бойынша бөл.",
+            categories: [
+              { id: "land", label: "Жерде / орманда", emoji: "🌳" },
+              { id: "water", label: "Суда", emoji: "🌊" },
+              { id: "mount", label: "Тауда", emoji: "⛰️" },
+            ],
+            items: [
+              { id: "s1", label: "сиыр", emoji: "🐄", categoryId: "land" },
+              { id: "s2", label: "қоян", emoji: "🐰", categoryId: "land" },
+              { id: "s3", label: "түлкі", emoji: "🦊", categoryId: "land" },
+              { id: "s4", label: "дельфин", emoji: "🐬", categoryId: "water" },
+              { id: "s5", label: "арқар", emoji: "🐏", categoryId: "mount" },
+            ],
+            checkLabel: "Тексеру",
+          },
+          en: {
+            title: "Where do these animals live?",
+            instruction:
+              "Sort the animals by their habitat.",
+            categories: [
+              { id: "land", label: "On land / in forest", emoji: "🌳" },
+              { id: "water", label: "In water", emoji: "🌊" },
+              { id: "mount", label: "In mountains", emoji: "⛰️" },
+            ],
+            items: [
+              { id: "s1", label: "cow", emoji: "🐄", categoryId: "land" },
+              { id: "s2", label: "hare", emoji: "🐰", categoryId: "land" },
+              { id: "s3", label: "fox", emoji: "🦊", categoryId: "land" },
+              { id: "s4", label: "dolphin", emoji: "🐬", categoryId: "water" },
+              { id: "s5", label: "argali", emoji: "🐏", categoryId: "mount" },
+            ],
+            checkLabel: "Check",
+          },
+        },
+      },
+    ],
+
+    // Итоги
+    experiments: [
+      {
+        type: "fact",
+        data: {
+          ru: {
+            title: "Найди в энциклопедии",
+            text:
+              "Узнай, какие редкие дикие животные живут в Казахстане. Запиши 3 примера и где они обитают.",
+            keywords: ["энциклопедия", "Казахстан", "редкие"],
+            icon: "sparkles",
+          },
+          kz: {
+            title: "Энциклопедиядан тап",
+            text:
+              "Қазақстанда қандай сирек кездесетін жабайы жануарлар бар? 3 мысал жазып, қайда тұратынын көрсет.",
+            keywords: ["энциклопедия", "Қазақстан", "сирек"],
+            icon: "sparkles",
+          },
+          en: {
+            title: "Find in the encyclopedia",
+            text:
+              "Find out which rare wild animals live in Kazakhstan. Write down 3 examples and where they live.",
+            keywords: ["encyclopedia", "Kazakhstan", "rare"],
+            icon: "sparkles",
+          },
+        },
+      },
+      {
+        type: "fact",
+        data: {
+          ru: {
+            title: "Это интересно!",
+            text:
+              "У молодых пингвинов хвост похож на белый мех. Это помогает их мамам быстро находить своих птенцов в большой стае.",
+            keywords: ["пингвины", "хвост", "мех"],
+            icon: "bulb",
+          },
+          kz: {
+            title: "Бұл қызық!",
+            text:
+              "Жас пингвиндердің құйрығы ақ жүнге ұқсайды. Бұл аналарына үлкен топтан өз балапандарын тез табуға көмектеседі.",
+            keywords: ["пингвин", "құйрық", "жүн"],
+            icon: "bulb",
+          },
+          en: {
+            title: "Did you know?",
+            text:
+              "Young penguins have tails that look like white fur. It helps their mothers quickly find their chicks in a large flock.",
+            keywords: ["penguins", "tail", "fur"],
+            icon: "bulb",
+          },
+        },
+      },
+      {
+        type: "summary",
+        data: {
+          ru: {
+            title: "Итоговые вопросы",
+            text:
+              "1) Чем **дикие** животные отличаются от **домашних**? 2) Почему человек должен **заботиться** о домашних животных?",
+          },
+          kz: {
+            title: "Қорытынды сұрақтар",
+            text:
+              "1) **Жабайы** жануарлар **үй** жануарларынан немен ерекшеленеді? 2) Адам үй жануарларына неліктен **қамқорлық** жасауы керек?",
+          },
+          en: {
+            title: "Wrap-up questions",
+            text:
+              "1) How do **wild** animals differ from **domestic** ones? 2) Why should people **take care** of domestic animals?",
+          },
+        },
+      },
+    ],
+  },
+  25: {
+    intro: [
+      {
+        type: "audio",
+        data: {
+          ru: {
+            title: "Аудио-гид к уроку",
+            text:
+              "Сегодня мы узнаем, что животные бывают дикими и домашними, и в чём их главное отличие.",
+            caption: "Послушай вступление к уроку",
+            durationLabel: "0:22",
+          },
+          kz: {
+            title: "Сабақтың аудио-гиді",
+            text:
+              "Бүгін біз жануарлардың жабайы және үй жануарлары болып бөлінетінін, олардың айырмашылығы неде екенін білеміз.",
+            caption: "Сабақтың кіріспесін тыңда",
+            durationLabel: "0:22",
+          },
+          en: {
+            title: "Lesson audio guide",
+            text:
+              "Today we'll learn that animals can be wild or domestic, and what is the main difference between them.",
+            caption: "Listen to the lesson intro",
+            durationLabel: "0:22",
+          },
+        },
+      },
+      {
+        type: "carousel",
+        data: {
+          ru: {
+            groupLabel: "Ключевые слова",
+            title: "Дикие и домашние",
+            slides: [
+              { emoji: "🏠", caption: "Домашние животные / Үй жануарлары / Domestic animals" },
+              { emoji: "🌲", caption: "Дикие животные / Жабайы жануарлар / Wild animals" },
+              { emoji: "🌍", caption: "Среда обитания / Мекен орта / Habitat" },
+            ],
+          },
+          kz: {
+            groupLabel: "Кілт сөздер",
+            title: "Жабайы және үй",
+            slides: [
+              { emoji: "🏠", caption: "Үй жануарлары / Домашние / Domestic animals" },
+              { emoji: "🌲", caption: "Жабайы жануарлар / Дикие / Wild animals" },
+              { emoji: "🌍", caption: "Мекен орта / Среда обитания / Habitat" },
+            ],
+          },
+          en: {
+            groupLabel: "Key words",
+            title: "Wild and domestic",
+            slides: [
+              { emoji: "🏠", caption: "Domestic animals / Домашние / Үй жануарлары" },
+              { emoji: "🌲", caption: "Wild animals / Дикие / Жабайы жануарлар" },
+              { emoji: "🌍", caption: "Habitat / Среда обитания / Мекен орта" },
+            ],
+          },
+        },
+      },
+    ],
+
+    // Домашние животные
+    scientists: [
+      {
+        type: "carousel",
+        data: {
+          ru: {
+            groupLabel: "Работа в группах",
+            title: "Домашние животные",
+            slides: [
+              { emoji: "🐕", caption: "Собаки живут рядом с людьми — охраняют дом." },
+              { emoji: "🐄", caption: "Корова на пастбище даёт молоко." },
+              { emoji: "🐐", caption: "Коза у забора — даёт молоко и шерсть." },
+              { emoji: "🐎", caption: "Лошадь с жеребёнком — помогает человеку." },
+            ],
+          },
+          kz: {
+            groupLabel: "Топта жұмыс",
+            title: "Үй жануарлары",
+            slides: [
+              { emoji: "🐕", caption: "Иттер адаммен бірге тұрып, үйді күзетеді." },
+              { emoji: "🐄", caption: "Жайылымдағы сиыр сүт береді." },
+              { emoji: "🐐", caption: "Қоршау жанындағы ешкі — сүт пен жүн береді." },
+              { emoji: "🐎", caption: "Жылқы құлынымен — адамға көмектеседі." },
+            ],
+          },
+          en: {
+            groupLabel: "Group work",
+            title: "Domestic animals",
+            slides: [
+              { emoji: "🐕", caption: "Dogs live with people — they guard the house." },
+              { emoji: "🐄", caption: "A cow on the pasture gives milk." },
+              { emoji: "🐐", caption: "A goat by the fence gives milk and wool." },
+              { emoji: "🐎", caption: "A mare with her foal — helps people." },
+            ],
+          },
+        },
+      },
+      {
+        type: "reveal",
+        data: {
+          ru: {
+            title: "Проверь себя",
+            question:
+              "Кто из этих животных — домашний? Подумай и проверь ответ.",
+            items: [
+              { emoji: "🐕", label: "собака" },
+              { emoji: "🐄", label: "корова" },
+              { emoji: "🐐", label: "коза" },
+            ],
+            answer:
+              "Все трое — домашние животные. Они живут рядом с человеком, приносят пользу, а человек заботится о них.",
+            buttonLabel: "Проверить ответ",
+          },
+          kz: {
+            title: "Өзіңді тексер",
+            question:
+              "Бұлардың қайсысы үй жануары? Ойлан да жауапты тексер.",
+            items: [
+              { emoji: "🐕", label: "ит" },
+              { emoji: "🐄", label: "сиыр" },
+              { emoji: "🐐", label: "ешкі" },
+            ],
+            answer:
+              "Үшеуі де үй жануарлары. Олар адамның жанында тұрады, пайда әкеледі, адам оларды күтеді.",
+            buttonLabel: "Жауапты тексеру",
+          },
+          en: {
+            title: "Check yourself",
+            question:
+              "Which of these are domestic animals? Think, then check.",
+            items: [
+              { emoji: "🐕", label: "dog" },
+              { emoji: "🐄", label: "cow" },
+              { emoji: "🐐", label: "goat" },
+            ],
+            answer:
+              "All three are domestic animals. They live near people, are useful, and people take care of them.",
+            buttonLabel: "Check answer",
+          },
+        },
+      },
+      {
+        type: "summary",
+        data: {
+          ru: {
+            title: "Что я узнал",
+            text:
+              "**Домашние** животные живут рядом с человеком, приносят **пользу**, а человек **заботится** о них.",
+            terms: ["домашние", "пользу", "заботится"],
+          },
+          kz: {
+            title: "Мен нені білдім",
+            text:
+              "**Үй** жануарлары адамның жанында тұрады, **пайда** әкеледі, адам олар туралы **қамқорлық** жасайды.",
+            terms: ["үй", "пайда", "қамқорлық"],
+          },
+          en: {
+            title: "What I learned",
+            text:
+              "**Domestic** animals live near people, bring **benefit**, and people **take care** of them.",
+            terms: ["domestic", "benefit", "take care"],
+          },
+        },
+      },
+    ],
+
+    // Дикие животные
+    observation: [
+      {
+        type: "carousel",
+        data: {
+          ru: {
+            groupLabel: "Работа в группах",
+            title: "Дикие животные",
+            slides: [
+              { emoji: "🐘", caption: "Слон живёт в жарких странах." },
+              { emoji: "🦧", caption: "Орангутан живёт в тропических лесах." },
+              { emoji: "🦅", caption: "Беркут парит над горами." },
+              { emoji: "🦌", caption: "Сайгак бегает по степям Казахстана." },
+              { emoji: "🐱", caption: "Рысь живёт в густых лесах." },
+            ],
+          },
+          kz: {
+            groupLabel: "Топта жұмыс",
+            title: "Жабайы жануарлар",
+            slides: [
+              { emoji: "🐘", caption: "Піл ыстық елдерде тұрады." },
+              { emoji: "🦧", caption: "Орангутан тропиктік ормандарда тұрады." },
+              { emoji: "🦅", caption: "Бүркіт таулардың үстінде қалықтайды." },
+              { emoji: "🦌", caption: "Киік Қазақстан даласында жүгіреді." },
+              { emoji: "🐱", caption: "Сілеусін қалың орманда тұрады." },
+            ],
+          },
+          en: {
+            groupLabel: "Group work",
+            title: "Wild animals",
+            slides: [
+              { emoji: "🐘", caption: "An elephant lives in hot countries." },
+              { emoji: "🦧", caption: "An orangutan lives in tropical forests." },
+              { emoji: "🦅", caption: "A golden eagle soars above the mountains." },
+              { emoji: "🦌", caption: "A saiga runs across the steppes of Kazakhstan." },
+              { emoji: "🐱", caption: "A lynx lives in dense forests." },
+            ],
+          },
+        },
+      },
+      {
+        type: "reveal",
+        data: {
+          ru: {
+            title: "Где они обитают?",
+            question:
+              "К какой группе относятся эти животные? Где они обитают?",
+            items: [
+              { emoji: "🐘", label: "слон" },
+              { emoji: "🦅", label: "беркут" },
+              { emoji: "🦌", label: "сайгак" },
+            ],
+            answer:
+              "Все они — дикие животные. Слон живёт в саваннах, беркут — в горах, сайгак — в степях. Они сами добывают пищу.",
+            buttonLabel: "Проверить ответ",
+          },
+          kz: {
+            title: "Олар қайда тұрады?",
+            question:
+              "Бұл жануарлар қай топқа жатады? Олар қайда тұрады?",
+            items: [
+              { emoji: "🐘", label: "піл" },
+              { emoji: "🦅", label: "бүркіт" },
+              { emoji: "🦌", label: "киік" },
+            ],
+            answer:
+              "Олардың барлығы — жабайы жануарлар. Піл саваннада, бүркіт тауда, киік далада тұрады. Олар тамағын өздері табады.",
+            buttonLabel: "Жауапты тексеру",
+          },
+          en: {
+            title: "Where do they live?",
+            question:
+              "What group do these animals belong to? Where do they live?",
+            items: [
+              { emoji: "🐘", label: "elephant" },
+              { emoji: "🦅", label: "eagle" },
+              { emoji: "🦌", label: "saiga" },
+            ],
+            answer:
+              "They are all wild animals. The elephant lives in savannas, the eagle in the mountains, the saiga in the steppes. They find food on their own.",
+            buttonLabel: "Check answer",
+          },
+        },
+      },
+      {
+        type: "summary",
+        data: {
+          ru: {
+            title: "Что я узнал",
+            text:
+              "**Дикие** животные живут в **лесах**, **степях** и **горах**. Они сами добывают пищу и находят жильё.",
+            terms: ["дикие", "лесах", "степях", "горах"],
+          },
+          kz: {
+            title: "Мен нені білдім",
+            text:
+              "**Жабайы** жануарлар **ормандарда**, **далада** және **тауларда** тұрады. Олар тамағын өздері табады, паналайтын жерін өздері іздейді.",
+            terms: ["жабайы", "ормандарда", "далада", "тауларда"],
+          },
+          en: {
+            title: "What I learned",
+            text:
+              "**Wild** animals live in **forests**, **steppes** and **mountains**. They find food and shelter on their own.",
+            terms: ["wild", "forests", "steppes", "mountains"],
+          },
+        },
+      },
+      {
+        type: "sort",
+        data: {
+          ru: {
+            title: "Где обитают эти животные?",
+            instruction:
+              "Распредели животных по среде обитания.",
+            categories: [
+              { id: "land", label: "На земле / в лесу", emoji: "🌳" },
+              { id: "water", label: "В воде", emoji: "🌊" },
+              { id: "mount", label: "В горах", emoji: "⛰️" },
+            ],
+            items: [
+              { id: "s1", label: "корова", emoji: "🐄", categoryId: "land" },
+              { id: "s2", label: "заяц", emoji: "🐰", categoryId: "land" },
+              { id: "s3", label: "лиса", emoji: "🦊", categoryId: "land" },
+              { id: "s4", label: "дельфин", emoji: "🐬", categoryId: "water" },
+              { id: "s5", label: "архар", emoji: "🐏", categoryId: "mount" },
+            ],
+            checkLabel: "Проверить",
+          },
+          kz: {
+            title: "Бұл жануарлар қайда тұрады?",
+            instruction:
+              "Жануарларды мекен ортасы бойынша бөл.",
+            categories: [
+              { id: "land", label: "Жерде / орманда", emoji: "🌳" },
+              { id: "water", label: "Суда", emoji: "🌊" },
+              { id: "mount", label: "Тауда", emoji: "⛰️" },
+            ],
+            items: [
+              { id: "s1", label: "сиыр", emoji: "🐄", categoryId: "land" },
+              { id: "s2", label: "қоян", emoji: "🐰", categoryId: "land" },
+              { id: "s3", label: "түлкі", emoji: "🦊", categoryId: "land" },
+              { id: "s4", label: "дельфин", emoji: "🐬", categoryId: "water" },
+              { id: "s5", label: "арқар", emoji: "🐏", categoryId: "mount" },
+            ],
+            checkLabel: "Тексеру",
+          },
+          en: {
+            title: "Where do these animals live?",
+            instruction:
+              "Sort the animals by their habitat.",
+            categories: [
+              { id: "land", label: "On land / in forest", emoji: "🌳" },
+              { id: "water", label: "In water", emoji: "🌊" },
+              { id: "mount", label: "In mountains", emoji: "⛰️" },
+            ],
+            items: [
+              { id: "s1", label: "cow", emoji: "🐄", categoryId: "land" },
+              { id: "s2", label: "hare", emoji: "🐰", categoryId: "land" },
+              { id: "s3", label: "fox", emoji: "🦊", categoryId: "land" },
+              { id: "s4", label: "dolphin", emoji: "🐬", categoryId: "water" },
+              { id: "s5", label: "argali", emoji: "🐏", categoryId: "mount" },
+            ],
+            checkLabel: "Check",
+          },
+        },
+      },
+    ],
+
+    // Итоги
+    experiments: [
+      {
+        type: "fact",
+        data: {
+          ru: {
+            title: "Найди в энциклопедии",
+            text:
+              "Узнай, какие редкие дикие животные живут в Казахстане. Запиши 3 примера и где они обитают.",
+            keywords: ["энциклопедия", "Казахстан", "редкие"],
+            icon: "sparkles",
+          },
+          kz: {
+            title: "Энциклопедиядан тап",
+            text:
+              "Қазақстанда қандай сирек кездесетін жабайы жануарлар бар? 3 мысал жазып, қайда тұратынын көрсет.",
+            keywords: ["энциклопедия", "Қазақстан", "сирек"],
+            icon: "sparkles",
+          },
+          en: {
+            title: "Find in the encyclopedia",
+            text:
+              "Find out which rare wild animals live in Kazakhstan. Write down 3 examples and where they live.",
+            keywords: ["encyclopedia", "Kazakhstan", "rare"],
+            icon: "sparkles",
+          },
+        },
+      },
+      {
+        type: "fact",
+        data: {
+          ru: {
+            title: "Это интересно!",
+            text:
+              "У молодых пингвинов хвост похож на белый мех. Это помогает их мамам быстро находить своих птенцов в большой стае.",
+            keywords: ["пингвины", "хвост", "мех"],
+            icon: "bulb",
+          },
+          kz: {
+            title: "Бұл қызық!",
+            text:
+              "Жас пингвиндердің құйрығы ақ жүнге ұқсайды. Бұл аналарына үлкен топтан өз балапандарын тез табуға көмектеседі.",
+            keywords: ["пингвин", "құйрық", "жүн"],
+            icon: "bulb",
+          },
+          en: {
+            title: "Did you know?",
+            text:
+              "Young penguins have tails that look like white fur. It helps their mothers quickly find their chicks in a large flock.",
+            keywords: ["penguins", "tail", "fur"],
+            icon: "bulb",
+          },
+        },
+      },
+      {
+        type: "summary",
+        data: {
+          ru: {
+            title: "Итоговые вопросы",
+            text:
+              "1) Чем **дикие** животные отличаются от **домашних**? 2) Почему человек должен **заботиться** о домашних животных?",
+          },
+          kz: {
+            title: "Қорытынды сұрақтар",
+            text:
+              "1) **Жабайы** жануарлар **үй** жануарларынан немен ерекшеленеді? 2) Адам үй жануарларына неліктен **қамқорлық** жасауы керек?",
+          },
+          en: {
+            title: "Wrap-up questions",
+            text:
+              "1) How do **wild** animals differ from **domestic** ones? 2) Why should people **take care** of domestic animals?",
+          },
+        },
+      },
+    ],
+  },
+  26: {
+    intro: [
+      {
+        type: "audio",
+        data: {
+          ru: {
+            title: "Аудио-гид к уроку",
+            text:
+              "Сегодня мы узнаем, что животные бывают дикими и домашними, и в чём их главное отличие.",
+            caption: "Послушай вступление к уроку",
+            durationLabel: "0:22",
+          },
+          kz: {
+            title: "Сабақтың аудио-гиді",
+            text:
+              "Бүгін біз жануарлардың жабайы және үй жануарлары болып бөлінетінін, олардың айырмашылығы неде екенін білеміз.",
+            caption: "Сабақтың кіріспесін тыңда",
+            durationLabel: "0:22",
+          },
+          en: {
+            title: "Lesson audio guide",
+            text:
+              "Today we'll learn that animals can be wild or domestic, and what is the main difference between them.",
+            caption: "Listen to the lesson intro",
+            durationLabel: "0:22",
+          },
+        },
+      },
+      {
+        type: "carousel",
+        data: {
+          ru: {
+            groupLabel: "Ключевые слова",
+            title: "Дикие и домашние",
+            slides: [
+              { emoji: "🏠", caption: "Домашние животные / Үй жануарлары / Domestic animals" },
+              { emoji: "🌲", caption: "Дикие животные / Жабайы жануарлар / Wild animals" },
+              { emoji: "🌍", caption: "Среда обитания / Мекен орта / Habitat" },
+            ],
+          },
+          kz: {
+            groupLabel: "Кілт сөздер",
+            title: "Жабайы және үй",
+            slides: [
+              { emoji: "🏠", caption: "Үй жануарлары / Домашние / Domestic animals" },
+              { emoji: "🌲", caption: "Жабайы жануарлар / Дикие / Wild animals" },
+              { emoji: "🌍", caption: "Мекен орта / Среда обитания / Habitat" },
+            ],
+          },
+          en: {
+            groupLabel: "Key words",
+            title: "Wild and domestic",
+            slides: [
+              { emoji: "🏠", caption: "Domestic animals / Домашние / Үй жануарлары" },
+              { emoji: "🌲", caption: "Wild animals / Дикие / Жабайы жануарлар" },
+              { emoji: "🌍", caption: "Habitat / Среда обитания / Мекен орта" },
+            ],
+          },
+        },
+      },
+    ],
+
+    // Домашние животные
+    scientists: [
+      {
+        type: "carousel",
+        data: {
+          ru: {
+            groupLabel: "Работа в группах",
+            title: "Домашние животные",
+            slides: [
+              { emoji: "🐕", caption: "Собаки живут рядом с людьми — охраняют дом." },
+              { emoji: "🐄", caption: "Корова на пастбище даёт молоко." },
+              { emoji: "🐐", caption: "Коза у забора — даёт молоко и шерсть." },
+              { emoji: "🐎", caption: "Лошадь с жеребёнком — помогает человеку." },
+            ],
+          },
+          kz: {
+            groupLabel: "Топта жұмыс",
+            title: "Үй жануарлары",
+            slides: [
+              { emoji: "🐕", caption: "Иттер адаммен бірге тұрып, үйді күзетеді." },
+              { emoji: "🐄", caption: "Жайылымдағы сиыр сүт береді." },
+              { emoji: "🐐", caption: "Қоршау жанындағы ешкі — сүт пен жүн береді." },
+              { emoji: "🐎", caption: "Жылқы құлынымен — адамға көмектеседі." },
+            ],
+          },
+          en: {
+            groupLabel: "Group work",
+            title: "Domestic animals",
+            slides: [
+              { emoji: "🐕", caption: "Dogs live with people — they guard the house." },
+              { emoji: "🐄", caption: "A cow on the pasture gives milk." },
+              { emoji: "🐐", caption: "A goat by the fence gives milk and wool." },
+              { emoji: "🐎", caption: "A mare with her foal — helps people." },
+            ],
+          },
+        },
+      },
+      {
+        type: "reveal",
+        data: {
+          ru: {
+            title: "Проверь себя",
+            question:
+              "Кто из этих животных — домашний? Подумай и проверь ответ.",
+            items: [
+              { emoji: "🐕", label: "собака" },
+              { emoji: "🐄", label: "корова" },
+              { emoji: "🐐", label: "коза" },
+            ],
+            answer:
+              "Все трое — домашние животные. Они живут рядом с человеком, приносят пользу, а человек заботится о них.",
+            buttonLabel: "Проверить ответ",
+          },
+          kz: {
+            title: "Өзіңді тексер",
+            question:
+              "Бұлардың қайсысы үй жануары? Ойлан да жауапты тексер.",
+            items: [
+              { emoji: "🐕", label: "ит" },
+              { emoji: "🐄", label: "сиыр" },
+              { emoji: "🐐", label: "ешкі" },
+            ],
+            answer:
+              "Үшеуі де үй жануарлары. Олар адамның жанында тұрады, пайда әкеледі, адам оларды күтеді.",
+            buttonLabel: "Жауапты тексеру",
+          },
+          en: {
+            title: "Check yourself",
+            question:
+              "Which of these are domestic animals? Think, then check.",
+            items: [
+              { emoji: "🐕", label: "dog" },
+              { emoji: "🐄", label: "cow" },
+              { emoji: "🐐", label: "goat" },
+            ],
+            answer:
+              "All three are domestic animals. They live near people, are useful, and people take care of them.",
+            buttonLabel: "Check answer",
+          },
+        },
+      },
+      {
+        type: "summary",
+        data: {
+          ru: {
+            title: "Что я узнал",
+            text:
+              "**Домашние** животные живут рядом с человеком, приносят **пользу**, а человек **заботится** о них.",
+            terms: ["домашние", "пользу", "заботится"],
+          },
+          kz: {
+            title: "Мен нені білдім",
+            text:
+              "**Үй** жануарлары адамның жанында тұрады, **пайда** әкеледі, адам олар туралы **қамқорлық** жасайды.",
+            terms: ["үй", "пайда", "қамқорлық"],
+          },
+          en: {
+            title: "What I learned",
+            text:
+              "**Domestic** animals live near people, bring **benefit**, and people **take care** of them.",
+            terms: ["domestic", "benefit", "take care"],
+          },
+        },
+      },
+    ],
+
+    // Дикие животные
+    observation: [
+      {
+        type: "carousel",
+        data: {
+          ru: {
+            groupLabel: "Работа в группах",
+            title: "Дикие животные",
+            slides: [
+              { emoji: "🐘", caption: "Слон живёт в жарких странах." },
+              { emoji: "🦧", caption: "Орангутан живёт в тропических лесах." },
+              { emoji: "🦅", caption: "Беркут парит над горами." },
+              { emoji: "🦌", caption: "Сайгак бегает по степям Казахстана." },
+              { emoji: "🐱", caption: "Рысь живёт в густых лесах." },
+            ],
+          },
+          kz: {
+            groupLabel: "Топта жұмыс",
+            title: "Жабайы жануарлар",
+            slides: [
+              { emoji: "🐘", caption: "Піл ыстық елдерде тұрады." },
+              { emoji: "🦧", caption: "Орангутан тропиктік ормандарда тұрады." },
+              { emoji: "🦅", caption: "Бүркіт таулардың үстінде қалықтайды." },
+              { emoji: "🦌", caption: "Киік Қазақстан даласында жүгіреді." },
+              { emoji: "🐱", caption: "Сілеусін қалың орманда тұрады." },
+            ],
+          },
+          en: {
+            groupLabel: "Group work",
+            title: "Wild animals",
+            slides: [
+              { emoji: "🐘", caption: "An elephant lives in hot countries." },
+              { emoji: "🦧", caption: "An orangutan lives in tropical forests." },
+              { emoji: "🦅", caption: "A golden eagle soars above the mountains." },
+              { emoji: "🦌", caption: "A saiga runs across the steppes of Kazakhstan." },
+              { emoji: "🐱", caption: "A lynx lives in dense forests." },
+            ],
+          },
+        },
+      },
+      {
+        type: "reveal",
+        data: {
+          ru: {
+            title: "Где они обитают?",
+            question:
+              "К какой группе относятся эти животные? Где они обитают?",
+            items: [
+              { emoji: "🐘", label: "слон" },
+              { emoji: "🦅", label: "беркут" },
+              { emoji: "🦌", label: "сайгак" },
+            ],
+            answer:
+              "Все они — дикие животные. Слон живёт в саваннах, беркут — в горах, сайгак — в степях. Они сами добывают пищу.",
+            buttonLabel: "Проверить ответ",
+          },
+          kz: {
+            title: "Олар қайда тұрады?",
+            question:
+              "Бұл жануарлар қай топқа жатады? Олар қайда тұрады?",
+            items: [
+              { emoji: "🐘", label: "піл" },
+              { emoji: "🦅", label: "бүркіт" },
+              { emoji: "🦌", label: "киік" },
+            ],
+            answer:
+              "Олардың барлығы — жабайы жануарлар. Піл саваннада, бүркіт тауда, киік далада тұрады. Олар тамағын өздері табады.",
+            buttonLabel: "Жауапты тексеру",
+          },
+          en: {
+            title: "Where do they live?",
+            question:
+              "What group do these animals belong to? Where do they live?",
+            items: [
+              { emoji: "🐘", label: "elephant" },
+              { emoji: "🦅", label: "eagle" },
+              { emoji: "🦌", label: "saiga" },
+            ],
+            answer:
+              "They are all wild animals. The elephant lives in savannas, the eagle in the mountains, the saiga in the steppes. They find food on their own.",
+            buttonLabel: "Check answer",
+          },
+        },
+      },
+      {
+        type: "summary",
+        data: {
+          ru: {
+            title: "Что я узнал",
+            text:
+              "**Дикие** животные живут в **лесах**, **степях** и **горах**. Они сами добывают пищу и находят жильё.",
+            terms: ["дикие", "лесах", "степях", "горах"],
+          },
+          kz: {
+            title: "Мен нені білдім",
+            text:
+              "**Жабайы** жануарлар **ормандарда**, **далада** және **тауларда** тұрады. Олар тамағын өздері табады, паналайтын жерін өздері іздейді.",
+            terms: ["жабайы", "ормандарда", "далада", "тауларда"],
+          },
+          en: {
+            title: "What I learned",
+            text:
+              "**Wild** animals live in **forests**, **steppes** and **mountains**. They find food and shelter on their own.",
+            terms: ["wild", "forests", "steppes", "mountains"],
+          },
+        },
+      },
+      {
+        type: "sort",
+        data: {
+          ru: {
+            title: "Где обитают эти животные?",
+            instruction:
+              "Распредели животных по среде обитания.",
+            categories: [
+              { id: "land", label: "На земле / в лесу", emoji: "🌳" },
+              { id: "water", label: "В воде", emoji: "🌊" },
+              { id: "mount", label: "В горах", emoji: "⛰️" },
+            ],
+            items: [
+              { id: "s1", label: "корова", emoji: "🐄", categoryId: "land" },
+              { id: "s2", label: "заяц", emoji: "🐰", categoryId: "land" },
+              { id: "s3", label: "лиса", emoji: "🦊", categoryId: "land" },
+              { id: "s4", label: "дельфин", emoji: "🐬", categoryId: "water" },
+              { id: "s5", label: "архар", emoji: "🐏", categoryId: "mount" },
+            ],
+            checkLabel: "Проверить",
+          },
+          kz: {
+            title: "Бұл жануарлар қайда тұрады?",
+            instruction:
+              "Жануарларды мекен ортасы бойынша бөл.",
+            categories: [
+              { id: "land", label: "Жерде / орманда", emoji: "🌳" },
+              { id: "water", label: "Суда", emoji: "🌊" },
+              { id: "mount", label: "Тауда", emoji: "⛰️" },
+            ],
+            items: [
+              { id: "s1", label: "сиыр", emoji: "🐄", categoryId: "land" },
+              { id: "s2", label: "қоян", emoji: "🐰", categoryId: "land" },
+              { id: "s3", label: "түлкі", emoji: "🦊", categoryId: "land" },
+              { id: "s4", label: "дельфин", emoji: "🐬", categoryId: "water" },
+              { id: "s5", label: "арқар", emoji: "🐏", categoryId: "mount" },
+            ],
+            checkLabel: "Тексеру",
+          },
+          en: {
+            title: "Where do these animals live?",
+            instruction:
+              "Sort the animals by their habitat.",
+            categories: [
+              { id: "land", label: "On land / in forest", emoji: "🌳" },
+              { id: "water", label: "In water", emoji: "🌊" },
+              { id: "mount", label: "In mountains", emoji: "⛰️" },
+            ],
+            items: [
+              { id: "s1", label: "cow", emoji: "🐄", categoryId: "land" },
+              { id: "s2", label: "hare", emoji: "🐰", categoryId: "land" },
+              { id: "s3", label: "fox", emoji: "🦊", categoryId: "land" },
+              { id: "s4", label: "dolphin", emoji: "🐬", categoryId: "water" },
+              { id: "s5", label: "argali", emoji: "🐏", categoryId: "mount" },
+            ],
+            checkLabel: "Check",
+          },
+        },
+      },
+    ],
+
+    // Итоги
+    experiments: [
+      {
+        type: "fact",
+        data: {
+          ru: {
+            title: "Найди в энциклопедии",
+            text:
+              "Узнай, какие редкие дикие животные живут в Казахстане. Запиши 3 примера и где они обитают.",
+            keywords: ["энциклопедия", "Казахстан", "редкие"],
+            icon: "sparkles",
+          },
+          kz: {
+            title: "Энциклопедиядан тап",
+            text:
+              "Қазақстанда қандай сирек кездесетін жабайы жануарлар бар? 3 мысал жазып, қайда тұратынын көрсет.",
+            keywords: ["энциклопедия", "Қазақстан", "сирек"],
+            icon: "sparkles",
+          },
+          en: {
+            title: "Find in the encyclopedia",
+            text:
+              "Find out which rare wild animals live in Kazakhstan. Write down 3 examples and where they live.",
+            keywords: ["encyclopedia", "Kazakhstan", "rare"],
+            icon: "sparkles",
+          },
+        },
+      },
+      {
+        type: "fact",
+        data: {
+          ru: {
+            title: "Это интересно!",
+            text:
+              "У молодых пингвинов хвост похож на белый мех. Это помогает их мамам быстро находить своих птенцов в большой стае.",
+            keywords: ["пингвины", "хвост", "мех"],
+            icon: "bulb",
+          },
+          kz: {
+            title: "Бұл қызық!",
+            text:
+              "Жас пингвиндердің құйрығы ақ жүнге ұқсайды. Бұл аналарына үлкен топтан өз балапандарын тез табуға көмектеседі.",
+            keywords: ["пингвин", "құйрық", "жүн"],
+            icon: "bulb",
+          },
+          en: {
+            title: "Did you know?",
+            text:
+              "Young penguins have tails that look like white fur. It helps their mothers quickly find their chicks in a large flock.",
+            keywords: ["penguins", "tail", "fur"],
+            icon: "bulb",
+          },
+        },
+      },
+      {
+        type: "summary",
+        data: {
+          ru: {
+            title: "Итоговые вопросы",
+            text:
+              "1) Чем **дикие** животные отличаются от **домашних**? 2) Почему человек должен **заботиться** о домашних животных?",
+          },
+          kz: {
+            title: "Қорытынды сұрақтар",
+            text:
+              "1) **Жабайы** жануарлар **үй** жануарларынан немен ерекшеленеді? 2) Адам үй жануарларына неліктен **қамқорлық** жасауы керек?",
+          },
+          en: {
+            title: "Wrap-up questions",
+            text:
+              "1) How do **wild** animals differ from **domestic** ones? 2) Why should people **take care** of domestic animals?",
+          },
+        },
+      },
+    ],
+  },
+  27: {
+    intro: [
+      {
+        type: "audio",
+        data: {
+          ru: {
+            title: "Аудио-гид к уроку",
+            text:
+              "Сегодня мы узнаем, что животные бывают дикими и домашними, и в чём их главное отличие.",
+            caption: "Послушай вступление к уроку",
+            durationLabel: "0:22",
+          },
+          kz: {
+            title: "Сабақтың аудио-гиді",
+            text:
+              "Бүгін біз жануарлардың жабайы және үй жануарлары болып бөлінетінін, олардың айырмашылығы неде екенін білеміз.",
+            caption: "Сабақтың кіріспесін тыңда",
+            durationLabel: "0:22",
+          },
+          en: {
+            title: "Lesson audio guide",
+            text:
+              "Today we'll learn that animals can be wild or domestic, and what is the main difference between them.",
+            caption: "Listen to the lesson intro",
+            durationLabel: "0:22",
+          },
+        },
+      },
+      {
+        type: "carousel",
+        data: {
+          ru: {
+            groupLabel: "Ключевые слова",
+            title: "Дикие и домашние",
+            slides: [
+              { emoji: "🏠", caption: "Домашние животные / Үй жануарлары / Domestic animals" },
+              { emoji: "🌲", caption: "Дикие животные / Жабайы жануарлар / Wild animals" },
+              { emoji: "🌍", caption: "Среда обитания / Мекен орта / Habitat" },
+            ],
+          },
+          kz: {
+            groupLabel: "Кілт сөздер",
+            title: "Жабайы және үй",
+            slides: [
+              { emoji: "🏠", caption: "Үй жануарлары / Домашние / Domestic animals" },
+              { emoji: "🌲", caption: "Жабайы жануарлар / Дикие / Wild animals" },
+              { emoji: "🌍", caption: "Мекен орта / Среда обитания / Habitat" },
+            ],
+          },
+          en: {
+            groupLabel: "Key words",
+            title: "Wild and domestic",
+            slides: [
+              { emoji: "🏠", caption: "Domestic animals / Домашние / Үй жануарлары" },
+              { emoji: "🌲", caption: "Wild animals / Дикие / Жабайы жануарлар" },
+              { emoji: "🌍", caption: "Habitat / Среда обитания / Мекен орта" },
+            ],
+          },
+        },
+      },
+    ],
+
+    // Домашние животные
+    scientists: [
+      {
+        type: "carousel",
+        data: {
+          ru: {
+            groupLabel: "Работа в группах",
+            title: "Домашние животные",
+            slides: [
+              { emoji: "🐕", caption: "Собаки живут рядом с людьми — охраняют дом." },
+              { emoji: "🐄", caption: "Корова на пастбище даёт молоко." },
+              { emoji: "🐐", caption: "Коза у забора — даёт молоко и шерсть." },
+              { emoji: "🐎", caption: "Лошадь с жеребёнком — помогает человеку." },
+            ],
+          },
+          kz: {
+            groupLabel: "Топта жұмыс",
+            title: "Үй жануарлары",
+            slides: [
+              { emoji: "🐕", caption: "Иттер адаммен бірге тұрып, үйді күзетеді." },
+              { emoji: "🐄", caption: "Жайылымдағы сиыр сүт береді." },
+              { emoji: "🐐", caption: "Қоршау жанындағы ешкі — сүт пен жүн береді." },
+              { emoji: "🐎", caption: "Жылқы құлынымен — адамға көмектеседі." },
+            ],
+          },
+          en: {
+            groupLabel: "Group work",
+            title: "Domestic animals",
+            slides: [
+              { emoji: "🐕", caption: "Dogs live with people — they guard the house." },
+              { emoji: "🐄", caption: "A cow on the pasture gives milk." },
+              { emoji: "🐐", caption: "A goat by the fence gives milk and wool." },
+              { emoji: "🐎", caption: "A mare with her foal — helps people." },
+            ],
+          },
+        },
+      },
+      {
+        type: "reveal",
+        data: {
+          ru: {
+            title: "Проверь себя",
+            question:
+              "Кто из этих животных — домашний? Подумай и проверь ответ.",
+            items: [
+              { emoji: "🐕", label: "собака" },
+              { emoji: "🐄", label: "корова" },
+              { emoji: "🐐", label: "коза" },
+            ],
+            answer:
+              "Все трое — домашние животные. Они живут рядом с человеком, приносят пользу, а человек заботится о них.",
+            buttonLabel: "Проверить ответ",
+          },
+          kz: {
+            title: "Өзіңді тексер",
+            question:
+              "Бұлардың қайсысы үй жануары? Ойлан да жауапты тексер.",
+            items: [
+              { emoji: "🐕", label: "ит" },
+              { emoji: "🐄", label: "сиыр" },
+              { emoji: "🐐", label: "ешкі" },
+            ],
+            answer:
+              "Үшеуі де үй жануарлары. Олар адамның жанында тұрады, пайда әкеледі, адам оларды күтеді.",
+            buttonLabel: "Жауапты тексеру",
+          },
+          en: {
+            title: "Check yourself",
+            question:
+              "Which of these are domestic animals? Think, then check.",
+            items: [
+              { emoji: "🐕", label: "dog" },
+              { emoji: "🐄", label: "cow" },
+              { emoji: "🐐", label: "goat" },
+            ],
+            answer:
+              "All three are domestic animals. They live near people, are useful, and people take care of them.",
+            buttonLabel: "Check answer",
+          },
+        },
+      },
+      {
+        type: "summary",
+        data: {
+          ru: {
+            title: "Что я узнал",
+            text:
+              "**Домашние** животные живут рядом с человеком, приносят **пользу**, а человек **заботится** о них.",
+            terms: ["домашние", "пользу", "заботится"],
+          },
+          kz: {
+            title: "Мен нені білдім",
+            text:
+              "**Үй** жануарлары адамның жанында тұрады, **пайда** әкеледі, адам олар туралы **қамқорлық** жасайды.",
+            terms: ["үй", "пайда", "қамқорлық"],
+          },
+          en: {
+            title: "What I learned",
+            text:
+              "**Domestic** animals live near people, bring **benefit**, and people **take care** of them.",
+            terms: ["domestic", "benefit", "take care"],
+          },
+        },
+      },
+    ],
+
+    // Дикие животные
+    observation: [
+      {
+        type: "carousel",
+        data: {
+          ru: {
+            groupLabel: "Работа в группах",
+            title: "Дикие животные",
+            slides: [
+              { emoji: "🐘", caption: "Слон живёт в жарких странах." },
+              { emoji: "🦧", caption: "Орангутан живёт в тропических лесах." },
+              { emoji: "🦅", caption: "Беркут парит над горами." },
+              { emoji: "🦌", caption: "Сайгак бегает по степям Казахстана." },
+              { emoji: "🐱", caption: "Рысь живёт в густых лесах." },
+            ],
+          },
+          kz: {
+            groupLabel: "Топта жұмыс",
+            title: "Жабайы жануарлар",
+            slides: [
+              { emoji: "🐘", caption: "Піл ыстық елдерде тұрады." },
+              { emoji: "🦧", caption: "Орангутан тропиктік ормандарда тұрады." },
+              { emoji: "🦅", caption: "Бүркіт таулардың үстінде қалықтайды." },
+              { emoji: "🦌", caption: "Киік Қазақстан даласында жүгіреді." },
+              { emoji: "🐱", caption: "Сілеусін қалың орманда тұрады." },
+            ],
+          },
+          en: {
+            groupLabel: "Group work",
+            title: "Wild animals",
+            slides: [
+              { emoji: "🐘", caption: "An elephant lives in hot countries." },
+              { emoji: "🦧", caption: "An orangutan lives in tropical forests." },
+              { emoji: "🦅", caption: "A golden eagle soars above the mountains." },
+              { emoji: "🦌", caption: "A saiga runs across the steppes of Kazakhstan." },
+              { emoji: "🐱", caption: "A lynx lives in dense forests." },
+            ],
+          },
+        },
+      },
+      {
+        type: "reveal",
+        data: {
+          ru: {
+            title: "Где они обитают?",
+            question:
+              "К какой группе относятся эти животные? Где они обитают?",
+            items: [
+              { emoji: "🐘", label: "слон" },
+              { emoji: "🦅", label: "беркут" },
+              { emoji: "🦌", label: "сайгак" },
+            ],
+            answer:
+              "Все они — дикие животные. Слон живёт в саваннах, беркут — в горах, сайгак — в степях. Они сами добывают пищу.",
+            buttonLabel: "Проверить ответ",
+          },
+          kz: {
+            title: "Олар қайда тұрады?",
+            question:
+              "Бұл жануарлар қай топқа жатады? Олар қайда тұрады?",
+            items: [
+              { emoji: "🐘", label: "піл" },
+              { emoji: "🦅", label: "бүркіт" },
+              { emoji: "🦌", label: "киік" },
+            ],
+            answer:
+              "Олардың барлығы — жабайы жануарлар. Піл саваннада, бүркіт тауда, киік далада тұрады. Олар тамағын өздері табады.",
+            buttonLabel: "Жауапты тексеру",
+          },
+          en: {
+            title: "Where do they live?",
+            question:
+              "What group do these animals belong to? Where do they live?",
+            items: [
+              { emoji: "🐘", label: "elephant" },
+              { emoji: "🦅", label: "eagle" },
+              { emoji: "🦌", label: "saiga" },
+            ],
+            answer:
+              "They are all wild animals. The elephant lives in savannas, the eagle in the mountains, the saiga in the steppes. They find food on their own.",
+            buttonLabel: "Check answer",
+          },
+        },
+      },
+      {
+        type: "summary",
+        data: {
+          ru: {
+            title: "Что я узнал",
+            text:
+              "**Дикие** животные живут в **лесах**, **степях** и **горах**. Они сами добывают пищу и находят жильё.",
+            terms: ["дикие", "лесах", "степях", "горах"],
+          },
+          kz: {
+            title: "Мен нені білдім",
+            text:
+              "**Жабайы** жануарлар **ормандарда**, **далада** және **тауларда** тұрады. Олар тамағын өздері табады, паналайтын жерін өздері іздейді.",
+            terms: ["жабайы", "ормандарда", "далада", "тауларда"],
+          },
+          en: {
+            title: "What I learned",
+            text:
+              "**Wild** animals live in **forests**, **steppes** and **mountains**. They find food and shelter on their own.",
+            terms: ["wild", "forests", "steppes", "mountains"],
+          },
+        },
+      },
+      {
+        type: "sort",
+        data: {
+          ru: {
+            title: "Где обитают эти животные?",
+            instruction:
+              "Распредели животных по среде обитания.",
+            categories: [
+              { id: "land", label: "На земле / в лесу", emoji: "🌳" },
+              { id: "water", label: "В воде", emoji: "🌊" },
+              { id: "mount", label: "В горах", emoji: "⛰️" },
+            ],
+            items: [
+              { id: "s1", label: "корова", emoji: "🐄", categoryId: "land" },
+              { id: "s2", label: "заяц", emoji: "🐰", categoryId: "land" },
+              { id: "s3", label: "лиса", emoji: "🦊", categoryId: "land" },
+              { id: "s4", label: "дельфин", emoji: "🐬", categoryId: "water" },
+              { id: "s5", label: "архар", emoji: "🐏", categoryId: "mount" },
+            ],
+            checkLabel: "Проверить",
+          },
+          kz: {
+            title: "Бұл жануарлар қайда тұрады?",
+            instruction:
+              "Жануарларды мекен ортасы бойынша бөл.",
+            categories: [
+              { id: "land", label: "Жерде / орманда", emoji: "🌳" },
+              { id: "water", label: "Суда", emoji: "🌊" },
+              { id: "mount", label: "Тауда", emoji: "⛰️" },
+            ],
+            items: [
+              { id: "s1", label: "сиыр", emoji: "🐄", categoryId: "land" },
+              { id: "s2", label: "қоян", emoji: "🐰", categoryId: "land" },
+              { id: "s3", label: "түлкі", emoji: "🦊", categoryId: "land" },
+              { id: "s4", label: "дельфин", emoji: "🐬", categoryId: "water" },
+              { id: "s5", label: "арқар", emoji: "🐏", categoryId: "mount" },
+            ],
+            checkLabel: "Тексеру",
+          },
+          en: {
+            title: "Where do these animals live?",
+            instruction:
+              "Sort the animals by their habitat.",
+            categories: [
+              { id: "land", label: "On land / in forest", emoji: "🌳" },
+              { id: "water", label: "In water", emoji: "🌊" },
+              { id: "mount", label: "In mountains", emoji: "⛰️" },
+            ],
+            items: [
+              { id: "s1", label: "cow", emoji: "🐄", categoryId: "land" },
+              { id: "s2", label: "hare", emoji: "🐰", categoryId: "land" },
+              { id: "s3", label: "fox", emoji: "🦊", categoryId: "land" },
+              { id: "s4", label: "dolphin", emoji: "🐬", categoryId: "water" },
+              { id: "s5", label: "argali", emoji: "🐏", categoryId: "mount" },
+            ],
+            checkLabel: "Check",
+          },
+        },
+      },
+    ],
+
+    // Итоги
+    experiments: [
+      {
+        type: "fact",
+        data: {
+          ru: {
+            title: "Найди в энциклопедии",
+            text:
+              "Узнай, какие редкие дикие животные живут в Казахстане. Запиши 3 примера и где они обитают.",
+            keywords: ["энциклопедия", "Казахстан", "редкие"],
+            icon: "sparkles",
+          },
+          kz: {
+            title: "Энциклопедиядан тап",
+            text:
+              "Қазақстанда қандай сирек кездесетін жабайы жануарлар бар? 3 мысал жазып, қайда тұратынын көрсет.",
+            keywords: ["энциклопедия", "Қазақстан", "сирек"],
+            icon: "sparkles",
+          },
+          en: {
+            title: "Find in the encyclopedia",
+            text:
+              "Find out which rare wild animals live in Kazakhstan. Write down 3 examples and where they live.",
+            keywords: ["encyclopedia", "Kazakhstan", "rare"],
+            icon: "sparkles",
+          },
+        },
+      },
+      {
+        type: "fact",
+        data: {
+          ru: {
+            title: "Это интересно!",
+            text:
+              "У молодых пингвинов хвост похож на белый мех. Это помогает их мамам быстро находить своих птенцов в большой стае.",
+            keywords: ["пингвины", "хвост", "мех"],
+            icon: "bulb",
+          },
+          kz: {
+            title: "Бұл қызық!",
+            text:
+              "Жас пингвиндердің құйрығы ақ жүнге ұқсайды. Бұл аналарына үлкен топтан өз балапандарын тез табуға көмектеседі.",
+            keywords: ["пингвин", "құйрық", "жүн"],
+            icon: "bulb",
+          },
+          en: {
+            title: "Did you know?",
+            text:
+              "Young penguins have tails that look like white fur. It helps their mothers quickly find their chicks in a large flock.",
+            keywords: ["penguins", "tail", "fur"],
+            icon: "bulb",
+          },
+        },
+      },
+      {
+        type: "summary",
+        data: {
+          ru: {
+            title: "Итоговые вопросы",
+            text:
+              "1) Чем **дикие** животные отличаются от **домашних**? 2) Почему человек должен **заботиться** о домашних животных?",
+          },
+          kz: {
+            title: "Қорытынды сұрақтар",
+            text:
+              "1) **Жабайы** жануарлар **үй** жануарларынан немен ерекшеленеді? 2) Адам үй жануарларына неліктен **қамқорлық** жасауы керек?",
+          },
+          en: {
+            title: "Wrap-up questions",
+            text:
+              "1) How do **wild** animals differ from **domestic** ones? 2) Why should people **take care** of domestic animals?",
+          },
+        },
+      },
+    ],
+  },
+  28: {
+    intro: [
+      {
+        type: "audio",
+        data: {
+          ru: {
+            title: "Аудио-гид к уроку",
+            text:
+              "Сегодня мы узнаем, что животные бывают дикими и домашними, и в чём их главное отличие.",
+            caption: "Послушай вступление к уроку",
+            durationLabel: "0:22",
+          },
+          kz: {
+            title: "Сабақтың аудио-гиді",
+            text:
+              "Бүгін біз жануарлардың жабайы және үй жануарлары болып бөлінетінін, олардың айырмашылығы неде екенін білеміз.",
+            caption: "Сабақтың кіріспесін тыңда",
+            durationLabel: "0:22",
+          },
+          en: {
+            title: "Lesson audio guide",
+            text:
+              "Today we'll learn that animals can be wild or domestic, and what is the main difference between them.",
+            caption: "Listen to the lesson intro",
+            durationLabel: "0:22",
+          },
+        },
+      },
+      {
+        type: "carousel",
+        data: {
+          ru: {
+            groupLabel: "Ключевые слова",
+            title: "Дикие и домашние",
+            slides: [
+              { emoji: "🏠", caption: "Домашние животные / Үй жануарлары / Domestic animals" },
+              { emoji: "🌲", caption: "Дикие животные / Жабайы жануарлар / Wild animals" },
+              { emoji: "🌍", caption: "Среда обитания / Мекен орта / Habitat" },
+            ],
+          },
+          kz: {
+            groupLabel: "Кілт сөздер",
+            title: "Жабайы және үй",
+            slides: [
+              { emoji: "🏠", caption: "Үй жануарлары / Домашние / Domestic animals" },
+              { emoji: "🌲", caption: "Жабайы жануарлар / Дикие / Wild animals" },
+              { emoji: "🌍", caption: "Мекен орта / Среда обитания / Habitat" },
+            ],
+          },
+          en: {
+            groupLabel: "Key words",
+            title: "Wild and domestic",
+            slides: [
+              { emoji: "🏠", caption: "Domestic animals / Домашние / Үй жануарлары" },
+              { emoji: "🌲", caption: "Wild animals / Дикие / Жабайы жануарлар" },
+              { emoji: "🌍", caption: "Habitat / Среда обитания / Мекен орта" },
+            ],
+          },
+        },
+      },
+    ],
+
+    // Домашние животные
+    scientists: [
+      {
+        type: "carousel",
+        data: {
+          ru: {
+            groupLabel: "Работа в группах",
+            title: "Домашние животные",
+            slides: [
+              { emoji: "🐕", caption: "Собаки живут рядом с людьми — охраняют дом." },
+              { emoji: "🐄", caption: "Корова на пастбище даёт молоко." },
+              { emoji: "🐐", caption: "Коза у забора — даёт молоко и шерсть." },
+              { emoji: "🐎", caption: "Лошадь с жеребёнком — помогает человеку." },
+            ],
+          },
+          kz: {
+            groupLabel: "Топта жұмыс",
+            title: "Үй жануарлары",
+            slides: [
+              { emoji: "🐕", caption: "Иттер адаммен бірге тұрып, үйді күзетеді." },
+              { emoji: "🐄", caption: "Жайылымдағы сиыр сүт береді." },
+              { emoji: "🐐", caption: "Қоршау жанындағы ешкі — сүт пен жүн береді." },
+              { emoji: "🐎", caption: "Жылқы құлынымен — адамға көмектеседі." },
+            ],
+          },
+          en: {
+            groupLabel: "Group work",
+            title: "Domestic animals",
+            slides: [
+              { emoji: "🐕", caption: "Dogs live with people — they guard the house." },
+              { emoji: "🐄", caption: "A cow on the pasture gives milk." },
+              { emoji: "🐐", caption: "A goat by the fence gives milk and wool." },
+              { emoji: "🐎", caption: "A mare with her foal — helps people." },
+            ],
+          },
+        },
+      },
+      {
+        type: "reveal",
+        data: {
+          ru: {
+            title: "Проверь себя",
+            question:
+              "Кто из этих животных — домашний? Подумай и проверь ответ.",
+            items: [
+              { emoji: "🐕", label: "собака" },
+              { emoji: "🐄", label: "корова" },
+              { emoji: "🐐", label: "коза" },
+            ],
+            answer:
+              "Все трое — домашние животные. Они живут рядом с человеком, приносят пользу, а человек заботится о них.",
+            buttonLabel: "Проверить ответ",
+          },
+          kz: {
+            title: "Өзіңді тексер",
+            question:
+              "Бұлардың қайсысы үй жануары? Ойлан да жауапты тексер.",
+            items: [
+              { emoji: "🐕", label: "ит" },
+              { emoji: "🐄", label: "сиыр" },
+              { emoji: "🐐", label: "ешкі" },
+            ],
+            answer:
+              "Үшеуі де үй жануарлары. Олар адамның жанында тұрады, пайда әкеледі, адам оларды күтеді.",
+            buttonLabel: "Жауапты тексеру",
+          },
+          en: {
+            title: "Check yourself",
+            question:
+              "Which of these are domestic animals? Think, then check.",
+            items: [
+              { emoji: "🐕", label: "dog" },
+              { emoji: "🐄", label: "cow" },
+              { emoji: "🐐", label: "goat" },
+            ],
+            answer:
+              "All three are domestic animals. They live near people, are useful, and people take care of them.",
+            buttonLabel: "Check answer",
+          },
+        },
+      },
+      {
+        type: "summary",
+        data: {
+          ru: {
+            title: "Что я узнал",
+            text:
+              "**Домашние** животные живут рядом с человеком, приносят **пользу**, а человек **заботится** о них.",
+            terms: ["домашние", "пользу", "заботится"],
+          },
+          kz: {
+            title: "Мен нені білдім",
+            text:
+              "**Үй** жануарлары адамның жанында тұрады, **пайда** әкеледі, адам олар туралы **қамқорлық** жасайды.",
+            terms: ["үй", "пайда", "қамқорлық"],
+          },
+          en: {
+            title: "What I learned",
+            text:
+              "**Domestic** animals live near people, bring **benefit**, and people **take care** of them.",
+            terms: ["domestic", "benefit", "take care"],
+          },
+        },
+      },
+    ],
+
+    // Дикие животные
+    observation: [
+      {
+        type: "carousel",
+        data: {
+          ru: {
+            groupLabel: "Работа в группах",
+            title: "Дикие животные",
+            slides: [
+              { emoji: "🐘", caption: "Слон живёт в жарких странах." },
+              { emoji: "🦧", caption: "Орангутан живёт в тропических лесах." },
+              { emoji: "🦅", caption: "Беркут парит над горами." },
+              { emoji: "🦌", caption: "Сайгак бегает по степям Казахстана." },
+              { emoji: "🐱", caption: "Рысь живёт в густых лесах." },
+            ],
+          },
+          kz: {
+            groupLabel: "Топта жұмыс",
+            title: "Жабайы жануарлар",
+            slides: [
+              { emoji: "🐘", caption: "Піл ыстық елдерде тұрады." },
+              { emoji: "🦧", caption: "Орангутан тропиктік ормандарда тұрады." },
+              { emoji: "🦅", caption: "Бүркіт таулардың үстінде қалықтайды." },
+              { emoji: "🦌", caption: "Киік Қазақстан даласында жүгіреді." },
+              { emoji: "🐱", caption: "Сілеусін қалың орманда тұрады." },
+            ],
+          },
+          en: {
+            groupLabel: "Group work",
+            title: "Wild animals",
+            slides: [
+              { emoji: "🐘", caption: "An elephant lives in hot countries." },
+              { emoji: "🦧", caption: "An orangutan lives in tropical forests." },
+              { emoji: "🦅", caption: "A golden eagle soars above the mountains." },
+              { emoji: "🦌", caption: "A saiga runs across the steppes of Kazakhstan." },
+              { emoji: "🐱", caption: "A lynx lives in dense forests." },
+            ],
+          },
+        },
+      },
+      {
+        type: "reveal",
+        data: {
+          ru: {
+            title: "Где они обитают?",
+            question:
+              "К какой группе относятся эти животные? Где они обитают?",
+            items: [
+              { emoji: "🐘", label: "слон" },
+              { emoji: "🦅", label: "беркут" },
+              { emoji: "🦌", label: "сайгак" },
+            ],
+            answer:
+              "Все они — дикие животные. Слон живёт в саваннах, беркут — в горах, сайгак — в степях. Они сами добывают пищу.",
+            buttonLabel: "Проверить ответ",
+          },
+          kz: {
+            title: "Олар қайда тұрады?",
+            question:
+              "Бұл жануарлар қай топқа жатады? Олар қайда тұрады?",
+            items: [
+              { emoji: "🐘", label: "піл" },
+              { emoji: "🦅", label: "бүркіт" },
+              { emoji: "🦌", label: "киік" },
+            ],
+            answer:
+              "Олардың барлығы — жабайы жануарлар. Піл саваннада, бүркіт тауда, киік далада тұрады. Олар тамағын өздері табады.",
+            buttonLabel: "Жауапты тексеру",
+          },
+          en: {
+            title: "Where do they live?",
+            question:
+              "What group do these animals belong to? Where do they live?",
+            items: [
+              { emoji: "🐘", label: "elephant" },
+              { emoji: "🦅", label: "eagle" },
+              { emoji: "🦌", label: "saiga" },
+            ],
+            answer:
+              "They are all wild animals. The elephant lives in savannas, the eagle in the mountains, the saiga in the steppes. They find food on their own.",
+            buttonLabel: "Check answer",
+          },
+        },
+      },
+      {
+        type: "summary",
+        data: {
+          ru: {
+            title: "Что я узнал",
+            text:
+              "**Дикие** животные живут в **лесах**, **степях** и **горах**. Они сами добывают пищу и находят жильё.",
+            terms: ["дикие", "лесах", "степях", "горах"],
+          },
+          kz: {
+            title: "Мен нені білдім",
+            text:
+              "**Жабайы** жануарлар **ормандарда**, **далада** және **тауларда** тұрады. Олар тамағын өздері табады, паналайтын жерін өздері іздейді.",
+            terms: ["жабайы", "ормандарда", "далада", "тауларда"],
+          },
+          en: {
+            title: "What I learned",
+            text:
+              "**Wild** animals live in **forests**, **steppes** and **mountains**. They find food and shelter on their own.",
+            terms: ["wild", "forests", "steppes", "mountains"],
+          },
+        },
+      },
+      {
+        type: "sort",
+        data: {
+          ru: {
+            title: "Где обитают эти животные?",
+            instruction:
+              "Распредели животных по среде обитания.",
+            categories: [
+              { id: "land", label: "На земле / в лесу", emoji: "🌳" },
+              { id: "water", label: "В воде", emoji: "🌊" },
+              { id: "mount", label: "В горах", emoji: "⛰️" },
+            ],
+            items: [
+              { id: "s1", label: "корова", emoji: "🐄", categoryId: "land" },
+              { id: "s2", label: "заяц", emoji: "🐰", categoryId: "land" },
+              { id: "s3", label: "лиса", emoji: "🦊", categoryId: "land" },
+              { id: "s4", label: "дельфин", emoji: "🐬", categoryId: "water" },
+              { id: "s5", label: "архар", emoji: "🐏", categoryId: "mount" },
+            ],
+            checkLabel: "Проверить",
+          },
+          kz: {
+            title: "Бұл жануарлар қайда тұрады?",
+            instruction:
+              "Жануарларды мекен ортасы бойынша бөл.",
+            categories: [
+              { id: "land", label: "Жерде / орманда", emoji: "🌳" },
+              { id: "water", label: "Суда", emoji: "🌊" },
+              { id: "mount", label: "Тауда", emoji: "⛰️" },
+            ],
+            items: [
+              { id: "s1", label: "сиыр", emoji: "🐄", categoryId: "land" },
+              { id: "s2", label: "қоян", emoji: "🐰", categoryId: "land" },
+              { id: "s3", label: "түлкі", emoji: "🦊", categoryId: "land" },
+              { id: "s4", label: "дельфин", emoji: "🐬", categoryId: "water" },
+              { id: "s5", label: "арқар", emoji: "🐏", categoryId: "mount" },
+            ],
+            checkLabel: "Тексеру",
+          },
+          en: {
+            title: "Where do these animals live?",
+            instruction:
+              "Sort the animals by their habitat.",
+            categories: [
+              { id: "land", label: "On land / in forest", emoji: "🌳" },
+              { id: "water", label: "In water", emoji: "🌊" },
+              { id: "mount", label: "In mountains", emoji: "⛰️" },
+            ],
+            items: [
+              { id: "s1", label: "cow", emoji: "🐄", categoryId: "land" },
+              { id: "s2", label: "hare", emoji: "🐰", categoryId: "land" },
+              { id: "s3", label: "fox", emoji: "🦊", categoryId: "land" },
+              { id: "s4", label: "dolphin", emoji: "🐬", categoryId: "water" },
+              { id: "s5", label: "argali", emoji: "🐏", categoryId: "mount" },
+            ],
+            checkLabel: "Check",
+          },
+        },
+      },
+    ],
+
+    // Итоги
+    experiments: [
+      {
+        type: "fact",
+        data: {
+          ru: {
+            title: "Найди в энциклопедии",
+            text:
+              "Узнай, какие редкие дикие животные живут в Казахстане. Запиши 3 примера и где они обитают.",
+            keywords: ["энциклопедия", "Казахстан", "редкие"],
+            icon: "sparkles",
+          },
+          kz: {
+            title: "Энциклопедиядан тап",
+            text:
+              "Қазақстанда қандай сирек кездесетін жабайы жануарлар бар? 3 мысал жазып, қайда тұратынын көрсет.",
+            keywords: ["энциклопедия", "Қазақстан", "сирек"],
+            icon: "sparkles",
+          },
+          en: {
+            title: "Find in the encyclopedia",
+            text:
+              "Find out which rare wild animals live in Kazakhstan. Write down 3 examples and where they live.",
+            keywords: ["encyclopedia", "Kazakhstan", "rare"],
+            icon: "sparkles",
+          },
+        },
+      },
+      {
+        type: "fact",
+        data: {
+          ru: {
+            title: "Это интересно!",
+            text:
+              "У молодых пингвинов хвост похож на белый мех. Это помогает их мамам быстро находить своих птенцов в большой стае.",
+            keywords: ["пингвины", "хвост", "мех"],
+            icon: "bulb",
+          },
+          kz: {
+            title: "Бұл қызық!",
+            text:
+              "Жас пингвиндердің құйрығы ақ жүнге ұқсайды. Бұл аналарына үлкен топтан өз балапандарын тез табуға көмектеседі.",
+            keywords: ["пингвин", "құйрық", "жүн"],
+            icon: "bulb",
+          },
+          en: {
+            title: "Did you know?",
+            text:
+              "Young penguins have tails that look like white fur. It helps their mothers quickly find their chicks in a large flock.",
+            keywords: ["penguins", "tail", "fur"],
+            icon: "bulb",
+          },
+        },
+      },
+      {
+        type: "summary",
+        data: {
+          ru: {
+            title: "Итоговые вопросы",
+            text:
+              "1) Чем **дикие** животные отличаются от **домашних**? 2) Почему человек должен **заботиться** о домашних животных?",
+          },
+          kz: {
+            title: "Қорытынды сұрақтар",
+            text:
+              "1) **Жабайы** жануарлар **үй** жануарларынан немен ерекшеленеді? 2) Адам үй жануарларына неліктен **қамқорлық** жасауы керек?",
+          },
+          en: {
+            title: "Wrap-up questions",
+            text:
+              "1) How do **wild** animals differ from **domestic** ones? 2) Why should people **take care** of domestic animals?",
+          },
+        },
+      },
+    ],
+  },
+  29: {
+    intro: [
+      {
+        type: "audio",
+        data: {
+          ru: {
+            title: "Аудио-гид к уроку",
+            text:
+              "Сегодня мы узнаем, что животные бывают дикими и домашними, и в чём их главное отличие.",
+            caption: "Послушай вступление к уроку",
+            durationLabel: "0:22",
+          },
+          kz: {
+            title: "Сабақтың аудио-гиді",
+            text:
+              "Бүгін біз жануарлардың жабайы және үй жануарлары болып бөлінетінін, олардың айырмашылығы неде екенін білеміз.",
+            caption: "Сабақтың кіріспесін тыңда",
+            durationLabel: "0:22",
+          },
+          en: {
+            title: "Lesson audio guide",
+            text:
+              "Today we'll learn that animals can be wild or domestic, and what is the main difference between them.",
+            caption: "Listen to the lesson intro",
+            durationLabel: "0:22",
+          },
+        },
+      },
+      {
+        type: "carousel",
+        data: {
+          ru: {
+            groupLabel: "Ключевые слова",
+            title: "Дикие и домашние",
+            slides: [
+              { emoji: "🏠", caption: "Домашние животные / Үй жануарлары / Domestic animals" },
+              { emoji: "🌲", caption: "Дикие животные / Жабайы жануарлар / Wild animals" },
+              { emoji: "🌍", caption: "Среда обитания / Мекен орта / Habitat" },
+            ],
+          },
+          kz: {
+            groupLabel: "Кілт сөздер",
+            title: "Жабайы және үй",
+            slides: [
+              { emoji: "🏠", caption: "Үй жануарлары / Домашние / Domestic animals" },
+              { emoji: "🌲", caption: "Жабайы жануарлар / Дикие / Wild animals" },
+              { emoji: "🌍", caption: "Мекен орта / Среда обитания / Habitat" },
+            ],
+          },
+          en: {
+            groupLabel: "Key words",
+            title: "Wild and domestic",
+            slides: [
+              { emoji: "🏠", caption: "Domestic animals / Домашние / Үй жануарлары" },
+              { emoji: "🌲", caption: "Wild animals / Дикие / Жабайы жануарлар" },
+              { emoji: "🌍", caption: "Habitat / Среда обитания / Мекен орта" },
+            ],
+          },
+        },
+      },
+    ],
+
+    // Домашние животные
+    scientists: [
+      {
+        type: "carousel",
+        data: {
+          ru: {
+            groupLabel: "Работа в группах",
+            title: "Домашние животные",
+            slides: [
+              { emoji: "🐕", caption: "Собаки живут рядом с людьми — охраняют дом." },
+              { emoji: "🐄", caption: "Корова на пастбище даёт молоко." },
+              { emoji: "🐐", caption: "Коза у забора — даёт молоко и шерсть." },
+              { emoji: "🐎", caption: "Лошадь с жеребёнком — помогает человеку." },
+            ],
+          },
+          kz: {
+            groupLabel: "Топта жұмыс",
+            title: "Үй жануарлары",
+            slides: [
+              { emoji: "🐕", caption: "Иттер адаммен бірге тұрып, үйді күзетеді." },
+              { emoji: "🐄", caption: "Жайылымдағы сиыр сүт береді." },
+              { emoji: "🐐", caption: "Қоршау жанындағы ешкі — сүт пен жүн береді." },
+              { emoji: "🐎", caption: "Жылқы құлынымен — адамға көмектеседі." },
+            ],
+          },
+          en: {
+            groupLabel: "Group work",
+            title: "Domestic animals",
+            slides: [
+              { emoji: "🐕", caption: "Dogs live with people — they guard the house." },
+              { emoji: "🐄", caption: "A cow on the pasture gives milk." },
+              { emoji: "🐐", caption: "A goat by the fence gives milk and wool." },
+              { emoji: "🐎", caption: "A mare with her foal — helps people." },
+            ],
+          },
+        },
+      },
+      {
+        type: "reveal",
+        data: {
+          ru: {
+            title: "Проверь себя",
+            question:
+              "Кто из этих животных — домашний? Подумай и проверь ответ.",
+            items: [
+              { emoji: "🐕", label: "собака" },
+              { emoji: "🐄", label: "корова" },
+              { emoji: "🐐", label: "коза" },
+            ],
+            answer:
+              "Все трое — домашние животные. Они живут рядом с человеком, приносят пользу, а человек заботится о них.",
+            buttonLabel: "Проверить ответ",
+          },
+          kz: {
+            title: "Өзіңді тексер",
+            question:
+              "Бұлардың қайсысы үй жануары? Ойлан да жауапты тексер.",
+            items: [
+              { emoji: "🐕", label: "ит" },
+              { emoji: "🐄", label: "сиыр" },
+              { emoji: "🐐", label: "ешкі" },
+            ],
+            answer:
+              "Үшеуі де үй жануарлары. Олар адамның жанында тұрады, пайда әкеледі, адам оларды күтеді.",
+            buttonLabel: "Жауапты тексеру",
+          },
+          en: {
+            title: "Check yourself",
+            question:
+              "Which of these are domestic animals? Think, then check.",
+            items: [
+              { emoji: "🐕", label: "dog" },
+              { emoji: "🐄", label: "cow" },
+              { emoji: "🐐", label: "goat" },
+            ],
+            answer:
+              "All three are domestic animals. They live near people, are useful, and people take care of them.",
+            buttonLabel: "Check answer",
+          },
+        },
+      },
+      {
+        type: "summary",
+        data: {
+          ru: {
+            title: "Что я узнал",
+            text:
+              "**Домашние** животные живут рядом с человеком, приносят **пользу**, а человек **заботится** о них.",
+            terms: ["домашние", "пользу", "заботится"],
+          },
+          kz: {
+            title: "Мен нені білдім",
+            text:
+              "**Үй** жануарлары адамның жанында тұрады, **пайда** әкеледі, адам олар туралы **қамқорлық** жасайды.",
+            terms: ["үй", "пайда", "қамқорлық"],
+          },
+          en: {
+            title: "What I learned",
+            text:
+              "**Domestic** animals live near people, bring **benefit**, and people **take care** of them.",
+            terms: ["domestic", "benefit", "take care"],
+          },
+        },
+      },
+    ],
+
+    // Дикие животные
+    observation: [
+      {
+        type: "carousel",
+        data: {
+          ru: {
+            groupLabel: "Работа в группах",
+            title: "Дикие животные",
+            slides: [
+              { emoji: "🐘", caption: "Слон живёт в жарких странах." },
+              { emoji: "🦧", caption: "Орангутан живёт в тропических лесах." },
+              { emoji: "🦅", caption: "Беркут парит над горами." },
+              { emoji: "🦌", caption: "Сайгак бегает по степям Казахстана." },
+              { emoji: "🐱", caption: "Рысь живёт в густых лесах." },
+            ],
+          },
+          kz: {
+            groupLabel: "Топта жұмыс",
+            title: "Жабайы жануарлар",
+            slides: [
+              { emoji: "🐘", caption: "Піл ыстық елдерде тұрады." },
+              { emoji: "🦧", caption: "Орангутан тропиктік ормандарда тұрады." },
+              { emoji: "🦅", caption: "Бүркіт таулардың үстінде қалықтайды." },
+              { emoji: "🦌", caption: "Киік Қазақстан даласында жүгіреді." },
+              { emoji: "🐱", caption: "Сілеусін қалың орманда тұрады." },
+            ],
+          },
+          en: {
+            groupLabel: "Group work",
+            title: "Wild animals",
+            slides: [
+              { emoji: "🐘", caption: "An elephant lives in hot countries." },
+              { emoji: "🦧", caption: "An orangutan lives in tropical forests." },
+              { emoji: "🦅", caption: "A golden eagle soars above the mountains." },
+              { emoji: "🦌", caption: "A saiga runs across the steppes of Kazakhstan." },
+              { emoji: "🐱", caption: "A lynx lives in dense forests." },
+            ],
+          },
+        },
+      },
+      {
+        type: "reveal",
+        data: {
+          ru: {
+            title: "Где они обитают?",
+            question:
+              "К какой группе относятся эти животные? Где они обитают?",
+            items: [
+              { emoji: "🐘", label: "слон" },
+              { emoji: "🦅", label: "беркут" },
+              { emoji: "🦌", label: "сайгак" },
+            ],
+            answer:
+              "Все они — дикие животные. Слон живёт в саваннах, беркут — в горах, сайгак — в степях. Они сами добывают пищу.",
+            buttonLabel: "Проверить ответ",
+          },
+          kz: {
+            title: "Олар қайда тұрады?",
+            question:
+              "Бұл жануарлар қай топқа жатады? Олар қайда тұрады?",
+            items: [
+              { emoji: "🐘", label: "піл" },
+              { emoji: "🦅", label: "бүркіт" },
+              { emoji: "🦌", label: "киік" },
+            ],
+            answer:
+              "Олардың барлығы — жабайы жануарлар. Піл саваннада, бүркіт тауда, киік далада тұрады. Олар тамағын өздері табады.",
+            buttonLabel: "Жауапты тексеру",
+          },
+          en: {
+            title: "Where do they live?",
+            question:
+              "What group do these animals belong to? Where do they live?",
+            items: [
+              { emoji: "🐘", label: "elephant" },
+              { emoji: "🦅", label: "eagle" },
+              { emoji: "🦌", label: "saiga" },
+            ],
+            answer:
+              "They are all wild animals. The elephant lives in savannas, the eagle in the mountains, the saiga in the steppes. They find food on their own.",
+            buttonLabel: "Check answer",
+          },
+        },
+      },
+      {
+        type: "summary",
+        data: {
+          ru: {
+            title: "Что я узнал",
+            text:
+              "**Дикие** животные живут в **лесах**, **степях** и **горах**. Они сами добывают пищу и находят жильё.",
+            terms: ["дикие", "лесах", "степях", "горах"],
+          },
+          kz: {
+            title: "Мен нені білдім",
+            text:
+              "**Жабайы** жануарлар **ормандарда**, **далада** және **тауларда** тұрады. Олар тамағын өздері табады, паналайтын жерін өздері іздейді.",
+            terms: ["жабайы", "ормандарда", "далада", "тауларда"],
+          },
+          en: {
+            title: "What I learned",
+            text:
+              "**Wild** animals live in **forests**, **steppes** and **mountains**. They find food and shelter on their own.",
+            terms: ["wild", "forests", "steppes", "mountains"],
+          },
+        },
+      },
+      {
+        type: "sort",
+        data: {
+          ru: {
+            title: "Где обитают эти животные?",
+            instruction:
+              "Распредели животных по среде обитания.",
+            categories: [
+              { id: "land", label: "На земле / в лесу", emoji: "🌳" },
+              { id: "water", label: "В воде", emoji: "🌊" },
+              { id: "mount", label: "В горах", emoji: "⛰️" },
+            ],
+            items: [
+              { id: "s1", label: "корова", emoji: "🐄", categoryId: "land" },
+              { id: "s2", label: "заяц", emoji: "🐰", categoryId: "land" },
+              { id: "s3", label: "лиса", emoji: "🦊", categoryId: "land" },
+              { id: "s4", label: "дельфин", emoji: "🐬", categoryId: "water" },
+              { id: "s5", label: "архар", emoji: "🐏", categoryId: "mount" },
+            ],
+            checkLabel: "Проверить",
+          },
+          kz: {
+            title: "Бұл жануарлар қайда тұрады?",
+            instruction:
+              "Жануарларды мекен ортасы бойынша бөл.",
+            categories: [
+              { id: "land", label: "Жерде / орманда", emoji: "🌳" },
+              { id: "water", label: "Суда", emoji: "🌊" },
+              { id: "mount", label: "Тауда", emoji: "⛰️" },
+            ],
+            items: [
+              { id: "s1", label: "сиыр", emoji: "🐄", categoryId: "land" },
+              { id: "s2", label: "қоян", emoji: "🐰", categoryId: "land" },
+              { id: "s3", label: "түлкі", emoji: "🦊", categoryId: "land" },
+              { id: "s4", label: "дельфин", emoji: "🐬", categoryId: "water" },
+              { id: "s5", label: "арқар", emoji: "🐏", categoryId: "mount" },
+            ],
+            checkLabel: "Тексеру",
+          },
+          en: {
+            title: "Where do these animals live?",
+            instruction:
+              "Sort the animals by their habitat.",
+            categories: [
+              { id: "land", label: "On land / in forest", emoji: "🌳" },
+              { id: "water", label: "In water", emoji: "🌊" },
+              { id: "mount", label: "In mountains", emoji: "⛰️" },
+            ],
+            items: [
+              { id: "s1", label: "cow", emoji: "🐄", categoryId: "land" },
+              { id: "s2", label: "hare", emoji: "🐰", categoryId: "land" },
+              { id: "s3", label: "fox", emoji: "🦊", categoryId: "land" },
+              { id: "s4", label: "dolphin", emoji: "🐬", categoryId: "water" },
+              { id: "s5", label: "argali", emoji: "🐏", categoryId: "mount" },
+            ],
+            checkLabel: "Check",
+          },
+        },
+      },
+    ],
+
+    // Итоги
+    experiments: [
+      {
+        type: "fact",
+        data: {
+          ru: {
+            title: "Найди в энциклопедии",
+            text:
+              "Узнай, какие редкие дикие животные живут в Казахстане. Запиши 3 примера и где они обитают.",
+            keywords: ["энциклопедия", "Казахстан", "редкие"],
+            icon: "sparkles",
+          },
+          kz: {
+            title: "Энциклопедиядан тап",
+            text:
+              "Қазақстанда қандай сирек кездесетін жабайы жануарлар бар? 3 мысал жазып, қайда тұратынын көрсет.",
+            keywords: ["энциклопедия", "Қазақстан", "сирек"],
+            icon: "sparkles",
+          },
+          en: {
+            title: "Find in the encyclopedia",
+            text:
+              "Find out which rare wild animals live in Kazakhstan. Write down 3 examples and where they live.",
+            keywords: ["encyclopedia", "Kazakhstan", "rare"],
+            icon: "sparkles",
+          },
+        },
+      },
+      {
+        type: "fact",
+        data: {
+          ru: {
+            title: "Это интересно!",
+            text:
+              "У молодых пингвинов хвост похож на белый мех. Это помогает их мамам быстро находить своих птенцов в большой стае.",
+            keywords: ["пингвины", "хвост", "мех"],
+            icon: "bulb",
+          },
+          kz: {
+            title: "Бұл қызық!",
+            text:
+              "Жас пингвиндердің құйрығы ақ жүнге ұқсайды. Бұл аналарына үлкен топтан өз балапандарын тез табуға көмектеседі.",
+            keywords: ["пингвин", "құйрық", "жүн"],
+            icon: "bulb",
+          },
+          en: {
+            title: "Did you know?",
+            text:
+              "Young penguins have tails that look like white fur. It helps their mothers quickly find their chicks in a large flock.",
+            keywords: ["penguins", "tail", "fur"],
+            icon: "bulb",
+          },
+        },
+      },
+      {
+        type: "summary",
+        data: {
+          ru: {
+            title: "Итоговые вопросы",
+            text:
+              "1) Чем **дикие** животные отличаются от **домашних**? 2) Почему человек должен **заботиться** о домашних животных?",
+          },
+          kz: {
+            title: "Қорытынды сұрақтар",
+            text:
+              "1) **Жабайы** жануарлар **үй** жануарларынан немен ерекшеленеді? 2) Адам үй жануарларына неліктен **қамқорлық** жасауы керек?",
+          },
+          en: {
+            title: "Wrap-up questions",
+            text:
+              "1) How do **wild** animals differ from **domestic** ones? 2) Why should people **take care** of domestic animals?",
+          },
+        },
+      },
+    ],
+  },
+  30: {
+    intro: [
+      {
+        type: "audio",
+        data: {
+          ru: {
+            title: "Аудио-гид к уроку",
+            text:
+              "Сегодня мы узнаем, что животные бывают дикими и домашними, и в чём их главное отличие.",
+            caption: "Послушай вступление к уроку",
+            durationLabel: "0:22",
+          },
+          kz: {
+            title: "Сабақтың аудио-гиді",
+            text:
+              "Бүгін біз жануарлардың жабайы және үй жануарлары болып бөлінетінін, олардың айырмашылығы неде екенін білеміз.",
+            caption: "Сабақтың кіріспесін тыңда",
+            durationLabel: "0:22",
+          },
+          en: {
+            title: "Lesson audio guide",
+            text:
+              "Today we'll learn that animals can be wild or domestic, and what is the main difference between them.",
+            caption: "Listen to the lesson intro",
+            durationLabel: "0:22",
+          },
+        },
+      },
+      {
+        type: "carousel",
+        data: {
+          ru: {
+            groupLabel: "Ключевые слова",
+            title: "Дикие и домашние",
+            slides: [
+              { emoji: "🏠", caption: "Домашние животные / Үй жануарлары / Domestic animals" },
+              { emoji: "🌲", caption: "Дикие животные / Жабайы жануарлар / Wild animals" },
+              { emoji: "🌍", caption: "Среда обитания / Мекен орта / Habitat" },
+            ],
+          },
+          kz: {
+            groupLabel: "Кілт сөздер",
+            title: "Жабайы және үй",
+            slides: [
+              { emoji: "🏠", caption: "Үй жануарлары / Домашние / Domestic animals" },
+              { emoji: "🌲", caption: "Жабайы жануарлар / Дикие / Wild animals" },
+              { emoji: "🌍", caption: "Мекен орта / Среда обитания / Habitat" },
+            ],
+          },
+          en: {
+            groupLabel: "Key words",
+            title: "Wild and domestic",
+            slides: [
+              { emoji: "🏠", caption: "Domestic animals / Домашние / Үй жануарлары" },
+              { emoji: "🌲", caption: "Wild animals / Дикие / Жабайы жануарлар" },
+              { emoji: "🌍", caption: "Habitat / Среда обитания / Мекен орта" },
+            ],
+          },
+        },
+      },
+    ],
+
+    // Домашние животные
+    scientists: [
+      {
+        type: "carousel",
+        data: {
+          ru: {
+            groupLabel: "Работа в группах",
+            title: "Домашние животные",
+            slides: [
+              { emoji: "🐕", caption: "Собаки живут рядом с людьми — охраняют дом." },
+              { emoji: "🐄", caption: "Корова на пастбище даёт молоко." },
+              { emoji: "🐐", caption: "Коза у забора — даёт молоко и шерсть." },
+              { emoji: "🐎", caption: "Лошадь с жеребёнком — помогает человеку." },
+            ],
+          },
+          kz: {
+            groupLabel: "Топта жұмыс",
+            title: "Үй жануарлары",
+            slides: [
+              { emoji: "🐕", caption: "Иттер адаммен бірге тұрып, үйді күзетеді." },
+              { emoji: "🐄", caption: "Жайылымдағы сиыр сүт береді." },
+              { emoji: "🐐", caption: "Қоршау жанындағы ешкі — сүт пен жүн береді." },
+              { emoji: "🐎", caption: "Жылқы құлынымен — адамға көмектеседі." },
+            ],
+          },
+          en: {
+            groupLabel: "Group work",
+            title: "Domestic animals",
+            slides: [
+              { emoji: "🐕", caption: "Dogs live with people — they guard the house." },
+              { emoji: "🐄", caption: "A cow on the pasture gives milk." },
+              { emoji: "🐐", caption: "A goat by the fence gives milk and wool." },
+              { emoji: "🐎", caption: "A mare with her foal — helps people." },
+            ],
+          },
+        },
+      },
+      {
+        type: "reveal",
+        data: {
+          ru: {
+            title: "Проверь себя",
+            question:
+              "Кто из этих животных — домашний? Подумай и проверь ответ.",
+            items: [
+              { emoji: "🐕", label: "собака" },
+              { emoji: "🐄", label: "корова" },
+              { emoji: "🐐", label: "коза" },
+            ],
+            answer:
+              "Все трое — домашние животные. Они живут рядом с человеком, приносят пользу, а человек заботится о них.",
+            buttonLabel: "Проверить ответ",
+          },
+          kz: {
+            title: "Өзіңді тексер",
+            question:
+              "Бұлардың қайсысы үй жануары? Ойлан да жауапты тексер.",
+            items: [
+              { emoji: "🐕", label: "ит" },
+              { emoji: "🐄", label: "сиыр" },
+              { emoji: "🐐", label: "ешкі" },
+            ],
+            answer:
+              "Үшеуі де үй жануарлары. Олар адамның жанында тұрады, пайда әкеледі, адам оларды күтеді.",
+            buttonLabel: "Жауапты тексеру",
+          },
+          en: {
+            title: "Check yourself",
+            question:
+              "Which of these are domestic animals? Think, then check.",
+            items: [
+              { emoji: "🐕", label: "dog" },
+              { emoji: "🐄", label: "cow" },
+              { emoji: "🐐", label: "goat" },
+            ],
+            answer:
+              "All three are domestic animals. They live near people, are useful, and people take care of them.",
+            buttonLabel: "Check answer",
+          },
+        },
+      },
+      {
+        type: "summary",
+        data: {
+          ru: {
+            title: "Что я узнал",
+            text:
+              "**Домашние** животные живут рядом с человеком, приносят **пользу**, а человек **заботится** о них.",
+            terms: ["домашние", "пользу", "заботится"],
+          },
+          kz: {
+            title: "Мен нені білдім",
+            text:
+              "**Үй** жануарлары адамның жанында тұрады, **пайда** әкеледі, адам олар туралы **қамқорлық** жасайды.",
+            terms: ["үй", "пайда", "қамқорлық"],
+          },
+          en: {
+            title: "What I learned",
+            text:
+              "**Domestic** animals live near people, bring **benefit**, and people **take care** of them.",
+            terms: ["domestic", "benefit", "take care"],
+          },
+        },
+      },
+    ],
+
+    // Дикие животные
+    observation: [
+      {
+        type: "carousel",
+        data: {
+          ru: {
+            groupLabel: "Работа в группах",
+            title: "Дикие животные",
+            slides: [
+              { emoji: "🐘", caption: "Слон живёт в жарких странах." },
+              { emoji: "🦧", caption: "Орангутан живёт в тропических лесах." },
+              { emoji: "🦅", caption: "Беркут парит над горами." },
+              { emoji: "🦌", caption: "Сайгак бегает по степям Казахстана." },
+              { emoji: "🐱", caption: "Рысь живёт в густых лесах." },
+            ],
+          },
+          kz: {
+            groupLabel: "Топта жұмыс",
+            title: "Жабайы жануарлар",
+            slides: [
+              { emoji: "🐘", caption: "Піл ыстық елдерде тұрады." },
+              { emoji: "🦧", caption: "Орангутан тропиктік ормандарда тұрады." },
+              { emoji: "🦅", caption: "Бүркіт таулардың үстінде қалықтайды." },
+              { emoji: "🦌", caption: "Киік Қазақстан даласында жүгіреді." },
+              { emoji: "🐱", caption: "Сілеусін қалың орманда тұрады." },
+            ],
+          },
+          en: {
+            groupLabel: "Group work",
+            title: "Wild animals",
+            slides: [
+              { emoji: "🐘", caption: "An elephant lives in hot countries." },
+              { emoji: "🦧", caption: "An orangutan lives in tropical forests." },
+              { emoji: "🦅", caption: "A golden eagle soars above the mountains." },
+              { emoji: "🦌", caption: "A saiga runs across the steppes of Kazakhstan." },
+              { emoji: "🐱", caption: "A lynx lives in dense forests." },
+            ],
+          },
+        },
+      },
+      {
+        type: "reveal",
+        data: {
+          ru: {
+            title: "Где они обитают?",
+            question:
+              "К какой группе относятся эти животные? Где они обитают?",
+            items: [
+              { emoji: "🐘", label: "слон" },
+              { emoji: "🦅", label: "беркут" },
+              { emoji: "🦌", label: "сайгак" },
+            ],
+            answer:
+              "Все они — дикие животные. Слон живёт в саваннах, беркут — в горах, сайгак — в степях. Они сами добывают пищу.",
+            buttonLabel: "Проверить ответ",
+          },
+          kz: {
+            title: "Олар қайда тұрады?",
+            question:
+              "Бұл жануарлар қай топқа жатады? Олар қайда тұрады?",
+            items: [
+              { emoji: "🐘", label: "піл" },
+              { emoji: "🦅", label: "бүркіт" },
+              { emoji: "🦌", label: "киік" },
+            ],
+            answer:
+              "Олардың барлығы — жабайы жануарлар. Піл саваннада, бүркіт тауда, киік далада тұрады. Олар тамағын өздері табады.",
+            buttonLabel: "Жауапты тексеру",
+          },
+          en: {
+            title: "Where do they live?",
+            question:
+              "What group do these animals belong to? Where do they live?",
+            items: [
+              { emoji: "🐘", label: "elephant" },
+              { emoji: "🦅", label: "eagle" },
+              { emoji: "🦌", label: "saiga" },
+            ],
+            answer:
+              "They are all wild animals. The elephant lives in savannas, the eagle in the mountains, the saiga in the steppes. They find food on their own.",
+            buttonLabel: "Check answer",
+          },
+        },
+      },
+      {
+        type: "summary",
+        data: {
+          ru: {
+            title: "Что я узнал",
+            text:
+              "**Дикие** животные живут в **лесах**, **степях** и **горах**. Они сами добывают пищу и находят жильё.",
+            terms: ["дикие", "лесах", "степях", "горах"],
+          },
+          kz: {
+            title: "Мен нені білдім",
+            text:
+              "**Жабайы** жануарлар **ормандарда**, **далада** және **тауларда** тұрады. Олар тамағын өздері табады, паналайтын жерін өздері іздейді.",
+            terms: ["жабайы", "ормандарда", "далада", "тауларда"],
+          },
+          en: {
+            title: "What I learned",
+            text:
+              "**Wild** animals live in **forests**, **steppes** and **mountains**. They find food and shelter on their own.",
+            terms: ["wild", "forests", "steppes", "mountains"],
+          },
+        },
+      },
+      {
+        type: "sort",
+        data: {
+          ru: {
+            title: "Где обитают эти животные?",
+            instruction:
+              "Распредели животных по среде обитания.",
+            categories: [
+              { id: "land", label: "На земле / в лесу", emoji: "🌳" },
+              { id: "water", label: "В воде", emoji: "🌊" },
+              { id: "mount", label: "В горах", emoji: "⛰️" },
+            ],
+            items: [
+              { id: "s1", label: "корова", emoji: "🐄", categoryId: "land" },
+              { id: "s2", label: "заяц", emoji: "🐰", categoryId: "land" },
+              { id: "s3", label: "лиса", emoji: "🦊", categoryId: "land" },
+              { id: "s4", label: "дельфин", emoji: "🐬", categoryId: "water" },
+              { id: "s5", label: "архар", emoji: "🐏", categoryId: "mount" },
+            ],
+            checkLabel: "Проверить",
+          },
+          kz: {
+            title: "Бұл жануарлар қайда тұрады?",
+            instruction:
+              "Жануарларды мекен ортасы бойынша бөл.",
+            categories: [
+              { id: "land", label: "Жерде / орманда", emoji: "🌳" },
+              { id: "water", label: "Суда", emoji: "🌊" },
+              { id: "mount", label: "Тауда", emoji: "⛰️" },
+            ],
+            items: [
+              { id: "s1", label: "сиыр", emoji: "🐄", categoryId: "land" },
+              { id: "s2", label: "қоян", emoji: "🐰", categoryId: "land" },
+              { id: "s3", label: "түлкі", emoji: "🦊", categoryId: "land" },
+              { id: "s4", label: "дельфин", emoji: "🐬", categoryId: "water" },
+              { id: "s5", label: "арқар", emoji: "🐏", categoryId: "mount" },
+            ],
+            checkLabel: "Тексеру",
+          },
+          en: {
+            title: "Where do these animals live?",
+            instruction:
+              "Sort the animals by their habitat.",
+            categories: [
+              { id: "land", label: "On land / in forest", emoji: "🌳" },
+              { id: "water", label: "In water", emoji: "🌊" },
+              { id: "mount", label: "In mountains", emoji: "⛰️" },
+            ],
+            items: [
+              { id: "s1", label: "cow", emoji: "🐄", categoryId: "land" },
+              { id: "s2", label: "hare", emoji: "🐰", categoryId: "land" },
+              { id: "s3", label: "fox", emoji: "🦊", categoryId: "land" },
+              { id: "s4", label: "dolphin", emoji: "🐬", categoryId: "water" },
+              { id: "s5", label: "argali", emoji: "🐏", categoryId: "mount" },
+            ],
+            checkLabel: "Check",
+          },
+        },
+      },
+    ],
+
+    // Итоги
+    experiments: [
+      {
+        type: "fact",
+        data: {
+          ru: {
+            title: "Найди в энциклопедии",
+            text:
+              "Узнай, какие редкие дикие животные живут в Казахстане. Запиши 3 примера и где они обитают.",
+            keywords: ["энциклопедия", "Казахстан", "редкие"],
+            icon: "sparkles",
+          },
+          kz: {
+            title: "Энциклопедиядан тап",
+            text:
+              "Қазақстанда қандай сирек кездесетін жабайы жануарлар бар? 3 мысал жазып, қайда тұратынын көрсет.",
+            keywords: ["энциклопедия", "Қазақстан", "сирек"],
+            icon: "sparkles",
+          },
+          en: {
+            title: "Find in the encyclopedia",
+            text:
+              "Find out which rare wild animals live in Kazakhstan. Write down 3 examples and where they live.",
+            keywords: ["encyclopedia", "Kazakhstan", "rare"],
+            icon: "sparkles",
+          },
+        },
+      },
+      {
+        type: "fact",
+        data: {
+          ru: {
+            title: "Это интересно!",
+            text:
+              "У молодых пингвинов хвост похож на белый мех. Это помогает их мамам быстро находить своих птенцов в большой стае.",
+            keywords: ["пингвины", "хвост", "мех"],
+            icon: "bulb",
+          },
+          kz: {
+            title: "Бұл қызық!",
+            text:
+              "Жас пингвиндердің құйрығы ақ жүнге ұқсайды. Бұл аналарына үлкен топтан өз балапандарын тез табуға көмектеседі.",
+            keywords: ["пингвин", "құйрық", "жүн"],
+            icon: "bulb",
+          },
+          en: {
+            title: "Did you know?",
+            text:
+              "Young penguins have tails that look like white fur. It helps their mothers quickly find their chicks in a large flock.",
+            keywords: ["penguins", "tail", "fur"],
+            icon: "bulb",
+          },
+        },
+      },
+      {
+        type: "summary",
+        data: {
+          ru: {
+            title: "Итоговые вопросы",
+            text:
+              "1) Чем **дикие** животные отличаются от **домашних**? 2) Почему человек должен **заботиться** о домашних животных?",
+          },
+          kz: {
+            title: "Қорытынды сұрақтар",
+            text:
+              "1) **Жабайы** жануарлар **үй** жануарларынан немен ерекшеленеді? 2) Адам үй жануарларына неліктен **қамқорлық** жасауы керек?",
+          },
+          en: {
+            title: "Wrap-up questions",
+            text:
+              "1) How do **wild** animals differ from **domestic** ones? 2) Why should people **take care** of domestic animals?",
+          },
+        },
+      },
+    ],
+  },
+  31: {
+    intro: [
+      {
+        type: "audio",
+        data: {
+          ru: {
+            title: "Аудио-гид к уроку",
+            text:
+              "Сегодня мы узнаем, что животные бывают дикими и домашними, и в чём их главное отличие.",
+            caption: "Послушай вступление к уроку",
+            durationLabel: "0:22",
+          },
+          kz: {
+            title: "Сабақтың аудио-гиді",
+            text:
+              "Бүгін біз жануарлардың жабайы және үй жануарлары болып бөлінетінін, олардың айырмашылығы неде екенін білеміз.",
+            caption: "Сабақтың кіріспесін тыңда",
+            durationLabel: "0:22",
+          },
+          en: {
+            title: "Lesson audio guide",
+            text:
+              "Today we'll learn that animals can be wild or domestic, and what is the main difference between them.",
+            caption: "Listen to the lesson intro",
+            durationLabel: "0:22",
+          },
+        },
+      },
+      {
+        type: "carousel",
+        data: {
+          ru: {
+            groupLabel: "Ключевые слова",
+            title: "Дикие и домашние",
+            slides: [
+              { emoji: "🏠", caption: "Домашние животные / Үй жануарлары / Domestic animals" },
+              { emoji: "🌲", caption: "Дикие животные / Жабайы жануарлар / Wild animals" },
+              { emoji: "🌍", caption: "Среда обитания / Мекен орта / Habitat" },
+            ],
+          },
+          kz: {
+            groupLabel: "Кілт сөздер",
+            title: "Жабайы және үй",
+            slides: [
+              { emoji: "🏠", caption: "Үй жануарлары / Домашние / Domestic animals" },
+              { emoji: "🌲", caption: "Жабайы жануарлар / Дикие / Wild animals" },
+              { emoji: "🌍", caption: "Мекен орта / Среда обитания / Habitat" },
+            ],
+          },
+          en: {
+            groupLabel: "Key words",
+            title: "Wild and domestic",
+            slides: [
+              { emoji: "🏠", caption: "Domestic animals / Домашние / Үй жануарлары" },
+              { emoji: "🌲", caption: "Wild animals / Дикие / Жабайы жануарлар" },
+              { emoji: "🌍", caption: "Habitat / Среда обитания / Мекен орта" },
+            ],
+          },
+        },
+      },
+    ],
+
+    // Домашние животные
+    scientists: [
+      {
+        type: "carousel",
+        data: {
+          ru: {
+            groupLabel: "Работа в группах",
+            title: "Домашние животные",
+            slides: [
+              { emoji: "🐕", caption: "Собаки живут рядом с людьми — охраняют дом." },
+              { emoji: "🐄", caption: "Корова на пастбище даёт молоко." },
+              { emoji: "🐐", caption: "Коза у забора — даёт молоко и шерсть." },
+              { emoji: "🐎", caption: "Лошадь с жеребёнком — помогает человеку." },
+            ],
+          },
+          kz: {
+            groupLabel: "Топта жұмыс",
+            title: "Үй жануарлары",
+            slides: [
+              { emoji: "🐕", caption: "Иттер адаммен бірге тұрып, үйді күзетеді." },
+              { emoji: "🐄", caption: "Жайылымдағы сиыр сүт береді." },
+              { emoji: "🐐", caption: "Қоршау жанындағы ешкі — сүт пен жүн береді." },
+              { emoji: "🐎", caption: "Жылқы құлынымен — адамға көмектеседі." },
+            ],
+          },
+          en: {
+            groupLabel: "Group work",
+            title: "Domestic animals",
+            slides: [
+              { emoji: "🐕", caption: "Dogs live with people — they guard the house." },
+              { emoji: "🐄", caption: "A cow on the pasture gives milk." },
+              { emoji: "🐐", caption: "A goat by the fence gives milk and wool." },
+              { emoji: "🐎", caption: "A mare with her foal — helps people." },
+            ],
+          },
+        },
+      },
+      {
+        type: "reveal",
+        data: {
+          ru: {
+            title: "Проверь себя",
+            question:
+              "Кто из этих животных — домашний? Подумай и проверь ответ.",
+            items: [
+              { emoji: "🐕", label: "собака" },
+              { emoji: "🐄", label: "корова" },
+              { emoji: "🐐", label: "коза" },
+            ],
+            answer:
+              "Все трое — домашние животные. Они живут рядом с человеком, приносят пользу, а человек заботится о них.",
+            buttonLabel: "Проверить ответ",
+          },
+          kz: {
+            title: "Өзіңді тексер",
+            question:
+              "Бұлардың қайсысы үй жануары? Ойлан да жауапты тексер.",
+            items: [
+              { emoji: "🐕", label: "ит" },
+              { emoji: "🐄", label: "сиыр" },
+              { emoji: "🐐", label: "ешкі" },
+            ],
+            answer:
+              "Үшеуі де үй жануарлары. Олар адамның жанында тұрады, пайда әкеледі, адам оларды күтеді.",
+            buttonLabel: "Жауапты тексеру",
+          },
+          en: {
+            title: "Check yourself",
+            question:
+              "Which of these are domestic animals? Think, then check.",
+            items: [
+              { emoji: "🐕", label: "dog" },
+              { emoji: "🐄", label: "cow" },
+              { emoji: "🐐", label: "goat" },
+            ],
+            answer:
+              "All three are domestic animals. They live near people, are useful, and people take care of them.",
+            buttonLabel: "Check answer",
+          },
+        },
+      },
+      {
+        type: "summary",
+        data: {
+          ru: {
+            title: "Что я узнал",
+            text:
+              "**Домашние** животные живут рядом с человеком, приносят **пользу**, а человек **заботится** о них.",
+            terms: ["домашние", "пользу", "заботится"],
+          },
+          kz: {
+            title: "Мен нені білдім",
+            text:
+              "**Үй** жануарлары адамның жанында тұрады, **пайда** әкеледі, адам олар туралы **қамқорлық** жасайды.",
+            terms: ["үй", "пайда", "қамқорлық"],
+          },
+          en: {
+            title: "What I learned",
+            text:
+              "**Domestic** animals live near people, bring **benefit**, and people **take care** of them.",
+            terms: ["domestic", "benefit", "take care"],
+          },
+        },
+      },
+    ],
+
+    // Дикие животные
+    observation: [
+      {
+        type: "carousel",
+        data: {
+          ru: {
+            groupLabel: "Работа в группах",
+            title: "Дикие животные",
+            slides: [
+              { emoji: "🐘", caption: "Слон живёт в жарких странах." },
+              { emoji: "🦧", caption: "Орангутан живёт в тропических лесах." },
+              { emoji: "🦅", caption: "Беркут парит над горами." },
+              { emoji: "🦌", caption: "Сайгак бегает по степям Казахстана." },
+              { emoji: "🐱", caption: "Рысь живёт в густых лесах." },
+            ],
+          },
+          kz: {
+            groupLabel: "Топта жұмыс",
+            title: "Жабайы жануарлар",
+            slides: [
+              { emoji: "🐘", caption: "Піл ыстық елдерде тұрады." },
+              { emoji: "🦧", caption: "Орангутан тропиктік ормандарда тұрады." },
+              { emoji: "🦅", caption: "Бүркіт таулардың үстінде қалықтайды." },
+              { emoji: "🦌", caption: "Киік Қазақстан даласында жүгіреді." },
+              { emoji: "🐱", caption: "Сілеусін қалың орманда тұрады." },
+            ],
+          },
+          en: {
+            groupLabel: "Group work",
+            title: "Wild animals",
+            slides: [
+              { emoji: "🐘", caption: "An elephant lives in hot countries." },
+              { emoji: "🦧", caption: "An orangutan lives in tropical forests." },
+              { emoji: "🦅", caption: "A golden eagle soars above the mountains." },
+              { emoji: "🦌", caption: "A saiga runs across the steppes of Kazakhstan." },
+              { emoji: "🐱", caption: "A lynx lives in dense forests." },
+            ],
+          },
+        },
+      },
+      {
+        type: "reveal",
+        data: {
+          ru: {
+            title: "Где они обитают?",
+            question:
+              "К какой группе относятся эти животные? Где они обитают?",
+            items: [
+              { emoji: "🐘", label: "слон" },
+              { emoji: "🦅", label: "беркут" },
+              { emoji: "🦌", label: "сайгак" },
+            ],
+            answer:
+              "Все они — дикие животные. Слон живёт в саваннах, беркут — в горах, сайгак — в степях. Они сами добывают пищу.",
+            buttonLabel: "Проверить ответ",
+          },
+          kz: {
+            title: "Олар қайда тұрады?",
+            question:
+              "Бұл жануарлар қай топқа жатады? Олар қайда тұрады?",
+            items: [
+              { emoji: "🐘", label: "піл" },
+              { emoji: "🦅", label: "бүркіт" },
+              { emoji: "🦌", label: "киік" },
+            ],
+            answer:
+              "Олардың барлығы — жабайы жануарлар. Піл саваннада, бүркіт тауда, киік далада тұрады. Олар тамағын өздері табады.",
+            buttonLabel: "Жауапты тексеру",
+          },
+          en: {
+            title: "Where do they live?",
+            question:
+              "What group do these animals belong to? Where do they live?",
+            items: [
+              { emoji: "🐘", label: "elephant" },
+              { emoji: "🦅", label: "eagle" },
+              { emoji: "🦌", label: "saiga" },
+            ],
+            answer:
+              "They are all wild animals. The elephant lives in savannas, the eagle in the mountains, the saiga in the steppes. They find food on their own.",
+            buttonLabel: "Check answer",
+          },
+        },
+      },
+      {
+        type: "summary",
+        data: {
+          ru: {
+            title: "Что я узнал",
+            text:
+              "**Дикие** животные живут в **лесах**, **степях** и **горах**. Они сами добывают пищу и находят жильё.",
+            terms: ["дикие", "лесах", "степях", "горах"],
+          },
+          kz: {
+            title: "Мен нені білдім",
+            text:
+              "**Жабайы** жануарлар **ормандарда**, **далада** және **тауларда** тұрады. Олар тамағын өздері табады, паналайтын жерін өздері іздейді.",
+            terms: ["жабайы", "ормандарда", "далада", "тауларда"],
+          },
+          en: {
+            title: "What I learned",
+            text:
+              "**Wild** animals live in **forests**, **steppes** and **mountains**. They find food and shelter on their own.",
+            terms: ["wild", "forests", "steppes", "mountains"],
+          },
+        },
+      },
+      {
+        type: "sort",
+        data: {
+          ru: {
+            title: "Где обитают эти животные?",
+            instruction:
+              "Распредели животных по среде обитания.",
+            categories: [
+              { id: "land", label: "На земле / в лесу", emoji: "🌳" },
+              { id: "water", label: "В воде", emoji: "🌊" },
+              { id: "mount", label: "В горах", emoji: "⛰️" },
+            ],
+            items: [
+              { id: "s1", label: "корова", emoji: "🐄", categoryId: "land" },
+              { id: "s2", label: "заяц", emoji: "🐰", categoryId: "land" },
+              { id: "s3", label: "лиса", emoji: "🦊", categoryId: "land" },
+              { id: "s4", label: "дельфин", emoji: "🐬", categoryId: "water" },
+              { id: "s5", label: "архар", emoji: "🐏", categoryId: "mount" },
+            ],
+            checkLabel: "Проверить",
+          },
+          kz: {
+            title: "Бұл жануарлар қайда тұрады?",
+            instruction:
+              "Жануарларды мекен ортасы бойынша бөл.",
+            categories: [
+              { id: "land", label: "Жерде / орманда", emoji: "🌳" },
+              { id: "water", label: "Суда", emoji: "🌊" },
+              { id: "mount", label: "Тауда", emoji: "⛰️" },
+            ],
+            items: [
+              { id: "s1", label: "сиыр", emoji: "🐄", categoryId: "land" },
+              { id: "s2", label: "қоян", emoji: "🐰", categoryId: "land" },
+              { id: "s3", label: "түлкі", emoji: "🦊", categoryId: "land" },
+              { id: "s4", label: "дельфин", emoji: "🐬", categoryId: "water" },
+              { id: "s5", label: "арқар", emoji: "🐏", categoryId: "mount" },
+            ],
+            checkLabel: "Тексеру",
+          },
+          en: {
+            title: "Where do these animals live?",
+            instruction:
+              "Sort the animals by their habitat.",
+            categories: [
+              { id: "land", label: "On land / in forest", emoji: "🌳" },
+              { id: "water", label: "In water", emoji: "🌊" },
+              { id: "mount", label: "In mountains", emoji: "⛰️" },
+            ],
+            items: [
+              { id: "s1", label: "cow", emoji: "🐄", categoryId: "land" },
+              { id: "s2", label: "hare", emoji: "🐰", categoryId: "land" },
+              { id: "s3", label: "fox", emoji: "🦊", categoryId: "land" },
+              { id: "s4", label: "dolphin", emoji: "🐬", categoryId: "water" },
+              { id: "s5", label: "argali", emoji: "🐏", categoryId: "mount" },
+            ],
+            checkLabel: "Check",
+          },
+        },
+      },
+    ],
+
+    // Итоги
+    experiments: [
+      {
+        type: "fact",
+        data: {
+          ru: {
+            title: "Найди в энциклопедии",
+            text:
+              "Узнай, какие редкие дикие животные живут в Казахстане. Запиши 3 примера и где они обитают.",
+            keywords: ["энциклопедия", "Казахстан", "редкие"],
+            icon: "sparkles",
+          },
+          kz: {
+            title: "Энциклопедиядан тап",
+            text:
+              "Қазақстанда қандай сирек кездесетін жабайы жануарлар бар? 3 мысал жазып, қайда тұратынын көрсет.",
+            keywords: ["энциклопедия", "Қазақстан", "сирек"],
+            icon: "sparkles",
+          },
+          en: {
+            title: "Find in the encyclopedia",
+            text:
+              "Find out which rare wild animals live in Kazakhstan. Write down 3 examples and where they live.",
+            keywords: ["encyclopedia", "Kazakhstan", "rare"],
+            icon: "sparkles",
+          },
+        },
+      },
+      {
+        type: "fact",
+        data: {
+          ru: {
+            title: "Это интересно!",
+            text:
+              "У молодых пингвинов хвост похож на белый мех. Это помогает их мамам быстро находить своих птенцов в большой стае.",
+            keywords: ["пингвины", "хвост", "мех"],
+            icon: "bulb",
+          },
+          kz: {
+            title: "Бұл қызық!",
+            text:
+              "Жас пингвиндердің құйрығы ақ жүнге ұқсайды. Бұл аналарына үлкен топтан өз балапандарын тез табуға көмектеседі.",
+            keywords: ["пингвин", "құйрық", "жүн"],
+            icon: "bulb",
+          },
+          en: {
+            title: "Did you know?",
+            text:
+              "Young penguins have tails that look like white fur. It helps their mothers quickly find their chicks in a large flock.",
+            keywords: ["penguins", "tail", "fur"],
+            icon: "bulb",
+          },
+        },
+      },
+      {
+        type: "summary",
+        data: {
+          ru: {
+            title: "Итоговые вопросы",
+            text:
+              "1) Чем **дикие** животные отличаются от **домашних**? 2) Почему человек должен **заботиться** о домашних животных?",
+          },
+          kz: {
+            title: "Қорытынды сұрақтар",
+            text:
+              "1) **Жабайы** жануарлар **үй** жануарларынан немен ерекшеленеді? 2) Адам үй жануарларына неліктен **қамқорлық** жасауы керек?",
+          },
+          en: {
+            title: "Wrap-up questions",
+            text:
+              "1) How do **wild** animals differ from **domestic** ones? 2) Why should people **take care** of domestic animals?",
+          },
+        },
+      },
+    ],
+  },
+  32: {
+    intro: [
+      {
+        type: "audio",
+        data: {
+          ru: {
+            title: "Аудио-гид к уроку",
+            text:
+              "Сегодня мы узнаем, что животные бывают дикими и домашними, и в чём их главное отличие.",
+            caption: "Послушай вступление к уроку",
+            durationLabel: "0:22",
+          },
+          kz: {
+            title: "Сабақтың аудио-гиді",
+            text:
+              "Бүгін біз жануарлардың жабайы және үй жануарлары болып бөлінетінін, олардың айырмашылығы неде екенін білеміз.",
+            caption: "Сабақтың кіріспесін тыңда",
+            durationLabel: "0:22",
+          },
+          en: {
+            title: "Lesson audio guide",
+            text:
+              "Today we'll learn that animals can be wild or domestic, and what is the main difference between them.",
+            caption: "Listen to the lesson intro",
+            durationLabel: "0:22",
+          },
+        },
+      },
+      {
+        type: "carousel",
+        data: {
+          ru: {
+            groupLabel: "Ключевые слова",
+            title: "Дикие и домашние",
+            slides: [
+              { emoji: "🏠", caption: "Домашние животные / Үй жануарлары / Domestic animals" },
+              { emoji: "🌲", caption: "Дикие животные / Жабайы жануарлар / Wild animals" },
+              { emoji: "🌍", caption: "Среда обитания / Мекен орта / Habitat" },
+            ],
+          },
+          kz: {
+            groupLabel: "Кілт сөздер",
+            title: "Жабайы және үй",
+            slides: [
+              { emoji: "🏠", caption: "Үй жануарлары / Домашние / Domestic animals" },
+              { emoji: "🌲", caption: "Жабайы жануарлар / Дикие / Wild animals" },
+              { emoji: "🌍", caption: "Мекен орта / Среда обитания / Habitat" },
+            ],
+          },
+          en: {
+            groupLabel: "Key words",
+            title: "Wild and domestic",
+            slides: [
+              { emoji: "🏠", caption: "Domestic animals / Домашние / Үй жануарлары" },
+              { emoji: "🌲", caption: "Wild animals / Дикие / Жабайы жануарлар" },
+              { emoji: "🌍", caption: "Habitat / Среда обитания / Мекен орта" },
+            ],
+          },
+        },
+      },
+    ],
+
+    // Домашние животные
+    scientists: [
+      {
+        type: "carousel",
+        data: {
+          ru: {
+            groupLabel: "Работа в группах",
+            title: "Домашние животные",
+            slides: [
+              { emoji: "🐕", caption: "Собаки живут рядом с людьми — охраняют дом." },
+              { emoji: "🐄", caption: "Корова на пастбище даёт молоко." },
+              { emoji: "🐐", caption: "Коза у забора — даёт молоко и шерсть." },
+              { emoji: "🐎", caption: "Лошадь с жеребёнком — помогает человеку." },
+            ],
+          },
+          kz: {
+            groupLabel: "Топта жұмыс",
+            title: "Үй жануарлары",
+            slides: [
+              { emoji: "🐕", caption: "Иттер адаммен бірге тұрып, үйді күзетеді." },
+              { emoji: "🐄", caption: "Жайылымдағы сиыр сүт береді." },
+              { emoji: "🐐", caption: "Қоршау жанындағы ешкі — сүт пен жүн береді." },
+              { emoji: "🐎", caption: "Жылқы құлынымен — адамға көмектеседі." },
+            ],
+          },
+          en: {
+            groupLabel: "Group work",
+            title: "Domestic animals",
+            slides: [
+              { emoji: "🐕", caption: "Dogs live with people — they guard the house." },
+              { emoji: "🐄", caption: "A cow on the pasture gives milk." },
+              { emoji: "🐐", caption: "A goat by the fence gives milk and wool." },
+              { emoji: "🐎", caption: "A mare with her foal — helps people." },
+            ],
+          },
+        },
+      },
+      {
+        type: "reveal",
+        data: {
+          ru: {
+            title: "Проверь себя",
+            question:
+              "Кто из этих животных — домашний? Подумай и проверь ответ.",
+            items: [
+              { emoji: "🐕", label: "собака" },
+              { emoji: "🐄", label: "корова" },
+              { emoji: "🐐", label: "коза" },
+            ],
+            answer:
+              "Все трое — домашние животные. Они живут рядом с человеком, приносят пользу, а человек заботится о них.",
+            buttonLabel: "Проверить ответ",
+          },
+          kz: {
+            title: "Өзіңді тексер",
+            question:
+              "Бұлардың қайсысы үй жануары? Ойлан да жауапты тексер.",
+            items: [
+              { emoji: "🐕", label: "ит" },
+              { emoji: "🐄", label: "сиыр" },
+              { emoji: "🐐", label: "ешкі" },
+            ],
+            answer:
+              "Үшеуі де үй жануарлары. Олар адамның жанында тұрады, пайда әкеледі, адам оларды күтеді.",
+            buttonLabel: "Жауапты тексеру",
+          },
+          en: {
+            title: "Check yourself",
+            question:
+              "Which of these are domestic animals? Think, then check.",
+            items: [
+              { emoji: "🐕", label: "dog" },
+              { emoji: "🐄", label: "cow" },
+              { emoji: "🐐", label: "goat" },
+            ],
+            answer:
+              "All three are domestic animals. They live near people, are useful, and people take care of them.",
+            buttonLabel: "Check answer",
+          },
+        },
+      },
+      {
+        type: "summary",
+        data: {
+          ru: {
+            title: "Что я узнал",
+            text:
+              "**Домашние** животные живут рядом с человеком, приносят **пользу**, а человек **заботится** о них.",
+            terms: ["домашние", "пользу", "заботится"],
+          },
+          kz: {
+            title: "Мен нені білдім",
+            text:
+              "**Үй** жануарлары адамның жанында тұрады, **пайда** әкеледі, адам олар туралы **қамқорлық** жасайды.",
+            terms: ["үй", "пайда", "қамқорлық"],
+          },
+          en: {
+            title: "What I learned",
+            text:
+              "**Domestic** animals live near people, bring **benefit**, and people **take care** of them.",
+            terms: ["domestic", "benefit", "take care"],
+          },
+        },
+      },
+    ],
+
+    // Дикие животные
+    observation: [
+      {
+        type: "carousel",
+        data: {
+          ru: {
+            groupLabel: "Работа в группах",
+            title: "Дикие животные",
+            slides: [
+              { emoji: "🐘", caption: "Слон живёт в жарких странах." },
+              { emoji: "🦧", caption: "Орангутан живёт в тропических лесах." },
+              { emoji: "🦅", caption: "Беркут парит над горами." },
+              { emoji: "🦌", caption: "Сайгак бегает по степям Казахстана." },
+              { emoji: "🐱", caption: "Рысь живёт в густых лесах." },
+            ],
+          },
+          kz: {
+            groupLabel: "Топта жұмыс",
+            title: "Жабайы жануарлар",
+            slides: [
+              { emoji: "🐘", caption: "Піл ыстық елдерде тұрады." },
+              { emoji: "🦧", caption: "Орангутан тропиктік ормандарда тұрады." },
+              { emoji: "🦅", caption: "Бүркіт таулардың үстінде қалықтайды." },
+              { emoji: "🦌", caption: "Киік Қазақстан даласында жүгіреді." },
+              { emoji: "🐱", caption: "Сілеусін қалың орманда тұрады." },
+            ],
+          },
+          en: {
+            groupLabel: "Group work",
+            title: "Wild animals",
+            slides: [
+              { emoji: "🐘", caption: "An elephant lives in hot countries." },
+              { emoji: "🦧", caption: "An orangutan lives in tropical forests." },
+              { emoji: "🦅", caption: "A golden eagle soars above the mountains." },
+              { emoji: "🦌", caption: "A saiga runs across the steppes of Kazakhstan." },
+              { emoji: "🐱", caption: "A lynx lives in dense forests." },
+            ],
+          },
+        },
+      },
+      {
+        type: "reveal",
+        data: {
+          ru: {
+            title: "Где они обитают?",
+            question:
+              "К какой группе относятся эти животные? Где они обитают?",
+            items: [
+              { emoji: "🐘", label: "слон" },
+              { emoji: "🦅", label: "беркут" },
+              { emoji: "🦌", label: "сайгак" },
+            ],
+            answer:
+              "Все они — дикие животные. Слон живёт в саваннах, беркут — в горах, сайгак — в степях. Они сами добывают пищу.",
+            buttonLabel: "Проверить ответ",
+          },
+          kz: {
+            title: "Олар қайда тұрады?",
+            question:
+              "Бұл жануарлар қай топқа жатады? Олар қайда тұрады?",
+            items: [
+              { emoji: "🐘", label: "піл" },
+              { emoji: "🦅", label: "бүркіт" },
+              { emoji: "🦌", label: "киік" },
+            ],
+            answer:
+              "Олардың барлығы — жабайы жануарлар. Піл саваннада, бүркіт тауда, киік далада тұрады. Олар тамағын өздері табады.",
+            buttonLabel: "Жауапты тексеру",
+          },
+          en: {
+            title: "Where do they live?",
+            question:
+              "What group do these animals belong to? Where do they live?",
+            items: [
+              { emoji: "🐘", label: "elephant" },
+              { emoji: "🦅", label: "eagle" },
+              { emoji: "🦌", label: "saiga" },
+            ],
+            answer:
+              "They are all wild animals. The elephant lives in savannas, the eagle in the mountains, the saiga in the steppes. They find food on their own.",
+            buttonLabel: "Check answer",
+          },
+        },
+      },
+      {
+        type: "summary",
+        data: {
+          ru: {
+            title: "Что я узнал",
+            text:
+              "**Дикие** животные живут в **лесах**, **степях** и **горах**. Они сами добывают пищу и находят жильё.",
+            terms: ["дикие", "лесах", "степях", "горах"],
+          },
+          kz: {
+            title: "Мен нені білдім",
+            text:
+              "**Жабайы** жануарлар **ормандарда**, **далада** және **тауларда** тұрады. Олар тамағын өздері табады, паналайтын жерін өздері іздейді.",
+            terms: ["жабайы", "ормандарда", "далада", "тауларда"],
+          },
+          en: {
+            title: "What I learned",
+            text:
+              "**Wild** animals live in **forests**, **steppes** and **mountains**. They find food and shelter on their own.",
+            terms: ["wild", "forests", "steppes", "mountains"],
+          },
+        },
+      },
+      {
+        type: "sort",
+        data: {
+          ru: {
+            title: "Где обитают эти животные?",
+            instruction:
+              "Распредели животных по среде обитания.",
+            categories: [
+              { id: "land", label: "На земле / в лесу", emoji: "🌳" },
+              { id: "water", label: "В воде", emoji: "🌊" },
+              { id: "mount", label: "В горах", emoji: "⛰️" },
+            ],
+            items: [
+              { id: "s1", label: "корова", emoji: "🐄", categoryId: "land" },
+              { id: "s2", label: "заяц", emoji: "🐰", categoryId: "land" },
+              { id: "s3", label: "лиса", emoji: "🦊", categoryId: "land" },
+              { id: "s4", label: "дельфин", emoji: "🐬", categoryId: "water" },
+              { id: "s5", label: "архар", emoji: "🐏", categoryId: "mount" },
+            ],
+            checkLabel: "Проверить",
+          },
+          kz: {
+            title: "Бұл жануарлар қайда тұрады?",
+            instruction:
+              "Жануарларды мекен ортасы бойынша бөл.",
+            categories: [
+              { id: "land", label: "Жерде / орманда", emoji: "🌳" },
+              { id: "water", label: "Суда", emoji: "🌊" },
+              { id: "mount", label: "Тауда", emoji: "⛰️" },
+            ],
+            items: [
+              { id: "s1", label: "сиыр", emoji: "🐄", categoryId: "land" },
+              { id: "s2", label: "қоян", emoji: "🐰", categoryId: "land" },
+              { id: "s3", label: "түлкі", emoji: "🦊", categoryId: "land" },
+              { id: "s4", label: "дельфин", emoji: "🐬", categoryId: "water" },
+              { id: "s5", label: "арқар", emoji: "🐏", categoryId: "mount" },
+            ],
+            checkLabel: "Тексеру",
+          },
+          en: {
+            title: "Where do these animals live?",
+            instruction:
+              "Sort the animals by their habitat.",
+            categories: [
+              { id: "land", label: "On land / in forest", emoji: "🌳" },
+              { id: "water", label: "In water", emoji: "🌊" },
+              { id: "mount", label: "In mountains", emoji: "⛰️" },
+            ],
+            items: [
+              { id: "s1", label: "cow", emoji: "🐄", categoryId: "land" },
+              { id: "s2", label: "hare", emoji: "🐰", categoryId: "land" },
+              { id: "s3", label: "fox", emoji: "🦊", categoryId: "land" },
+              { id: "s4", label: "dolphin", emoji: "🐬", categoryId: "water" },
+              { id: "s5", label: "argali", emoji: "🐏", categoryId: "mount" },
+            ],
+            checkLabel: "Check",
+          },
+        },
+      },
+    ],
+
+    // Итоги
+    experiments: [
+      {
+        type: "fact",
+        data: {
+          ru: {
+            title: "Найди в энциклопедии",
+            text:
+              "Узнай, какие редкие дикие животные живут в Казахстане. Запиши 3 примера и где они обитают.",
+            keywords: ["энциклопедия", "Казахстан", "редкие"],
+            icon: "sparkles",
+          },
+          kz: {
+            title: "Энциклопедиядан тап",
+            text:
+              "Қазақстанда қандай сирек кездесетін жабайы жануарлар бар? 3 мысал жазып, қайда тұратынын көрсет.",
+            keywords: ["энциклопедия", "Қазақстан", "сирек"],
+            icon: "sparkles",
+          },
+          en: {
+            title: "Find in the encyclopedia",
+            text:
+              "Find out which rare wild animals live in Kazakhstan. Write down 3 examples and where they live.",
+            keywords: ["encyclopedia", "Kazakhstan", "rare"],
+            icon: "sparkles",
+          },
+        },
+      },
+      {
+        type: "fact",
+        data: {
+          ru: {
+            title: "Это интересно!",
+            text:
+              "У молодых пингвинов хвост похож на белый мех. Это помогает их мамам быстро находить своих птенцов в большой стае.",
+            keywords: ["пингвины", "хвост", "мех"],
+            icon: "bulb",
+          },
+          kz: {
+            title: "Бұл қызық!",
+            text:
+              "Жас пингвиндердің құйрығы ақ жүнге ұқсайды. Бұл аналарына үлкен топтан өз балапандарын тез табуға көмектеседі.",
+            keywords: ["пингвин", "құйрық", "жүн"],
+            icon: "bulb",
+          },
+          en: {
+            title: "Did you know?",
+            text:
+              "Young penguins have tails that look like white fur. It helps their mothers quickly find their chicks in a large flock.",
+            keywords: ["penguins", "tail", "fur"],
+            icon: "bulb",
+          },
+        },
+      },
+      {
+        type: "summary",
+        data: {
+          ru: {
+            title: "Итоговые вопросы",
+            text:
+              "1) Чем **дикие** животные отличаются от **домашних**? 2) Почему человек должен **заботиться** о домашних животных?",
+          },
+          kz: {
+            title: "Қорытынды сұрақтар",
+            text:
+              "1) **Жабайы** жануарлар **үй** жануарларынан немен ерекшеленеді? 2) Адам үй жануарларына неліктен **қамқорлық** жасауы керек?",
+          },
+          en: {
+            title: "Wrap-up questions",
+            text:
+              "1) How do **wild** animals differ from **domestic** ones? 2) Why should people **take care** of domestic animals?",
+          },
+        },
+      },
+    ],
+  },
+  33: {
+    intro: [
+      {
+        type: "audio",
+        data: {
+          ru: {
+            title: "Аудио-гид к уроку",
+            text:
+              "Сегодня мы узнаем, что животные бывают дикими и домашними, и в чём их главное отличие.",
+            caption: "Послушай вступление к уроку",
+            durationLabel: "0:22",
+          },
+          kz: {
+            title: "Сабақтың аудио-гиді",
+            text:
+              "Бүгін біз жануарлардың жабайы және үй жануарлары болып бөлінетінін, олардың айырмашылығы неде екенін білеміз.",
+            caption: "Сабақтың кіріспесін тыңда",
+            durationLabel: "0:22",
+          },
+          en: {
+            title: "Lesson audio guide",
+            text:
+              "Today we'll learn that animals can be wild or domestic, and what is the main difference between them.",
+            caption: "Listen to the lesson intro",
+            durationLabel: "0:22",
+          },
+        },
+      },
+      {
+        type: "carousel",
+        data: {
+          ru: {
+            groupLabel: "Ключевые слова",
+            title: "Дикие и домашние",
+            slides: [
+              { emoji: "🏠", caption: "Домашние животные / Үй жануарлары / Domestic animals" },
+              { emoji: "🌲", caption: "Дикие животные / Жабайы жануарлар / Wild animals" },
+              { emoji: "🌍", caption: "Среда обитания / Мекен орта / Habitat" },
+            ],
+          },
+          kz: {
+            groupLabel: "Кілт сөздер",
+            title: "Жабайы және үй",
+            slides: [
+              { emoji: "🏠", caption: "Үй жануарлары / Домашние / Domestic animals" },
+              { emoji: "🌲", caption: "Жабайы жануарлар / Дикие / Wild animals" },
+              { emoji: "🌍", caption: "Мекен орта / Среда обитания / Habitat" },
+            ],
+          },
+          en: {
+            groupLabel: "Key words",
+            title: "Wild and domestic",
+            slides: [
+              { emoji: "🏠", caption: "Domestic animals / Домашние / Үй жануарлары" },
+              { emoji: "🌲", caption: "Wild animals / Дикие / Жабайы жануарлар" },
+              { emoji: "🌍", caption: "Habitat / Среда обитания / Мекен орта" },
+            ],
+          },
+        },
+      },
+    ],
+
+    // Домашние животные
+    scientists: [
+      {
+        type: "carousel",
+        data: {
+          ru: {
+            groupLabel: "Работа в группах",
+            title: "Домашние животные",
+            slides: [
+              { emoji: "🐕", caption: "Собаки живут рядом с людьми — охраняют дом." },
+              { emoji: "🐄", caption: "Корова на пастбище даёт молоко." },
+              { emoji: "🐐", caption: "Коза у забора — даёт молоко и шерсть." },
+              { emoji: "🐎", caption: "Лошадь с жеребёнком — помогает человеку." },
+            ],
+          },
+          kz: {
+            groupLabel: "Топта жұмыс",
+            title: "Үй жануарлары",
+            slides: [
+              { emoji: "🐕", caption: "Иттер адаммен бірге тұрып, үйді күзетеді." },
+              { emoji: "🐄", caption: "Жайылымдағы сиыр сүт береді." },
+              { emoji: "🐐", caption: "Қоршау жанындағы ешкі — сүт пен жүн береді." },
+              { emoji: "🐎", caption: "Жылқы құлынымен — адамға көмектеседі." },
+            ],
+          },
+          en: {
+            groupLabel: "Group work",
+            title: "Domestic animals",
+            slides: [
+              { emoji: "🐕", caption: "Dogs live with people — they guard the house." },
+              { emoji: "🐄", caption: "A cow on the pasture gives milk." },
+              { emoji: "🐐", caption: "A goat by the fence gives milk and wool." },
+              { emoji: "🐎", caption: "A mare with her foal — helps people." },
+            ],
+          },
+        },
+      },
+      {
+        type: "reveal",
+        data: {
+          ru: {
+            title: "Проверь себя",
+            question:
+              "Кто из этих животных — домашний? Подумай и проверь ответ.",
+            items: [
+              { emoji: "🐕", label: "собака" },
+              { emoji: "🐄", label: "корова" },
+              { emoji: "🐐", label: "коза" },
+            ],
+            answer:
+              "Все трое — домашние животные. Они живут рядом с человеком, приносят пользу, а человек заботится о них.",
+            buttonLabel: "Проверить ответ",
+          },
+          kz: {
+            title: "Өзіңді тексер",
+            question:
+              "Бұлардың қайсысы үй жануары? Ойлан да жауапты тексер.",
+            items: [
+              { emoji: "🐕", label: "ит" },
+              { emoji: "🐄", label: "сиыр" },
+              { emoji: "🐐", label: "ешкі" },
+            ],
+            answer:
+              "Үшеуі де үй жануарлары. Олар адамның жанында тұрады, пайда әкеледі, адам оларды күтеді.",
+            buttonLabel: "Жауапты тексеру",
+          },
+          en: {
+            title: "Check yourself",
+            question:
+              "Which of these are domestic animals? Think, then check.",
+            items: [
+              { emoji: "🐕", label: "dog" },
+              { emoji: "🐄", label: "cow" },
+              { emoji: "🐐", label: "goat" },
+            ],
+            answer:
+              "All three are domestic animals. They live near people, are useful, and people take care of them.",
+            buttonLabel: "Check answer",
+          },
+        },
+      },
+      {
+        type: "summary",
+        data: {
+          ru: {
+            title: "Что я узнал",
+            text:
+              "**Домашние** животные живут рядом с человеком, приносят **пользу**, а человек **заботится** о них.",
+            terms: ["домашние", "пользу", "заботится"],
+          },
+          kz: {
+            title: "Мен нені білдім",
+            text:
+              "**Үй** жануарлары адамның жанында тұрады, **пайда** әкеледі, адам олар туралы **қамқорлық** жасайды.",
+            terms: ["үй", "пайда", "қамқорлық"],
+          },
+          en: {
+            title: "What I learned",
+            text:
+              "**Domestic** animals live near people, bring **benefit**, and people **take care** of them.",
+            terms: ["domestic", "benefit", "take care"],
+          },
+        },
+      },
+    ],
+
+    // Дикие животные
+    observation: [
+      {
+        type: "carousel",
+        data: {
+          ru: {
+            groupLabel: "Работа в группах",
+            title: "Дикие животные",
+            slides: [
+              { emoji: "🐘", caption: "Слон живёт в жарких странах." },
+              { emoji: "🦧", caption: "Орангутан живёт в тропических лесах." },
+              { emoji: "🦅", caption: "Беркут парит над горами." },
+              { emoji: "🦌", caption: "Сайгак бегает по степям Казахстана." },
+              { emoji: "🐱", caption: "Рысь живёт в густых лесах." },
+            ],
+          },
+          kz: {
+            groupLabel: "Топта жұмыс",
+            title: "Жабайы жануарлар",
+            slides: [
+              { emoji: "🐘", caption: "Піл ыстық елдерде тұрады." },
+              { emoji: "🦧", caption: "Орангутан тропиктік ормандарда тұрады." },
+              { emoji: "🦅", caption: "Бүркіт таулардың үстінде қалықтайды." },
+              { emoji: "🦌", caption: "Киік Қазақстан даласында жүгіреді." },
+              { emoji: "🐱", caption: "Сілеусін қалың орманда тұрады." },
+            ],
+          },
+          en: {
+            groupLabel: "Group work",
+            title: "Wild animals",
+            slides: [
+              { emoji: "🐘", caption: "An elephant lives in hot countries." },
+              { emoji: "🦧", caption: "An orangutan lives in tropical forests." },
+              { emoji: "🦅", caption: "A golden eagle soars above the mountains." },
+              { emoji: "🦌", caption: "A saiga runs across the steppes of Kazakhstan." },
+              { emoji: "🐱", caption: "A lynx lives in dense forests." },
+            ],
+          },
+        },
+      },
+      {
+        type: "reveal",
+        data: {
+          ru: {
+            title: "Где они обитают?",
+            question:
+              "К какой группе относятся эти животные? Где они обитают?",
+            items: [
+              { emoji: "🐘", label: "слон" },
+              { emoji: "🦅", label: "беркут" },
+              { emoji: "🦌", label: "сайгак" },
+            ],
+            answer:
+              "Все они — дикие животные. Слон живёт в саваннах, беркут — в горах, сайгак — в степях. Они сами добывают пищу.",
+            buttonLabel: "Проверить ответ",
+          },
+          kz: {
+            title: "Олар қайда тұрады?",
+            question:
+              "Бұл жануарлар қай топқа жатады? Олар қайда тұрады?",
+            items: [
+              { emoji: "🐘", label: "піл" },
+              { emoji: "🦅", label: "бүркіт" },
+              { emoji: "🦌", label: "киік" },
+            ],
+            answer:
+              "Олардың барлығы — жабайы жануарлар. Піл саваннада, бүркіт тауда, киік далада тұрады. Олар тамағын өздері табады.",
+            buttonLabel: "Жауапты тексеру",
+          },
+          en: {
+            title: "Where do they live?",
+            question:
+              "What group do these animals belong to? Where do they live?",
+            items: [
+              { emoji: "🐘", label: "elephant" },
+              { emoji: "🦅", label: "eagle" },
+              { emoji: "🦌", label: "saiga" },
+            ],
+            answer:
+              "They are all wild animals. The elephant lives in savannas, the eagle in the mountains, the saiga in the steppes. They find food on their own.",
+            buttonLabel: "Check answer",
+          },
+        },
+      },
+      {
+        type: "summary",
+        data: {
+          ru: {
+            title: "Что я узнал",
+            text:
+              "**Дикие** животные живут в **лесах**, **степях** и **горах**. Они сами добывают пищу и находят жильё.",
+            terms: ["дикие", "лесах", "степях", "горах"],
+          },
+          kz: {
+            title: "Мен нені білдім",
+            text:
+              "**Жабайы** жануарлар **ормандарда**, **далада** және **тауларда** тұрады. Олар тамағын өздері табады, паналайтын жерін өздері іздейді.",
+            terms: ["жабайы", "ормандарда", "далада", "тауларда"],
+          },
+          en: {
+            title: "What I learned",
+            text:
+              "**Wild** animals live in **forests**, **steppes** and **mountains**. They find food and shelter on their own.",
+            terms: ["wild", "forests", "steppes", "mountains"],
+          },
+        },
+      },
+      {
+        type: "sort",
+        data: {
+          ru: {
+            title: "Где обитают эти животные?",
+            instruction:
+              "Распредели животных по среде обитания.",
+            categories: [
+              { id: "land", label: "На земле / в лесу", emoji: "🌳" },
+              { id: "water", label: "В воде", emoji: "🌊" },
+              { id: "mount", label: "В горах", emoji: "⛰️" },
+            ],
+            items: [
+              { id: "s1", label: "корова", emoji: "🐄", categoryId: "land" },
+              { id: "s2", label: "заяц", emoji: "🐰", categoryId: "land" },
+              { id: "s3", label: "лиса", emoji: "🦊", categoryId: "land" },
+              { id: "s4", label: "дельфин", emoji: "🐬", categoryId: "water" },
+              { id: "s5", label: "архар", emoji: "🐏", categoryId: "mount" },
+            ],
+            checkLabel: "Проверить",
+          },
+          kz: {
+            title: "Бұл жануарлар қайда тұрады?",
+            instruction:
+              "Жануарларды мекен ортасы бойынша бөл.",
+            categories: [
+              { id: "land", label: "Жерде / орманда", emoji: "🌳" },
+              { id: "water", label: "Суда", emoji: "🌊" },
+              { id: "mount", label: "Тауда", emoji: "⛰️" },
+            ],
+            items: [
+              { id: "s1", label: "сиыр", emoji: "🐄", categoryId: "land" },
+              { id: "s2", label: "қоян", emoji: "🐰", categoryId: "land" },
+              { id: "s3", label: "түлкі", emoji: "🦊", categoryId: "land" },
+              { id: "s4", label: "дельфин", emoji: "🐬", categoryId: "water" },
+              { id: "s5", label: "арқар", emoji: "🐏", categoryId: "mount" },
+            ],
+            checkLabel: "Тексеру",
+          },
+          en: {
+            title: "Where do these animals live?",
+            instruction:
+              "Sort the animals by their habitat.",
+            categories: [
+              { id: "land", label: "On land / in forest", emoji: "🌳" },
+              { id: "water", label: "In water", emoji: "🌊" },
+              { id: "mount", label: "In mountains", emoji: "⛰️" },
+            ],
+            items: [
+              { id: "s1", label: "cow", emoji: "🐄", categoryId: "land" },
+              { id: "s2", label: "hare", emoji: "🐰", categoryId: "land" },
+              { id: "s3", label: "fox", emoji: "🦊", categoryId: "land" },
+              { id: "s4", label: "dolphin", emoji: "🐬", categoryId: "water" },
+              { id: "s5", label: "argali", emoji: "🐏", categoryId: "mount" },
+            ],
+            checkLabel: "Check",
+          },
+        },
+      },
+    ],
+
+    // Итоги
+    experiments: [
+      {
+        type: "fact",
+        data: {
+          ru: {
+            title: "Найди в энциклопедии",
+            text:
+              "Узнай, какие редкие дикие животные живут в Казахстане. Запиши 3 примера и где они обитают.",
+            keywords: ["энциклопедия", "Казахстан", "редкие"],
+            icon: "sparkles",
+          },
+          kz: {
+            title: "Энциклопедиядан тап",
+            text:
+              "Қазақстанда қандай сирек кездесетін жабайы жануарлар бар? 3 мысал жазып, қайда тұратынын көрсет.",
+            keywords: ["энциклопедия", "Қазақстан", "сирек"],
+            icon: "sparkles",
+          },
+          en: {
+            title: "Find in the encyclopedia",
+            text:
+              "Find out which rare wild animals live in Kazakhstan. Write down 3 examples and where they live.",
+            keywords: ["encyclopedia", "Kazakhstan", "rare"],
+            icon: "sparkles",
+          },
+        },
+      },
+      {
+        type: "fact",
+        data: {
+          ru: {
+            title: "Это интересно!",
+            text:
+              "У молодых пингвинов хвост похож на белый мех. Это помогает их мамам быстро находить своих птенцов в большой стае.",
+            keywords: ["пингвины", "хвост", "мех"],
+            icon: "bulb",
+          },
+          kz: {
+            title: "Бұл қызық!",
+            text:
+              "Жас пингвиндердің құйрығы ақ жүнге ұқсайды. Бұл аналарына үлкен топтан өз балапандарын тез табуға көмектеседі.",
+            keywords: ["пингвин", "құйрық", "жүн"],
+            icon: "bulb",
+          },
+          en: {
+            title: "Did you know?",
+            text:
+              "Young penguins have tails that look like white fur. It helps their mothers quickly find their chicks in a large flock.",
+            keywords: ["penguins", "tail", "fur"],
+            icon: "bulb",
+          },
+        },
+      },
+      {
+        type: "summary",
+        data: {
+          ru: {
+            title: "Итоговые вопросы",
+            text:
+              "1) Чем **дикие** животные отличаются от **домашних**? 2) Почему человек должен **заботиться** о домашних животных?",
+          },
+          kz: {
+            title: "Қорытынды сұрақтар",
+            text:
+              "1) **Жабайы** жануарлар **үй** жануарларынан немен ерекшеленеді? 2) Адам үй жануарларына неліктен **қамқорлық** жасауы керек?",
+          },
+          en: {
+            title: "Wrap-up questions",
+            text:
+              "1) How do **wild** animals differ from **domestic** ones? 2) Why should people **take care** of domestic animals?",
+          },
+        },
+      },
+    ],
+  },
 };
