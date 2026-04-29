@@ -2,6 +2,13 @@ import type { TaskCardData } from "@/components/lesson/blocks/TaskCard";
 import type { SummaryCardData } from "@/components/lesson/blocks/SummaryCard";
 import type { ActionCardData } from "@/components/lesson/blocks/ActionCard";
 import type { FactCardData } from "@/components/lesson/blocks/FactCard";
+import type { CarouselBlockData } from "@/components/lesson/blocks/CarouselBlock";
+import type { SortGameBlockData } from "@/components/lesson/blocks/SortGameBlock";
+import type { ZoomImageBlockData } from "@/components/lesson/blocks/ZoomImageBlock";
+import type { RevealAnswerBlockData } from "@/components/lesson/blocks/RevealAnswerBlock";
+import type { FillBlanksBlockData } from "@/components/lesson/blocks/FillBlanksBlock";
+import type { AudioPlayerBlockData } from "@/components/lesson/blocks/AudioPlayerBlock";
+import type { VideoBlockData } from "@/components/lesson/blocks/VideoBlock";
 import type { Lang } from "@/i18n/translations";
 
 export type SectionKey = "intro" | "scientists" | "observation" | "experiments";
@@ -10,7 +17,14 @@ export type Block =
   | { type: "task"; data: Record<Lang, TaskCardData> }
   | { type: "summary"; data: Record<Lang, SummaryCardData> }
   | { type: "action"; data: Record<Lang, ActionCardData> }
-  | { type: "fact"; data: Record<Lang, FactCardData> };
+  | { type: "fact"; data: Record<Lang, FactCardData> }
+  | { type: "carousel"; data: Record<Lang, CarouselBlockData> }
+  | { type: "sort"; data: Record<Lang, SortGameBlockData> }
+  | { type: "zoom"; data: Record<Lang, ZoomImageBlockData> }
+  | { type: "reveal"; data: Record<Lang, RevealAnswerBlockData> }
+  | { type: "fillblanks"; data: Record<Lang, FillBlanksBlockData> }
+  | { type: "audio"; data: Record<Lang, AudioPlayerBlockData> }
+  | { type: "video"; data: Record<Lang, VideoBlockData> };
 
 /**
  * Per-lesson, per-section block content.
