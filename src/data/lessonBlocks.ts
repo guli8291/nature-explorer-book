@@ -1655,4 +1655,539 @@ export const lessonBlocks: Partial<Record<number, Partial<Record<SectionKey, Blo
       },
     ],
   },
+
+  // ════════════════════════════════════════════════════════════════════════
+  // УРОК 5. Дикорастущие и культурные растения. Уход за комнатными.
+  // ════════════════════════════════════════════════════════════════════════
+  5: {
+    // ──────────────────────────────────────────────────────────────────────
+    // 1. Шапка — аудио-гид + ключевые слова (трёхъязычие)
+    // ──────────────────────────────────────────────────────────────────────
+    intro: [
+      {
+        type: "audio",
+        data: {
+          ru: {
+            title: "Аудио-гид к уроку",
+            text:
+              "Сегодня мы узнаем, чем дикорастущие растения отличаются от культурных, и научимся ухаживать за комнатными цветами.",
+            caption: "Послушай вступление к уроку",
+            durationLabel: "0:57",
+          },
+          kz: {
+            title: "Сабақтың аудио-гиді",
+            text:
+              "Бүгін біз жабайы өсімдіктердің мәдени өсімдіктерден қандай айырмашылығы бар екенін біліп, бөлме гүлдерін күтуді үйренеміз.",
+            caption: "Сабақтың кіріспесін тыңда",
+            durationLabel: "0:57",
+          },
+          en: {
+            title: "Lesson audio guide",
+            text:
+              "Today we'll learn how wild plants differ from cultivated ones and how to take care of houseplants.",
+            caption: "Listen to the lesson intro",
+            durationLabel: "0:57",
+          },
+        },
+      },
+      {
+        type: "carousel",
+        data: {
+          ru: {
+            groupLabel: "Ключевые слова",
+            title: "Дикорастущие / Культурные",
+            slides: [
+              { emoji: "🌿", caption: "Дикорастущие растения / Жабайы өсімдіктер / Wild plants" },
+              { emoji: "🌾", caption: "Культурные растения / Мәдени өсімдіктер / Cultivated plants" },
+              { emoji: "🪴", caption: "Комнатные растения / Бөлме өсімдіктері / Houseplants" },
+              { emoji: "💧", caption: "Уход / Күтім / Care" },
+            ],
+          },
+          kz: {
+            groupLabel: "Кілт сөздер",
+            title: "Жабайы / Мәдени",
+            slides: [
+              { emoji: "🌿", caption: "Жабайы өсімдіктер / Дикорастущие / Wild plants" },
+              { emoji: "🌾", caption: "Мәдени өсімдіктер / Культурные / Cultivated plants" },
+              { emoji: "🪴", caption: "Бөлме өсімдіктері / Комнатные / Houseplants" },
+              { emoji: "💧", caption: "Күтім / Уход / Care" },
+            ],
+          },
+          en: {
+            groupLabel: "Key words",
+            title: "Wild / Cultivated",
+            slides: [
+              { emoji: "🌿", caption: "Wild plants / Дикорастущие / Жабайы өсімдіктер" },
+              { emoji: "🌾", caption: "Cultivated plants / Культурные / Мәдени өсімдіктер" },
+              { emoji: "🪴", caption: "Houseplants / Комнатные / Бөлме өсімдіктері" },
+              { emoji: "💧", caption: "Care / Уход / Күтім" },
+            ],
+          },
+        },
+      },
+    ],
+
+    // ──────────────────────────────────────────────────────────────────────
+    // 2. Дикорастущие и культурные растения
+    // ──────────────────────────────────────────────────────────────────────
+    scientists: [
+      {
+        type: "summary",
+        data: {
+          ru: {
+            title: "Дикорастущие и культурные",
+            text:
+              "**Дикорастущие** растения растут сами, без помощи человека. **Культурные** растения люди выращивают сами — для еды, лекарств и красоты.",
+            terms: ["дикорастущие", "культурные"],
+          },
+          kz: {
+            title: "Жабайы және мәдени",
+            text:
+              "**Жабайы** өсімдіктер адамның көмегінсіз өздігінен өседі. **Мәдени** өсімдіктерді адамдар тамақ, дәрі және әсемдік үшін өздері өсіреді.",
+            terms: ["жабайы", "мәдени"],
+          },
+          en: {
+            title: "Wild and cultivated",
+            text:
+              "**Wild** plants grow on their own, without people. **Cultivated** plants are grown by people — for food, medicine and beauty.",
+            terms: ["wild", "cultivated"],
+          },
+        },
+      },
+      {
+        type: "carousel",
+        data: {
+          ru: {
+            groupLabel: "Работа в группах",
+            title: "Как человек использует это растение?",
+            slides: [
+              { emoji: "🌱", caption: "Хлопок — из его волокон делают ткань и одежду." },
+              { emoji: "🌻", caption: "Подсолнечник — из семян получают масло." },
+              { emoji: "🌾", caption: "Пшеница — из зёрен делают муку и хлеб." },
+            ],
+          },
+          kz: {
+            groupLabel: "Топта жұмыс",
+            title: "Адам бұл өсімдікті қалай пайдаланады?",
+            slides: [
+              { emoji: "🌱", caption: "Мақта — талшықтарынан мата мен киім жасайды." },
+              { emoji: "🌻", caption: "Күнбағыс — дәнінен май алады." },
+              { emoji: "🌾", caption: "Бидай — дәнінен ұн мен нан жасайды." },
+            ],
+          },
+          en: {
+            groupLabel: "Group work",
+            title: "How do people use this plant?",
+            slides: [
+              { emoji: "🌱", caption: "Cotton — its fibres are used for fabric and clothing." },
+              { emoji: "🌻", caption: "Sunflower — its seeds give oil." },
+              { emoji: "🌾", caption: "Wheat — its grains are used for flour and bread." },
+            ],
+          },
+        },
+      },
+      {
+        type: "reveal",
+        data: {
+          ru: {
+            title: "Лекарственные растения",
+            question: "Эти растения называют лекарственными. Почему?",
+            items: [
+              { emoji: "🌼", label: "календула" },
+              { emoji: "🌸", label: "ромашка" },
+              { emoji: "🌿", label: "зверобой" },
+            ],
+            answer:
+              "Из них делают лекарства и отвары, которые помогают людям лечиться от болезней.",
+            buttonLabel: "Показать ответ",
+          },
+          kz: {
+            title: "Дәрілік өсімдіктер",
+            question: "Бұл өсімдіктерді дәрілік деп атайды. Неліктен?",
+            items: [
+              { emoji: "🌼", label: "күнбағыс шай" },
+              { emoji: "🌸", label: "түймедақ" },
+              { emoji: "🌿", label: "шайқурай" },
+            ],
+            answer:
+              "Олардан адамдарды емдейтін дәрілер мен қайнатпалар жасайды.",
+            buttonLabel: "Жауапты көрсету",
+          },
+          en: {
+            title: "Medicinal plants",
+            question: "These plants are called medicinal. Why?",
+            items: [
+              { emoji: "🌼", label: "calendula" },
+              { emoji: "🌸", label: "chamomile" },
+              { emoji: "🌿", label: "St John's wort" },
+            ],
+            answer:
+              "They are used to make medicines and herbal teas that help people recover from illness.",
+            buttonLabel: "Show answer",
+          },
+        },
+      },
+      {
+        type: "fillblanks",
+        data: {
+          ru: {
+            title: "Сравни два пейзажа",
+            template: "На первом фото растения ___, а на втором — ___.",
+            hints: ["дикорастущие", "культурные"],
+          },
+          kz: {
+            title: "Екі көріністі салыстыр",
+            template: "Бірінші суретте өсімдіктер ___, ал екіншісінде — ___.",
+            hints: ["жабайы", "мәдени"],
+          },
+          en: {
+            title: "Compare two landscapes",
+            template: "In the first photo the plants are ___, in the second — ___.",
+            hints: ["wild", "cultivated"],
+          },
+        },
+      },
+      {
+        type: "video",
+        data: {
+          ru: {
+            title: "Культурные растения",
+            youtubeId: "0R5Lf3Q3p2A",
+            caption: "Короткое видео о том, как человек выращивает культурные растения.",
+            durationLabel: "1:20",
+          },
+          kz: {
+            title: "Мәдени өсімдіктер",
+            youtubeId: "0R5Lf3Q3p2A",
+            caption: "Адамның мәдени өсімдіктерді қалай өсіретіні туралы қысқа бейне.",
+            durationLabel: "1:20",
+          },
+          en: {
+            title: "Cultivated plants",
+            youtubeId: "0R5Lf3Q3p2A",
+            caption: "A short video about how people grow cultivated plants.",
+            durationLabel: "1:20",
+          },
+        },
+      },
+      {
+        type: "sort",
+        data: {
+          ru: {
+            title: "Дикие или культурные?",
+            instruction:
+              "Распредели слова на две группы: дикорастущие и культурные растения.",
+            categories: [
+              { id: "wild", label: "Дикорастущие", emoji: "🌿" },
+              { id: "cult", label: "Культурные", emoji: "🌾" },
+            ],
+            items: [
+              { id: "i1", label: "одуванчик", emoji: "🌼", categoryId: "wild" },
+              { id: "i2", label: "подсолнечник", emoji: "🌻", categoryId: "cult" },
+              { id: "i3", label: "берёза", emoji: "🌳", categoryId: "wild" },
+              { id: "i4", label: "пшеница", emoji: "🌾", categoryId: "cult" },
+              { id: "i5", label: "гвоздика", emoji: "🌸", categoryId: "cult" },
+              { id: "i6", label: "капуста", emoji: "🥬", categoryId: "cult" },
+            ],
+            checkLabel: "Показать ответ",
+          },
+          kz: {
+            title: "Жабайы ма, мәдени ме?",
+            instruction:
+              "Сөздерді екі топқа бөл: жабайы және мәдени өсімдіктер.",
+            categories: [
+              { id: "wild", label: "Жабайы", emoji: "🌿" },
+              { id: "cult", label: "Мәдени", emoji: "🌾" },
+            ],
+            items: [
+              { id: "i1", label: "бақбақ", emoji: "🌼", categoryId: "wild" },
+              { id: "i2", label: "күнбағыс", emoji: "🌻", categoryId: "cult" },
+              { id: "i3", label: "қайың", emoji: "🌳", categoryId: "wild" },
+              { id: "i4", label: "бидай", emoji: "🌾", categoryId: "cult" },
+              { id: "i5", label: "қалампыр", emoji: "🌸", categoryId: "cult" },
+              { id: "i6", label: "орамжапырақ", emoji: "🥬", categoryId: "cult" },
+            ],
+            checkLabel: "Жауапты көрсету",
+          },
+          en: {
+            title: "Wild or cultivated?",
+            instruction:
+              "Sort the words into two groups: wild and cultivated plants.",
+            categories: [
+              { id: "wild", label: "Wild", emoji: "🌿" },
+              { id: "cult", label: "Cultivated", emoji: "🌾" },
+            ],
+            items: [
+              { id: "i1", label: "dandelion", emoji: "🌼", categoryId: "wild" },
+              { id: "i2", label: "sunflower", emoji: "🌻", categoryId: "cult" },
+              { id: "i3", label: "birch", emoji: "🌳", categoryId: "wild" },
+              { id: "i4", label: "wheat", emoji: "🌾", categoryId: "cult" },
+              { id: "i5", label: "carnation", emoji: "🌸", categoryId: "cult" },
+              { id: "i6", label: "cabbage", emoji: "🥬", categoryId: "cult" },
+            ],
+            checkLabel: "Show answer",
+          },
+        },
+      },
+    ],
+
+    // ──────────────────────────────────────────────────────────────────────
+    // 3. Комнатные растения и уход
+    // ──────────────────────────────────────────────────────────────────────
+    observation: [
+      {
+        type: "summary",
+        data: {
+          ru: {
+            title: "Комнатные растения",
+            text:
+              "Многие комнатные растения привезены из **тёплых стран**. Поэтому им нужны **тепло**, **свет** и **полив** — особый уход.",
+            terms: ["тёплых стран", "тепло", "свет", "полив"],
+          },
+          kz: {
+            title: "Бөлме өсімдіктері",
+            text:
+              "Көптеген бөлме өсімдіктері **жылы елдерден** әкелінген. Сондықтан оларға **жылу**, **жарық** және **суару** — ерекше күтім қажет.",
+            terms: ["жылы елдерден", "жылу", "жарық", "суару"],
+          },
+          en: {
+            title: "Houseplants",
+            text:
+              "Many houseplants come from **warm countries**. That's why they need **warmth**, **light** and **watering** — special care.",
+            terms: ["warm countries", "warmth", "light", "watering"],
+          },
+        },
+      },
+      {
+        type: "sort",
+        data: {
+          ru: {
+            title: "Что нужно для ухода?",
+            instruction:
+              "Выбери только те предметы, которые нужны для ухода за растениями.",
+            categories: [
+              { id: "yes", label: "Нужно для ухода", emoji: "✅" },
+              { id: "no", label: "Не нужно", emoji: "❌" },
+            ],
+            items: [
+              { id: "t1", label: "Лейка", emoji: "🚿", categoryId: "yes" },
+              { id: "t2", label: "Пульверизатор", emoji: "💦", categoryId: "yes" },
+              { id: "t3", label: "Секатор", emoji: "✂️", categoryId: "yes" },
+              { id: "t4", label: "Лампа", emoji: "💡", categoryId: "yes" },
+              { id: "t5", label: "Фонарик", emoji: "🔦", categoryId: "no" },
+              { id: "t6", label: "Смартфон", emoji: "📱", categoryId: "no" },
+              { id: "t7", label: "Игрушка", emoji: "🧸", categoryId: "no" },
+              { id: "t8", label: "Садовый инструмент", emoji: "🪴", categoryId: "yes" },
+            ],
+            checkLabel: "Проверить ответ",
+          },
+          kz: {
+            title: "Күтім үшін не қажет?",
+            instruction:
+              "Өсімдіктерді күтуге қажет заттарды ғана таңда.",
+            categories: [
+              { id: "yes", label: "Күтімге қажет", emoji: "✅" },
+              { id: "no", label: "Қажет емес", emoji: "❌" },
+            ],
+            items: [
+              { id: "t1", label: "Шелек", emoji: "🚿", categoryId: "yes" },
+              { id: "t2", label: "Бүріккіш", emoji: "💦", categoryId: "yes" },
+              { id: "t3", label: "Қайшы", emoji: "✂️", categoryId: "yes" },
+              { id: "t4", label: "Шам", emoji: "💡", categoryId: "yes" },
+              { id: "t5", label: "Қол шамы", emoji: "🔦", categoryId: "no" },
+              { id: "t6", label: "Смартфон", emoji: "📱", categoryId: "no" },
+              { id: "t7", label: "Ойыншық", emoji: "🧸", categoryId: "no" },
+              { id: "t8", label: "Бақша құралы", emoji: "🪴", categoryId: "yes" },
+            ],
+            checkLabel: "Жауапты тексеру",
+          },
+          en: {
+            title: "What's needed for plant care?",
+            instruction:
+              "Pick only the items needed to take care of plants.",
+            categories: [
+              { id: "yes", label: "Needed", emoji: "✅" },
+              { id: "no", label: "Not needed", emoji: "❌" },
+            ],
+            items: [
+              { id: "t1", label: "Watering can", emoji: "🚿", categoryId: "yes" },
+              { id: "t2", label: "Spray bottle", emoji: "💦", categoryId: "yes" },
+              { id: "t3", label: "Pruner", emoji: "✂️", categoryId: "yes" },
+              { id: "t4", label: "Lamp", emoji: "💡", categoryId: "yes" },
+              { id: "t5", label: "Flashlight", emoji: "🔦", categoryId: "no" },
+              { id: "t6", label: "Smartphone", emoji: "📱", categoryId: "no" },
+              { id: "t7", label: "Toy", emoji: "🧸", categoryId: "no" },
+              { id: "t8", label: "Garden tool", emoji: "🪴", categoryId: "yes" },
+            ],
+            checkLabel: "Check answer",
+          },
+        },
+      },
+      {
+        type: "reveal",
+        data: {
+          ru: {
+            title: "Где держать эти растения?",
+            question:
+              "Фиалка и хлорофитум — комнатные растения. Где их лучше держать?",
+            items: [
+              { emoji: "🌸", label: "фиалка" },
+              { emoji: "🌿", label: "хлорофитум" },
+            ],
+            answer:
+              "В тёплом и светлом месте, на подоконнике, но не под прямыми лучами солнца. Поливать регулярно мягкой водой.",
+            buttonLabel: "Показать ответ",
+          },
+          kz: {
+            title: "Бұл өсімдіктерді қайда ұстау керек?",
+            question:
+              "Қызғалдақ пен хлорофитум — бөлме өсімдіктері. Оларды қайда ұстаған дұрыс?",
+            items: [
+              { emoji: "🌸", label: "қызғалдақ" },
+              { emoji: "🌿", label: "хлорофитум" },
+            ],
+            answer:
+              "Жылы әрі жарық жерде, терезе алдында, бірақ күннің тура сәулесінен алыс. Жұмсақ сумен үнемі суару керек.",
+            buttonLabel: "Жауапты көрсету",
+          },
+          en: {
+            title: "Where should we keep them?",
+            question:
+              "Violet and spider plant are houseplants. Where is it best to keep them?",
+            items: [
+              { emoji: "🌸", label: "violet" },
+              { emoji: "🌿", label: "spider plant" },
+            ],
+            answer:
+              "In a warm and bright place, on a windowsill, but away from direct sunlight. Water regularly with soft water.",
+            buttonLabel: "Show answer",
+          },
+        },
+      },
+      {
+        type: "fact",
+        data: {
+          ru: {
+            title: "Найди в энциклопедии",
+            text:
+              "Узнай, какие культурные растения выращивают в твоём регионе. Запиши 3 примера.",
+            keywords: ["энциклопедия", "регион", "культурные"],
+            icon: "sparkles",
+          },
+          kz: {
+            title: "Энциклопедиядан тап",
+            text:
+              "Сенің өңіріңде қандай мәдени өсімдіктер өсіріледі? 3 мысал жаз.",
+            keywords: ["энциклопедия", "өңір", "мәдени"],
+            icon: "sparkles",
+          },
+          en: {
+            title: "Find in the encyclopedia",
+            text:
+              "Find out what cultivated plants are grown in your region. Write down 3 examples.",
+            keywords: ["encyclopedia", "region", "cultivated"],
+            icon: "sparkles",
+          },
+        },
+      },
+    ],
+
+    // ──────────────────────────────────────────────────────────────────────
+    // 4. Итоги — что я узнал + вопросы
+    // ──────────────────────────────────────────────────────────────────────
+    experiments: [
+      {
+        type: "summary",
+        data: {
+          ru: {
+            title: "Что я узнал",
+            text:
+              "Растения бывают **дикорастущие** и **культурные**. Человек использует их для **еды**, **лекарств** и **красоты**.",
+            terms: ["дикорастущие", "культурные", "еды", "лекарств", "красоты"],
+          },
+          kz: {
+            title: "Мен нені білдім",
+            text:
+              "Өсімдіктер **жабайы** және **мәдени** болып бөлінеді. Адам оларды **тамаққа**, **дәріге** және **әсемдікке** пайдаланады.",
+            terms: ["жабайы", "мәдени", "тамаққа", "дәріге", "әсемдікке"],
+          },
+          en: {
+            title: "What I learned",
+            text:
+              "Plants can be **wild** or **cultivated**. People use them for **food**, **medicine** and **beauty**.",
+            terms: ["wild", "cultivated", "food", "medicine", "beauty"],
+          },
+        },
+      },
+      {
+        type: "summary",
+        data: {
+          ru: {
+            title: "Уход за комнатными",
+            text:
+              "Комнатным растениям нужны **полив**, **тепло** и **свет** — без этого они погибнут.",
+            terms: ["полив", "тепло", "свет"],
+          },
+          kz: {
+            title: "Бөлме өсімдіктеріне күтім",
+            text:
+              "Бөлме өсімдіктеріне **суару**, **жылу** және **жарық** қажет — оларсыз олар өледі.",
+            terms: ["суару", "жылу", "жарық"],
+          },
+          en: {
+            title: "Houseplant care",
+            text:
+              "Houseplants need **watering**, **warmth** and **light** — without them they will die.",
+            terms: ["watering", "warmth", "light"],
+          },
+        },
+      },
+      {
+        type: "action",
+        data: {
+          ru: {
+            title: "Проблемный вопрос",
+            prompt:
+              "Как ты думаешь, что произойдёт, если не ухаживать за культурными растениями?",
+            placeholder: "Подумай и напиши свой ответ...",
+            multiline: true,
+          },
+          kz: {
+            title: "Проблемалық сұрақ",
+            prompt:
+              "Қалай ойлайсың, мәдени өсімдіктерді күтпесе не болады?",
+            placeholder: "Ойлан да жауабыңды жаз...",
+            multiline: true,
+          },
+          en: {
+            title: "Problem question",
+            prompt:
+              "What do you think will happen if cultivated plants are not cared for?",
+            placeholder: "Think and write your answer...",
+            multiline: true,
+          },
+        },
+      },
+      {
+        type: "summary",
+        data: {
+          ru: {
+            title: "Итоговые вопросы",
+            text:
+              "1) Чем **дикорастущие** растения отличаются от **культурных**? 2) Зачем человек выращивает культурные растения? 3) Что нужно комнатным растениям для жизни?",
+          },
+          kz: {
+            title: "Қорытынды сұрақтар",
+            text:
+              "1) **Жабайы** өсімдіктердің **мәдени** өсімдіктерден қандай айырмашылығы бар? 2) Адам мәдени өсімдіктерді не үшін өсіреді? 3) Бөлме өсімдіктеріне өмір сүруге не керек?",
+          },
+          en: {
+            title: "Wrap-up questions",
+            text:
+              "1) How do **wild** plants differ from **cultivated** ones? 2) Why do people grow cultivated plants? 3) What do houseplants need to live?",
+          },
+        },
+      },
+    ],
+  },
 };
