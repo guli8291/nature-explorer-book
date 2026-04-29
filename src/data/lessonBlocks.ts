@@ -708,17 +708,17 @@ export const lessonBlocks: Partial<Record<number, Partial<Record<SectionKey, Blo
         data: {
           ru: {
             title: "Найди в энциклопедии",
-            text: "Открой книгу или интернет с помощью взрослых: какие лиственные и хвойные растения растут в твоей местности? Запиши 3 названия.",
+            prompt: "Открой книгу или интернет с помощью взрослых: какие лиственные и хвойные растения растут в твоей местности? Запиши 3 названия.",
             placeholder: "Например: берёза, сосна, тополь...",
           },
           kz: {
             title: "Энциклопедиядан тап",
-            text: "Үлкендердің көмегімен кітап немесе интернет аш: сенің өңіріңде қандай жапырақты және қылқан жапырақты өсімдіктер өседі? 3 атауын жаз.",
+            prompt: "Үлкендердің көмегімен кітап немесе интернет аш: сенің өңіріңде қандай жапырақты және қылқан жапырақты өсімдіктер өседі? 3 атауын жаз.",
             placeholder: "Мысалы: қайың, қарағай, терек...",
           },
           en: {
             title: "Find in an encyclopedia",
-            text: "With an adult, open a book or the internet: what deciduous and coniferous plants grow in your area? Write 3 names.",
+            prompt: "With an adult, open a book or the internet: what deciduous and coniferous plants grow in your area? Write 3 names.",
             placeholder: "For example: birch, pine, poplar...",
           },
         },
