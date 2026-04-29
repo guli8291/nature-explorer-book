@@ -484,4 +484,390 @@ export const lessonBlocks: Partial<Record<number, Partial<Record<SectionKey, Blo
       },
     ],
   },
+
+  // ════════════════════════════════════════════════════════════════════════
+  // LESSON 2 — Растения вокруг нас (деревья, кустарники, травы)
+  // ════════════════════════════════════════════════════════════════════════
+  2: {
+    // ──────────────────────────────────────────────────────────────────────
+    // 1. Вводная — мини-карусель определений + аудио
+    // ──────────────────────────────────────────────────────────────────────
+    intro: [
+      {
+        type: "carousel",
+        data: {
+          ru: {
+            groupLabel: "Ключевые слова",
+            title: "Дерево · Кустарник · Трава",
+            slides: [
+              { emoji: "🌳", caption: "Дерево — у него один большой ствол и крона из веток.", question: "Какие деревья ты знаешь?" },
+              { emoji: "🌿", caption: "Кустарник — у него несколько тонких стволиков.", question: "Где ты видел кустарник?" },
+              { emoji: "🌱", caption: "Трава — у неё мягкий зелёный стебель.", question: "Какая трава растёт у твоего дома?" },
+            ],
+          },
+          kz: {
+            groupLabel: "Кілт сөздер",
+            title: "Ағаш · Бұта · Шөп",
+            slides: [
+              { emoji: "🌳", caption: "Ағаш — бір үлкен діңі мен бұтақтары бар.", question: "Қандай ағаштарды білесің?" },
+              { emoji: "🌿", caption: "Бұта — бірнеше жіңішке діңшелері бар.", question: "Бұтаны қайдан көрдің?" },
+              { emoji: "🌱", caption: "Шөп — жұмсақ жасыл сабағы бар.", question: "Үйіңнің жанында қандай шөп өседі?" },
+            ],
+          },
+          en: {
+            groupLabel: "Key words",
+            title: "Tree · Shrub · Grass",
+            slides: [
+              { emoji: "🌳", caption: "A tree has one big trunk and a crown of branches.", question: "What trees do you know?" },
+              { emoji: "🌿", caption: "A shrub has several thin stems.", question: "Where have you seen a shrub?" },
+              { emoji: "🌱", caption: "Grass has a soft green stem.", question: "What grass grows near your home?" },
+            ],
+          },
+        },
+      },
+      {
+        type: "audio",
+        data: {
+          ru: {
+            title: "Слушай: о чём этот урок",
+            text: "Сегодня мы узнаем, на какие группы делятся растения. Мы научимся отличать деревья, кустарники и травы, а ещё познакомимся с лиственными и хвойными растениями.",
+            caption: "Введение к уроку",
+            durationLabel: "0:30",
+          },
+          kz: {
+            title: "Тыңда: бұл сабақ не туралы",
+            text: "Бүгін біз өсімдіктердің қандай топтарға бөлінетінін білеміз. Ағаш, бұта және шөпті ажыратуды үйренеміз, сонымен қатар жапырақты және қылқан жапырақты өсімдіктермен танысамыз.",
+            caption: "Сабаққа кіріспе",
+            durationLabel: "0:30",
+          },
+          en: {
+            title: "Listen: what this lesson is about",
+            text: "Today we'll learn what groups plants are divided into. We'll learn to tell trees, shrubs and grasses apart, and meet deciduous and coniferous plants.",
+            caption: "Lesson intro",
+            durationLabel: "0:30",
+          },
+        },
+      },
+    ],
+
+    // ──────────────────────────────────────────────────────────────────────
+    // 2. Деревья, кустарники и травы — карусель примеров, сортировка, видео
+    // ──────────────────────────────────────────────────────────────────────
+    scientists: [
+      {
+        type: "carousel",
+        data: {
+          ru: {
+            groupLabel: "Примеры",
+            title: "Жизненные формы растений",
+            slides: [
+              { emoji: "🌳", caption: "Дерево: один крепкий ствол, высокая крона." },
+              { emoji: "🌸", caption: "Цветущий кустарник: много тонких стволиков." },
+              { emoji: "🌾", caption: "Трава: мягкий зелёный стебель, не одревесневает." },
+            ],
+          },
+          kz: {
+            groupLabel: "Мысалдар",
+            title: "Өсімдіктердің тіршілік формалары",
+            slides: [
+              { emoji: "🌳", caption: "Ағаш: бір берік дің, биік жапырақ алқабы." },
+              { emoji: "🌸", caption: "Гүлдеген бұта: көп жіңішке діңше." },
+              { emoji: "🌾", caption: "Шөп: жұмсақ жасыл сабақ, ағаштанбайды." },
+            ],
+          },
+          en: {
+            groupLabel: "Examples",
+            title: "Life forms of plants",
+            slides: [
+              { emoji: "🌳", caption: "Tree: one strong trunk, tall crown." },
+              { emoji: "🌸", caption: "Flowering shrub: many thin stems." },
+              { emoji: "🌾", caption: "Grass: a soft green stem, not woody." },
+            ],
+          },
+        },
+      },
+      {
+        type: "video",
+        data: {
+          ru: {
+            title: "Как растут растения",
+            youtubeId: "w77zPAtVTuI",
+            caption: "Таймлапс роста семян: посмотри, как из крошки появляется растение!",
+            durationLabel: "1:30",
+          },
+          kz: {
+            title: "Өсімдіктер қалай өседі",
+            youtubeId: "w77zPAtVTuI",
+            caption: "Тұқымның өсу таймлапсы: кішкентай дәннен өсімдіктің қалай шығатынын қара!",
+            durationLabel: "1:30",
+          },
+          en: {
+            title: "How plants grow",
+            youtubeId: "w77zPAtVTuI",
+            caption: "Time-lapse of seeds growing: see how a tiny seed becomes a plant!",
+            durationLabel: "1:30",
+          },
+        },
+      },
+      {
+        type: "sort",
+        data: {
+          ru: {
+            title: "Работа в парах: разложи по группам",
+            instruction: "Выбери слово, затем нажми на нужную карточку: дерево, кустарник или трава.",
+            categories: [
+              { id: "tree", label: "Дерево", emoji: "🌳" },
+              { id: "shrub", label: "Кустарник", emoji: "🌿" },
+              { id: "grass", label: "Трава", emoji: "🌱" },
+            ],
+            items: [
+              { id: "birch", label: "берёза", emoji: "🌳", categoryId: "tree" },
+              { id: "pine", label: "сосна", emoji: "🌲", categoryId: "tree" },
+              { id: "lilac", label: "сирень", emoji: "🌸", categoryId: "shrub" },
+              { id: "currant", label: "смородина", emoji: "🫐", categoryId: "shrub" },
+              { id: "dandelion", label: "одуванчик", emoji: "🌼", categoryId: "grass" },
+              { id: "tulip", label: "тюльпан", emoji: "🌷", categoryId: "grass" },
+            ],
+            checkLabel: "Проверить ответ",
+          },
+          kz: {
+            title: "Жұптық жұмыс: топтарға бөл",
+            instruction: "Сөзді таңда, сосын қажетті картаны бас: ағаш, бұта немесе шөп.",
+            categories: [
+              { id: "tree", label: "Ағаш", emoji: "🌳" },
+              { id: "shrub", label: "Бұта", emoji: "🌿" },
+              { id: "grass", label: "Шөп", emoji: "🌱" },
+            ],
+            items: [
+              { id: "birch", label: "қайың", emoji: "🌳", categoryId: "tree" },
+              { id: "pine", label: "қарағай", emoji: "🌲", categoryId: "tree" },
+              { id: "lilac", label: "сирень", emoji: "🌸", categoryId: "shrub" },
+              { id: "currant", label: "қарақат", emoji: "🫐", categoryId: "shrub" },
+              { id: "dandelion", label: "бақбақ", emoji: "🌼", categoryId: "grass" },
+              { id: "tulip", label: "қызғалдақ", emoji: "🌷", categoryId: "grass" },
+            ],
+            checkLabel: "Жауапты тексер",
+          },
+          en: {
+            title: "Pair work: sort into groups",
+            instruction: "Pick a word, then tap the right card: tree, shrub or grass.",
+            categories: [
+              { id: "tree", label: "Tree", emoji: "🌳" },
+              { id: "shrub", label: "Shrub", emoji: "🌿" },
+              { id: "grass", label: "Grass", emoji: "🌱" },
+            ],
+            items: [
+              { id: "birch", label: "birch", emoji: "🌳", categoryId: "tree" },
+              { id: "pine", label: "pine", emoji: "🌲", categoryId: "tree" },
+              { id: "lilac", label: "lilac", emoji: "🌸", categoryId: "shrub" },
+              { id: "currant", label: "currant", emoji: "🫐", categoryId: "shrub" },
+              { id: "dandelion", label: "dandelion", emoji: "🌼", categoryId: "grass" },
+              { id: "tulip", label: "tulip", emoji: "🌷", categoryId: "grass" },
+            ],
+            checkLabel: "Check answer",
+          },
+        },
+      },
+    ],
+
+    // ──────────────────────────────────────────────────────────────────────
+    // 3. Лиственные и хвойные — лупа, энциклопедия, сортировка картинок
+    // ──────────────────────────────────────────────────────────────────────
+    observation: [
+      {
+        type: "zoom",
+        data: {
+          ru: {
+            title: "Самостоятельная работа: ель и дуб",
+            instruction: "Наведи лупу. Чем отличаются эти растения? Как называются иголки ели?",
+            images: [
+              { emoji: "🌲", caption: "Ель — у неё иголки (хвоя)" },
+              { emoji: "🌳", caption: "Дуб — у него широкие листья" },
+            ],
+          },
+          kz: {
+            title: "Өзіндік жұмыс: шырша мен емен",
+            instruction: "Лупаны жүгірт. Бұл өсімдіктер немен ерекшеленеді? Шыршаның инелері қалай аталады?",
+            images: [
+              { emoji: "🌲", caption: "Шырша — инелері (қылқан) бар" },
+              { emoji: "🌳", caption: "Емен — кең жапырақтары бар" },
+            ],
+          },
+          en: {
+            title: "Independent work: spruce and oak",
+            instruction: "Move the magnifier. How are these plants different? What are spruce needles called?",
+            images: [
+              { emoji: "🌲", caption: "Spruce — has needles" },
+              { emoji: "🌳", caption: "Oak — has broad leaves" },
+            ],
+          },
+        },
+      },
+      {
+        type: "action",
+        data: {
+          ru: {
+            title: "Найди в энциклопедии",
+            text: "Открой книгу или интернет с помощью взрослых: какие лиственные и хвойные растения растут в твоей местности? Запиши 3 названия.",
+            placeholder: "Например: берёза, сосна, тополь...",
+            tone: "purple",
+          },
+          kz: {
+            title: "Энциклопедиядан тап",
+            text: "Үлкендердің көмегімен кітап немесе интернет аш: сенің өңіріңде қандай жапырақты және қылқан жапырақты өсімдіктер өседі? 3 атауын жаз.",
+            placeholder: "Мысалы: қайың, қарағай, терек...",
+            tone: "purple",
+          },
+          en: {
+            title: "Find in an encyclopedia",
+            text: "With an adult, open a book or the internet: what deciduous and coniferous plants grow in your area? Write 3 names.",
+            placeholder: "For example: birch, pine, poplar...",
+            tone: "purple",
+          },
+        },
+      },
+      {
+        type: "reveal",
+        data: {
+          ru: {
+            title: "Работа в парах: лиственные и хвойные",
+            question: "Распредели растения на две группы. Где лиственные, а где хвойные?",
+            items: [
+              { emoji: "🌾", label: "Пшеница" },
+              { emoji: "🌳", label: "Берёза" },
+              { emoji: "🌿", label: "Кустарник" },
+              { emoji: "🌲", label: "Лиственница" },
+              { emoji: "🌴", label: "Пальма" },
+            ],
+            answer: "Лиственные: пшеница, берёза, кустарник, пальма. Хвойные: лиственница, ель, сосна. У хвойных листья — это иголки!",
+            buttonLabel: "Показать ответ",
+          },
+          kz: {
+            title: "Жұптық жұмыс: жапырақты және қылқан жапырақты",
+            question: "Өсімдіктерді екі топқа бөл. Қайсысы жапырақты, қайсысы қылқан жапырақты?",
+            items: [
+              { emoji: "🌾", label: "Бидай" },
+              { emoji: "🌳", label: "Қайың" },
+              { emoji: "🌿", label: "Бұта" },
+              { emoji: "🌲", label: "Балқарағай" },
+              { emoji: "🌴", label: "Пальма" },
+            ],
+            answer: "Жапырақты: бидай, қайың, бұта, пальма. Қылқан жапырақты: балқарағай, шырша, қарағай. Қылқан жапырақтылардың жапырағы — инелер!",
+            buttonLabel: "Жауапты көрсет",
+          },
+          en: {
+            title: "Pair work: deciduous and coniferous",
+            question: "Sort the plants into two groups. Which are deciduous, which are coniferous?",
+            items: [
+              { emoji: "🌾", label: "Wheat" },
+              { emoji: "🌳", label: "Birch" },
+              { emoji: "🌿", label: "Shrub" },
+              { emoji: "🌲", label: "Larch" },
+              { emoji: "🌴", label: "Palm" },
+            ],
+            answer: "Deciduous: wheat, birch, shrub, palm. Coniferous: larch, spruce, pine. Their 'leaves' are needles!",
+            buttonLabel: "Show answer",
+          },
+        },
+      },
+    ],
+
+    // ──────────────────────────────────────────────────────────────────────
+    // 4. Практика, факты и итоги
+    // ──────────────────────────────────────────────────────────────────────
+    experiments: [
+      {
+        type: "carousel",
+        data: {
+          ru: {
+            groupLabel: "Сравни",
+            title: "Маленькое и большое дерево",
+            slides: [
+              { emoji: "🌱", caption: "Тонкий саженец берёзы — мальчик легко обхватывает его пальцами." },
+              { emoji: "🌳", caption: "Старое толстое дерево — обхватить можно только всем классом!" },
+            ],
+          },
+          kz: {
+            groupLabel: "Салыстыр",
+            title: "Кішкентай және үлкен ағаш",
+            slides: [
+              { emoji: "🌱", caption: "Қайыңның жіңішке көшеті — баланың саусағы оңай орап алады." },
+              { emoji: "🌳", caption: "Қарт жуан ағаш — бүкіл сыныппен ғана құшақтай аласың!" },
+            ],
+          },
+          en: {
+            groupLabel: "Compare",
+            title: "Small and large tree",
+            slides: [
+              { emoji: "🌱", caption: "A thin birch sapling — a boy easily wraps his fingers around it." },
+              { emoji: "🌳", caption: "An old thick tree — only the whole class together can hug it!" },
+            ],
+          },
+        },
+      },
+      {
+        type: "summary",
+        data: {
+          ru: {
+            title: "Что я узнал",
+            text:
+              "**Ботаника** — наука о растениях. **Растения** — живые организмы: они растут, питаются, дышат и размножаются. По форме они делятся на **деревья**, **кустарники** и **травы**, а по типу листьев — на **лиственные** и **хвойные**.",
+          },
+          kz: {
+            title: "Мен нені білдім",
+            text:
+              "**Ботаника** — өсімдіктер туралы ғылым. **Өсімдіктер** — тірі ағзалар: олар өседі, қоректенеді, тыныс алады және көбейеді. Пішіні бойынша **ағаш**, **бұта** және **шөпке** бөлінеді, ал жапырақ түріне қарай **жапырақты** және **қылқан жапырақтыға** бөлінеді.",
+          },
+          en: {
+            title: "What I learned",
+            text:
+              "**Botany** is the science of plants. **Plants** are living organisms: they grow, feed, breathe and reproduce. By form they are divided into **trees**, **shrubs** and **grasses**, and by leaf type into **deciduous** and **coniferous**.",
+          },
+        },
+      },
+      {
+        type: "fact",
+        data: {
+          ru: {
+            title: "Это интересно!",
+            text: "Самое высокое дерево в мире — секвойя. Она вырастает выше 100 метров (как 30-этажный дом!) и может жить тысячи лет.",
+            keywords: ["секвойя", "100 метров", "тысячи лет"],
+            icon: "sparkles",
+          },
+          kz: {
+            title: "Бұл қызық!",
+            text: "Әлемдегі ең биік ағаш — секвойя. Ол 100 метрден де биік (30 қабатты үйдей!) өсіп, мыңдаған жыл өмір сүре алады.",
+            keywords: ["секвойя", "100 метр", "мыңдаған жыл"],
+            icon: "sparkles",
+          },
+          en: {
+            title: "Fun fact!",
+            text: "The tallest tree in the world is the sequoia. It grows over 100 metres tall (like a 30-storey building!) and can live for thousands of years.",
+            keywords: ["sequoia", "100 metres", "thousands of years"],
+            icon: "sparkles",
+          },
+        },
+      },
+      {
+        type: "summary",
+        data: {
+          ru: {
+            title: "Вопросы для самопроверки",
+            text:
+              "1) На какие группы делятся **растения**? 2) По какому признаку их так разделили? 3) На какие группы делятся растения по типу **листьев**? 4) Какие интересные растения есть в твоей местности?",
+          },
+          kz: {
+            title: "Өзіңді тексер сұрақтары",
+            text:
+              "1) **Өсімдіктер** қандай топтарға бөлінеді? 2) Қандай белгі бойынша бөлінген? 3) Жапырақ түріне қарай қандай топтарға бөлінеді? 4) Сенің өңіріңде қандай қызықты өсімдіктер бар?",
+          },
+          en: {
+            title: "Self-check questions",
+            text:
+              "1) Into what groups are **plants** divided? 2) By what feature are they divided? 3) Into what groups are plants divided by **leaf** type? 4) What interesting plants grow in your area?",
+          },
+        },
+      },
+    ],
+  },
 };
