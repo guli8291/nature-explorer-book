@@ -5,6 +5,13 @@ import { TaskCard } from "./blocks/TaskCard";
 import { SummaryCard } from "./blocks/SummaryCard";
 import { ActionCard } from "./blocks/ActionCard";
 import { FactCard } from "./blocks/FactCard";
+import { CarouselBlock } from "./blocks/CarouselBlock";
+import { SortGameBlock } from "./blocks/SortGameBlock";
+import { ZoomImageBlock } from "./blocks/ZoomImageBlock";
+import { RevealAnswerBlock } from "./blocks/RevealAnswerBlock";
+import { FillBlanksBlock } from "./blocks/FillBlanksBlock";
+import { AudioPlayerBlock } from "./blocks/AudioPlayerBlock";
+import { VideoBlock } from "./blocks/VideoBlock";
 
 type Props = {
   lessonId: number;
@@ -25,6 +32,20 @@ const renderBlock = (block: Block, lang: "ru" | "kz" | "en") => {
       return <ActionCard data={block.data[lang]} />;
     case "fact":
       return <FactCard data={block.data[lang]} />;
+    case "carousel":
+      return <CarouselBlock data={block.data[lang]} />;
+    case "sort":
+      return <SortGameBlock data={block.data[lang]} />;
+    case "zoom":
+      return <ZoomImageBlock data={block.data[lang]} />;
+    case "reveal":
+      return <RevealAnswerBlock data={block.data[lang]} />;
+    case "fillblanks":
+      return <FillBlanksBlock data={block.data[lang]} />;
+    case "audio":
+      return <AudioPlayerBlock data={block.data[lang]} />;
+    case "video":
+      return <VideoBlock data={block.data[lang]} />;
   }
 };
 
