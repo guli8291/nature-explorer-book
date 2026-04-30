@@ -21,56 +21,11 @@ type SectionDef = {
 };
 
 const SECTIONS: SectionDef[] = [
-  {
-    key: "explorer",
-    titleKey: "sec_explorer",
-    range: [1, 1],
-    hsl: "35 85% 50%",
-    tint: "45 90% 92%",
-    bgTint: "45 90% 95%",
-    emoji: "🔬",
-    accessory: "magnifier",
-  },
-  {
-    key: "living",
-    titleKey: "sec_living",
-    range: [2, 12],
-    hsl: "130 55% 32%",
-    tint: "120 45% 90%",
-    bgTint: "120 45% 94%",
-    emoji: "🌳",
-    accessory: "leaf",
-  },
-  {
-    key: "phys1",
-    titleKey: "sec_physics1",
-    range: [13, 16],
-    hsl: "12 70% 48%",
-    tint: "15 80% 92%",
-    bgTint: "15 80% 95%",
-    emoji: "🔥",
-    accessory: "flame",
-  },
-  {
-    key: "space",
-    titleKey: "sec_space",
-    range: [17, 22],
-    hsl: "230 60% 30%",
-    tint: "225 55% 92%",
-    bgTint: "225 55% 95%",
-    emoji: "🌍",
-    accessory: "astronaut",
-  },
-  {
-    key: "phys2",
-    titleKey: "sec_physics2",
-    range: [23, 33],
-    hsl: "265 50% 45%",
-    tint: "265 55% 93%",
-    bgTint: "265 55% 96%",
-    emoji: "💧",
-    accessory: "droplet",
-  },
+  { key: "explorer", titleKey: "sec_explorer", range: [1, 1],   hsl: "35 85% 50%",  tint: "45 90% 92%",  bgTint: "45 90% 95%",  emoji: "🔬", accessory: "magnifier" },
+  { key: "living",   titleKey: "sec_living",   range: [2, 12],  hsl: "130 55% 32%", tint: "120 45% 90%", bgTint: "120 45% 94%", emoji: "🌳", accessory: "leaf" },
+  { key: "phys1",    titleKey: "sec_physics1", range: [13, 16], hsl: "12 70% 48%",  tint: "15 80% 92%",  bgTint: "15 80% 95%",  emoji: "🔥", accessory: "flame" },
+  { key: "space",    titleKey: "sec_space",    range: [17, 22], hsl: "230 60% 30%", tint: "225 55% 92%", bgTint: "225 55% 95%", emoji: "🌍", accessory: "astronaut" },
+  { key: "phys2",    titleKey: "sec_physics2", range: [23, 33], hsl: "265 50% 45%", tint: "265 55% 93%", bgTint: "265 55% 96%", emoji: "💧", accessory: "droplet" },
 ];
 
 // Hero is panel 0, sections start at panel 1
@@ -92,11 +47,8 @@ const Index = () => {
   const owlBob = useTransform(scrollProgress, (p) => Math.sin(p * Math.PI * 6) * 8);
 
   const completed = (() => {
-    try {
-      return JSON.parse(localStorage.getItem("completed") || "[]") as number[];
-    } catch {
-      return [];
-    }
+    try { return JSON.parse(localStorage.getItem("completed") || "[]") as number[]; }
+    catch { return []; }
   })();
   const progress = (completed.length / lessons.length) * 100;
 
@@ -246,8 +198,7 @@ const Index = () => {
                 </div>
                 <div className="flex-1 min-w-0">
                   <div className="text-[10px] md:text-xs font-bold uppercase tracking-[0.25em] text-white/85">
-                    {tr("lesson")} {sec.range[0]}
-                    {sec.range[0] !== sec.range[1] ? `–${sec.range[1]}` : ""}
+                    {tr("lesson")} {sec.range[0]}{sec.range[0] !== sec.range[1] ? `–${sec.range[1]}` : ""}
                   </div>
                   <h2 className="font-display text-2xl md:text-4xl font-black text-white leading-tight truncate">
                     {title}
@@ -298,19 +249,14 @@ const Index = () => {
                         >
                           {l.icon}
                         </motion.div>
-                        <div
-                          className="text-[10px] font-bold tracking-wider uppercase relative"
-                          style={{ color: `hsl(${sec.hsl})` }}
-                        >
+                        <div className="text-[10px] font-bold tracking-wider uppercase relative" style={{ color: `hsl(${sec.hsl})` }}>
                           {tr("lesson")} {l.id}
                         </div>
-                        <div className="font-display font-bold text-forest-deep text-sm leading-tight mt-1 relative line-clamp-2">
-                          {l.title[lang]}
+                        <div className="font-display font-bold text-forest-deep text-sm leading-tight mt-1 relative line-clamp-3">
+                          {tr(`l${l.id}_title`)}
                         </div>
                         {done && (
-                          <div className="absolute top-2 right-2 w-7 h-7 rounded-full bg-sun grid place-items-center text-[14px] shadow">
-                            ⭐
-                          </div>
+                          <div className="absolute top-2 right-2 w-7 h-7 rounded-full bg-sun grid place-items-center text-[14px] shadow">⭐</div>
                         )}
                       </motion.button>
                     );
@@ -354,7 +300,11 @@ const Index = () => {
 
       {/* Path Line — bottom fixed */}
       <div className="absolute left-0 right-0 bottom-0 h-40 pointer-events-none z-30">
-        <svg viewBox="0 0 1000 160" preserveAspectRatio="none" className="absolute inset-0 w-full h-full">
+        <svg
+          viewBox="0 0 1000 160"
+          preserveAspectRatio="none"
+          className="absolute inset-0 w-full h-full"
+        >
           <defs>
             <linearGradient id="pathGrad" x1="0" x2="1" y1="0" y2="0">
               <stop offset="0%" stopColor="hsl(35 85% 55%)" />
@@ -406,12 +356,7 @@ const Index = () => {
                 className="relative grid place-items-center"
                 aria-label={`Go to panel ${idx}`}
               >
-                <svg
-                  width={isActive ? 56 : 42}
-                  height={isActive ? 56 : 42}
-                  viewBox="0 0 24 24"
-                  style={{ filter: `drop-shadow(0 4px 10px ${color})` }}
-                >
+                <svg width={isActive ? 56 : 42} height={isActive ? 56 : 42} viewBox="0 0 24 24" style={{ filter: `drop-shadow(0 4px 10px ${color})` }}>
                   <path
                     d="M12 2 L14.6 8.6 L21.6 9.2 L16.3 13.8 L17.9 20.6 L12 17 L6.1 20.6 L7.7 13.8 L2.4 9.2 L9.4 8.6 Z"
                     fill={isActive ? color : "hsl(0 0% 100% / 0.95)"}
@@ -420,11 +365,8 @@ const Index = () => {
                     strokeLinejoin="round"
                   />
                   <text
-                    x="12"
-                    y="15"
-                    textAnchor="middle"
-                    fontSize="8"
-                    fontWeight="900"
+                    x="12" y="15" textAnchor="middle"
+                    fontSize="8" fontWeight="900"
                     fill={isActive ? "white" : color}
                     fontFamily="Nunito, sans-serif"
                   >
