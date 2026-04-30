@@ -90,16 +90,8 @@ export const t = {
   sec_space: { kz: "Жер және ғарыш", ru: "Земля и космос", en: "Earth and space" },
   sec_physics2: { kz: "Табиғат физикасы (2-бөлім)", ru: "Физика природы (часть 2)", en: "Physics of nature (part 2)" },
   // Lesson 1 content
-  l1_title: {
-    kz: "Жаратылыстану дегеніміз не?",
-    ru: "Что такое естествознание?",
-    en: "What is natural science?",
-  },
-  l1_intro: {
-    kz: "Бүгін біз жаратылыстанумен танысамыз — табиғат туралы ғылым.",
-    ru: "Сегодня мы познакомимся с естествознанием — наукой о природе.",
-    en: "Today we will meet natural science — the science about nature.",
-  },
+  l1_title: { kz: 'Қоршаған әлемді қалай зерттейміз (сұрақ қоюды үйренеміз)', ru: 'Как изучают окружающий мир (учимся задавать вопросы)', en: 'How we study the world (learning to ask questions)' },
+  l1_intro: { kz: 'Бүгін біз ғалымдардың табиғат туралы қалай сұрақ қоятынын және жауап іздейтінін білеміз.', ru: 'Сегодня узнаем, как учёные задают вопросы о природе и ищут на них ответы.', en: 'Today we will learn how scientists ask questions about nature and search for answers.' },
   l1_theory_p1: {
     kz: "Табиғат — бұл бізді қоршаған бәрі: ағаштар, жануарлар, тастар, су, ауа және күн.",
     ru: "Природа — это всё, что нас окружает: деревья, животные, камни, вода, воздух и солнце.",
@@ -128,19 +120,19 @@ export const t = {
   q3_a: { kz: "Тірі табиғат", ru: "Живая природа", en: "Living nature" },
   q3_b: { kz: "Жансыз табиғат", ru: "Неживая природа", en: "Non-living nature" },
   q3_c: { kz: "Ойыншық", ru: "Игрушка", en: "Toy" },
-  l2_title: { kz: 'Табиғатты қалай зерттейді?', ru: 'Как изучают природу?', en: 'How to study nature?' },
+  l2_title: { kz: 'Өсімдіктер қандай болады', ru: 'Какие бывают растения', en: 'What kinds of plants are there' },
   // Per-lesson nav labels (override defaults nav_intro/nav_scientists/nav_observation/nav_experiments/nav_review)
   l2_nav_1: { kz: 'Кіріспе', ru: 'Введение', en: 'Introduction' },
   l2_nav_2: { kz: 'Топтық жұмыс', ru: 'Работа в группах', en: 'Group Work' },
   l2_nav_3: { kz: '', ru: '', en: '' },
   l2_nav_4: { kz: '', ru: '', en: '' },
   l2_nav_5: { kz: '', ru: '', en: '' },
-  l2_intro: { kz: 'Ғалымдар табиғатты қалай зерттейтінін білеміз.', ru: 'Узнаем, какими способами учёные изучают природу.', en: 'We will learn how scientists study nature.' },
+  l2_intro: { kz: 'Өсімдіктер қандай топтарға бөлінетінін білеміз: ағаш, бұта, шөп.', ru: 'Узнаем, на какие группы делятся растения: дерево, кустарник, трава.', en: 'We will learn how plants are grouped: trees, shrubs and grasses.' },
   l2_theory_p1: { kz: '', ru: '', en: '' },
   l2_theory_p2: { kz: '', ru: '', en: '' },
   l2_theory_p3: { kz: '', ru: '', en: '' },
-  l3_title: { kz: 'Табиғатты қайда зерттеуге болады?', ru: 'Где можно изучать природу?', en: 'Where can we study nature?' },
-  l3_intro: { kz: 'Табиғатты қай жерде бақылауға және зерттеуге болатынын түсінеміз.', ru: 'Поймём, где можно наблюдать и изучать природу.', en: 'We will find out where we can observe and study nature.' },
+  l3_title: { kz: 'Өсімдіктің мүшелері', ru: 'Части растений', en: 'Parts of a plant' },
+  l3_intro: { kz: 'Өсімдіктің негізгі мүшелерімен танысамыз: тамыр, сабақ, жапырақ, гүл және жеміс.', ru: 'Познакомимся с основными частями растения: корень, стебель, лист, цветок и плод.', en: 'We will meet the main parts of a plant: root, stem, leaf, flower and fruit.' },
   l3_theory_p1: { kz: '', ru: '', en: '' },
   l3_theory_p2: { kz: '', ru: '', en: '' },
   l3_theory_p3: { kz: '', ru: '', en: '' },
@@ -149,83 +141,83 @@ export const t = {
   l4_theory_p1: { kz: '', ru: '', en: '' },
   l4_theory_p2: { kz: '', ru: '', en: '' },
   l4_theory_p3: { kz: '', ru: '', en: '' },
-  l5_title: { kz: 'Тірі және жансыз табиғат', ru: 'Живая и неживая природа', en: 'Living and non-living nature' },
-  l5_intro: { kz: 'Тірі және жансыз табиғатты ажыратамыз.', ru: 'Различим живую и неживую природу.', en: 'We will tell living from non-living nature.' },
+  l5_title: { kz: 'Жабайы және мәдени өсімдіктер. Бөлме және мәдени өсімдіктерге күтім', ru: 'Дикорастущие и культурные растения. Уход за комнатными и культурными растениями', en: 'Wild and cultivated plants. Caring for houseplants and cultivated plants' },
+  l5_intro: { kz: 'Жабайы мен мәдени өсімдіктердің айырмашылығын білеміз және оларға қалай күтім жасайтынды үйренеміз.', ru: 'Узнаем, чем дикорастущие растения отличаются от культурных, и научимся за ними ухаживать.', en: 'We will see how wild plants differ from cultivated ones and learn how to care for them.' },
   l5_theory_p1: { kz: '', ru: '', en: '' },
   l5_theory_p2: { kz: '', ru: '', en: '' },
   l5_theory_p3: { kz: '', ru: '', en: '' },
-  l6_title: { kz: 'Өсімдікке не қажет?', ru: 'Что нужно растениям?', en: 'What do plants need?' },
-  l6_intro: { kz: 'Өсімдікке өмір сүруге не қажет екенін білеміз.', ru: 'Узнаем, что необходимо растениям для жизни.', en: 'We will learn what plants need to live.' },
+  l6_title: { kz: 'Өсімдіктер мен жануарлар. Ұқсастығы мен айырмашылығы', ru: 'Растения и животины. Чем похожи и чем отличаются', en: 'Plants and animals. How they are alike and different' },
+  l6_intro: { kz: 'Өсімдіктер мен жануарлар тірі ағза ретінде немен ұқсас, немен ерекше — соны білеміз.', ru: 'Узнаем, чем растения и животные похожи как живые организмы и чем они различаются.', en: 'We will learn how plants and animals are alike as living organisms and how they differ.' },
   l6_theory_p1: { kz: '', ru: '', en: '' },
   l6_theory_p2: { kz: '', ru: '', en: '' },
   l6_theory_p3: { kz: '', ru: '', en: '' },
-  l7_title: { kz: 'Өсімдіктің мүшелері', ru: 'Части растений', en: 'Parts of a plant' },
-  l7_intro: { kz: 'Өсімдіктің негізгі мүшелерімен танысамыз.', ru: 'Познакомимся с основными частями растения.', en: 'We will meet the main parts of a plant.' },
+  l7_title: { kz: 'Жануарлар қандай болады', ru: 'Какие бывают животные', en: 'What kinds of animals are there' },
+  l7_intro: { kz: 'Жануарлар жабайы және үй жануарлары болып бөлінетінін, олардың айырмашылығын білеміз.', ru: 'Узнаем, что животные бывают дикими и домашними, и в чём их отличия.', en: 'We will learn that animals are wild or domestic, and how they differ.' },
   l7_theory_p1: { kz: '', ru: '', en: '' },
   l7_theory_p2: { kz: '', ru: '', en: '' },
   l7_theory_p3: { kz: '', ru: '', en: '' },
-  l8_title: { kz: 'Өсімдіктер қандай болады?', ru: 'Какие бывают растения?', en: 'What types of plants are there?' },
-  l8_intro: { kz: 'Өсімдіктердің әртүрлі топтарын қарастырамыз.', ru: 'Рассмотрим разные группы растений.', en: 'We will look at different groups of plants.' },
+  l8_title: { kz: 'Жануарлар жыл мезгілдерінің ауысуына қалай дайындалады', ru: 'Как животные готовятся к смене времён года', en: 'How animals prepare for the change of seasons' },
+  l8_intro: { kz: 'Қыс келе жатқанда жануарлар қалай дайындалады — соны білеміз: түлеу, ұйқы, ұшып кету.', ru: 'Узнаем, как животные готовятся к зиме: линька, спячка, перелёт.', en: 'We will learn how animals get ready for winter: moulting, hibernation and migration.' },
   l8_theory_p1: { kz: '', ru: '', en: '' },
   l8_theory_p2: { kz: '', ru: '', en: '' },
   l8_theory_p3: { kz: '', ru: '', en: '' },
-  l9_title: { kz: 'Көкөністер мен жемістер', ru: 'Овощи и фрукты', en: 'Vegetables and fruits' },
-  l9_intro: { kz: 'Көкөніс пен жемісті ажыратуды үйренеміз.', ru: 'Научимся различать овощи и фрукты.', en: 'We will learn to tell vegetables from fruits.' },
+  l9_title: { kz: 'Адам денесінің мүшелері', ru: 'Части тела человека', en: 'Parts of the human body' },
+  l9_intro: { kz: 'Адам денесі қандай мүшелерден тұратынын және анатомия деген не — соны білеміз.', ru: 'Узнаем, из каких частей состоит тело человека, и что такое анатомия.', en: 'We will learn the parts of the human body and what anatomy is.' },
   l9_theory_p1: { kz: '', ru: '', en: '' },
   l9_theory_p2: { kz: '', ru: '', en: '' },
   l9_theory_p3: { kz: '', ru: '', en: '' },
-  l10_title: { kz: 'Өсімдік қалай өседі?', ru: 'Как растения растут?', en: 'How do plants grow?' },
-  l10_intro: { kz: 'Өсімдіктің қалай өсетінін білеміз.', ru: 'Узнаем, как растения растут и развиваются.', en: 'We will see how plants grow.' },
+  l10_title: { kz: 'Адам өмірінің кезеңдері', ru: 'Этапы жизни человека', en: 'Stages of human life' },
+  l10_intro: { kz: 'Адам өмірі қандай кезеңдерге бөлінетінін білеміз.', ru: 'Узнаем, на какие этапы делится жизнь человека.', en: 'We will learn the stages of human life.' },
   l10_theory_p1: { kz: '', ru: '', en: '' },
   l10_theory_p2: { kz: '', ru: '', en: '' },
   l10_theory_p3: { kz: '', ru: '', en: '' },
-  l11_title: { kz: 'Жабайы жануарлар деген кімдер?', ru: 'Кто такие дикие животные?', en: 'Who are wild animals?' },
-  l11_intro: { kz: 'Жабайы жануарлармен танысамыз.', ru: 'Познакомимся с дикими животными.', en: 'We will meet wild animals.' },
+  l11_title: { kz: 'Адам — тірі ағза', ru: 'Человек — живой организм', en: 'A human is a living organism' },
+  l11_intro: { kz: 'Адамға өсу мен дамуға не қажет екенін білеміз.', ru: 'Узнаем, что необходимо человеку для роста и развития.', en: 'We will learn what a human needs to grow and develop.' },
   l11_theory_p1: { kz: '', ru: '', en: '' },
   l11_theory_p2: { kz: '', ru: '', en: '' },
   l11_theory_p3: { kz: '', ru: '', en: '' },
-  l12_title: { kz: 'Үй жануарлары', ru: 'Домашние животные', en: 'Domestic animals' },
-  l12_intro: { kz: 'Үй жануарлары туралы білеміз.', ru: 'Узнаем о домашних животных и заботе о них.', en: 'We will learn about domestic animals.' },
+  l12_title: { kz: 'Адам — тірі ағза (жалғасы)', ru: 'Человек — живой организм (продолжение)', en: 'A human is a living organism (continued)' },
+  l12_intro: { kz: 'Өткен сабақты қайталап, білгенімізді тексереміз.', ru: 'Повторим прошлый урок и проверим свои знания.', en: 'We will revise the previous lesson and check our knowledge.' },
   l12_theory_p1: { kz: '', ru: '', en: '' },
   l12_theory_p2: { kz: '', ru: '', en: '' },
   l12_theory_p3: { kz: '', ru: '', en: '' },
-  l13_title: { kz: 'Құстар мен жәндіктер', ru: 'Птицы и насекомые', en: 'Birds and insects' },
-  l13_intro: { kz: 'Құстар мен жәндіктерді зерттейміз.', ru: 'Изучим птиц и насекомых вокруг нас.', en: 'We will study birds and insects.' },
+  l13_title: { kz: 'Күш деген не. Қозғалыс деген не', ru: 'Что такое сила. Что такое движение', en: 'What is force. What is motion' },
+  l13_intro: { kz: 'Қозғалыс, итеру және тарту деген не екенін білеміз.', ru: 'Узнаем, что такое движение, толчок и тяга.', en: 'We will learn what motion, push and pull are.' },
   l13_theory_p1: { kz: '', ru: '', en: '' },
   l13_theory_p2: { kz: '', ru: '', en: '' },
   l13_theory_p3: { kz: '', ru: '', en: '' },
-  l14_title: { kz: 'Балықтар мен қосмекенділер', ru: 'Рыбы и земноводные', en: 'Fish and amphibians' },
-  l14_intro: { kz: 'Балықтар мен қосмекенділермен танысамыз.', ru: 'Познакомимся с рыбами и земноводными.', en: 'We will meet fish and amphibians.' },
+  l14_title: { kz: 'Тірі ағзалардың қозғалысы', ru: 'Движение живых организмов', en: 'Motion of living organisms' },
+  l14_intro: { kz: 'Жануарлар мен адамға неге қозғалу қажет екенін білеміз.', ru: 'Узнаем, почему животным и людям необходимо двигаться.', en: 'We will learn why animals and people need to move.' },
   l14_theory_p1: { kz: '', ru: '', en: '' },
   l14_theory_p2: { kz: '', ru: '', en: '' },
   l14_theory_p3: { kz: '', ru: '', en: '' },
-  l15_title: { kz: 'Жануарлар қайда мекендейді?', ru: 'Где живут животные?', en: 'Where do animals live?' },
-  l15_intro: { kz: 'Жануарлар қай жерде мекендейтінін білеміз.', ru: 'Узнаем, где живут разные животные.', en: 'We will learn where animals live.' },
+  l15_title: { kz: 'Траектория деген не', ru: 'Что такое траектория', en: 'What is a trajectory' },
+  l15_intro: { kz: 'Траектория деген не және оны қалай сызуға болады — соны білеміз.', ru: 'Узнаем, что такое траектория и как её изобразить.', en: 'We will learn what a trajectory is and how to draw it.' },
   l15_theory_p1: { kz: '', ru: '', en: '' },
   l15_theory_p2: { kz: '', ru: '', en: '' },
   l15_theory_p3: { kz: '', ru: '', en: '' },
-  l16_title: { kz: 'Адамның сезім мүшелері', ru: 'Органы чувств человека', en: 'Human sense organs' },
-  l16_intro: { kz: 'Адамның сезім мүшелерін зерттейміз.', ru: 'Изучим органы чувств человека.', en: 'We will explore human sense organs.' },
+  l16_title: { kz: 'Заттарды қозғалысқа қандай күштер келтіреді', ru: 'Какие силы приводят предметы в движение', en: 'What forces set objects in motion' },
+  l16_intro: { kz: 'Ауырлық, серпімділік және үйкеліс күштерімен танысамыз.', ru: 'Узнаем, что такое сила тяжести, упругости и трения.', en: 'We will meet the forces of gravity, elasticity and friction.' },
   l16_theory_p1: { kz: '', ru: '', en: '' },
   l16_theory_p2: { kz: '', ru: '', en: '' },
   l16_theory_p3: { kz: '', ru: '', en: '' },
-  l17_title: { kz: 'Гигиена және денсаулық', ru: 'Гигиена и здоровье', en: 'Hygiene and health' },
-  l17_intro: { kz: 'Гигиена мен денсаулық туралы әңгімелесеміз.', ru: 'Поговорим о гигиене и здоровье.', en: 'We will talk about hygiene and health.' },
+  l17_title: { kz: 'Ғарыш және астрономия', ru: 'Космос и астрономия', en: 'Space and astronomy' },
+  l17_intro: { kz: 'Астрономия нені зерттейтінін білеміз.', ru: 'Узнаем, что изучает астрономия.', en: 'We will learn what astronomy studies.' },
   l17_theory_p1: { kz: '', ru: '', en: '' },
   l17_theory_p2: { kz: '', ru: '', en: '' },
   l17_theory_p3: { kz: '', ru: '', en: '' },
-  l18_title: { kz: 'Дұрыс тамақтану', ru: 'Правильное питание', en: 'Healthy eating' },
-  l18_intro: { kz: 'Дұрыс тамақтануды үйренеміз.', ru: 'Узнаем, как питаться правильно.', en: 'We will learn how to eat healthy.' },
+  l18_title: { kz: 'Ғарышты зерттеу', ru: 'Изучение космоса', en: 'Studying space' },
+  l18_intro: { kz: 'Ғарышты зерттеуге қандай аспаптар қолданылады және ғарышкер деген кім — соны білеміз.', ru: 'Узнаем, какие приборы используют для изучения космоса и кто такие космонавты.', en: 'We will learn what tools are used to study space and who astronauts are.' },
   l18_theory_p1: { kz: '', ru: '', en: '' },
   l18_theory_p2: { kz: '', ru: '', en: '' },
   l18_theory_p3: { kz: '', ru: '', en: '' },
-  l19_title: { kz: 'Күн тәртібі', ru: 'Распорядок дня', en: 'Daily routine' },
-  l19_intro: { kz: 'Күн тәртібін құруды үйренеміз.', ru: 'Составим правильный распорядок дня.', en: 'We will build a daily routine.' },
+  l19_title: { kz: 'Ғарышты зерттеу (жалғасы)', ru: 'Изучение космоса (продолжение)', en: 'Studying space (continued)' },
+  l19_intro: { kz: 'Қазақстандық ғарышкерлермен танысып, ғарыш аппараттары туралы білеміз.', ru: 'Познакомимся с казахстанскими космонавтами и космическими аппаратами.', en: 'We will meet Kazakh cosmonauts and learn about spacecraft.' },
   l19_theory_p1: { kz: '', ru: '', en: '' },
   l19_theory_p2: { kz: '', ru: '', en: '' },
   l19_theory_p3: { kz: '', ru: '', en: '' },
-  l20_title: { kz: 'Айналамыздағы ауа', ru: 'Воздух вокруг нас', en: 'Air around us' },
-  l20_intro: { kz: 'Айналамыздағы ауа туралы білеміз.', ru: 'Узнаем о воздухе, который нас окружает.', en: 'We will learn about the air around us.' },
+  l20_title: { kz: 'Жер — планета', ru: 'Земля — планета', en: 'The Earth — a planet' },
+  l20_intro: { kz: 'Глобус деген не және Жер планетасының пішіні қандай — соны білеміз.', ru: 'Узнаем, что такое глобус и какую форму имеет планета Земля.', en: 'We will learn what a globe is and what shape the Earth has.' },
   l20_theory_p1: { kz: '', ru: '', en: '' },
   l20_theory_p2: { kz: '', ru: '', en: '' },
   l20_theory_p3: { kz: '', ru: '', en: '' },
@@ -294,86 +286,182 @@ export const t = {
   l33_theory_p1: { kz: '', ru: '', en: '' },
   l33_theory_p2: { kz: '', ru: '', en: '' },
   l33_theory_p3: { kz: '', ru: '', en: '' },
-  l1_scientists: { kz: 'Жаратылыстану — күн неге жарық беретінін, жаңбыр неге жауатынын, гүл неге өсетінін түсіндіретін ғылым. Натуралист-ғалымдар әлемнің әр бөлшегін зерттейді.', ru: 'Естествознание — это наука, которая объясняет, почему светит солнце, идёт дождь и растут цветы. Учёные-натуралисты изучают каждый кусочек мира.', en: 'Natural science explains why the sun shines, rain falls and flowers grow. Naturalists study every piece of the world.' },
-  l1_observation: { kz: 'Аулаға шығып қара: қайсысы тірі, қайсысы жансыз? Тас жатыр, мысық жүгіреді. Міне, бұл — алғашқы ғылыми бақылау.', ru: 'Выйди во двор и посмотри: где живое, а где неживое? Камень лежит, а котёнок бежит. Это и есть первое научное наблюдение.', en: 'Step outside and look: what is living and what is not? A stone lies still, a kitten runs. That is your first scientific observation.' },
-  l1_experiments: { kz: 'Дәнді дымқыл мақтасы бар стақанға салып, терезеге қой. Бірнеше күннен кейін өскінді көресің — бұл сенің натуралист ретіндегі алғашқы тәжірибең.', ru: 'Положи семечко в стакан с влажной ваткой и поставь на окно. Через несколько дней ты увидишь росток — это твой первый опыт натуралиста.', en: 'Put a seed in a glass with a wet cotton pad on the windowsill. In a few days a sprout will appear — your first naturalist experiment.' },
-  l1_review: { kz: '1. Жаратылыстану нені зерттейді?\n2. Зерттеуші деген кім?\n3. Тірі табиғаттың үш және жансыз табиғаттың үш нысанын ата.', ru: '1. Что изучает естествознание?\n2. Кто такой исследователь?\n3. Назови три предмета живой природы и три — неживой.', en: '1. What does natural science study?\n2. Who is an explorer?\n3. Name three living and three non-living things.' },
-  l2_scientists: { kz: 'Ғалымдар жай ғана қарап қоймайды — тексереді. Биолог көбелекті бақылайды, эколог ағаштарды санайды, метеоролог температураны өлшейді.', ru: 'Учёные не просто смотрят — они проверяют. Биолог наблюдает за бабочкой, эколог считает деревья, метеоролог измеряет температуру.', en: 'Scientists don\'t just look — they check. A biologist watches a butterfly, an ecologist counts trees, a meteorologist measures temperature.' },
-  l2_observation: { kz: 'Үлкейткіш әйнекті ал да, ағаштың жапырағын қарап шық. Жұқа тамырларын көресің бе? Ұсақты үлкейту арқылы ғалымдар жаңалық ашады.', ru: 'Возьми лупу и рассмотри лист дерева. Видишь ли ты тонкие жилки? Так, увеличивая мелкое, учёные открывают новое.', en: 'Take a magnifier and look at a leaf. Can you see the thin veins? By enlarging the small, scientists discover the new.' },
-  l2_experiments: { kz: 'Екі тостағанға су құй: бірін күнге, екіншісін көлеңкеге қой. Бір сағаттан соң саусағыңмен жылылығын салыстыр. Бұл — салыстырмалы тәжірибе.', ru: 'Налей воду в две чашки: одну поставь на солнце, вторую — в тень. Через час сравни температуру пальцем. Это сравнительный опыт.', en: 'Pour water into two cups: place one in the sun, one in the shade. After an hour compare temperatures with your finger. This is a comparative experiment.' },
-  l2_review: { kz: '1. Табиғатты зерттеудің үш әдісін ата.\n2. Ғалымға үлкейткіш әйнек не үшін керек?\n3. Тәжірибе бақылаудан немен ерекшеленеді?', ru: '1. Назови три способа изучения природы.\n2. Зачем учёному лупа?\n3. Чем опыт отличается от наблюдения?', en: '1. Name three ways to study nature.\n2. Why does a scientist need a magnifier?\n3. How is an experiment different from observation?' },
-  l3_scientists: { kz: 'Зертханада ғалымдар күрделі тәжірибелер жасайды, ал далада — жануарларды өз мекенінде бақылайды. Екі жер де ғылым үшін бірдей маңызды.', ru: 'В лаборатории учёные ставят сложные опыты, а в поле — наблюдают за животными в их доме. Оба места одинаково важны для науки.', en: 'In the lab, scientists run complex experiments; in the field they watch animals at home. Both places matter equally for science.' },
-  l3_observation: { kz: 'Саябақта серуенде жүріп, неше түрлі құс үнін естігеніңді жазып ал. Саябақ — ашық аспан астындағы шағын табиғат зертханасы.', ru: 'Прогуляйся по парку и запиши, сколько разных птиц ты услышал. Парк — это маленькая природная лаборатория под открытым небом.', en: 'Walk through a park and note how many different birds you hear. A park is a small open-air natural lab.' },
-  l3_experiments: { kz: 'Бақтан екі түрлі гүл тауып, оларды салыстыр: жапырақшалары, жапырақтары, иісі. Айырмашылықты жаз — бұл далалық зерттеу.', ru: 'Найди в саду два разных цветка и сравни их: лепестки, листья, запах. Запиши отличия — это полевое исследование.', en: 'Find two different flowers in a garden and compare them: petals, leaves, smell. Write the differences — this is field research.' },
-  l3_review: { kz: '1. Табиғатты қай жерде зерттеуге болады?\n2. Зертхана далалық жұмыстан немен ерекшеленеді?\n3. Кәдімгі ауладан қандай қызық нәрсе көруге болады?', ru: '1. Где можно изучать природу?\n2. Чем отличается лаборатория от полевой работы?\n3. Что интересного можно увидеть в обычном дворе?', en: '1. Where can we study nature?\n2. How is a lab different from fieldwork?\n3. What interesting things can be seen in an ordinary yard?' },
+  l1_scientists: { kz: 'Ғалым — қоршаған әлемді зерттейтін адам. Ол лупамен өсімдікті қарайды, неге олай аталатынын ойлайды және әр құбылыстың жауабын іздейді.', ru: 'Учёный — это человек, изучающий окружающий мир. Он рассматривает растение через лупу, думает, почему оно так называется, и ищет ответ на каждое явление.', en: 'A scientist is a person who studies the world. They look at a plant through a magnifier, ask why it is named so, and search for the answer to every phenomenon.' },
+  l1_observation: { kz: 'Бүршіктің ашылуын күнделікті бақыла: жабық, жартылай ашық, толық ашық. Қай мезгілде мұндай өзгеріс болады? Сары алғашқы гүлдерді тауып, олардың атын білуге тырыс.', ru: 'Понаблюдай за раскрытием почки день за днём: закрытая, чуть приоткрытая, распустилась. В какое время года это бывает? Найди жёлтые первоцветы и попробуй узнать их название.', en: 'Watch a bud open day by day: closed, half-open, fully bloomed. In what season does this happen? Find yellow spring flowers and try to name them.' },
+  l1_experiments: { kz: 'Шай кесесіне қант сал да, не болатынын қара. Адам не істеп жатыр? Ол үшін не үшін? Содан кейін кит, саңырауқұлақ, құмырсқа, жаңбыр, жапырақ түсу, су астындағы дайвер суреттерін қай ғылым саласына жатқызуға болатынын ойла.', ru: 'Опусти сахар в чашку и посмотри, что произойдёт. Что делает человек? Для чего? Затем подумай, к какому разделу науки отнести кита, гриб, муравья, дождь, листопад и дайвера под водой.', en: 'Drop sugar into a cup and watch what happens. What is the person doing, and why? Then decide which branch of science studies whales, mushrooms, ants, rain, falling leaves and divers underwater.' },
+  l1_review: { kz: '1. Дикі жануар үй жануарынан немен ерекшеленеді — әлі ертерек: ғалым әлемді қалай зерттейді?
+2. Қаныш Сәтбаев туралы не білдің?
+3. Сұрақ қою неге маңызды?', ru: '1. Как учёный изучает окружающий мир?
+2. Что ты узнал о Каныше Сатпаеве?
+3. Почему важно уметь задавать вопросы?', en: '1. How does a scientist study the world?
+2. What did you learn about Kanysh Satpayev?
+3. Why is it important to ask questions?' },
+  l2_scientists: { kz: 'Ағаштың бір ғана діңгегі, бұтаның бірнеше жіңішке діңі, шөптің жұмсақ сабағы болады. Ботаниктер дәл осы белгілер бойынша өсімдіктерді жіктейді.', ru: 'У дерева один ствол, у кустарника несколько тонких стволиков, у травы — мягкий стебель. Именно по этим признакам ботаники разделяют растения.', en: 'A tree has one trunk, a shrub has several thin stems, and a grass has a soft stem. Botanists group plants by these features.' },
+  l2_observation: { kz: 'Шыршаның ине жапырағын және емен жапырағын лупамен қара. Олар немен ерекшеленеді? Шыршаның жапырақтарын қалай атаймыз?', ru: 'Рассмотри через лупу хвою ели и лист дуба. Чем они отличаются? Как называются листья ели?', en: 'Use a magnifier to look at a spruce needle and an oak leaf. How do they differ? What do we call the leaves of a spruce?' },
+  l2_experiments: { kz: 'Сөздерді топтарға бөл: қайың, сирень, бақбақ, қарағай, қарақат, қызғалдақ — қайсысы ағаш, қайсысы бұта, қайсысы шөп? Тексеру түймесін бас.', ru: 'Распредели слова по группам: берёза, сирень, одуванчик, сосна, смородина, тюльпан — где дерево, где кустарник, где трава? Нажми «Проверить ответ».', en: 'Sort the words into groups: birch, lilac, dandelion, pine, currant, tulip — which is a tree, a shrub, a grass? Press "Check answer".' },
+  l2_review: { kz: '1. Өсімдіктер қандай топтарға бөлінеді?
+2. Жапырақ түріне қарай қандай топтар болады?
+3. Сенің өңіріңде қандай қызықты өсімдіктер өседі?', ru: '1. На какие группы делятся растения?
+2. Какие группы выделяют по типу листьев?
+3. Какие интересные растения растут в твоей местности?', en: '1. What groups are plants divided into?
+2. What groups are there by type of leaf?
+3. What interesting plants grow in your area?' },
+  l3_scientists: { kz: 'Қызанақ бұтасын қара: 1 — тамыр, 2 — сабақ, 3 — жапырақ, 4 — гүл, 5 — тұқымды жеміс. Әр мүше өз жұмысын атқарады.', ru: 'Рассмотри куст томата: 1 — корень, 2 — стебель, 3 — лист, 4 — цветок, 5 — плод с семенами. Каждая часть выполняет свою работу.', en: 'Look at a tomato plant: 1 — root, 2 — stem, 3 — leaf, 4 — flower, 5 — fruit with seeds. Each part has its own job.' },
+  l3_observation: { kz: 'Гүлдеген алма ағашы мен жемісті алма ағашын салыстыр. Бір ғана ағаш қалай өзгерді? Қайың мен қызғалдақтың айырмашылығы неде?', ru: 'Сравни цветущую и плодоносящую яблоню. Как изменилось одно и то же дерево? Чем отличаются берёза и тюльпан?', en: 'Compare an apple tree in bloom and with fruit. How did the same tree change? How do a birch and a tulip differ?' },
+  l3_experiments: { kz: 'Пластилиннен немесе кепкен жапырақтардан өсімдік моделін жаса. Содан кейін «1 — тамыр, 2 — сабақ, 3 — жапырақ, 4 — гүл, 5 — жеміс» сандарын анютиналар суретіндегі сәйкес мүшелермен сәйкестендір.', ru: 'Сделай модель растения из пластилина или засушенных листьев. Затем сопоставь номера «1 — корень, 2 — стебель, 3 — лист, 4 — цветок, 5 — плод» с частями на рисунке анютиных глазок.', en: 'Build a model plant from clay or dried leaves. Then match the numbers "1 — root, 2 — stem, 3 — leaf, 4 — flower, 5 — fruit" to the parts on the pansy picture.' },
+  l3_review: { kz: '1. Өсімдік қандай мүшелерден тұрады?
+2. Тамырды неге жер асты мүшесі деп атайды?
+3. Өсімдік бір мүшесінен айырылса не болады?', ru: '1. Из каких частей состоит растение?
+2. Почему корень называют подземной частью растения?
+3. Что произойдёт, если растение лишится одной из своих частей?', en: '1. What parts does a plant consist of?
+2. Why is the root called the underground part?
+3. What happens if a plant loses one of its parts?' },
   l4_scientists: { kz: 'Ғалым күнделік жүргізуі шарт: сурет салады, фотоға түсіреді, күн мен ауа райын жазады. Жазбасыз жаңалықты ұмытып қалуға болады.', ru: 'Учёный обязательно ведёт дневник: рисует, фотографирует, записывает дату и погоду. Без записей открытие легко забыть.', en: 'A scientist always keeps a diary: drawings, photos, the date and the weather. Without notes a discovery is easily forgotten.' },
   l4_observation: { kz: 'Бұлттарды 5 минут бақылап, пішінін сал. Бір сағаттан кейін қайта сал — олардың қаншалықты өзгергенін көресің.', ru: 'Понаблюдай за облаками 5 минут и нарисуй их форму. Через час нарисуй снова — увидишь, как сильно они меняются.', en: 'Watch the clouds for 5 minutes and draw their shape. Draw again an hour later — you\'ll see how much they change.' },
   l4_experiments: { kz: '«Менің ауа райым» блокнотын бастап жаз: күн сайын күнді, бұлтты немесе жаңбырды сал. Аптадан кейін шынайы бақылау кестесі шығады.', ru: 'Заведи блокнот «Моя погода»: каждый день рисуй солнце, тучу или дождь. Через неделю получится настоящая таблица наблюдений.', en: 'Start a notebook called "My weather": every day draw a sun, cloud or rain. After a week you\'ll have a real observation table.' },
   l4_review: { kz: '1. Бақылау күнделігі не үшін қажет?\n2. Жаза алмасаң, нәтижені қалай жазуға болады?\n3. Сенің ауа райыңда не жиі өзгерді?', ru: '1. Зачем нужен дневник наблюдений?\n2. Как можно записывать результаты, если ещё не умеешь писать?\n3. Что в твоей погоде менялось чаще всего?', en: '1. Why do we need an observation diary?\n2. How can you record results if you can\'t write yet?\n3. What changed most often in your weather?' },
-  l5_scientists: { kz: 'Биологтар дәлелдеді: барлық тіршілік иесі тыныс алады, қоректенеді, өседі, көбейеді және өледі. Тас пен бұлт олай етпейді — олар жансыз.', ru: 'Биологи доказали: всё живое дышит, питается, растёт, размножается и умирает. Камень и облако этого не делают — они неживые.', en: 'Biologists have shown that all living things breathe, eat, grow, reproduce and die. A stone and a cloud do not — they are non-living.' },
-  l5_observation: { kz: 'Күшік пен жұмсақ ит ойыншықты салыстыр. Екеуі ұқсас, бірақ бірі тыныс алып, құйрығын бұлғайды, екіншісі — жоқ. Айырмашылық осында!', ru: 'Сравни щенка и плюшевую игрушку-собаку. Оба похожи, но один дышит и виляет хвостом, а другой — нет. Вот в чём разница!', en: 'Compare a puppy to a stuffed toy dog. They look alike, but one breathes and wags its tail, the other does not. That\'s the difference!' },
-  l5_experiments: { kz: 'Шыбық пен пластик гүлді бір ыдыстағы суға қойып қой. Аптадан соң шыбық тамыр шығарады, гүл сол қалпында қалады.', ru: 'Поставь рядом веточку и пластмассовый цветок в воду. Через неделю веточка пустит корешки, а цветок останется прежним.', en: 'Place a real twig and a plastic flower in water side by side. In a week the twig will grow roots; the flower will not.' },
-  l5_review: { kz: '1. Тіршіліктің 5 белгісін ата.\n2. Күн тірі ме? Неліктен?\n3. Бөлмеңнен тірі мен жансыз нәрсенің мысалын келтір.', ru: '1. Назови 5 признаков живого.\n2. Является ли солнце живым? Почему?\n3. Приведи пример живого и неживого в твоей комнате.', en: '1. Name 5 signs of life.\n2. Is the sun living? Why?\n3. Give an example of living and non-living in your room.' },
-  l6_scientists: { kz: 'Ботаниктер анықтады: жарықсыз өсімдік сарғаяды, сусыз — солады, ауасыз — жапырағымен тыныс ала алмайды.', ru: 'Ботаники выяснили: без света растение бледнеет, без воды — вянет, а без воздуха — не может дышать через листья.', en: 'Botanists found that without light a plant turns pale, without water it wilts, and without air it can\'t breathe through its leaves.' },
-  l6_observation: { kz: 'Бірдей екі гүлді қой: біреуін күнге, екіншісін қараңғы шкафқа. 3 күннен соң жапырақтарын салыстыр — айырмашылық өте үлкен болады.', ru: 'Поставь два одинаковых цветка: один на солнце, другой — в тёмный шкаф. Через 3 дня сравни листья — разница будет огромной.', en: 'Place two identical plants: one in the sun, one in a dark cupboard. After 3 days compare the leaves — the difference will be huge.' },
-  l6_experiments: { kz: 'Бір өсімдікті сумен суар, екіншісін бір апта суарма. Не болатынын жаз. Осылай судың тіршілікке қажет екенін дәлелдейсің.', ru: 'Полей одно растение водой, а другое не поливай неделю. Запиши, что произойдёт. Так ты докажешь, что вода нужна для жизни.', en: 'Water one plant; don\'t water the other for a week. Write down what happens. This proves that water is needed for life.' },
-  l6_review: { kz: '1. Өсімдікке өмір сүру үшін не керек?\n2. Өсімдік қоректі қайдан алады?\n3. Жарықсыз гүлге не болады?', ru: '1. Что нужно растению, чтобы жить?\n2. Откуда растение берёт пищу?\n3. Что случится с цветком без света?', en: '1. What does a plant need to live?\n2. Where does a plant get food?\n3. What happens to a flower without light?' },
-  l7_scientists: { kz: 'Өсімдіктің әр мүшесінің өз жұмысы бар: тамыр ұстап тұрып су ішеді, сабақ суды жоғары жеткізеді, жапырақ күнді ұстайды, гүл жеміс береді.', ru: 'У каждой части растения своя работа: корень держит и пьёт, стебель несёт воду вверх, лист ловит солнце, цветок даёт плоды.', en: 'Every plant part has its job: the root holds and drinks, the stem carries water up, the leaf catches sun, the flower produces fruit.' },
-  l7_observation: { kz: 'Бақтан кішкентай арамшөпті тамырымен ақырын қазып ал. Оның бәрі бар екенін көресің: тамыры да, сабағы да, жапырақтары да.', ru: 'Аккуратно выкопай в саду маленький сорняк целиком. Ты увидишь, что у него есть всё: и корень, и стебель, и листья.', en: 'Gently dig up a tiny weed from the garden, root and all. You\'ll see it has everything: a root, a stem and leaves.' },
-  l7_experiments: { kz: 'Ақ гүлді тағамдық бояуы бар суға қой. Бір түнде жапырақшалары боялады — бұл су сабақ арқылы көтерілгені.', ru: 'Поставь белый цветок в воду с пищевым красителем. Через ночь лепестки окрасятся — это вода поднялась по стеблю.', en: 'Put a white flower in water with food colouring. By morning the petals turn colour — water has travelled up the stem.' },
-  l7_review: { kz: '1. Өсімдіктің барлық негізгі мүшесін ата.\n2. Өсімдікке гүл не үшін керек?\n3. Тамыр неге әрқашан төменде болады?', ru: '1. Назови все основные части растения.\n2. Зачем растению цветок?\n3. Почему корень всегда внизу?', en: '1. Name all the main parts of a plant.\n2. Why does a plant need a flower?\n3. Why is the root always at the bottom?' },
-  l8_scientists: { kz: 'Ғалымдар өсімдіктерді үш топқа бөледі: ағаш (бір қатты діңі), бұта (бірнеше жіңішке діңі) және шөп (жұмсақ сабағы).', ru: 'Учёные делят растения на три группы: деревья (один твёрдый ствол), кустарники (много стволиков) и травы (мягкий стебель).', en: 'Scientists sort plants into three groups: trees (one hard trunk), shrubs (many small stems) and grasses (soft stems).' },
-  l8_observation: { kz: 'Аулаңнан бір ағаш, бір бұта және бір шөп тауып ал. Сабақтарын ұстап көр — айырмашылықты саусағыңмен сезін.', ru: 'Найди во дворе одно дерево, один кустарник и одну травинку. Потрогай их стебли — почувствуй разницу пальцами.', en: 'Find one tree, one shrub and one blade of grass in the yard. Touch their stems and feel the difference with your fingers.' },
-  l8_experiments: { kz: 'Жапырақ жинап ал: үш ағаштан және үш бұтадан. Топтарға бөліп, альбомға жапсыр.', ru: 'Собери коллекцию листьев: с трёх деревьев и трёх кустарников. Разложи их по группам и наклей в альбом.', en: 'Collect leaves from three trees and three shrubs. Sort them into groups and glue them into an album.' },
-  l8_review: { kz: '1. Өсімдіктер қандай үш топқа бөлінеді?\n2. Ағаш бұтадан немен ерекшеленеді?\n3. Әр топтан екі мысал ата.', ru: '1. На какие три группы делят растения?\n2. Чем дерево отличается от кустарника?\n3. Назови по два примера каждой группы.', en: '1. Into what three groups are plants divided?\n2. How is a tree different from a shrub?\n3. Give two examples for each group.' },
-  l9_scientists: { kz: 'Агрономдар біледі: көкөніс бақшада өседі (сәбіз, орамжапырақ), ал жеміс — ағашта және бұтада (алма, таңқурай).', ru: 'Агрономы знают: овощи растут на грядках (морковь, капуста), а фрукты — на деревьях и кустах (яблоко, малина).', en: 'Agronomists know that vegetables grow in beds (carrot, cabbage) while fruits grow on trees and bushes (apple, raspberry).' },
-  l9_observation: { kz: 'Ас үйге үңіл де, тағамдарды бөл: көкөніс — солға, жеміс — оңға. Байқа — жеміс жиі тәтті, көкөніс — олай емес.', ru: 'Загляни на кухню и разложи продукты: овощи слева, фрукты справа. Заметь — фрукты чаще сладкие, овощи — нет.', en: 'Peek into the kitchen and sort the food: vegetables left, fruits right. Notice — fruits are usually sweet, vegetables aren\'t.' },
-  l9_experiments: { kz: 'Алма мен қызанақты қақ бөл. Екеуінің ішінде де дән бар! Демек, ботаникалық тұрғыдан қызанақ та — жеміс.', ru: 'Разрежь яблоко и помидор пополам. Внутри обоих есть семена! Это значит, ботанически помидор — тоже фрукт.', en: 'Cut an apple and a tomato in half. Both have seeds inside! Botanically, that means a tomato is actually a fruit too.' },
-  l9_review: { kz: '1. Көкөніс пен жеміс қайда өседі?\n2. 3 көкөніс пен 3 жемісті ата.\n3. Көкөніс пен жемістің пайдасы неде?', ru: '1. Где растут овощи, а где — фрукты?\n2. Назови 3 овоща и 3 фрукта.\n3. Чем полезны овощи и фрукты?', en: '1. Where do vegetables and fruits grow?\n2. Name 3 vegetables and 3 fruits.\n3. How are vegetables and fruits useful?' },
-  l10_scientists: { kz: 'Ботаниктер өсімдіктің жолын қадағалаған: дән → өскін → сабақ → бүршік → гүл → жаңа дәні бар жеміс. Бәрі қайталанады.', ru: 'Ботаники проследили путь растения: семя → росток → стебель → бутон → цветок → плод с новыми семенами. И всё повторяется.', en: 'Botanists traced the plant\'s path: seed → sprout → stem → bud → flower → fruit with new seeds. The cycle repeats.' },
-  l10_observation: { kz: 'Бұршақты топыраққа отырғыз да, күн сайын сызғышпен биіктігін өлше. Аптада қарындаштан биік болуы мүмкін!', ru: 'Посади боб в землю и каждый день измеряй ростом линейкой. За неделю он может стать выше карандаша!', en: 'Plant a bean in soil and measure its height with a ruler each day. In a week it can grow taller than a pencil!' },
-  l10_experiments: { kz: 'Бұршақты дымқыл мақтаға қой. Үшінші күні тамыршаны, бесінші күні өскінді көресің. Бұл — өсімдік өмірінің басы.', ru: 'Положи фасоль на влажную ватку. На третий день увидишь корешок, на пятый — росток. Это самое начало жизни растения.', en: 'Place a bean on a wet cotton pad. On day 3 a root appears, on day 5 a sprout. This is the very start of a plant\'s life.' },
-  l10_review: { kz: '1. Өсімдіктің өмірі неден басталады?\n2. Алдымен не пайда болады — тамыр ма, жапырақ па?\n3. Гүлден не өсіп шығады?', ru: '1. С чего начинается жизнь растения?\n2. Что появляется раньше — корень или лист?\n3. Что вырастает из цветка?', en: '1. How does a plant\'s life begin?\n2. What appears first — the root or the leaf?\n3. What grows from a flower?' },
-  l11_scientists: { kz: 'Зоологтар жабайы аңдарды үркітпес үшін алыстан бақылайды. Осылайша қасқыр мен аюдың қалай өмір сүретінін білдік.', ru: 'Зоологи наблюдают за дикими зверями издалека, чтобы их не спугнуть. Так удалось узнать, как живут волки и медведи.', en: 'Zoologists watch wild animals from far away so as not to scare them. That\'s how we learned how wolves and bears live.' },
-  l11_observation: { kz: 'Орманда аңды байқау қиын — олардың қорғаныс түсі болады. Ақ қоян қыста ақ, жазда сұр болады.', ru: 'В лесу заметить зверя сложно — у них защитная окраска. Зайчик-беляк зимой белый, а летом серый.', en: 'It\'s hard to spot a wild animal in the forest — they have camouflage. The mountain hare is white in winter and grey in summer.' },
-  l11_experiments: { kz: 'Жемсауыт жасап, ішіне жаңғақ сал. Терезеден бақылап тұр — мүмкін, тиін сенің үйіңе тура жүгіріп келер.', ru: 'Сделай кормушку и положи в неё орехи. Понаблюдай в окно — может быть, прибежит белка прямо к твоему дому.', en: 'Make a feeder and put nuts in it. Watch from the window — perhaps a squirrel will run right up to your house.' },
-  l11_review: { kz: '1. Жабайы жануарлар қайда тұрады?\n2. Қорғаныс түсі деген не?\n3. Қазақстанның 5 жабайы жануарын ата.', ru: '1. Где живут дикие животные?\n2. Кто такая защитная окраска?\n3. Назови 5 диких животных Казахстана.', en: '1. Where do wild animals live?\n2. What is camouflage?\n3. Name 5 wild animals of Kazakhstan.' },
-  l12_scientists: { kz: 'Мыңдаған жыл бұрын адам қасқырды қолға үйретті — осылайша ит пайда болды. Кейін — сиыр, жылқы, мысық. Мұны ата-бабаларымыз — алғашқы ғалымдар жасады.', ru: 'Тысячи лет назад человек приручил волка — так появилась собака. Потом — корову, лошадь, кошку. Это сделали наши предки-учёные.', en: 'Thousands of years ago humans tamed the wolf — that\'s how the dog appeared. Then came cows, horses and cats. Our ancestors were the first scientists.' },
-  l12_observation: { kz: 'Мысықтың аяғымен жуынғанын, иттің құйрығын бұлғағанын қара. Әр қимыл — жануардың «сөзі».', ru: 'Посмотри, как кошка умывается лапкой, а собака виляет хвостом. Каждое движение — это «слова» животного.', en: 'Watch a cat wash itself with its paw and a dog wag its tail. Every movement is the animal\'s "words".' },
-  l12_experiments: { kz: 'Үй жануарына бір апта күтім жасап көр: тамақ бер, су құй, ойна. Көңіл-күйі қалай өзгергенін жаз.', ru: 'Попробуй ухаживать за домашним питомцем неделю: корми, давай воду, играй. Запиши, как изменилось его настроение.', en: 'Try caring for a pet for a week: feed, give water, play. Write how its mood changed.' },
-  l12_review: { kz: '1. Адам жануарды не үшін қолға үйретті?\n2. Үй жануарына күн сайын не керек?\n3. Сенің сүйікті үй жануарың қандай және неліктен?', ru: '1. Зачем человек приручил животных?\n2. Что нужно домашнему питомцу каждый день?\n3. Какое у тебя любимое домашнее животное и почему?', en: '1. Why did humans tame animals?\n2. What does a pet need every day?\n3. What is your favourite pet and why?' },
-  l13_scientists: { kz: 'Орнитологтар құстарды, энтомологтар — жәндіктерді зерттейді. Олар білді: ара бір-біріне гүл туралы айту үшін билейді.', ru: 'Орнитологи изучают птиц, а энтомологи — насекомых. Они узнали: пчёлы танцуют, чтобы рассказать друг другу о цветах.', en: 'Ornithologists study birds, entomologists study insects. They found that bees dance to tell each other about flowers.' },
-  l13_observation: { kz: 'Көктемде таңертең тыңда: неше түрлі құс үні бар? Әр құстың өз әні бар, бұл оның төлқұжаты іспетті.', ru: 'Послушай весной утром: сколько разных птичьих голосов? Каждая птица поёт свою песню, как у неё свой паспорт.', en: 'Listen on a spring morning: how many bird voices? Each bird sings its own song — like its passport.' },
-  l13_experiments: { kz: 'Үстелге қант кесегін қойып, күт. Жуырда құмырсқа жүгіріп келеді, сосын оның соңынан құмырсқалардың тұтас жолы шығады.', ru: 'Положи на стол кусочек сахара и подожди. Скоро прибежит муравей, а потом — целая дорожка муравьёв за ним.', en: 'Put a piece of sugar on the table and wait. Soon an ant will come, then a whole trail of ants behind it.' },
-  l13_review: { kz: '1. Жәндіктің неше аяғы бар?\n2. Құс жәндіктен немен ерекшеленеді?\n3. 3 құс пен 3 жәндікті ата.', ru: '1. Сколько ножек у насекомого?\n2. Чем птица отличается от насекомого?\n3. Назови 3 птицы и 3 насекомых.', en: '1. How many legs does an insect have?\n2. How is a bird different from an insect?\n3. Name 3 birds and 3 insects.' },
-  l14_scientists: { kz: 'Ихтиологтар балықтарды зерттейді. Олар балықтың суда еріген оттегімен — желбезек арқылы тыныс алатынын анықтады.', ru: 'Ихтиологи изучают рыб. Они выяснили, что рыбы дышат кислородом, который растворён прямо в воде, — через жабры.', en: 'Ichthyologists study fish. They found that fish breathe oxygen dissolved in water, through their gills.' },
-  l14_observation: { kz: 'Аквариумда балықтың аузын қаншалықты жиі ашатынын сана — бұл ол «тыныс алып жатыр». Бақа суда да, құрлықта да тіршілік ете алады.', ru: 'В аквариуме посчитай, как часто рыбка открывает рот — это она «дышит». А лягушка может и в воде, и на земле.', en: 'In an aquarium count how often the fish opens its mouth — that\'s how it "breathes". A frog lives both in water and on land.' },
-  l14_experiments: { kz: 'Қағаз кемені суға қой да, үрле. Балықтар да судың қозғалысын терісімен және бүйір сызығы арқылы сезеді.', ru: 'Опусти бумажный кораблик на воду и подуй. Так же рыбки чувствуют движение воды кожей и боковой линией.', en: 'Put a paper boat on water and blow. Fish also sense water movement through their skin and lateral line.' },
-  l14_review: { kz: '1. Балық немен тыныс алады?\n2. Бақа қайда тұрады?\n3. Бақаны неге қосмекенді деп атайды?', ru: '1. Чем дышит рыба?\n2. Где живёт лягушка?\n3. Почему лягушку называют земноводным?', en: '1. How do fish breathe?\n2. Where do frogs live?\n3. Why is a frog called an amphibian?' },
-  l15_scientists: { kz: 'Экологтар айтады: әр жануар азық тауып, тасалана алатын жерде тұрады. Түйе — шөлде, ақ аю — мұз үстінде.', ru: 'Экологи говорят: каждое животное живёт там, где может найти еду и спрятаться. Верблюд — в пустыне, белый медведь — на льдинах.', en: 'Ecologists say each animal lives where it can find food and hide. The camel — in the desert, the polar bear — on ice.' },
-  l15_observation: { kz: 'Суреттерді қара: балықта — су үшін қанаттар, құста — аспан үшін қанат, көртышқанда — жер үшін күрек тәрізді аяқтар.', ru: 'Посмотри картинки: у рыбы — плавники для воды, у птицы — крылья для неба, у крота — лапы-лопаты для земли.', en: 'Look at pictures: a fish has fins for water, a bird has wings for sky, a mole has shovel-paws for soil.' },
-  l15_experiments: { kz: 'Қораптан макет жаса: «орман», «өзен», «шөл». Аңдарды қиып ал да, әрқайсысын өз үйіне қондыр.', ru: 'Сделай макет из коробки: «лес», «река», «пустыня». Вырежи зверей и пересели каждого в свой домик.', en: 'Make a diorama from a box: "forest", "river", "desert". Cut out animals and place each in its own home.' },
-  l15_review: { kz: '1. Түйе неге орманда тұрмайды?\n2. Судың үш тұрғынын ата.\n3. Аңға өз үйінде өмір сүруге не көмектеседі?', ru: '1. Почему верблюд не живёт в лесу?\n2. Назови трёх обитателей воды.\n3. Что помогает зверю выжить в его доме?', en: '1. Why doesn\'t a camel live in the forest?\n2. Name three water dwellers.\n3. What helps an animal survive in its home?' },
-  l16_scientists: { kz: 'Физиологтар адам ағзасын зерттейді. Бізде 5 сезім мүшесі бар: көз көреді, құлақ естиді, мұрын иіс сезеді, тіл дәм татады, тері сезеді.', ru: 'Физиологи изучают тело человека. У нас 5 органов чувств: глаза видят, уши слышат, нос нюхает, язык пробует, кожа чувствует.', en: 'Physiologists study the human body. We have 5 senses: eyes see, ears hear, nose smells, tongue tastes, skin feels.' },
-  l16_observation: { kz: 'Көзіңді жұм да, досыңнан ас үйден бір нәрсенің иісін иіскетіп беруді сұра. Тек иіс арқылы алманы немесе қиярды таныдың ба?', ru: 'Закрой глаза и попроси друга дать понюхать что-то с кухни. Угадаешь ли ты яблоко или огурец только по запаху?', en: 'Close your eyes and ask a friend to let you smell something from the kitchen. Can you tell apple from cucumber by smell alone?' },
-  l16_experiments: { kz: 'Көзіңді байлап, түрлі заттарды ұстап көр: жұмсақ, қатты, бұжыр. Тек саусағыңмен тани аласың ба?', ru: 'С завязанными глазами потрогай разные предметы: мягкое, твёрдое, шершавое. Узнаёшь ли их только пальцами?', en: 'With your eyes closed, touch different objects: soft, hard, rough. Can you recognise them with just your fingers?' },
-  l16_review: { kz: '1. Адамның қанша сезім мүшесі бар?\n2. Тәтті мен ащыны қай мүшемен ажыратамыз?\n3. Ауырғанды сезбесек, не болар еді?', ru: '1. Сколько у человека органов чувств?\n2. Каким органом мы определяем сладкое и горькое?\n3. Что было бы, если бы мы не чувствовали боли?', en: '1. How many senses does a person have?\n2. Which organ tells us sweet from bitter?\n3. What if we couldn\'t feel pain?' },
-  l17_scientists: { kz: 'Дәрігерлер дәлелдеді: жуылмаған қолда миллиондаған микроб тұрады. Сабын мен су оларды жуып, бізді аурудан сақтайды.', ru: 'Врачи доказали: на немытых руках живут миллионы микробов. Мыло и вода смывают их и спасают нас от болезней.', en: 'Doctors have proven that millions of germs live on unwashed hands. Soap and water wash them off and save us from illness.' },
-  l17_observation: { kz: 'Өзіңді бақыла: күніне қанша рет қол жуасың? Тамақтан бұрын, көшеден кейін, дәретханадан соң — бұл денсаулық әдеті.', ru: 'Понаблюдай за собой: сколько раз в день ты моешь руки? До еды, после улицы, после туалета — это привычка здоровья.', en: 'Watch yourself: how many times a day do you wash your hands? Before meals, after the street, after the toilet — that\'s a healthy habit.' },
-  l17_experiments: { kz: 'Алақаныңа ұн жағып, досыңмен қол алыс. «Микробтың» қалай оңай өтетінін көрдің бе? Шынайылары да солай тарайды.', ru: 'Намажь ладошку мукой и поздоровайся за руку с другом. Видишь, как «микробы» легко переходят? Так распространяются и настоящие.', en: 'Coat your palm with flour and shake hands with a friend. See how the "germs" pass on? Real ones spread the same way.' },
-  l17_review: { kz: '1. Қашан қол жуу керек?\n2. Тісті күніне 2 рет неге тазалау керек?\n3. Микроб деген не?', ru: '1. Когда нужно мыть руки?\n2. Зачем чистить зубы 2 раза в день?\n3. Что такое микробы?', en: '1. When should you wash your hands?\n2. Why brush your teeth twice a day?\n3. What are germs?' },
-  l18_scientists: { kz: 'Диетологтар «денсаулық тәрелкесін» жасады: жартысы — көкөніс пен жеміс, төрттен бірі — ботқа, төрттен бірі — ет немесе балық.', ru: 'Диетологи составили «тарелку здоровья»: половина — овощи и фрукты, четверть — каши, четверть — мясо или рыба.', en: 'Dietitians made the "healthy plate": half vegetables and fruit, a quarter grains, a quarter meat or fish.' },
-  l18_observation: { kz: 'Түскі асыңдағы тәрелкеңе қара: ол «денсаулық тәрелкесіне» ұқсай ма? Онда не көп — пайдалысы ма, тәттісі ме?', ru: 'Загляни в свою тарелку на обеде: похожа ли она на «тарелку здоровья»? Чего в ней больше — полезного или сладкого?', en: 'Look at your lunch plate: does it match the healthy plate? Is there more healthy food or more sweets?' },
-  l18_experiments: { kz: 'Бір аптаға өзің мәзір жаса: таңғы, түскі, кешкі ас. Күн сайын бір жеміс пен бір көкөніс қос. Өзіңді қалай сезінетініңді жаз.', ru: 'На неделю составь меню сам: завтрак, обед, ужин. Включи каждый день фрукт и овощ. Запиши, как чувствуешь себя.', en: 'Plan a week\'s menu yourself: breakfast, lunch, dinner. Include a fruit and a vegetable each day. Note how you feel.' },
-  l18_review: { kz: '1. Қандай тағам ең пайдалы?\n2. Күніне неше рет тамақтану керек?\n3. Тәттіні неге көп жеуге болмайды?', ru: '1. Какая еда самая полезная?\n2. Сколько раз в день нужно есть?\n3. Почему нельзя есть много сладкого?', en: '1. Which food is the healthiest?\n2. How many times a day should we eat?\n3. Why shouldn\'t we eat too many sweets?' },
-  l19_scientists: { kz: 'Ғалымдар айтады: ағза режимге үйренеді. Бір уақытта жатсаң — ұйықтау оңай, таңертең тұру да оңай.', ru: 'Учёные говорят: тело привыкает к режиму. Если ложиться в одно время — легче засыпать, а утром — легче вставать.', en: 'Scientists say the body gets used to a schedule. Going to bed at the same time makes falling asleep — and waking up — easier.' },
-  l19_observation: { kz: 'Күніңді жаз: қашан тұрдың, тамақ іштің, ойнадың, ұйықтадың. Досыңның күнімен салыстыр — әркімнің режимі әртүрлі.', ru: 'Запиши свой день: во сколько встал, поел, играл, лёг спать. Сравни с днём друга — режимы у всех разные.', en: 'Write down your day: when you got up, ate, played, went to bed. Compare with a friend — everyone\'s routine differs.' },
-  l19_experiments: { kz: 'Өз күн тәртібіңді жасап, оны сағат түрінде сал. Бір апта бойы солай өмір сүруге тырыс — оңай әрі көңілді болады.', ru: 'Составь свой режим дня и нарисуй его в виде часов. Постарайся прожить так неделю — будет легче и веселее.', en: 'Make your own daily routine and draw it as a clock. Try living by it for a week — it will be easier and more fun.' },
-  l19_review: { kz: '1. Күн тәртібі не үшін керек?\n2. Бірінші сынып оқушысы неше сағат ұйықтауы керек?\n3. Мектепке дейін, таңертең не болуы тиіс?', ru: '1. Зачем нужен режим дня?\n2. Сколько часов должен спать первоклассник?\n3. Что должно быть утром, до школы?', en: '1. Why do we need a routine?\n2. How many hours should a first-grader sleep?\n3. What should you do in the morning before school?' },
-  l20_scientists: { kz: 'Ғалымдар дәлелдеді: ауа барлық жерде бар — тіпті бос көрінетін стақанда да. Тек ауа арқасында ғана біз тыныс ала аламыз.', ru: 'Учёные доказали: воздух есть везде — даже в стакане, который кажется пустым. И только благодаря воздуху мы можем дышать.', en: 'Scientists proved that air is everywhere — even in an empty-looking glass. Only thanks to air can we breathe.' },
-  l20_observation: { kz: 'Бетіңнің алдында қолыңды сермеп қой — самал сезесің. Бұл — ауаның қозғалысы. Желсіз күні де ауа бар, тек қозғалмайды.', ru: 'Помаши рукой перед лицом — почувствуешь ветерок. Это движется воздух. А в безветрие он стоит на месте, но он там есть.', en: 'Wave your hand in front of your face — you\'ll feel a breeze. That\'s air moving. On a calm day it\'s still there, just not moving.' },
-  l20_experiments: { kz: 'Аударылған стақанды су құйылған тазға бат — су ішіне кірмейді. Оны кіргізбей тұрған — ауа.', ru: 'Опусти перевёрнутый стакан в таз с водой — вода внутрь не зайдёт. Это воздух не пускает её.', en: 'Push an upside-down glass into a basin of water — water won\'t enter. The air inside is blocking it.' },
-  l20_review: { kz: '1. Ауа қай жерде болады?\n2. Ауамен кім тыныс алады?\n3. Жел деген не?', ru: '1. Где находится воздух?\n2. Кто дышит воздухом?\n3. Что такое ветер?', en: '1. Where is air found?\n2. Who breathes air?\n3. What is wind?' },
+  l5_scientists: { kz: 'Жабайы өсімдіктер — даланың өзі еккен өсімдіктер. Мәдени өсімдіктерді адам өсіреді: мақта, бидай, қырыққабат. Күнтізбек, түймешетен, шайқурай — дәрілік өсімдіктер.', ru: 'Дикорастущие растения сеет сама природа, а культурные — выращивает человек: хлопок, пшеница, капуста. Календула, ромашка, зверобой — лекарственные растения.', en: 'Wild plants grow on their own, while cultivated ones are grown by people: cotton, wheat, cabbage. Calendula, chamomile and St John\'s wort are medicinal plants.' },
+  l5_observation: { kz: 'Шалғын мен егілген алқапты салыстыр: бірінші суретте өсімдіктер ___, екіншісінде ___. Калла мен хлорофитумды қара: бұл бөлме гүлдерін қайда қою керек?', ru: 'Сравни луг и засеянное поле: на первом фото растения ___, на втором ___. Рассмотри фиалку и хлорофитум: где лучше держать эти комнатные цветы?', en: 'Compare a meadow and a sown field: in the first photo plants are ___, in the second ___. Look at a violet and a spider plant: where is best to keep these houseplants?' },
+  l5_experiments: { kz: 'Сөздерді екі бағанға бөл: «Жабайы» — бақбақ, қайың, қалампыр; «Мәдени» — күнбағыс, бидай, қырыққабат. Содан кейін өсімдікке күтім жасауға қажет заттарды белгіле: су құюғыш, бүріккіш, бақша құралы, секатор.', ru: 'Распредели слова по двум колонкам: «Дикорастущие» — одуванчик, берёза, гвоздика; «Культурные» — подсолнечник, пшеница, капуста. Затем выбери только те предметы, что нужны для ухода: лейка, пульверизатор, садовый инструмент, секатор.', en: 'Sort the words into two columns: "Wild" — dandelion, birch, carnation; "Cultivated" — sunflower, wheat, cabbage. Then pick only the items needed for plant care: watering can, spray bottle, garden tool, secateurs.' },
+  l5_review: { kz: '1. Жабайы өсімдік мәдениден немен ерекшеленеді?
+2. Бөлме гүліне не қажет?
+3. Мәдени өсімдікке күтім жасамаса не болады?', ru: '1. Чем дикорастущее растение отличается от культурного?
+2. Что нужно комнатному растению?
+3. Что произойдёт, если не ухаживать за культурными растениями?', en: '1. How does a wild plant differ from a cultivated one?
+2. What does a houseplant need?
+3. What happens if cultivated plants are not cared for?' },
+  l6_scientists: { kz: 'Барлық тірі ағза тыныс алады, қоректенеді, өседі, көбейеді, қартаяды. Ит күшіктен ересек итке дейін өседі: 1 ай, 3 ай, 6 ай, 1 жыл, 2 жыл, 3 жыл, 5 жыл.', ru: 'Все живые организмы дышат, питаются, растут, размножаются и стареют. Собака растёт от щенка до взрослого пса: 1 месяц, 3 месяца, 6 месяцев, 1 год, 2 года, 3 года, 5 лет.', en: 'Every living thing breathes, eats, grows, reproduces and ages. A dog grows from a puppy to an adult: 1 month, 3, 6 months, 1, 2, 3, 5 years.' },
+  l6_observation: { kz: 'Жылқы, тасбақа, кірпі, сиыр, тотықұс, мысықты қара. Қайсысы жылдам жүгіреді, қайсысы баяу қозғалады? Әрқайсысын белгіле.', ru: 'Рассмотри лошадь, черепаху, ежа, корову, попугая ара и кошку. Кто бегает быстро, а кто двигается медленно? Отметь каждого галочкой.', en: 'Look at a horse, turtle, hedgehog, cow, macaw and cat. Which moves fast, which slowly? Tick each one.' },
+  l6_experiments: { kz: 'Гепардтың жүгіруі мен тиіннің секіруін салыстыр. Жануарлар қалай жылжиды және бұл оларға қалай көмектеседі? 4 қазан — Бүкіләлемдік жануарларды қорғау күні.', ru: 'Сравни бег гепарда и прыжки белки. Как двигаются животные и как им это помогает? 4 октября — Всемирный день защиты животных.', en: 'Compare a cheetah running and a squirrel leaping. How do animals move and how does it help them? October 4 is World Animal Day.' },
+  l6_review: { kz: '1. Өсімдік пен жануардың ұқсастығы неде?
+2. Олардың қоректенуі қалай ерекшеленеді?
+3. Неліктен жануарларды қорғау керек?', ru: '1. Чем похожи растения и животные?
+2. Чем отличается их питание?
+3. Почему нужно защищать животных?', en: '1. How are plants and animals alike?
+2. How does their feeding differ?
+3. Why must we protect animals?' },
+  l7_scientists: { kz: 'Үй жануарлары адам жанында тұрады, оған пайда әкеледі: ит, сиыр, ешкі, жылқы. Адам оларға күтім жасайды.', ru: 'Домашние животные живут рядом с человеком и приносят ему пользу: собака, корова, коза, лошадь. Человек о них заботится.', en: 'Domestic animals live near people and help them: dog, cow, goat, horse. People take care of them.' },
+  l7_observation: { kz: 'Піл, орангутанг, бүркіт, киік, сілеусін — олар қай жерде мекендейді? Әрқайсысын дұрыс топқа орналастыр.', ru: 'Слон, орангутан, беркут, сайгак, рысь — где они обитают? Помести каждого в правильную группу.', en: 'Elephant, orangutan, golden eagle, saiga, lynx — where do they live? Place each in the right group.' },
+  l7_experiments: { kz: 'Сиыр, қоян, түлкі, дельфин, арқарды мекен ортасы бойынша сұрыпта: су, жер, тау. Қазақстанның сирек жануарлары туралы энциклопедиядан тауып оқы.', ru: 'Распредели корову, зайца, лису, дельфина и архара по среде обитания: вода, земля, горы. Найди в энциклопедии редких животных Казахстана.', en: 'Sort cow, hare, fox, dolphin and argali by habitat: water, land, mountains. Look up rare animals of Kazakhstan in an encyclopedia.' },
+  l7_review: { kz: '1. Жабайы жануарлар үй жануарларынан немен ерекшеленеді?
+2. Адам үй жануарларына неліктен қамқор болуы керек?', ru: '1. Чем дикие животные отличаются от домашних?
+2. Почему человек должен заботиться о домашних животных?', en: '1. How do wild animals differ from domestic ones?
+2. Why must people care for domestic animals?' },
+  l8_scientists: { kz: 'Түлеу — жануардың жүнін немесе құстың қауырсынын ауыстыруы. Қоян жазда сұр, қыста ақ; тиін жазда қызыл, қыста сұрғылт болады.', ru: 'Линька — это смена шерсти у животного или перьев у птицы. Заяц летом серый, зимой белый; белка летом рыжая, зимой сероватая.', en: 'Moulting is when an animal changes its fur or a bird its feathers. A hare is grey in summer and white in winter; a squirrel is red in summer and grey in winter.' },
+  l8_observation: { kz: 'Аю жазда орманда жүреді, қыста апанда ұйықтайды. Көктемде қайтып келетін құстарды «жыл құстары» дейді.', ru: 'Медведь летом гуляет в лесу, зимой спит в берлоге. Птиц, которые улетают и возвращаются весной, называют перелётными.', en: 'A bear roams the forest in summer and sleeps in a den in winter. Birds that fly away and return in spring are called migratory.' },
+  l8_experiments: { kz: 'Тиін, кірпі, борсық, көртышқан, тышқан, аю, сарышұнақты екі бағанға сұрыпта: «Қор жинайды» және «Ұйқыға кетеді». Сурок қор жинамайды — ол өте терең ұйықтайды.', ru: 'Распредели белку, ежа, барсука, бурундука, мышь, медведя и суслика по двум колонкам: «Делают запасы» и «Впадают в спячку». Сурок не делает запасов — он спит очень глубоко.', en: 'Sort squirrel, hedgehog, badger, chipmunk, mouse, bear and ground squirrel into two columns: "Store food" and "Hibernate". The marmot stores nothing — it sleeps very deeply.' },
+  l8_review: { kz: '1. Қандай жануарлар қысқы ұйқыға кетеді?
+2. Кейбір құстар жылы жаққа неге ұшып кетеді?', ru: '1. Какие животные впадают в спячку?
+2. Почему некоторые птицы улетают на юг?', en: '1. Which animals hibernate?
+2. Why do some birds fly south?' },
+  l9_scientists: { kz: 'Адам денесі бас, мойын, тұлға, қол және аяқтан тұрады. Анатомия — ағзаның құрылысын зерттейтін ғылым.', ru: 'Тело человека состоит из головы, шеи, туловища, рук и ног. Анатомия — наука, изучающая строение организма.', en: 'The human body has a head, neck, torso, arms and legs. Anatomy is the science of how the body is built.' },
+  l9_observation: { kz: 'Балалар сабақта, орманда, бассейнде, асфальтта сурет салғанда қандай мүшелерін қолданады? Әр суретке жауап бер.', ru: 'Какие части тела дети используют в классе, в лесу, в бассейне, рисуя на асфальте? Ответь по каждому фото.', en: 'Which body parts do children use in class, in the forest, in a pool, drawing on the pavement? Answer for each photo.' },
+  l9_experiments: { kz: 'Цифрларды бала суретімен сәйкестендір: 1 — бас, 2 — қол, 3 — тұлға, 4 — аяқ. Жауапты тексер.', ru: 'Сопоставь цифры с рисунком ребёнка: 1 — голова, 2 — рука, 3 — туловище, 4 — нога. Проверь ответ.', en: 'Match the numbers to the child\'s picture: 1 — head, 2 — arm, 3 — torso, 4 — leg. Check the answer.' },
+  l9_review: { kz: '1. Адам денесі қандай мүшелерден тұрады?
+2. Денеміздің құрылысын білу неге қажет?
+3. Қолыңмен не істей аласың?', ru: '1. Из каких частей состоит тело человека?
+2. Зачем знать строение тела?
+3. Расскажи, что ты умеешь делать руками.', en: '1. What parts make up the human body?
+2. Why know the body\'s structure?
+3. What can you do with your hands?' },
+  l10_scientists: { kz: 'Нәрестелік (0–1), ерте балалық (1–3), мектеп жасына дейін (3–6), мектеп жасы (6–17), жастық (18–25), орта жас (26–44), толысқан жас (45–59), қарт жас (60–75), ұзақ өмір сүрушілер (90+).', ru: 'Младенчество (0–1), раннее детство (1–3), дошкольный (3–6), школьный (6–17), молодость (18–25), средний (26–44), зрелый (45–59), пожилой (60–75), долгожители (90+).', en: 'Infancy (0–1), early childhood (1–3), preschool (3–6), school (6–17), youth (18–25), middle age (26–44), maturity (45–59), elderly (60–75), long-livers (90+).' },
+  l10_observation: { kz: 'Бес ер адамның суретін салыстыр: бала, жасөспірім, ересек, қарт. Адам жасына қарай қалай өзгереді?', ru: 'Сравни пять фигур мужчин: мальчик, подросток, взрослый, пожилой. Как меняется человек с возрастом?', en: 'Compare five figures: boy, teen, adult, elderly. How does a person change with age?' },
+  l10_experiments: { kz: 'Қандай заттар қай кезеңге қажет: коляска, рюкзак, доп, көлік, ноутбук? Сұрыпта да тексер. Ұзақ өмір сүрушілер туралы энциклопедиядан оқы.', ru: 'Определи, на каком этапе нужны эти вещи: коляска, рюкзак, мяч, машина, ноутбук. Распредели и проверь. Найди в энциклопедии о людях-долгожителях.', en: 'Decide at which life stage these items are needed: pram, backpack, ball, car, laptop. Sort and check. Read about long-livers in an encyclopedia.' },
+  l10_review: { kz: '1. Адам өмірі қандай кезеңдерге бөлінеді?
+2. Қай кезеңде бала мектепке барады?
+3. Бірінші сыныпта не үйрендің, қалай өзгердің?', ru: '1. На какие этапы делится жизнь человека?
+2. На каком этапе человек учится в школе?
+3. Чему ты научился в первом классе и как изменился?', en: '1. What are the stages of life?
+2. At which stage do children go to school?
+3. What have you learned in first grade and how did you change?' },
+  l11_scientists: { kz: 'Адам, өсімдік және жануар сияқты, тірі ағза: өседі, тыныс алады, қоректенеді, көбейеді. Оған су, таза ауа және дұрыс тамақ керек.', ru: 'Человек, как растения и животные, — живой организм: растёт, дышит, питается, размножается. Ему нужны вода, чистый воздух и правильная еда.', en: 'Like plants and animals, a human is a living organism: grows, breathes, eats, reproduces. They need water, clean air and good food.' },
+  l11_observation: { kz: 'Қыз алма жейді, бала велосипед тебеді, балалар планшетпен жұмыс істейді. Балалар не істеп жатыр? Адамға өмір сүруге тағы не қажет?', ru: 'Девочка ест яблоко, мальчик едет на велосипеде, дети работают с планшетом. Что делают дети? Что ещё необходимо человеку для жизни?', en: 'A girl eats an apple, a boy rides a bike, kids use a tablet. What are they doing? What else does a person need for life?' },
+  l11_experiments: { kz: 'Қыздың айналасындағы заттардан өмірге қажеттілерді белгіле: көкөніс, су, телефон, теледидар, кітап, нан, киім. Қазақ тағам академиясы 1974 жылдан бері тағам нормаларын зерттейді.', ru: 'Отметь среди предметов вокруг девочки только жизненно важные: овощи, вода, телефон, телевизор, книга, хлеб, одежда. Казахская академия питания изучает нормы питания с 1974 года.', en: 'Mark only the essentials around the girl: vegetables, water, phone, TV, book, bread, clothes. The Kazakh Academy of Nutrition has studied diet norms since 1974.' },
+  l11_review: { kz: '1. Адамға өмір сүруге не қажет?
+2. Адамның қажеттіліктері туралы постер жаса.
+3. Дұрыс тамақтанбаса не болады?', ru: '1. Что необходимо человеку для жизни?
+2. Составь постер о потребностях человека.
+3. Что произойдёт, если человек не будет правильно питаться?', en: '1. What does a human need for life?
+2. Make a poster of human needs.
+3. What happens if a person eats poorly?' },
+  l12_scientists: { kz: 'Адам — өсімдік пен жануарға ұқсас тірі ағза, бірақ ол ойлайды, сөйлейді, еңбек етеді.', ru: 'Человек — живой организм, как растения и животные, но он думает, говорит и трудится.', en: 'A human is a living organism like plants and animals, but also thinks, speaks and works.' },
+  l12_observation: { kz: 'Айналаңа қара: қандай адамдар тірі ағзаның белгілерін көрсетеді — тыныс алу, қозғалу, тамақтану?', ru: 'Посмотри вокруг: какие люди показывают признаки живого организма — дыхание, движение, питание?', en: 'Look around: who shows signs of a living organism — breathing, moving, eating?' },
+  l12_experiments: { kz: 'Қорытынды тест: өсімдікті неге тірі дейміз? Жабайы жануар үй жануарынан немен ерекшеленеді? Түлеу деген не? Адам неліктен тірі ағза?', ru: 'Итоговый тест: почему растение — живое? Чем отличается дикое животное от домашнего? Что такое линька? Почему человек — живой организм?', en: 'Final quiz: why is a plant alive? How does a wild animal differ from a domestic one? What is moulting? Why is a human a living organism?' },
+  l12_review: { kz: '1. Өсімдік қандай мүшелерден тұрады?
+2. Адам денесі қандай мүшелерден тұрады?
+3. Адамды неге тірі ағза дейміз?', ru: '1. Из каких частей состоит растение?
+2. Из каких частей состоит тело человека?
+3. Почему человек — живой организм?', en: '1. What parts make up a plant?
+2. What parts make up a human body?
+3. Why is a human a living organism?' },
+  l13_scientists: { kz: 'Қозғалыс — заттың белгілі бір уақыт ішінде орнын ауыстыруы. Итеру — затты өзіңнен ары жылжыту, тарту — өзіңе қарай тарту.', ru: 'Движение — это изменение положения предмета за определённое время. Толчок — это движение предмета от себя, тяга — к себе.', en: 'Motion is a change of an object\'s position over time. A push moves an object away from you, a pull moves it toward you.' },
+  l13_observation: { kz: 'Зымыранның ұшуы (тігінен) және ұшақтың ұшуын (көлденең) салыстыр. Қозғалыс бағыты қалай ерекшеленеді? Шанасын итеретін қыз бен шанасын тартып келе жатқан адамды қара.', ru: 'Сравни взлёт ракеты (вертикально) и полёт самолёта (горизонтально). Чем отличается направление движения? Рассмотри девочку, которая толкает санки, и человека, который тянет санки за собой.', en: 'Compare a rocket lifting off (vertically) and a plane flying (horizontally). How do their directions differ? Look at a girl pushing a sled and a person pulling one.' },
+  l13_experiments: { kz: 'Үстелдегі допты қолыңмен оңға, сосын солға домалат. Содан кейін кітапты еңкейтіп, не болатынын қара. «Тарту — _ қарай қозғалыс», «Итеру — _ ары қозғалыс» деген сөйлемдерге сөздерді тарт.', ru: 'Прокати мяч на столе сначала вправо, затем влево. Затем наклони книгу и посмотри, что произойдёт. Перетащи слова в предложения «Тяга — движение _ к себе», «Толчок — движение _ от себя».', en: 'Roll a ball on the table right, then left. Then tilt a book and watch what happens. Drag words into the sentences "Pull — motion toward you", "Push — motion away from you".' },
+  l13_review: { kz: '1. Итеру тартудан немен ерекшеленеді?
+2. Заттарды қозғалысқа не келтіреді?', ru: '1. Чем отличается толчок от тяги?
+2. Что приводит предметы в движение?', en: '1. How does a push differ from a pull?
+2. What sets objects in motion?' },
+  l14_scientists: { kz: 'Қозғалыс — өмір. Адам жұмыс істеу, тамақ табу және сау болу үшін қозғалуы керек. Спортпен айналысу денсаулықты сақтайды.', ru: 'Движение — это жизнь. Человеку нужно двигаться, чтобы трудиться, добывать пищу и быть здоровым. Спорт помогает сохранять здоровье.', en: 'Motion is life. People need to move to work, find food and stay healthy. Sport keeps us well.' },
+  l14_observation: { kz: 'Көшедегі адамдарды қара: кім не істеп жатыр? Жүгіріп бара жатқан гну отары мен жайылып жүрген жылқыны қара: жануар қозғалмаса не болады?', ru: 'Рассмотри людей на улице: кто что делает? Посмотри на бегущих гну и пасущуюся лошадь: что случится с животным, если оно не будет двигаться?', en: 'Watch people on the street: who is doing what? Look at running wildebeest and a grazing horse: what happens to an animal that does not move?' },
+  l14_experiments: { kz: 'Сөйлемдерді толтыр: «Жануар _ керек, әйтпесе ол _ қалады немесе _ үлгермейді». Гепард — ең жылдам жануар, ал бау-бақша ұлуы, теңіз жұлдызы, тасбақа, коала, теңіз ат-балығы — ең баяулары.', ru: 'Заполни предложения: «Животное должно _, иначе останется без _ или не сможет убежать от _». Гепард — самое быстрое животное, а садовая улитка, морская звезда, черепаха, коала и морской конёк — самые медленные.', en: 'Fill in: "An animal must _, or it will be left without _ or unable to escape _". The cheetah is the fastest animal; garden snails, starfish, tortoises, koalas and seahorses are the slowest.' },
+  l14_review: { kz: '1. Жануарларға неге қозғалу қажет?
+2. Адам қозғалмаса не болады?', ru: '1. Почему животным необходимо двигаться?
+2. Что произойдёт с человеком, если он не будет двигаться?', en: '1. Why must animals move?
+2. What happens to a person who does not move?' },
+  l15_scientists: { kz: 'Заттың қозғалысын сипаттау үшін «траектория» және «жол» сөздері қолданылады. Траектория — заттың қозғалу барысында сызатын сызығы. Қозғалыс түзу немесе қисық болады.', ru: 'Чтобы описать движение, используют слова «траектория» и «путь». Траектория — это линия, которую описывает предмет во время движения. Движение бывает прямым и кривым.', en: 'To describe motion we use the words "trajectory" and "path". A trajectory is the line an object draws as it moves. Motion can be straight or curved.' },
+  l15_observation: { kz: 'Екі ұшақты қара: бірі түзу пунктирмен ұшады, екіншісі қисық сызықпен. Олар бірдей жүзе ме? Жауабыңды дәлелде.', ru: 'Рассмотри два самолёта: один летит по прямой пунктирной линии, другой — по кривой. Ровно ли они летят? Обоснуй ответ.', en: 'Look at two planes: one on a dashed straight line, the other on a curve. Are they both flying straight? Justify your answer.' },
+  l15_experiments: { kz: 'Ойыншық көлікті алдымен тегіс жерде, содан кейін көлбеу беттен жіберіп, өткен жолды сызғышпен өлше. «Барлық _ белгілі бір _ бойынша қозғалады» деген сөйлемге «заттар» және «траектория» сөздерін орналастыр.', ru: 'Толкни игрушечную машину сначала по ровной поверхности, затем по наклонной, и измерь линейкой пройденный путь. Расставь слова «предметы» и «траектории» в предложении «Все _ двигаются по определённой _».', en: 'Push a toy car on a flat surface, then on a slope, and measure the distance with a ruler. Place the words "objects" and "trajectories" in the sentence "All _ move along a certain _".' },
+  l15_review: { kz: '1. Траектория деген не?
+2. Қозғалыс қандай болады?
+3. Адамға заттардың траекториясын білу неге қажет?', ru: '1. Что такое траектория движения?
+2. Каким бывает движение?
+3. Почему человеку нужно знать траекторию некоторых предметов?', en: '1. What is a trajectory?
+2. What kinds of motion are there?
+3. Why does a person need to know the trajectory of certain objects?' },
+  l16_scientists: { kz: 'Күш — заттардың әрекетін сипаттайды. Ауырлық күші барлық затты Жерге тартады, серпімділік күші бұйымды бастапқы пішініне қайтарады, үйкеліс күші қозғалысқа кедергі жасайды.', ru: 'Сила характеризует действие тел. Сила тяжести притягивает все предметы к Земле, сила упругости возвращает форму, сила трения мешает движению.', en: 'Force describes how objects act. Gravity pulls everything to the Earth, elasticity restores the shape, friction resists motion.' },
+  l16_observation: { kz: 'Қыз тербелісте тербеледі, бала допты тізесімен соғады. Балалар не істеп жатыр? Заттарды не қозғалтады? Арқан тартып жатқан балаларды қара: күші көп жақ қай бағытқа жылжиды?', ru: 'Девочка качается на качелях, мальчик подбивает мяч коленом. Что делают дети? Что заставляет предметы двигаться? Посмотри на перетягивание каната: куда сдвинется команда сильнее?', en: 'A girl swings on a swing, a boy bumps a ball with his knee. What are the children doing? What makes things move? Look at tug-of-war: which way does the stronger team move?' },
+  l16_experiments: { kz: 'Сөйлемдердегі бос орындарға «ауырлық», «серпімділік», «үйкеліс» сөздерін қой. Тест: тарту — _ қозғалыс; итеру — _ қозғалыс; барлық затты Жерге _ күші тартады.', ru: 'Заполни пропуски словами «тяжести», «упругости», «трения». Тест: тяга — движение _; толчок — движение _; все предметы к Земле притягивает сила _.', en: 'Fill in: "gravity", "elasticity", "friction". Quiz: pull — motion _; push — motion _; all objects are pulled to Earth by _.' },
+  l16_review: { kz: '1. Мұзды жолға неге құм себеді?
+2. Таразы, садақ кірісі мен батутта қандай күш қолданылады?', ru: '1. Зачем посыпают песком обледенелые дорожки?
+2. Какая сила работает в весах, тетиве лука и батуте?', en: '1. Why is sand spread on icy paths?
+2. Which force works in scales, a bow string and a trampoline?' },
+  l17_scientists: { kz: 'Жұлдыздар — алыста жанып тұрған үлкен шарлар. Ай — Жерге ең жақын ғарыш денесі, табиғи серігіміз. Күн — бізге жарық пен жылу беретін ең жақын жұлдыз. Күнде өмір жоқ, өйткені ол өте ыстық.', ru: 'Звёзды — огромные раскалённые шары вдалеке. Луна — ближайшее небесное тело и спутник Земли. Солнце — ближайшая звезда, источник света и тепла. На Солнце жизни нет — там очень жарко.', en: 'Stars are huge hot balls far away. The Moon is the nearest body and Earth\'s satellite. The Sun is the nearest star — our light and heat. There is no life on the Sun — it is too hot.' },
+  l17_observation: { kz: 'Ғарыштан түсірілген суретті қара: Жер мен Айды тап. Жұлдызды тұманның суретін зерттеп, не көріп тұрғаныңды айт.', ru: 'Рассмотри фото из космоса: где Земля, где Луна. Изучи снимок звёздной туманности и расскажи, что видишь.', en: 'Look at a space photo: which is Earth, which is the Moon. Study a nebula image and tell what you see.' },
+  l17_experiments: { kz: 'Бос орынға дұрыс сөзді таңда: «Шексіз кеңістік — _ (ғарыш)», «Жұлдыздар, планеталар және серіктер — _ (аспан денелері)», «Ғарышты _ зерттейді (астрономия)».', ru: 'Выбери правильное слово: «Безграничное пространство — _ (космос)», «Звёзды, планеты и спутники — _ (небесные тела)», «Космос изучает _ (астрономия)».', en: 'Choose the right word: "Endless space is _ (space)", "Stars, planets and satellites are _ (celestial bodies)", "Space is studied by _ (astronomy)".' },
+  l17_review: { kz: '1. Ғарыш деген не?
+2. Күнде неге өмір жоқ?
+3. Жасанды аппарат Күнге ұшса не болады?', ru: '1. Что такое космос?
+2. Почему на Солнце нет жизни?
+3. Что произойдёт, если искусственный аппарат полетит к Солнцу?', en: '1. What is space?
+2. Why is there no life on the Sun?
+3. What would happen if a spacecraft flew to the Sun?' },
+  l18_scientists: { kz: 'Ғарышты зерттейтін ғылым — астрономия, ғалымдар — астрономдар. Обсерватория — Жер бетіндегі арнайы ғылыми кешен. Тянь-Шань обсерваториясы — соның бірі.', ru: 'Науку о космосе называют астрономией, а учёных — астрономами. Обсерватория — научный комплекс на Земле. Тянь-Шаньская обсерватория — одна из них.', en: 'The science of space is astronomy, scientists are astronomers. An observatory is a research complex on Earth. The Tian Shan observatory is one of them.' },
+  l18_observation: { kz: 'Радиотелескоп пен «Хаббл» ғарыштық телескопының суретін салыстыр. Қайсысы Жерде, қайсысы орбитада? Зымыранның ұшуы мен серіктің суретіне қарап, олардың не үшін керектігін айт.', ru: 'Сравни радиотелескоп и космический телескоп «Хаббл». Какой на Земле, а какой на орбите? Посмотри на запуск ракеты и спутник: для чего они нужны?', en: 'Compare a radio telescope and the Hubble space telescope. Which is on Earth, which on orbit? Look at a rocket launch and a satellite: what are they for?' },
+  l18_experiments: { kz: 'Жұлдызды аспанның екі суретіне арналған дұрыс атауды тізімнен таңда: галактика немесе тұманшық. Содан кейін Байқоңыр ғарыш айлағы туралы оқы — Юрий Гагарин осы жерден ұшты.', ru: 'Подбери правильные названия к двум фото звёздного неба: галактика или туманность. Затем прочитай о космодроме Байконур — отсюда стартовал Юрий Гагарин.', en: 'Match the right name to two night-sky photos: galaxy or nebula. Then read about Baikonur — the cosmodrome from which Yuri Gagarin launched.' },
+  l18_review: { kz: '1. Обсерватория деген не?
+2. Астрономдар ғарышты немен зерттейді?
+3. Байқоңыр туралы не білдің?', ru: '1. Что такое обсерватория?
+2. С помощью чего астрономы изучают космос?
+3. Что ты знаешь о Байконуре?', en: '1. What is an observatory?
+2. What do astronomers use to study space?
+3. What do you know about Baikonur?' },
+  l19_scientists: { kz: 'Жасанды Жер серіктері — адам жасаған аппараттар. Ғарышкерлер — ғарыш станциясында жұмыс істейтін адамдар. Қазақстандық ғарышкерлер: Тоқтар Әубәкіров, Талғат Мұсабаев, Айдын Айымбетов.', ru: 'Искусственные спутники — аппараты, созданные людьми. Космонавты работают на станции. Казахстанские космонавты: Тохтар Аубакиров, Талгат Мусабаев, Айдын Аимбетов.', en: 'Artificial satellites are devices made by people. Cosmonauts work on a station. Kazakh cosmonauts: Toktar Aubakirov, Talgat Musabayev, Aidyn Aimbetov.' },
+  l19_observation: { kz: 'МКС қасындағы ашық ғарыштағы ғарышкердің суретін қара. Ол не істеп жатыр? Не үшін?', ru: 'Рассмотри фото космонавта в открытом космосе рядом с МКС. Что он делает? Зачем?', en: 'Look at a cosmonaut on a spacewalk near the ISS. What are they doing and why?' },
+  l19_experiments: { kz: 'Қазақстандық ғарышкерлердің атын дұрыс ретпен орналастыр: Әубәкіров, Мұсабаев, Айымбетов. Кім бірінші, кім кейін ұшты?', ru: 'Расставь имена казахстанских космонавтов в порядке полётов: Аубакиров, Мусабаев, Аимбетов. Кто полетел первым?', en: 'Arrange the Kazakh cosmonauts in flight order: Aubakirov, Musabayev, Aimbetov. Who flew first?' },
+  l19_review: { kz: '1. Жасанды серіктер не үшін керек?
+2. Қазақстандық қандай ғарышкерлерді білесің?
+3. Ғарышкер болу үшін не қажет деп ойлайсың?', ru: '1. Зачем нужны искусственные спутники?
+2. Каких казахстанских космонавтов ты знаешь?
+3. Что, по-твоему, нужно, чтобы стать космонавтом?', en: '1. Why are artificial satellites needed?
+2. Which Kazakh cosmonauts do you know?
+3. What do you think it takes to become a cosmonaut?' },
+  l20_scientists: { kz: 'Жер — өмір бар планета. Глобус — Жердің кішірейтілген моделі. Күн жүйесінде Күннің айналасында сегіз планета айналады, кейбіреулерінде серіктер бар.', ru: 'Земля — планета, на которой есть жизнь. Глобус — уменьшенная модель Земли. В Солнечной системе вокруг Солнца вращается восемь планет, у некоторых есть спутники.', en: 'Earth is a planet with life. A globe is a small model of Earth. In the Solar System eight planets orbit the Sun, and some have moons.' },
+  l20_observation: { kz: 'Ғарыштан түскен Жердің суретін және балалар қарап тұрған глобусты салыстыр. Жер қандай пішінде? Глобустағы әртүрлі түстер нені білдіреді?', ru: 'Сравни фото Земли из космоса и глобус, который рассматривают дети. Какой формы Земля? Что обозначают разные цвета на глобусе?', en: 'Compare a photo of Earth from space and a globe the children are studying. What shape is Earth? What do the colours on the globe mean?' },
+  l20_experiments: { kz: 'Планеталардың атын Күннен бастап ретімен қой: Меркурий, Шолпан, Жер, Марс, Юпитер, Сатурн, Уран, Нептун. Содан кейін «Күн жүйесі» бейнероликін қара.', ru: 'Расставь планеты по порядку от Солнца: Меркурий, Венера, Земля, Марс, Юпитер, Сатурн, Уран, Нептун. Затем посмотри видео «Солнечная система».', en: 'Order the planets from the Sun: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune. Then watch the "Solar System" video.' },
+  l20_review: { kz: '1. Жер планетасының ерекшелігі неде?
+2. Глобус не үшін жасалған?', ru: '1. В чём особенность планеты Земля?
+2. Для чего сделали глобус?', en: '1. What is special about planet Earth?
+2. Why was the globe created?' },
   l21_scientists: { kz: 'Физиктер анықтады: ауа мөлдір, түссіз, иіссіз, бірақ орын алады және қызған кезде жоғары көтеріледі.', ru: 'Физики установили: воздух прозрачен, не имеет цвета и запаха, но занимает место и при нагреве поднимается вверх.', en: 'Physicists found that air is transparent, colourless and odourless, yet it takes up space and rises when heated.' },
   l21_observation: { kz: 'Шарды үрле — ішіне ауа толып, домаланды. Оны жіберіп қал — ауа ысқырып шығады.', ru: 'Надуй шарик — он округлился, потому что внутри воздух занял место. Отпусти его — воздух выходит со свистом.', en: 'Blow up a balloon — it rounds because air takes up space inside. Let it go and the air whistles out.' },
   l21_experiments: { kz: 'Қағаз жыланды жылы радиатордың үстінде ұста — ол айналады. Бұл жылыған ауа жоғары көтеріліп, оны айналдырады.', ru: 'Подержи бумажную змейку над тёплой батареей — она закружится. Это нагретый воздух поднимается вверх и крутит её.', en: 'Hold a paper snake above a warm radiator — it will spin. Heated air rises and turns it.' },
