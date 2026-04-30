@@ -252,8 +252,8 @@ const Index = () => {
                         <div className="text-[10px] font-bold tracking-wider uppercase relative" style={{ color: `hsl(${sec.hsl})` }}>
                           {tr("lesson")} {l.id}
                         </div>
-                        <div className="font-display font-bold text-forest-deep text-sm leading-tight mt-1 relative line-clamp-3">
-                          {tr(`l${l.id}_title`)}
+                        <div className="font-display font-bold text-forest-deep text-sm leading-tight mt-1 relative line-clamp-2">
+                          {l.title[lang]}
                         </div>
                         {done && (
                           <div className="absolute top-2 right-2 w-7 h-7 rounded-full bg-sun grid place-items-center text-[14px] shadow">⭐</div>
